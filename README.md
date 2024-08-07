@@ -1,2 +1,4 @@
 # Math1431
-My Course Content for Math 1431 at the College of DuPage
+My Course Content for Math 1431 at the College of DuPage.
+
+Hello World!
