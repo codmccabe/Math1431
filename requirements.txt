@@ -16,3 +16,5 @@ sphinxcontrib-jsmath
 sphinxcontrib-qthelp
 sphinxcontrib-serializinghtml
 sphinxcontrib-tikz
+markdown-it-py
+myst-parser
