@@ -110,8 +110,8 @@ what is $x^{2}-x-12$ negative?
 
 This method can be generalized in the following way.
 
-:::{prf:algorithm} Solving quadratic inequality
-:nonumber:
+:::{admonition} Solving quadratic inequality
+:class: tip
 1.  What was the first thing we did to solve the original inequality? ($ax^{2}+bx+c=0$)
 2.  After finding when $ax^{2}+bx+c=0$ we identified how many subintervals? (three (or two) subintervals)
 3.  In those three subintervals we did what in those subintervals? (we tested if $ax^{2}+bx+c$ is positive or negative)
