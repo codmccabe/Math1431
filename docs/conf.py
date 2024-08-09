@@ -179,7 +179,7 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-    'preamble': r'\usepackage{pgf,tikz} \usetikzlibrary{arrows} \newcommand{\ddx}[1]{\frac{d}{dx}\left[#1\right]} \newcommand{\ddt}[1]{\frac{d}{dt}\left[#1\right]} \newcommand{\dydx}{\frac{dy}{dx}} \newcommand{\dxdt}{\frac{dx}{dt}} \newcommand{\dydt}{\frac{dy}{dt}} \newcommand{\dzdt}{\frac{dz}{dt}} \newcommand{\R}{\mathbb{R}} \newcommand{\Q}{\mathbb{Q}} \newcommand{\N}{\mathbb{N}} \newcommand{\Z}{\mathbb{Z}}',
+    'preamble': r'\usepackage{pgf,tikz}',
 
     # Latex figure (float) alignment
     #
