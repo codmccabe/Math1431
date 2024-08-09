@@ -16,7 +16,7 @@ jobs:
         with:
           packages: |
             scheme-basic
-            texlive-xetex
+            xetex
 
       - name: Check `tlmgr` version
         run: tlmgr --version
