@@ -99,7 +99,12 @@ This method can be generalized in the following way.
 2.  After finding when $ax^{2}+bx+c=0$ we identified how many subintervals? (three (or two) subintervals)
 3.  In those three subintervals we did what in those subintervals? (we tested if $ax^{2}+bx+c$ is positive or negative)
 :::
-
+:::{tikz}
+    \draw[white](0,-1)--(0,1);
+    \draw[<->](-4,0)--(4,0)node[below right]{$x$};
+	\draw[latex-{]},thick,blue](-4,0)--(-1,0)node[below]{$-4$};
+	\draw[{[}-latex,thick,blue](1,0)node[below]{$\frac{3}{2}$}--(4,0);
+:::
 ::::{prf:example}
 :label: firstinequality
 Solve $$2x^{2}+5x-12\ge0$$
