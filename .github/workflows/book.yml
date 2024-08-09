@@ -19,6 +19,7 @@ jobs:
             xetex
             pgf
             standalone
+            pgfplots
 
       - name: Check `tlmgr` version
         run: tlmgr --version
