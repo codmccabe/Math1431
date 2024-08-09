@@ -18,6 +18,7 @@ jobs:
             scheme-basic
             xetex
             pgf
+            standalone
 
       - name: Check `tlmgr` version
         run: tlmgr --version
