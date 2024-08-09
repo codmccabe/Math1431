@@ -18,3 +18,4 @@ sphinxcontrib-serializinghtml
 sphinxcontrib-tikz
 markdown-it-py
 myst-parser
+linkify-it-py
