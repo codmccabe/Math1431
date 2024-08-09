@@ -66,27 +66,10 @@ This means we expect to maintain positive profits when more than 350 units are p
 :::{prf:definition}
 A quadratic inequality is an inequality that can be written in the form $$ax^{2}+bx+c*0,$$ where $*$ is $\{<,>,\le,\ge\}$, $a,b,c\in\mathbb{R}$, and $a\ne0$.
 :::
-:::::{prf:example}
+::::{prf:example}
 Solve the quadratic inequality $$x^{2}-x-12<0$$
-::::{dropdown} Solution:
+:::{dropdown} Solution:
 Note $x^{2}-x-12<0$ occurs at the red curve:
-:::{tikz}
-    [scale=0.2]
-    \draw[latex-latex,blue,domain=-3.66:4.65]
-		plot(\x,{pow(\x,2)-\x-12})
-	;
-	\draw[red,domain=-3:4,thick]
-		plot(\x,{pow(\x,2)-\x-12})
-	;
-	\draw[<->](-5,0)--(5,0)node[below right]{$x$};
-	\draw[<->](0,-15)--(0,5)node[above right]{$y$};
-	\draw
-		(-3,2pt)--(-3,-2pt)node[below]{-3}
-		(4,2pt)--(4,-2pt)node[below]{4}
-	;
-	\foreach \x in {5,4,...,-13,-14}
-		\draw(-2pt,\x)--(2pt,\x);
-:::
 Notice that if we first know when $x^{2}-x-12=0$ we can start to figure out when $x^{2}-x-12<0$ .
 
 When is $x^{2}-x-12=0$?
@@ -105,8 +88,8 @@ When is $x^{2}-x-12$ positive?
 what is $x^{2}-x-12$ negative?
 
 * If $x=0$ then what? (why ask when $x=0$?)
+:::
 ::::
-:::::
 
 This method can be generalized in the following way.
 
