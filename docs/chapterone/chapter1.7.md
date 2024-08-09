@@ -117,10 +117,10 @@ This method can be generalized in the following way.
 3.  In those three subintervals we did what in those subintervals? (we tested if $ax^{2}+bx+c$ is positive or negative)
 :::
 
-:::::{prf:example}
+::::{prf:example}
 :label: firstinequality
 Solve $$2x^{2}+5x-12\ge0$$
-::::{dropdown} Solution:
+:::{dropdown} Solution:
 First, we will solve $$\begin{aligned}
 2x^{2}+5x-12 & =0\\
 2x^{2}+8x-3x-12 & =0\\
@@ -134,14 +134,8 @@ Third, $$\begin{aligned}
 2*(-5)^{2}+5*(-5)-12 & =13\\
 2*(0)^{2}+5*(0)-12 & =-12\\
 2*(2)^{2}+5*(2)-12 & =6\end{aligned}$$ From the test values we see the solution set is: $$\{x\,|\,x\le-4\lor\frac{3}{2}\le x\}=(-\infty,-4]\cup[\frac{3}{2},\infty)$$
-:::{tikz}
-    \draw[white](0,-1)--(0,1);
-    \draw[<->](-4,0)--(4,0)node[below right]{$x$};
-	\draw[latex-{]},thick,blue](-4,0)--(-1,0)node[below]{$-4$};
-	\draw[{[}-latex,thick,blue](1,0)node[below]{$\frac{3}{2}$}--(4,0);
 :::
 ::::
-:::::
 ::::{prf:example}
 :label: 17rocket
 If an object is launched from ground level with an initial velocity of 144 feet per second, its height $s$ in feet $t$ seconds after launching is $$s=-16t^{2}+144t.$$ When will the object be greater than 128 feet above ground level?
