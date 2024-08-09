@@ -17,7 +17,7 @@ jobs:
           packages: |
             scheme-basic
             xetex
-            tikz
+            pgf
 
       - name: Check `tlmgr` version
         run: tlmgr --version
