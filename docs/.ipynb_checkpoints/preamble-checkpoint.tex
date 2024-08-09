@@ -1,0 +1,72 @@
+\usepackage{float}
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{multicol}
+%\usepackage{pgfmath}
+%\usepackage{calculator}
+\usepackage{pgfplots}
+%\usepackage{bbding}
+\usepgflibrary{arrows} % LATEX and plain TEX and pure pgf
+\usepgflibrary[arrows] % ConTEXt and pure pgf
+\usetikzlibrary{arrows} % LATEX and plain TEX when using Tik Z
+\usetikzlibrary[arrows] % ConTEXt when using Tik Z
+\usetikzlibrary{decorations.pathreplacing,angles,quotes} %curly bracket lines
+\usetikzlibrary {angles} %For angles
+\usetikzlibrary {angles,quotes} %added things for angles
+
+\renewcommand{\theenumi}{\alph{enumi}}
+
+\newcommand{\ddx}[1]{\frac{d}{dx}\left[#1\right]}
+\newcommand{\ddt}[1]{\frac{d}{dt}\left[#1\right]}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\dxdt}{\frac{dx}{dt}}
+\newcommand{\dydt}{\frac{dy}{dt}}
+\newcommand{\dzdt}{\frac{dz}{dt}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\theoremstyle{plain}
+\ifx\thechapter\undefined
+  \newtheorem{thm}{\protect\theoremname}
+\else
+  \newtheorem{thm}{\protect\theoremname}[chapter]
+\fi
+\theoremstyle{definition}
+\ifx\thechapter\undefined
+  \newtheorem{defn}{\protect\definitionname}
+\else
+  \newtheorem{defn}{\protect\definitionname}[chapter]
+\fi
+\theoremstyle{remark}
+\ifx\thechapter\undefined
+  \newtheorem{rem}{\protect\remarkname}
+\else
+  \newtheorem{rem}{\protect\remarkname}[chapter]
+\fi
+\theoremstyle{definition}
+\ifx\thechapter\undefined
+  \newtheorem{example}{\protect\examplename}
+\else
+  \newtheorem{example}{\protect\examplename}[chapter]
+\fi
+\theoremstyle{definition}
+\newtheorem*{sol*}{\protect\solutionname}
+\newlist{casenv}{enumerate}{4}
+\setlist[casenv]{leftmargin=*,align=left,widest={iiii}}
+\setlist[casenv,1]{label={{\itshape\ \casename} \arabic*.},ref=\arabic*}
+\setlist[casenv,2]{label={{\itshape\ \casename} \roman*.},ref=\roman*}
+\setlist[casenv,3]{label={{\itshape\ \casename\ \alph*.}},ref=\alph*}
+\setlist[casenv,4]{label={{\itshape\ \casename} \arabic*.},ref=\arabic*}
+\theoremstyle{definition}
+\ifx\thechapter\undefined
+  \newtheorem{xca}{\protect\exercisename}
+\else
+  \newtheorem{xca}{\protect\exercisename}[chapter]
+\fi
