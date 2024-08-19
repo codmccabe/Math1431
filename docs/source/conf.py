@@ -9,7 +9,7 @@
 project = 'Math 1431 Notes'
 copyright = '2024, Michael McCabe'
 author = 'Michael McCabe'
-release = '2024'
+release = 'Fall 2024'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
