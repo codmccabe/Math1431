@@ -10,6 +10,8 @@ Welcome to Math 1431 Notes's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   Welcome
+
 
 
 Indices and tables
