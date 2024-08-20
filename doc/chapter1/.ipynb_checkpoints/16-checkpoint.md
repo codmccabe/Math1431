@@ -37,7 +37,7 @@ $(ab)^n = a^n\cdot b^n$ and $\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}$.
 
 For radical notation, we have:
 
-$$\root[n]{x} = x^{\frac{1}{n}}$$
+$$\sqrt[n]{x} = x^{\frac{1}{n}}$$
 :::
 
 :::{prf:example}
@@ -67,11 +67,21 @@ $$d=rt$$
 One printer can do a job twice as fast as another. Working together, both printers can do the job in 2 hours. How long would it take each printer, working alone, to do the job?
 :::{dropdown} Solution
 We know the work done for the faster printer plus the work done for the slower printer equals one job done.
+
 $$W_f+W_s = 1 $$
 
-Let $x$ be the number of hours the faster printer takes to complete one job. Then the rate for the faster printer is $$\frac{1}{x}$$ and the rate of the slower printer is $$\frac{1}{2x}$$ since "One printer can do a job twice as fast as another".
+Let $x$ be the number of hours the faster printer takes to complete one job. Then the rate for the faster printer is 
+
+$$\frac{1}{x}$$ 
+
+and the rate of the slower printer is 
+
+$$\frac{1}{2x}$$ 
+
+since "One printer can do a job twice as fast as another".
 
 The time $t=2$ for the job to be done. Therefore, we have the following equation to solve:
+
 $$\frac{1}{x}\cdot 2 + \frac{1}{2x}\cdot 2 = 1$$
 
 Simplifying we have:
