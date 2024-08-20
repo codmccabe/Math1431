@@ -10,7 +10,7 @@ The set of whole numbers is the set of natural numbers including the zero elemen
 
 The set of integers is denoted $\mathbb{Z}$ and equal to $\{...,-2,-1,0,1,2,...\}$.
 
-The set of rational numbers is denoted $\mathbb{Q}$ and equal to $\{\frac{p}{q}\,|\,p\in \mathbb{Z},q\in\mathbb{Z}\{0}$.
+The set of rational numbers is denoted $\mathbb{Q}$ and equal to $\{\frac{p}{q}\,|\,p\in \mathbb{Z},q\in\mathbb{Z}-\{0\}\}$.
 
 The set of irrational numbers are real numbers that are not rational numbers.
 
@@ -35,4 +35,11 @@ $(ab)^n = a^n\cdot b^n$ and $\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}$.
 :::{prf:example}
 :label: freshmanDream
 Remember $(ab)^n=a^n\cdot b^n$; however, $(a+b)^n\ne a^n +b^n$.
+
+That is, $(x+y)^2\ne x^2 +y^2$ because
+\begin{align*}
+    (x+y)^2 & = (x+y)(x+y)//
+    & = x^2+xy+xy+y^2//
+    & = x^2 + 2xy + y^2
+\end{align*}
 :::
