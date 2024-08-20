@@ -43,7 +43,7 @@ myst_enable_extensions = [
 ]
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'chapter1/.ipynb_checkpoints',]
 
 
 
