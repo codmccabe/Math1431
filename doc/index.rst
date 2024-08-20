@@ -11,3 +11,8 @@ Welcome to Math 1431 Notes's documentation!
    :caption: Contents:
 
    welcome
+
+.. toctree::
+   :caption: Chapter 1:
+
+   chapter1/16.md
