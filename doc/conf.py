@@ -25,6 +25,8 @@ extensions = [
 	'sphinx_proof',
 ]
 
+myst_enable_extension = ['colon_fence']
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
