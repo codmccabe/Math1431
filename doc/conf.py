@@ -21,6 +21,8 @@ release = 'Fall 2024'
 
 extensions = [
 	'myst_parser',
+	'sphinx_design',
+	'sphinx_proof',
 ]
 
 templates_path = ['_templates']
