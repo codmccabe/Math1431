@@ -154,7 +154,7 @@ Solve
 
 $$\sqrt{x}-5=2$$
 
-:::{dropbox} Solution:
+:::{dropdown} Solution:
 
 \begin{align*}
     \sqrt{x}-5 & = 2\\
