@@ -93,6 +93,76 @@ Simplifying we have:
 
 This means $x=3$ is the solution to the equation.
 
-That is, the faster printer will take 3 hours and the slower printer will take 6 hours to complete one job by them selves.
+That is, the faster printer will take 3 hours and the slower printer will take 6 hours to complete one job by themselves.
 :::
 ::::
+
+## Solving Equations
+
+::::{prf:example}
+:label: rationalEquation1
+Solve 
+
+$$\frac{3x-1}{3} - \frac{2x}{x-1} = x$$
+
+:::{dropdown} Solution:
+First, we notice that $x\ne1$. To solve this equation we will first subtract the two rational expressions.
+\begin{align*}
+    \left(\frac{x-1}{x-1}\right)\cdot \frac{3x-1}{3} - \left(\frac{3}{3}\right)\cdot \frac{2x}{x-1} & = x \\
+    \frac{(x-1)(3x-1)-2x(3)}{3(x-1)} & = x\\
+    \frac{3x^2-4x+1-6x}{3(x-1)} & = x\\
+\end{align*}
+
+Next, we will subtract $x$ from both sides and compute the two expressions:
+
+\begin{align*}
+    \frac{3x^2-4x+1-6x}{3(x-1)} - x & = 0\\
+    \frac{3x^2-4x+1-6x}{3(x-1)} - \frac{x(3(x-1))}{3(x-1)} & = 0\\
+    \frac{3x^2-4x+1-6x-3x^2+3x}{3(x-1)} & = 0\\
+    \frac{-7x+1}{3(x-1)} & = 0
+\end{align*}
+
+We know that $\frac{-7x+1}{3(x-1)}$ is zero whenever $-7x+1=0$ and $x\ne1$. Furthermore, we know $-7x+1=0$ whenever $x=\frac{1}{7}$. After checking we know the solution set for the equation is: $\{\frac{1}{7}\}$.
+:::
+::::
+::::{prf:example}
+:label: rationalEquation2
+Solve 
+
+$$\frac{3x+2}{x-2}+\frac{1}{x} = \frac{-2}{x^2-2x}$$
+
+:::{dropdown}
+First, notice that $x\ne2$ and $x\ne0$. To solve this equation we will add the two expressions on the left-hand side and see that the two expressions on either side of the equation share the same denominator. This means we can then set the numerator of both sides of the equation equal to each other.
+\begin{align*}
+    \left(\frac{x}{x}\right)\cdot \frac{3x+2}{x-2} + \frac{1}{x}\cdot \left(\frac{x-2}{x-2}\right) & = \frac{-2}{x(x-2)}\\
+    \frac{3x^2 +2x +x -2}{x(x-2)} & = \frac{-2}{x(x-2)}
+\end{align*}
+Since the denominator of the left-hand side is equal to the right-hand side, we have, provided $x\ne2$ and $x\ne0$
+\begin{align*}
+    3x^2+3x-2 & = -2\\
+    3x^2 + 3x & = 0\\
+    3x(x+1) & = 0
+\end{align*}
+That is $x=0$ or $x=-1$. We claim the solution set to the equation is $\{0,-1\}$. However, $x\ne0$. Therefore, after checking we see that the solution set is: $\{-1\}$.
+:::
+::::
+Before, we use a composition of inverse functions to solve equations like $\sqrt{x}=c$ first consider the square root operator. That is, $\sqrt{4}=2$ because $4=2^2$. In general, for all $c\ge0$, $\sqrt{x}=c$ whenever $x=c^2$. When solving the following equation we don't need to compose both sides by the $x^2$ function because we can use knowledge of the square function to find the solution intuitively.
+
+::::{prf:example}
+:label: radicalEquation1
+Solve 
+
+$$\sqrt{x}-5=2$$
+
+:::{dropbox} Solution:
+\begin{align*}
+    \sqrt{x}-5 & = 2\\
+    \sqrt{x} & = 7\\
+    x & = 49
+\end{align*}
+This hold true since $\sqrt{x}=7$ because $x=7^2=49$. Therefore, the solution set for the equation (after a quick mental check) is $\{49\}$.
+:::
+::::
+
+In some cases solving a rational equation isn't intuitive. In the next example, we will rely on prerequisite knowledge.
+
