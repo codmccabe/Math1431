@@ -131,7 +131,7 @@ Solve
 
 $$\frac{3x+2}{x-2}+\frac{1}{x} = \frac{-2}{x^2-2x}$$
 
-:::{dropdown}
+:::{dropdown} Solution:
 First, notice that $x\ne2$ and $x\ne0$. To solve this equation we will add the two expressions on the left-hand side and see that the two expressions on either side of the equation share the same denominator. This means we can then set the numerator of both sides of the equation equal to each other.
 \begin{align*}
     \left(\frac{x}{x}\right)\cdot \frac{3x+2}{x-2} + \frac{1}{x}\cdot \left(\frac{x-2}{x-2}\right) & = \frac{-2}{x(x-2)}\\
@@ -155,11 +155,13 @@ Solve
 $$\sqrt{x}-5=2$$
 
 :::{dropbox} Solution:
+
 \begin{align*}
     \sqrt{x}-5 & = 2\\
     \sqrt{x} & = 7\\
     x & = 49
 \end{align*}
+
 This hold true since $\sqrt{x}=7$ because $x=7^2=49$. Therefore, the solution set for the equation (after a quick mental check) is $\{49\}$.
 :::
 ::::
