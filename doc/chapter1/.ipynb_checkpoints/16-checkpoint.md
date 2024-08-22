@@ -168,3 +168,100 @@ This hold true since $\sqrt{x}=7$ because $x=7^2=49$. Therefore, the solution se
 
 In some cases solving a rational equation isn't intuitive. In the next example, we will rely on prerequisite knowledge.
 
+::::{prf:example}
+:label: radicalEquation1
+Solve 
+
+$$\sqrt{3x+1} - \sqrt{x+4} = 1 $$
+
+:::{dropdown} Solution:
+For solving this equation we will be composing both sides by the $x^2$ function to eliminate the radical. In fact, we will be composing both sides by the $x^2$ function twice. First, we will isolate on of the radial expressions.
+\begin{align*}
+    \sqrt{3x+1} - \sqrt{x+4} & = 1\\
+    \sqrt{3x+1} & = \sqrt{x+4} + 1\\
+    \left(\sqrt{3x+1}\right)^2 & = \left(\sqrt{x+4}+1\right)^2 \\
+    3x+1 & = (x+4) + 2\sqrt{x+4} + 1\\
+    3x+1 & = x+5 + 2\sqrt{x+4}\\
+    2x-4 & = 2\sqrt{x+4}\\
+    x-2 & = \sqrt{x+4}
+\end{align*}
+Next, we will compose both sides by the $x^2$ function again to eliminate the last radical expression. Then we will solve for $x$.
+\begin{align*}
+    \left(x-2\right)^2 & = \left(\sqrt{x+4}\right)^2\\
+    x^2 - 4x + 4 & = x+4\\
+    x^2 -5x & = 0\\
+    x(x-5) & = 0
+\end{align*}
+The solution to the last equation (by the zero product property) is $x=0$ and $x=5$. Claim, the solution set to the equation is $\{0,5\}$. However, to verify this claim we will check the solutions against the original equation.
+
+When $x=0$, we have,
+\begin{align*}
+    \sqrt{3(0)+1} - \sqrt{0+4} & = 1\\
+    \sqrt{1} - \sqrt{4} & \ne 1
+\end{algin*}
+This shows that $x=0$ is not a solution to the original equation.
+
+When $x=5$, we have,
+\begin{align*}
+    \sqrt{3(5)+1} - \sqrt{5+4} & = 1\\
+    \sqrt{9} - \sqrt{4} & = 1 \checkmark
+\end{align*}
+This shows that $x=5$ is a solution to the original equation.
+
+Therefore, the solution set for the equation is $\{5\}$.
+:::
+::::
+
+A quadratic equation is
+
+$$ax^2+bx+c=0$$
+
+where $a$, $b$, and $c$ are constants and $a\ne0$. 
+
+We have already seen how to solve quadratic equations using GCF factoring and zero product property. In this next example, we will use "ac" method of factoring and then zero product property to solve the equation.
+
+::::{prf:example}
+:label: quadEquation1
+Solve the following equation allowing real or non-real solutions.
+
+$$x^2+3x-10=0$$
+
+:::{dropdown} Solution:
+The equation $x^2+3x-10=0$ has $a=1$ and $c=-10$. Evaluating $ac$ we have $-10$. Now, we want to find two numbers that multiply to $ac=-10$ and add to $b=3$. The two numbers are $5$ and $-2$. Next, we will rewrite the equation and use factor by grouping to complete the factoring of the quadratic expression.
+\begin{align*}
+    x^2+3x-10 & = 10\\
+    x^2 +5x - 2x -10 & = 0\\
+    x(x+5)-2(x+5) & = 0\\
+    (x+5)(x-2) & = 0
+\end{align*}
+By the zero product property, we see that the solution to the equation is when $x=-5$ and $x=2$. Therefore, the solution set for the equation is $\{-5,2\}$.
+:::
+::::
+
+The next example is a quadratic-like equation. That is, the expression can be "transformed" into a quadratic equation in order to use quadratic equation techniques to solve.
+
+::::{prf:example}
+:label: quadLikeEquation
+Solve the following equation allowing real or non-real solutions.
+
+$$x^4 + 3x^2 - 10 = 0$$
+
+:::{dropdown} Solution:
+To demonstrate how this is a quadratic-like equation consider the original equation can be rewritten as the following:
+
+$$\left(x^2\right)^2 - 3\left(x^2\right) - 10 = 0$$
+
+If we let $u=x^2$, then we have $u^2=x^4$ and can solve the following equation:
+\begin{align*}
+    u^2 + 3u - 10 & = 0\\
+    (u+5)(u-2) & = 0
+\end{align*}
+By the zero product property, we have $u=-5$ and $u=2$. However, we want to solve for $x$. Using the fact that $u=x^2$ we have:
+\begin{align*}
+    u & = -5 & u & = 2\\
+    x^2 & = -5 & x^2 & = 2\\
+    x & = i\sqrt{5} & x & = \sqrt{2}
+\end{align*}
+Therefore, the solution set for the equation is $\{i\sqrt{5},\sqrt{2}\}$.
+:::
+::::
