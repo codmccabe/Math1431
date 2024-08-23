@@ -260,8 +260,8 @@ By the zero product property, we have $u=-5$ and $u=2$. However, we want to solv
 \begin{align*}
     u & = -5 & u & = 2\\
     x^2 & = -5 & x^2 & = 2\\
-    x & = i\sqrt{5} & x & = \sqrt{2}
+    x & = \pm i\sqrt{5} & x & = \pm \sqrt{2}
 \end{align*}
-Therefore, the solution set for the equation is $\{i\sqrt{5},\sqrt{2}\}$.
+Therefore, the solution set for the equation is $\{\pm i\sqrt{5},\pm \sqrt{2}\}$.
 :::
 ::::
