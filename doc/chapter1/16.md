@@ -1,6 +1,6 @@
 # Section 1.6
 
-We will start this section with some basic review.
+We will start this section with a basic review.
 
 ## Review
 
