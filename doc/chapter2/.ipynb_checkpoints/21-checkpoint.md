@@ -3,7 +3,7 @@
 ## Change, Distance, Midpoint
 Let $(x_1,y_1)$ and $(x_2,y_2)$ be any two points on the $xy$-plane. The following image will be used:
 
-![Graph!](images/graph.png)
+[![Graph!](images/graph.png)](images/graph.png)
 
 * The change in $x$ is $\Delta x = x_2 - x_1$.
 * The change in $y$ is $\Delta y = y_2 - y_1$.
