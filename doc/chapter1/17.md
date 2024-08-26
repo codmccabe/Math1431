@@ -1,5 +1,7 @@
 # Section 1.7
 
+## Review of concepts
+
 :::{prf:definition}
 :label: inequality
 An inequality says that one expressions is:
@@ -13,6 +15,8 @@ another expression.
 ![inequality!](images/inequality.png "Table of information about inequality notations")
 
 ![inequality2!](images/inequality2.png "Second part of the information")
+
+## Linear Inequality
 
 First, we will look at a simple example involving inequality notations.
 
@@ -45,6 +49,8 @@ From the graph, we see the solution set is $\{x\,|\,x<-2\}$. Also, the interval 
 ::::
 
 Next, we will look at a nonlinear inequality. Remember, if $ab=0$ then $a=0$ or $b=0$ by the zero product property. However, we do not use this property for nonlinear inequalities.
+
+## Nonlinear Inequality
 
 ::::{prf:example}
 :label: nonlinearInequality1
@@ -102,6 +108,9 @@ For context, we have the following graph.
 ![Nonlinear Inequality!](images/nonlinearInequality4.png)
 :::
 ::::
+
+### Rational Inequality
+
 ::::{prf:example}
 :label: rationalInequality
 Solve $\frac{6x+1}{2x-3} \le 6$
@@ -119,7 +128,10 @@ The solution to the equation is $x=\frac{19}{6}$. In the past, we would say this
 * When $x=0$ we have $\frac{6(0)+1}{2(0)-3} \le 6$ which is **true**.
 * When $x=2$ we have $\frac{6(2)+1}{2(2)-3} \le 6$ which is **false**.
 * When $x=4$ we have $\frac{6(4)+1}{2(4)-3} \le 6$ which is **true**.
+
 The graph of the solution would look like: ![Rational Inequality!](images/nonlinearInequality5.png)
+
+The solution set would be $\{x\,|\,x<\frac{3}{2}\text{ or }\frac{19}{6}\le x\}$ and interval notation would be $(-\infty,\frac{3}{2})\cup[\frac{19}{6},\infty)$.
 
 With context, we have:
 

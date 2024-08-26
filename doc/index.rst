@@ -17,3 +17,9 @@ Welcome to Math 1431 Notes's documentation!
 
    chapter1/16.md
    chapter1/17.md
+   chapter1/18.md
+
+.. toctree::
+   :caption: Chapter 2:
+
+   chapter2/21.md
