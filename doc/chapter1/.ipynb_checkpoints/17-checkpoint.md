@@ -69,5 +69,36 @@ That is, we will test values in each subinterval.
 The graph of the solution should look like the following: ![Nonlinear Inequality!](images/nonlinearInequality1.png)
 
 Based on the graph the solution set is $\{x\,|\,x<-3\text{ or }4<x\}$. The interval notation would be $(-\infty,-3)\cup(4,\infty)$.
+
+Here is a plot of $y=x^2-x-12$ compared with the solution.
+
+![Nonlinear Inequality!](images/nonlinearInequality2.png)
+:::
+::::
+
+::::{prf:example}
+:label: nonlinearInequality2
+Solve $2x^2+5x-12\le 0$.
+
+:::{dropdown} Solution:
+First, we will solve $2x2+5x-12 = 0$.
+\begin{align*}
+    2x^2+5x-12 & = 0\\
+    2x^2+8x-3x-12 & = 0\\
+    2x(x+4)-3(x+4) & = 0\\
+    (x+4)(2x-3) & = 0
+\end{align*}
+By the zero product property, we have $x=-4$ or $x=\frac{3}{2}$ as solutions to the equation. Next, identify the three subintervals created by these values and put them on a number line. Since there are no other zeros for the expression and the expression is defined everywhere with no jumps we know if we test one value on a subinterval that will determine the rest of the values in the subinterval.
+* When $x=-5$ we have $2(-5)^2+5(-5)-12\le 0$ which is **flase**. This means we will **not** shade the left-most subinterval.
+* When $x=0$ we have $2(0)^2+5(0)-12\le0$ which is **true**. This means we will shade the middle subinterval.
+* When $x=2$ we have $2(2)^2+5(2)-12\le0$ which is **false**. This means we will **not** shade the right-most subinterval.
+
+The graph of the solution would look like: ![Nonlinear Inequality!](images/nonlinearInequality3.png)
+
+From the graph we have the solution set $\{x\,|\,-4\le x\le \frac{3}{2}\}$ and the interval notation is $[-4,\frac{3}{2}]$.
+
+For context, we have the following graph.
+
+![Nonlinear Inequality!](images/nonlinearInequality4.png)
 :::
 ::::
