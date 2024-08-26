@@ -102,3 +102,27 @@ For context, we have the following graph.
 ![Nonlinear Inequality!](images/nonlinearInequality4.png)
 :::
 ::::
+::::{prf:example}
+:label: rationalInequality
+Solve $\frac{6x+1}{2x-3} \le 6$
+
+:::{dropdown} Solution:
+We will first solve $\frac{6x-1}{2x-3} = 0$ like the previous examples.
+\begin{align*}
+    \frac{6x+1}{2x-3} & = 6\\
+    \frac{6x+1}{2x-3} - 6 & = 0\\
+    \frac{6x+1}{2x-3} - \frac{6(2x-3)}{2x-3} & = 0\\
+    \frac{6x+1-12x+18}{2x-3} & = 0\\
+    \frac{-6x+19}{2x-3} & = 0
+\end{align*}
+The solution to the equation is $x=\frac{19}{6}$. In the past, we would say this splits the number line into 2 subintervals. However, the expression is undefined at $x=\frac{3}{2}$. This means we must include this value on the number line. Next, we will test values.
+* When $x=0$ we have $\frac{6(0)+1}{2(0)-3} \le 6$ which is **true**.
+* When $x=2$ we have $\frac{6(2)+1}{2(2)-3} \le 6$ which is **false**.
+* When $x=4$ we have $\frac{6(4)+1}{2(4)-3} \le 6$ which is **true**.
+The graph of the solution would look like: ![Rational Inequality!](images/nonlinearInequality5.png)
+
+With context, we have:
+
+![Rational Inequality!](images/nonlinearInequality6.png)
+:::
+::::
