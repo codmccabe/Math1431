@@ -66,7 +66,7 @@ Next, we will use the knowledge of completing the square to write $x^2+y^2+Dx+Ey
 ::::{prf:example}
 :label: genSndCircle
 Given $2x^2+2y^2+2x-6y=45$. Rewrite the equation in the form $(x-h)^2+(y-k)^2=r^2$ then find the center and radius of the resulting circle.
-:::dropdown} Solution:
+:::{dropdown} Solution:
 First, we will divide both sides of the equation by $2$.
 
 $$ x^2 + y^2 + x - 3y = \frac{45}{2} $$
