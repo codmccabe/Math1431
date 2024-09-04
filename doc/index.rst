@@ -26,3 +26,4 @@ Welcome to Math 1431 Notes's documentation!
    chapter2/22.md
    chapter2/23.md
    chapter2/24.md
+   chapter2/25.md

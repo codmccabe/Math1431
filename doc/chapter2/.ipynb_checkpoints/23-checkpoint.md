@@ -33,7 +33,7 @@ $$f(0)=(0)^2+(0)-6=-6$$
 :::
 
 Solve $f(x)=0$.
-:::{dropdown}
+:::{dropdown} Solution:
 \begin{align*}
     x^2 + x - 6 & = 0\\
     (x+3)(x-2) & = 0
@@ -108,13 +108,13 @@ $$(0,3)$$
 Remember when finding intervals where a function is increasing, decreasing, or constant we orientate concerning the $x$-axis. That is, when finding intervals of increasing for a function $f$ we want to see all $x$ values such that $f$ satisfies the increasing function definition.
 
 ## Domain
-We will be considering the following domain situations for the beginning of the semester.
+We will consider the following domain situations for the beginning of the semester.
 
 :::{prf:definition} Domain
 :label: keyDomain
-* The domain for the function $f(x)=x$ is the set of all $x$ such that $x$ is a real number. Or, $$\text{dom}(x)=\mathbb{R}$$
-* The domain for the function $f(x)=\frac{1}{x}$ is the set of all $x$ such that $x$ is not zero. Or, $$\text{dom}(\frac{1}{x})=\{x|x\ne0\}$$
-* The domain for the function $f(x)=\sqrt{x}$ is the set of all $x$ such that $x$ is greater than or equal to zero. Or, $$\text{dom}(\sqrt{x})=\{x|x\ge0\}$$
+* The domain for the function $f(x)=x$ is the set of all $x$ such that $x$ is a real number. Or, $\text{dom}(x)=\mathbb{R}$
+* The domain for the function $f(x)=\frac{1}{x}$ is the set of all $x$ such that $x$ is not zero. Or, $\text{dom}(\frac{1}{x})=\{x|x\ne0\}$
+* The domain for the function $f(x)=\sqrt{x}$ is the set of all $x$ such that $x$ is greater than or equal to zero. Or, $\text{dom}(\sqrt{x})=\{x|x\ge0\}$
 :::
 
 :::{prf:example}
