@@ -58,7 +58,7 @@ Given the following graph. Find the equation of the line.
 One way to find the equation of the line is to have two points, find the slope, plug the point and slope into the point-slope, and then solve for $y$. Given the graph, we have many points to choose from. However, two points are clearly on the line: $(0,2)$ and $(3,0)$. We will use these points to find the equation of the line. First, we will find the slope:
 
 \begin{align*}
-    m & = \frac{0-2){3-0}\\
+    m & = \frac{0-2}{3-0}\\
     & = \frac{-2}{3}
 \end{align*}
 
