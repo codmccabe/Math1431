@@ -99,7 +99,7 @@ Let line one be $y=3x+10$.
 Write an equation in slope-intercept form of the line that passes through the point $(2,-4)$ and satisfies the given conditions.
 
 Parallel to the line $3x-2y=5$.
-:::{dropdown}
+:::{dropdown} Solution:
 To construct a line equation we need a point and a slope. We know the point is $(2,-4)$. Next, we need to find the slope of the new line.
 
 The slope of the old line is unknown as the equation is given. We must first find the slope-intercept form of the equation given to find the slope of the old line.
@@ -120,7 +120,7 @@ Since, we have $(x_1,y_1)=(2,-4)$ and $m=\frac{3}{2}$ we can now find the equati
 Therefore, the equation of the line parallel to $3x-2y=5$ and passes through the point $(2,-4)$ is $y=\frac{3}{2}x-7$.
 :::
 Perpendicular to the line $3x-2y=5$.
-:::{dropdown}
+:::{dropdown} Solution:
 Given: $(x_1,y_1)=(2,-4)$
 
 Since $3x-2y=5$ can be written as $y=\frac{3}{2}x-7$ we know the slope of the old line is $m=\frac{3}{2}$.
