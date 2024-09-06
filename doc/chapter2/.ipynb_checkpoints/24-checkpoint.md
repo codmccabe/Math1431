@@ -17,6 +17,7 @@ $$Ax+By=C$$
 
 :::
 
+## Standard Form
 ::::{prf:example}
 :label: exmapleStandFormLine
 Write $-\frac{4}{3}x+\frac{2}{3}y=\frac{8}{3}$ in standard form.
@@ -36,7 +37,7 @@ $$2x-y=-4$$
 This would be the linear equation in standard form.
 :::
 ::::
-
+## Slope
 :::{prf:definition} Slope
 :label: defSlope
 The slope of a line is the change in $y$ values over the change in $x$ values. Or,
@@ -46,7 +47,7 @@ $$m=\frac{\Delta y}{\Delta x}$$
 :::
 
 Remember, $\Delta x = x_2 - x_1$ and $\Delta y = y_2 - y_1$. In function notation, we say $y_1=f(x_1)$.
-
+## Properties
 :::{prf:property} 
 :label: slopeIncDecCons
 Consider $m=\frac{\Delta y}{\Delta x}$.
@@ -56,7 +57,7 @@ Consider $m=\frac{\Delta y}{\Delta x}$.
 * If $m=0$, then $\Delta y = 0$, $\Delta x\ne0$, and the line is constant. We also say the line is horizontal.
 * If (for some reason) $m$ is undefined, then $\Delta x=0$ and the line would be vertical. We also say the slope is undefined.
 :::
-
+## Secant Line
 :::{prf:definition} Secant Line
 :label: secantLine
 Let $f$ be a function defined on an interval $I$ and $x_1,x_2\in I$. The average rate of change of a function $f$ from $x_1$ to $x_2$ is defined as:
@@ -65,7 +66,7 @@ $$m_{\text{ave}} = \dfrac{f(x_2)-f(x_1)}{x_2-x_1}$$
 
 The line through these two points, $(x_1,f(x_1)$ and $(x_2,f(x_2))$, is called the **secant line**.
 :::
-
+## Business Models
 :::{prf:Definition} Business Models
 :label: bizModels
 In general, we say 
