@@ -26,9 +26,7 @@ Squaring Function: $f(x)=x^2$.
 * ![Graph of the squaring function](images/sqrFunctionGraph.png)
 :::
 
-:::{plot}
-images/sqrFunctionPlot.py
-:::
+.. plot:: images/sqrFunctionPlot.py
 
 :::{prf:definition} Cubing Function
 :label: cubFunction
