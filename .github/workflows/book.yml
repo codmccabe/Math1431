@@ -13,7 +13,6 @@ jobs:
       - uses: actions/setup-python@v5
       - name: Install dependencies
         run: |
-          pip install sphinx sphinx_rtd_theme myst_parser sphinx-design sphinx-proof markdown-it-py linkify-it-py matplotlib numpy ipython
 	  pip install -r requirements.txt
       - name: Sphinx build
         run: |

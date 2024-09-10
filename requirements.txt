@@ -9,3 +9,10 @@ sphinx-copybutton
 sphinx-design
 sphinx-gallery[parallel]>=0.12.0
 sphinx-tags>=0.4.0
+sphinx 
+sphinx_rtd_theme
+myst_parser
+sphinx-proof
+matplotlib
+numpy
+
