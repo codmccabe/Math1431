@@ -23,6 +23,7 @@ extensions = [
 	'myst_parser',
 	'sphinx_design',
 	'sphinx_proof',
+	'matplotlib.sphinxext.plot_directive',
 ]
 
 myst_enable_extensions = [
