@@ -24,7 +24,8 @@ extensions = [
 	'sphinx_design',
 	'sphinx_proof',
         'matplotlib.sphinxext.plot_directive',
-        'numpydoc'
+        'numpydoc',
+	'nbsphinx',
 ]
 
 myst_enable_extensions = [
