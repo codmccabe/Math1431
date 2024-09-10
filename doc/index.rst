@@ -13,6 +13,9 @@ Welcome to Math 1431 Notes's documentation!
    welcome
 
 .. toctree::
+    intGraph
+
+.. toctree::
    :caption: Chapter 1:
 
    chapter1/16.md
