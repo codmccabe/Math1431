@@ -24,9 +24,6 @@ extensions = [
 	'sphinx_design',
 	'sphinx_proof',
         'matplotlib.sphinxext.plot_directive',
-        'IPython.sphinxext.ipython_directive',
-        'IPython.sphinxext.ipython_console_highlighting',
-	'sphinx.ext.inheritance_diagram',
         'numpydoc'
 ]
 
