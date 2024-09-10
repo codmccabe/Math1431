@@ -13,6 +13,8 @@ Welcome to Math 1431 Notes's documentation!
    welcome
 
 .. toctree::
+    :caption: Interactive
+    
     intGraph
 
 .. toctree::
