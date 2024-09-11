@@ -65,14 +65,32 @@ Given a function $g$ defined by $g(x)=f(x-h)$, where $h$ is any real number:
 Draw the graph for $f(x)=\frac{1}{2}(x-1)^2+2$.
 :::{dropdown} Solution:
 1. The graph we translate is $y=x^2$.
-2. The graph will be stretched vertically by a factor of $\frac{1}{2}$.
+2. The graph will be shrink vertically by a factor of $\frac{1}{2}$.
 3. The graph will be translated $1$ unit to the right.
 4.  The graph will be translated $2$ units upward.
 
 step-by-step:
 1. ![Parent Function](images/sketchGraph1.1.png)
-2. ![Vertical Strech](images/sketchGraph1.2.png)
+2. ![Vertical shrink](images/sketchGraph1.2.png)
 3. ![Translate right](images/sketchGraph1.3.png)
 4. ![Translate up](images/sketchGraph1.4.png)
+:::
+::::
+::::{prf:example}
+:label: sketchGraph2
+Draw the graph of $f(x)=-2\sqrt{x+1}-1$.
+:::{dropdown} Solution:
+1. The graph we translate is $y=\sqrt{x}$.
+2. The graph will be stretched vertically by a factor of $2$.
+3. The graph will be reflected across the $x$-axis.
+4. The graph will be translated $1$ unit to the left.
+5. The graph will be translated $1$ units downward.
+
+step-by-step:
+1. ![Parent Function](images/sketchGraph2.1.png)
+2. ![Vertical stretch](images/sketchGraph2.2.png)
+3. ![Reflect across y](images/sketchGraph2.3.png)
+4. ![Translate left](images/sketchGraph2.4.png)
+5. ![Translate down](images/sketchGraph2.5.png)
 :::
 ::::
