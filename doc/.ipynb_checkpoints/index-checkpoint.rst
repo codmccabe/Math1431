@@ -28,4 +28,3 @@ Welcome to Math 1431 Notes's
    chapter2/24.md
    chapter2/25.md
    chapter2/26.md
-   chapter2/intGraph.ipynb
