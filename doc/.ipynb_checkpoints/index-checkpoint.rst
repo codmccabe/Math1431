@@ -13,11 +13,6 @@ Welcome to Math 1431 Notes's documentation!
    welcome
 
 .. toctree::
-    :caption: Interactive
-    
-   chapter2/intGraph.ipynb
-
-.. toctree::
    :caption: Chapter 1:
 
    chapter1/16.md
@@ -33,3 +28,4 @@ Welcome to Math 1431 Notes's documentation!
    chapter2/24.md
    chapter2/25.md
    chapter2/26.md
+   chapter2/intGraph.ipynb
