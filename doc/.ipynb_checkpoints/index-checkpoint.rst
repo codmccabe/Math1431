@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Math 1431 Notes's documentation!
+Welcome to Math 1431 Notes's
 ===========================================
 
 .. toctree::
@@ -27,5 +27,5 @@ Welcome to Math 1431 Notes's documentation!
    chapter2/23.md
    chapter2/24.md
    chapter2/25.md
-   chapter2/26
-   chapter2/intGraph
+   chapter2/26.md
+   chapter2/intGraph.ipynb
