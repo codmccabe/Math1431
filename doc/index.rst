@@ -15,7 +15,7 @@ Welcome to Math 1431 Notes's documentation!
 .. toctree::
     :caption: Interactive
     
-    chapter2/intGraph.ipynb
+   chapter2/intGraph.ipynb
 
 .. toctree::
    :caption: Chapter 1:
