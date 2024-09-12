@@ -16,7 +16,7 @@ jobs:
           pip install sphinx sphinx_rtd_theme sphinx-proof myst_parser matplotlib numpy sphinx-design numpydoc linkify-it-py nbsphinx ipython ipykernel pandoc jupyter jupyter_contrib_nbextensions
       - name: Sphinx build
         run: |
-          sphinx-build doc _build
+          sphinx-build -T doc _build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
