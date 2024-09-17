@@ -124,10 +124,10 @@ We are given $f(x)=\sqrt{x}$. Next, we find $f(x+h)=\sqrt{x+h}$. Remember $\sqrt
 To finish simplifying the difference quotient we need to remember $(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})=a-b$. This identity is related to the term **conjugate**. The conjugate of $(\sqrt{x+h}-\sqrt{x}$ is $(\sqrt{x+h}+\sqrt{x})$. We will use the conjugate to rationalize the numerator of the difference quotient.
 
 \begin{align*}
-    \frac{f(x+h)-f(x)}{h} & = \frac{\sqrt{x+h}-\sqrt{x}}{h}\cdot \left(\frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}}\right)\\
-    & = \frac{(x+h)-(x)}{h(\sqrt{x+h)+\sqrt{x})}\\
-    & = \frac{h}{h(\sqrt{x+h}+\sqrt{x}\sqrt{x+h}+\sqrt{x})}\\
-    & = \frac{1}{\sqrt{x+h}+\sqrt{x}}
+    \frac{f(x+h)-f(x)}{h} & =\frac{\sqrt{x+h}-\sqrt{x}}{h}\cdot\left(\frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}}\right)\\
+    & =\frac{(x+h)-(x)}{h(\sqrt{x+h}+\sqrt{x})}\\
+    & =\frac{h}{h(\sqrt{x+h}+\sqrt{x})}\\
+    & =\frac{1}{\sqrt{x+h}+\sqrt{x}}
 \end{align*}
 
 Therefore, we have $\frac{f(x+h)-f(x)}{h} = \frac{1}{\sqrt{x+h}+\sqrt{x}}$.
