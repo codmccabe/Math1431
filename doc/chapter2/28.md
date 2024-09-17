@@ -62,7 +62,7 @@ Next, we will simplify $\frac{f(x+h)-f(x)}{h}$.
 
 \begin{align*}
     \frac{f(x+h)-f(x)}{h} & = \frac{6xh+3h^2-2h}{h}\\
-    & = \frac{h(6x+3h-2}{h}\\
+    & = \frac{h(6x+3h-2)}{h}\\
     & = 6x+3h-2
 \end{align*}
 
@@ -124,7 +124,7 @@ We are given $f(x)=\sqrt{x}$. Next, we find $f(x+h)=\sqrt{x+h}$. Remember $\sqrt
 To finish simplifying the difference quotient we need to remember $(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})=a-b$. This identity is related to the term **conjugate**. The conjugate of $(\sqrt{x+h}-\sqrt{x}$ is $(\sqrt{x+h}+\sqrt{x})$. We will use the conjugate to rationalize the numerator of the difference quotient.
 
 \begin{align*}
-    \frac{f(x+h)-f(x)}{h} & = \frac{\sqrt{x+h}-\sqrt{x}{h}\cdot \left(\frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}}\right)\\
+    \frac{f(x+h)-f(x)}{h} & = \frac{\sqrt{x+h}-\sqrt{x}}{h}\cdot \left(\frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}}\right)\\
     & = \frac{(x+h)-(x)}{h(\sqrt{x+h)+\sqrt{x})}\\
     & = \frac{h}{h(\sqrt{x+h}+\sqrt{x}\sqrt{x+h}+\sqrt{x})}\\
     & = \frac{1}{\sqrt{x+h}+\sqrt{x}}
@@ -133,3 +133,14 @@ To finish simplifying the difference quotient we need to remember $(\sqrt{a}+\sq
 Therefore, we have $\frac{f(x+h)-f(x)}{h} = \frac{1}{\sqrt{x+h}+\sqrt{x}}$.
 :::
 ::::
+
+## Composition of Functions
+
+:::{prf:definition}
+:label: compFunctions
+If $f$ and $g$ are functions then the **composite function**, or **composition**, of $f$ and $g$ is:
+
+$$(f\circ g)(x)=f(g(x))$$
+
+The domain of $f\circ g$ is the set of all $x$ such that $x$ is in the domain of $g$ such that $g(x)$ is in the domain of $f$.
+:::
