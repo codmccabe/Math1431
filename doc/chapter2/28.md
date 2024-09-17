@@ -144,3 +144,54 @@ $$(f\circ g)(x)=f(g(x))$$
 
 The domain of $f\circ g$ is the set of all $x$ such that $x$ is in the domain of $g$ such that $g(x)$ is in the domain of $f$.
 :::
+
+::::{prf:example}
+:label: compsGraph1
+Let the plot of $f$ be the following:
+
+![Graph of f(x)](images/compsFunctionf.png)
+
+Let the plot of $g$ be the following:
+
+![Graph of g(x)](images/compsFunctiong.png)
+
+Evaluate $f(g(1))$.
+:::{dropdown} Solution:
+First, the graph shows that $g(1)=3$. This means, $f(g(1))=f(3)$. From the graph, we see that $f(3)=2$. Therefore, $f(g(1))=2$.
+:::
+Evaluate $g(f(1))$.
+:::{dropdown} Solution:
+First, the graph shows that $f(1)=1$. This means, $g(f(1))=g(1)$. From the graph, we see that $g(1)=3$. Therefore, $g(f(1))=3$.
+:::
+::::
+
+The last example shows that, in general, $f(g(x))\ne g(f(x))$. Later we will see a special case where we need $f(g(x))=g(f(x))$.
+
+::::{prf:example}
+:label: compFunctionsEx1
+Let $f(x)=\sqrt{x+1}$ and $g(x)=\frac{1}{x+1}$.
+
+Find $f(g(x))$.
+:::{dropdown} Solution:
+\begin{align*}
+    f(g(x)) & = \sqrt{g(x)+1}\\
+    & = \sqrt{\frac{1}{x+1}+1}
+\end{align*}
+:::
+
+Find $g(f(x))$.
+:::{dropdown} Solution:
+\begin{align*}
+    g(f(x)) & = g(\sqrt{x+1})\\
+    & = \frac{1}{\sqrt{x+1}+1}
+\end{align*}
+:::
+::::
+
+::::{prf:example}
+:label: compFunctionEx2
+Let $h(x)=f(g(x))$ such that $h(x)=\sqrt{x^2+x+1}$. Find $f(x)$ and $g(x)$.
+:::{dropdown} Solution:
+The outside function is the square root function. This means $f(x)=\sqrt{x}$. The inside function is a polynomial. This means $g(x)=x^2+x+1$.
+:::
+::::
