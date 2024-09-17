@@ -98,7 +98,7 @@ Let $f(x)=\frac{1}{x}$. Simplify the difference quotient.
 First, we are given $f(x)=\frac{1}{x}$. Next, we want state $f(x+h)=\frac{1}{x+h}$. Next, we want to simplify $f(x+h)-f(x)$ by adding the two rational expressions using common denominators.
 
 \begin{align*}
-    f(x+h)-f(x) & = \frac{1}{x+h)-\frac{1}{x}\\
+    f(x+h)-f(x) & = \frac{1}{x+h}-\frac{1}{x}\\
     & = \frac{(x)-(x+h)}{x(x+h)}\\
     & = \frac{-h}{x(x+h)}
 \end{align*}
