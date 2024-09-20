@@ -25,7 +25,7 @@ where $c$ is some real number.
 
 $$f(x)=mx+b$$
 where $m$ is the slope of the line and $b$ is the $y$ component of the $y$-intercept. Assuming $m\ne0$ we have
-* This function is called a linear funciton.
+* This function is called a linear function.
 * The is a binomial
 * This has a degree of one.
 * The graph of the function is a slanted line. Where the slant is quantified by $m$.
@@ -44,7 +44,7 @@ where $a$, $b$, and $c$ are complex numbers and $a\ne0$.
 * The graph is a parabola
 :::
 
-When graphing a quadratic function we want write $ax^2+bx+c$ in the form $a(x-h)^2+k$. We do this to use translating and scaling of graph techniques learned in chapter 2.
+When graphing a quadratic function we want to write $ax^2+bx+c$ in the form $a(x-h)^2+k$. We do this by using translating and scaling of graph techniques learned in Chapter 2.
 
 ## Vertex Formula
 
@@ -88,13 +88,13 @@ We now rewrite and simplify $a\left(x^2 + \frac{b}{a}x\right) + c$ in the follow
     & = a\left(x+\frac{b}{2a}\right)^2 + \frac{4ac-b^2}{4a}
 \end{align*}
 
-From the last step we see:
+From the last step, we see:
 
 $$a\left(x+\frac{b}{2a}\right)^2 + \frac{4ac-b^2}{4a} = a\left(x-\left(-\frac{b}{2a}\right)\right)^2 + \frac{4ac-b^2}{4a}$$
 
 This means $h=-\frac{b}{2a}$ and $k=f(-\frac{b}{2a})$ or $k=\frac{4ac-b^2}{4a}$.
 
-With this in mind we have the following properties for graph a quadratic function.
+With this in mind, we have the following properties for graphing a quadratic function.
 
 :::{prf:property} Quadratic Function Graph
 :label: graphQuadFunction
@@ -194,7 +194,7 @@ Want to solve $f(x)=0$. Here we can use the $x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}$ 
     & = \frac{6\pm 2\sqrt{3}}{3}
 \end{align*}
 
-Therefore, the $x$ intercepts are at $(\frac{6+2\sqrt{3}}{3})$ and $(\frac{6-2\sqrt{3}}{3})$.
+Therefore, the $x$ intercepts are at $(\frac{6+2\sqrt{3}}{3},0)$ and $(\frac{6-2\sqrt{3}}{3},0)$.
 :::
 ::::
 
@@ -225,7 +225,7 @@ Find the maximum height of the ball.
 :::{dropdown} Solution:
 The maximum height will occur when the parabola achieves maximum output. This will happen at the vertex of the parabola. First, we will find how long it will take to reach maximum height by finding the $x$ component (or $t$ component in this context) of the vertex.
 
-$$-\frac{b}{2a}=-\frac{112}{2(-16)}=\frac{7}{2}=3.5$
+$$-\frac{b}{2a}=-\frac{112}{2(-16)}=\frac{7}{2}=3.5$$
 
 This means that at $3.5$ seconds into travel the ball will reach the maximum height.
 
