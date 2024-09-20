@@ -30,3 +30,8 @@ Welcome to Math 1431 Notes's
    chapter2/26.md
    chapter2/27.md
    chapter2/28.md
+
+.. toctree::
+   :caption: Chapter 3:
+
+   chapter3/31.md
