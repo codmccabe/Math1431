@@ -23,8 +23,8 @@ extensions = [
 	'myst_parser',
 	'sphinx_design',
 	'sphinx_proof',
-    'matplotlib.sphinxext.plot_directive',
-    'numpydoc',
+        'matplotlib.sphinxext.plot_directive',
+        'numpydoc',
 ]
 
 myst_enable_extensions = [
@@ -45,7 +45,7 @@ myst_enable_extensions = [
 ]
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'chapter1/.ipynb_checkpoints','.ipynb_checkpoints','chapter2/.ipynb_checkpoints']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'chapter1/.ipynb_checkpoints','.ipynb_checkpoints','chapter2/.ipynb_checkpoints','chapter3/.ipynb_checkpoints']
 
 
 
