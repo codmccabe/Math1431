@@ -113,7 +113,7 @@ where $a\ne0$, $h=-\frac{b}{2a}$ and $k=f(-\frac{b}{2a})$.
 * The value of $k$ describes the vertical shift of the parabola.
 :::
 
-When it comes to the $x$ and $y$ intercepts we will go into more detail in the following sections.
+We will discuss the $x$ and $y$ intercepts in more detail soon.
 
 ### Example of Vertex and Axis of Symmetry
 
@@ -121,6 +121,133 @@ When it comes to the $x$ and $y$ intercepts we will go into more detail in the f
 :label: vertexAxisSymm
 Find the axis and vertex of the parabola $f(x)=-3x^2+12x-8$.
 :::{dropdown} Solution:
+We know the vertex for the function $f(x)=ax^2+bx+c$ is at $\left(-\frac{b}{2a},f(-\frac{b}{2a})\right)$. First, we will find $-\frac{b}{2a}$.
 
+$$-\frac{b}{2a}=-\frac{12}{2(-3)}=2$$
+
+Next, we will evaluate $f(2)$.
+
+\begin{align*}
+    f(2) & = -3(2)^2+12(2)-8
+    & = 4
+\end{align*}
+
+Therefore, the vertex of the parabola is $(2,4)$. The exponent of the vertex is $2$. This means the axis is $x=2$.
+:::
+::::
+
+### $x$ and $y$ Intercepts
+
+The $y$ intercept of the function $f(x)=ax^2+bx+c$ is $(0,f(0))=(0,c)$. However, the $x$ intercepts are no that simple. Consider, we want to know when $f(x)=0$. Consider the following using completing the square method.
+
+\begin{align*}
+    ax^2+bx+c & = 0\\
+    x^2+\frac{b}{a}x+\frac{c}{a} & = 0\\
+    x^2+\frac{b}{a}x + C_x & = -\frac{c}{a} + C_x
+\end{align*}
+
+where $C_x$ will complete the square for the left-hand side.
+
+$$\left(\frac{\frac{b}{a}}{2}\right)^2=\left(\frac{b}{2a}\right)^2=\frac{b^2}{4a^2}$$
+
+This means $C_x=\frac{b}{4a^2}$.
+
+\begin{align*}
+    x^2+\frac{b}{a}x + C_x & = -\frac{c}{a} + C_x\\
+    x^2+\frac{b}{a}x + \frac{b}{4a^2} & = -\frac{c}{a} + \frac{b}{4a^2}\\
+    \left(x+\frac{b}{2a}\right)^2 & = \frac{b^2-4ac}{4a^2}\\
+    x+\frac{b}{2a} & = \pm \sqrt{\frac{b^2-4ac}{4a^2}}\\
+    x & = -\frac{b}{2a} \pm \frac{\sqrt{b^2-4ac}}{2a}\\
+    & = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
+\end{align*}
+
+That is, if $f(x)=0$ then it will happen when $x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}$. However, it is possible for $\sqrt{b^2-4ac}$ to be not real or even zero. So we have the following conclusions.
+
+* If $b^2-4ac=0$, then the parabola will have only one $x$ intercept at the vertex $(-\frac{b}{2a},0)$.
+* If $b^2-4ac>0$, then the parabola will have two $x$ intercepts at $(\frac{-b\pm \sqrt{b^2-4ac}}{2a},0)$
+* If $b^2-4ac<0$, then the parabola will have zero $x$ intercepts since $\sqrt{b^2-4ac}$ is not a real number.
+
+::::{prf:example}
+:label: xyInterceptsParabola
+Let $f(x)=-3x^2+12x-8$. Find the $x$ and $y$ intercept(s).
+
+The $y$ intercept.
+
+:::{dropdown} Solution:
+We want to $(0,f(0))$. That is,
+
+$$f(0)=-3(0)^2+12(0)-8=-8$$
+
+Therefore, the $y$ intercept is at $(0,-8)$.
+:::
+
+The $x$ intercept.
+
+:::{dropdown} Solution:
+Want to solve $f(x)=0$. Here we can use the $x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}$ formula (quadratic formula).
+
+\begin{align*}
+    x & = \frac{-b\pm \sqrt{b^2-4ac}}{2a}\\
+    & = \frac{-(12)\pm \sqrt{(12)^2-4(-3)(-8)}}{2(-3)}\\
+    & = \frac{-12\pm \sqrt{48}}{-6}\\
+    & = \frac{-12\pm 4\sqrt{3}}{-6}\\
+    & = \frac{6\pm 2\sqrt{3}}{3}
+\end{align*}
+
+Therefore, the $x$ intercepts are at $(\frac{6+2\sqrt{3}}{3})$ and $(\frac{6-2\sqrt{3}}{3})$.
+:::
+::::
+
+## Free Fall Model
+
+The position function of an object in free fall or an object projected directly upward or downward is the following.
+
+$$s(t)=-\frac{1}{2}gt^2+v_0 t+s_0$$
+
+where $g$ is the gravitation constant, $v_0$ is the initial velocity, and $s_0$ is the initial height. In this course, we will use $g=32$ feet per second squared. That is,
+
+$$s(t)=-16t^2+v_0t+s_0$$
+
+Here is an example of how we can use the model.
+
+::::{prf:example}
+:label: projectExample1
+A ball is projected directly upward from an initial height of $75$ feet with an initial velocity of $112$ feet per second.
+
+Find the function that gives the height of the ball with respect to time.
+:::{dropdown} Solution:
+We are given $v_0=112$ and $s_0=75$. Therefore, the function is
+
+$$s(t)=-16t^2+112t+75$$
+:::
+
+Find the maximum height of the ball.
+:::{dropdown} Solution:
+The maximum height will occur when the parabola achieves maximum output. This will happen at the vertex of the parabola. First, we will find how long it will take to reach maximum height by finding the $x$ component (or $t$ component in this context) of the vertex.
+
+$$-\frac{b}{2a}=-\frac{112}{2(-16)}=\frac{7}{2}=3.5$
+
+This means that at $3.5$ seconds into travel the ball will reach the maximum height.
+
+Next, we want to evaluate $s(t)$ at $3.5$ seconds to find the maximum height.
+
+$$s(3.5)=-16(3.5)^2+112(3.5)+75=271$$
+
+That is, the maximum height of the ball will be $271$ feet off the ground.
+:::
+
+Find how long it will take the ball to hit the ground.
+:::{dropdown} Solution:
+The ball hits the ground when $s(t)=0$. That is, we want to solve $s(t)=0$ or $-16t^2+112t+75=0$. To do this we will use the quadratic formula:
+
+\begin{align*}
+    x & = \frac{-112\pm \sqrt{112^2-4(-16)(75)}}{2(-16)}\\
+    & = \frac{-112\pm\sqrt{17344}}{-32}\\
+    & = \frac{-112\pm8\sqrt{271}}{-32}\\
+    & = \frac{14\pm\sqrt{271}}{4}\\
+    & \approx -0.6155 \text{ or } 7.6155
+\end{align*}
+
+Here we will take the positive value. That is, it will take $7.6155$ seconds to hit the ground.
 :::
 ::::
