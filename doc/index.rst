@@ -35,3 +35,4 @@ Welcome to Math 1431 Notes's
    :caption: Chapter 3:
 
    chapter3/31.md
+   chapter3/32.md
