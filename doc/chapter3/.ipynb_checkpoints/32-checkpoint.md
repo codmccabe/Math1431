@@ -19,11 +19,9 @@ $$12=3\cdot 4$$
 
 This can be shown by doing long division:
 
-\begin{tabular}{ccc}
- &  & 4\tabularnewline
-\cline{2-3} \cline{3-3} 
-\multicolumn{1}{c|}{3} & 1 & 2\tabularnewline
-- & 1 & 2\tabularnewline
-\cline{2-3} \cline{3-3} 
- &  & 0\tabularnewline
-\end{tabular}
+\begin{align*}
+ & \phantom{11}4\\
+3 & )\overline{12}\\
+- & \underline{\phantom{)}12}\\
+ & \phantom{)1}0
+\end{align*}
