@@ -120,11 +120,80 @@ Consider the following polynomial long division of $\frac{3x^3-2x^2+0x-150}{x-4}
 
 \begin{alignat*}{10}
  & \phantom{)3x^{3}-}3x^{2}+10x+40\\
-x-4 & )\overline{3x^{3}-2x^{2}+0x-150}\\
-- & \underline{\phantom{)}3x^{3}-4x^{2}} & \leftarrow3x^{2}(x-4)\phantom{x)-(3x^{3}-2x^{2}-12xxxx)}\\
- & \phantom{)3^{3}}10x^{2}+0x & \leftarrow(3x^{3}-2x^{2}+0x)-(3x^{3}-2x^{2}-12x)\\
-- & \underline{\phantom{xx}10x^{2}-40x} & \leftarrow-2(x^{2}+0x-4)\phantom{150)-(-2x^{2}+0x+))}\\
- & \phantom{xxxxxxxx}40x-150 & \leftarrow(-2x^{2}+12x-150)-(-2x^{2}+0x+8)\\
-- & \underline{\phantom{xxxxxxxx}40x-160} & \leftarrow40(x-4)\phantom{0)-(4x-160xxxxxxxxxxx)}\\
- & \phantom{xxxxxxxxxxxxxx}10 & \leftarrow(40x-150)-(4x-160)\phantom{xxxxxxxxxx)}
+x-4 & )\overline{3x^{3}-2x^{2}\phantom{xx}+0x-150}\\
+- & \underline{\phantom{x}3x^{3}-12x^{2}} & \leftarrow3x^{2}(x-4)\phantom{x)-(3x^{3}-2x^{2}-12xxxx)}\\
+ & \phantom{)3^{3}xxxx}10x^{2}+0x & \leftarrow(3x^{3}-2x^{2}+0x)-(3x^{3}-2x^{2}-12x)\\
+- & \underline{\phantom{xxxxxx}10x^{2}-40x} & \leftarrow-2(x^{2}+0x-4)\phantom{150)-(-2x^{2}+0x+))}\\
+ & \phantom{xxxxxxxxxxx}40x-150 & \leftarrow(-2x^{2}+12x-150)-(-2x^{2}+0x+8)\\
+- & \underline{\phantom{xxxxxxxxxxx}40x-160} & \leftarrow40(x-4)\phantom{0)-(4x-160xxxxxxxxxxx)}\\
+ & \phantom{xxxxxxxxxxxxxxxx}10 & \leftarrow(40x-150)-(4x-160)\phantom{xxxxxxxxxx)}
 \end{alignat*}
+
+Next, we want to do this again but remove all the $x^n$ factors.
+
+\begin{alignat*}{10}
+& \phantom{)3x^{3}-}3\phantom{xx}10\phantom{xxxx}40\\
+-4 & )\overline{3\phantom{xx}-2\phantom{xx}0\phantom{x}-150}\\
+- & \underline{\phantom{)}3\phantom{xx}-4}\\
+ & \phantom{)3^{3}}10\phantom{xxxx}0\\
+- & \underline{\phantom{xxx}10\phantom{xxx}40}\\
+ & \phantom{xxxxxxxx}40\text{\ensuremath{\phantom{x}}}-150\\
+- & \underline{\phantom{xxxxxxxx}40\phantom{x}-160}\\
+ & \phantom{xxxxxxxxxxxxx}10
+\end{alignat*}
+
+where $q(x)=3x^2+10x+40$ and $r(x)=10$ still. We can still remove some items from the work:
+
+\begin{alignat*}{10}
+ & \phantom{)3x^{3}-}3\phantom{xx}10\phantom{xxxx}40\\
+-4 & )\overline{3\phantom{xx}-2\phantom{xx}0\phantom{x}-150}\\
+- & \underline{\phantom{)}\phantom{xxx}-4}\\
+ & \phantom{)3^{3}xx}10\phantom{xxxx}\\
+- & \underline{\phantom{xxxxi}10\phantom{xx}40}\\
+ & \phantom{xxxxxxxx}40\text{\ensuremath{\phantom{x}}}\\
+- & \underline{\phantom{xxxxxxxx}40\phantom{x}-160}\\
+ & \phantom{xxxxxxxxxxxxx}10
+\end{alignat*}
+
+Next, we can smash everything together to get
+
+\begin{align*}
+ & \phantom{)3x^{3}-}3\phantom{xx}10\phantom{xxxx}40\\
+-4 & )\overline{3\phantom{xx}-2\phantom{xxxxx}0\phantom{x}-150}\\
+- & \underline{\phantom{xxx}-12\phantom{xx}-40\phantom{x}-160}\\
+ & \phantom{xxxxx}10\phantom{xxxx}40\phantom{xxx}10
+\end{align*}
+
+Finally, if we use $4$ instead of $-4$ and add down instead of subtract down we have synthetic division:
+
+\begin{align*}
+ & \phantom{)3x^{3}-}3\phantom{xxxxx}10\phantom{xxxx}40\\
+4 & )\overline{3\phantom{xx}-2\phantom{xxxxx}0\phantom{x}-150}\\
++ & \underline{\phantom{xxxxx}12\phantom{xxxx}40\phantom{xxx}160}\\
+ & \phantom{xxxxx}10\phantom{xxxx}40\phantom{xxxx}10
+\end{align*}
+
+Again, doing this shows that $q(x)=3x^2+10x+40$ and $r(x)=10$. We also have
+
+$$\frac{3x^3-2x^2+0x-150}{x-4}=3x^2+10x+40+\frac{10}{x-4}$$
+
+### Synthetic Division Examples
+
+::::{prf:example}
+:label: synDivExam1
+Rewrite $\frac{5x^3-6x^2-28x-2}{x+2}$ as $q(x)+\frac{r(x)}{x+2}$.
+:::{dropdown}
+In this case $x-k$ we have $x+2=x-(-2)$. This means $k=-2$.
+
+\begin{align*}
+ & \phantom{xxxxxx}5\phantom{xx}-16\phantom{xxxx}4\\
+-2 & )\overline{5\phantom{xx}-6\phantom{xx}-28\phantom{xx}-2}\\
++ & \underline{\phantom{xxx}-10\phantom{xxxx}32\phantom{xx}-8}\\
+ & \phantom{xxx}-16\phantom{xxxxx}4\phantom{xx}-10
+\end{align*}
+
+Therefore,
+
+$$\frac{5x^3-6x^2-28x-2}{x+2} = 5x^2 -16x +4 + \frac{-10}{x+2}$$
+:::
+::::
