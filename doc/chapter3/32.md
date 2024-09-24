@@ -42,7 +42,7 @@ This can be shown by doing long division:
 
 Since the division algorithm for real numbers is $a=bq+r$ we know that if we divide both sides by $b$ we have
 
-$$\frac{a}{b} = q+\frac{r}{b}$
+$$\frac{a}{b} = q+\frac{r}{b}$$
 
 We will use this fact to rewrite polynomial over polynomial expressions later on. For example, we know that $13=3(4)+1$. If we divide both sides by $3$ we have: $\frac{13}{3} = 4+\frac{1}{3}$.
 
