@@ -197,3 +197,30 @@ Therefore,
 $$\frac{5x^3-6x^2-28x-2}{x+2} = 5x^2 -16x +4 + \frac{-10}{x+2}$$
 :::
 ::::
+
+::::{prf:example}
+:label: synDivExam2
+Evaluate $\frac{5x^3-6x^2+3x}{x-1}$
+:::{dropdown} Solution:
+Here $k=1$.
+
+\begin{align*}
+ & \phantom{xxxxxx}5\phantom{xx}-1\phantom{xxxx}2\\
+1 & )\overline{5\phantom{xx}-6\phantom{xxx}3\phantom{xxxxx}0}\\
++ & \underline{\phantom{xxxxxx}5\phantom{x}-1\phantom{xxxxx}2}\\
+ & \phantom{xxx}-1\phantom{xxxxx}2\phantom{xxxx}2
+\end{align*}
+
+Therefore, we have $\frac{5x^3-6x^2+3x}{x-1}=5x^2-x+2+\frac{2}{x-1}$.
+:::
+::::
+
+Quick reminder: $i=\sqrt{-1}$, $i^2=-1$, $i^3=-i$, and $i^4=1$.
+
+Also,
+
+\begin{align*}
+    (2-i)(-8+4i) & = -16 + 8i + 8i - 4(-1)\\
+    & = -16+16i+4\\
+    & = -12+16i
+\end{align*}
