@@ -361,3 +361,5 @@ $$f(x)=(x-1)(x+1)(x-3)^2$$
 and all the roots of $f$ is $\{1,-1,3\}$.
 :::
 ::::
+
+In the next section, we will discover how to find all possible rational roots. This will help find zero of polynomials more efficiently.

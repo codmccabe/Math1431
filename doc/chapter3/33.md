@@ -1,0 +1,114 @@
+# Section 3.3
+
+:::{prf:theorem} Factor Theorem
+:label: factorThm
+For any polynomial $f(x)$, $x-k$ is a factor of $f(x)$ if and only if $f(k)=0$.
+:::
+
+:::{prf:theorem} Rational Zero Theorem
+:label: ratZeroThm
+Let $f(x)$ be a polynomial function
+
+$$f(x)=a_nx^n+a_{n-1}x^{n-1}+\dots +a_1x+a_0$$
+
+If $f(\frac{p}{q})=0$, then $p$ is proportional to $a_0$ and $q$ is proportional to $a_n$.
+:::
+
+From the previous theorem, it is important to remember that it is $\frac{p}{q}$ where $p$ is associated with $a_0$ (the constant term) and $q$ is associated with $a_n$ (the leading coefficient).
+
+::::{prf:example}
+:label: zeroExam1
+Let $f(x)=18x^6-21x^5-49x^4+21x^3+35x^2-4$. 
+
+List all possible rational zeros (or roots).
+
+:::{dropdown} Solution:
+Remember $p$ is associated with the constant value, $-4$. Also, $q$ is associated with the leading coefficient, $18$. Next, we will list all the factors of for $p$ and $q$.
+
+$$p=-4:\pm 1, \pm 2, \pm 4$$
+
+$$q=18: \pm 1, \pm 2, \pm 3, \pm 6, \pm 9, \pm 18$$
+
+Next, we will list all the possible rational zeros with redundant ratios.
+
+\begin{alignedat}{3}\pm\frac{1}{1}, & \pm\frac{1}{2}, & \pm\frac{1}{3}, & \pm\frac{1}{6}, & \pm\frac{1}{9}, & \pm\frac{1}{18},\\
+\pm\frac{2}{1}, & \pm\frac{2}{2}, & \pm\frac{2}{3}, & \pm\frac{2}{6}, & \pm\frac{2}{9}, & \pm\frac{2}{18},\\
+\pm\frac{4}{1}, & \pm\frac{4}{2}, & \pm\frac{4}{3}, & \pm\frac{4}{6}, & \pm\frac{4}{9}, & \pm\frac{4}{18}
+\end{alignedat}
+
+Eliminating redundancy we have the following as the possible rational roots.
+
+$$\pm 1, \pm 2, \pm 4, \pm \frac{1}{2},\pm \frac{1}{3},\pm \frac{1}{6},\pm \frac{1}{9},\pm \frac{1}{18}$$
+$$\pm \frac{2}{3},\pm \frac{2}{9},\pm \frac{4}{3}, \pm \frac{4}{9}$$
+:::
+
+Factor $f(x)$ into products of linear binomials.
+
+:::{dropdown} Solution:
+From the list of possible rational zeros, we will do synthetic division.
+
+We will first try $x=1$ (or $k=1$). After synthetic division we will discover $f(1)=0$ and $q_1(x)=18x^5-3x^4-52x^3-31x^2+4x+4$. That is,
+
+\begin{align*}
+    f(x) & = (x-1)q_1(x)\\
+    & = (x-1)(18x^5-3x^4-52x^3-31x^2+4x+4)
+\end{align*}
+
+Next, we will do synthetic division on $q_1(x)$ using $k=-1$. We will get $q_1(-1)=0$ and $q_2(x)=18x^4-21x^3-31x^2+4$. That is,
+
+\begin{align*}
+    f(x) & = (x-1)q_1(x)\\
+    & = (x-1)\left((x+1)q_2(x)\right)\\
+    & = (x-1)(x+1)(18x^4-21x^3-31x^2+4)
+\end{align*}
+
+Next, we will do synthetic division on $q_2(x)$ using $k=2$. We will get $q_2(2)=0$ and $q_3(x)=18x^3+15x^2-x-2$. That is,
+
+\begin{align*}
+    f(x) & = (x-1)(x+1)q_2(x)\\
+    & = (x-1)(x+1)\left((x-2)q_3(x)\right)\\
+    & = (x-1)(x+1)(x-2)(18x^3+15x^2-x-2)
+\end{align*}
+
+Next, we will do synthetic division on $q_3(x)$ using $k=-2$. We will get $q_3(-2)=-84$. This means $x=-2$ is not a zero of the original function. We then move down the list of possible rational zeros. We will find
+
+\begin{align*}
+    q_3(4) & = 1386\\
+    q_3(-4) & = -910\\
+    q_3(\frac{1}{2})) & = \frac{7}{2}\\
+    q_3(-\frac{1}{2})) & = 0
+\end{align*}
+
+We finally discover that $q_3(-\frac{1}{2})=0$. This means we will use synthetic division on $q_3(x)$ with $k=-\frac{1}{2}$. We will then get $q_4(x)=18x^2+6x-4$. That is,
+
+\begin{align*}
+    f(x) & = (x-1)(x+1)(x-2)q_3(x)\\
+    & = (x-1)(x+1)(x-2)\left((x+\frac{1}{2})q_4(x)\right)\\
+    & = (x-1)(x+1)(x-2)(x+\frac{1}{2})(=18x^2+6x-4)
+\end{align*}
+
+To find the last factors we then factor $=18x^2+6x-4$. First, $18\cdot(-4)=-72$, $12\cdot (-6)=-72$, and $12-6=6$. With that information, we can begin to factor.
+
+\begin{align*}
+    18x^2+6x-4 & = 18x^2+12x-6x-4\\
+    & = 6x(3x+2)-2(3x+2)\\
+    & = (3x+2)(6x-2)\\
+    & = (6x-2)(3x+2)\\
+    & = 2(3x-1)(3x+2)
+\end{align*}
+
+Putting everything together we have:
+
+$$f(x)=2(x-1)(x+1)(x-2)(x+\frac{1}{2})(3x-1)(3x+2)$$
+:::
+
+List all the zeros for the function $f(x)$
+
+:::{dropdown} Solution:
+Since we know
+
+$$f(x)=2(x-1)(x+1)(x-2)(x+\frac{1}{2})(3x-1)(3x+2)$$
+
+The zeros of the function $f$ is: $1$, $-1$, $2$, $-\frac{1}{2}$, $\frac{1}{3}$, and $-\frac{2}{3}$.
+:::
+::::

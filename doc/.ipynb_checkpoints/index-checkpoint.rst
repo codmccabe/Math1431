@@ -36,3 +36,4 @@ Welcome to Math 1431 Notes's
 
    chapter3/31.md
    chapter3/32.md
+   chapter3/33.md
