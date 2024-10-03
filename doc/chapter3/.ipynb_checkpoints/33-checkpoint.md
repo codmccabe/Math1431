@@ -34,11 +34,11 @@ $$q=18: \pm 1, \pm 2, \pm 3, \pm 6, \pm 9, \pm 18$$
 
 Next, we will list all the possible rational zeros with redundant ratios.
 
-\begin{alignedat*}{3}
+\begin{alignat*}{3}
 \pm\frac{1}{1}, & \pm\frac{1}{2}, & \pm\frac{1}{3}, & \pm\frac{1}{6}, & \pm\frac{1}{9}, & \pm\frac{1}{18},\\
 \pm\frac{2}{1}, & \pm\frac{2}{2}, & \pm\frac{2}{3}, & \pm\frac{2}{6}, & \pm\frac{2}{9}, & \pm\frac{2}{18},\\
 \pm\frac{4}{1}, & \pm\frac{4}{2}, & \pm\frac{4}{3}, & \pm\frac{4}{6}, & \pm\frac{4}{9}, & \pm\frac{4}{18}
-\end{alignedat*}
+\end{alignat*}
 
 Eliminating redundancy we have the following as the possible rational roots.
 
