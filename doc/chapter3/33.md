@@ -1,5 +1,6 @@
 # Section 3.3
 
+## Factor Theorem and Rational Zero Theorem
 :::{prf:theorem} Factor Theorem
 :label: factorThm
 For any polynomial $f(x)$, $x-k$ is a factor of $f(x)$ if and only if $f(k)=0$.
@@ -16,6 +17,8 @@ If $f(\frac{p}{q})=0$, then $p$ is proportional to $a_0$ and $q$ is proportional
 
 From the previous theorem, it is important to remember that it is $\frac{p}{q}$ where $p$ is associated with $a_0$ (the constant term) and $q$ is associated with $a_n$ (the leading coefficient).
 
+### Example(s)
+
 ::::{prf:example}
 :label: zeroExam1
 Let $f(x)=18x^6-21x^5-49x^4+21x^3+35x^2-4$. 
@@ -31,10 +34,11 @@ $$q=18: \pm 1, \pm 2, \pm 3, \pm 6, \pm 9, \pm 18$$
 
 Next, we will list all the possible rational zeros with redundant ratios.
 
-\begin{alignedat}{3}\pm\frac{1}{1}, & \pm\frac{1}{2}, & \pm\frac{1}{3}, & \pm\frac{1}{6}, & \pm\frac{1}{9}, & \pm\frac{1}{18},\\
+\begin{alignedat*}{3}
+\pm\frac{1}{1}, & \pm\frac{1}{2}, & \pm\frac{1}{3}, & \pm\frac{1}{6}, & \pm\frac{1}{9}, & \pm\frac{1}{18},\\
 \pm\frac{2}{1}, & \pm\frac{2}{2}, & \pm\frac{2}{3}, & \pm\frac{2}{6}, & \pm\frac{2}{9}, & \pm\frac{2}{18},\\
 \pm\frac{4}{1}, & \pm\frac{4}{2}, & \pm\frac{4}{3}, & \pm\frac{4}{6}, & \pm\frac{4}{9}, & \pm\frac{4}{18}
-\end{alignedat}
+\end{alignedat*}
 
 Eliminating redundancy we have the following as the possible rational roots.
 
@@ -112,3 +116,25 @@ $$f(x)=2(x-1)(x+1)(x-2)(x+\frac{1}{2})(3x-1)(3x+2)$$
 The zeros of the function $f$ is: $1$, $-1$, $2$, $-\frac{1}{2}$, $\frac{1}{3}$, and $-\frac{2}{3}$.
 :::
 ::::
+
+## Fundamental Theorem of Algebra and Number of Zeros Theorem
+
+:::{prf:theorem} Fundamental Theorem of Algebra
+:label: FTA
+Every function defined by a polynomial of degree 1 or more has at least one complex root.
+:::
+
+:::{prf:theorem} Number of Zeros Theorem
+:label: numberZerosThm
+A function defined by a polynomial of degree $n$ has at most $n$ distinct zeros.
+:::
+
+:::{prf:definition} Multiplicity
+:label: multiplicity
+The number of times a zero occurs is called the multiplicity of the zero.
+:::
+
+:::{prf:example}
+:label: multExam1
+Let $f(x)=(x+1)^3(x+3)(x-2)^2$. We know that the zeros of the function are $-1$, $-3$, and $2$. However, we can also say that $f$ has a zero at $x=-1$ with a multiplicity of $3$, $x=-3$ with a multiplicity of $1$, and $x=2$ with a multiplicity of $2$. The multiplicity is determined by the power on the individual factors.
+:::
