@@ -136,5 +136,72 @@ The number of times a zero occurs is called the multiplicity of the zero.
 
 :::{prf:example}
 :label: multExam1
-Let $f(x)=(x+1)^3(x+3)(x-2)^2$. We know that the zeros of the function are $-1$, $-3$, and $2$. However, we can also say that $f$ has a zero at $x=-1$ with a multiplicity of $3$, $x=-3$ with a multiplicity of $1$, and $x=2$ with a multiplicity of $2$. The multiplicity is determined by the power on the individual factors.
+Let $f(x)=(x+1)^3(x+3)(x-2)^2$. We know that the zeros of the function are $-1$, $-3$, and $2$. However, we can also say that $f$ has a zero at $x=-1$ with a multiplicity of $3$, $x=-3$ with a multiplicity of $1$, and $x=2$ with a multiplicity of $2$. The power on the individual factors determines the multiplicity.
 :::
+
+::::{prf:example}
+:label: multExam2
+Find a polynomial of degree three with real coefficient, zeros at $x=-3$, $x=-2$, and $x=5$, and $f(-1)=6$.
+:::{dropdown} Solution:
+We know that with the zeros 
+
+$$f(x)=a(x+3)(x+2)(x-5)$$
+
+In order to find $a$ we use $f(-1)=6$. That is, solve the following equation.
+
+\begin{align*}
+    a(-1+3)(-1+2)(-1-5) & = 6\\
+    a(2)(1)(-6) & = 6\\
+    a & = -\frac{6}{-12} = -\frac{1}{2}
+\end{align*}
+
+Therefore, $f(x)=-\frac{1}{2}(x+3)(x+2)(x-5)$. In expanded form we have:
+
+$$f(x)=-\frac{1}{2} x^3 + \frac{19}{2} x + 15$$
+:::
+::::
+
+## Complex Numbers
+
+Remember $\sqrt{-1}=i$ and the following hold true.
+
+\begin{align*}
+    i & = \sqrt{-1}\\
+    i^2 & = -1\\
+    i^3 & = -i\\
+    i^4 & = 1
+\end{align*}
+
+:::{prf:definition} Complex Conjugate
+:label: complexConj
+Let $z=a+ib$ where $a$ and $b$ are real numbers and $i=\sqrt{-1}$. Then we say $\overline{z}=a-ib$ and $\overline{z}$ is the conjugate of $z$.
+:::
+
+:::{prf:property} Conjugate Properties
+:label: complexConjProp
+Let $c$ and $d$ be complex number. Then
+* $\overline{c+d} = \overline{c}+\overline{d}$
+* $\overline{c\cdot d} = \overline{c}\cdot\overline{d}$
+* $\overline{c^n} = \left(\overline{c}\right)^n$
+:::
+
+:::{prf:theorem} Conjugate Zero Theorem
+:label: conjZeroThm
+If $f(x)$ defines a polynomial having **only real coefficients** and if $z=a+ib$ is a zero of $f(x)$, then $\overline{z}=a-ib$ is also a zero..
+:::
+
+::::{prf:example}
+:label: conjZeroExam1
+If $f(x)=x^2-8x+25$. Find $f(4+i3)$
+:::{dropdown} Solution:
+\begin{align*}
+    f(4+i3) & = (4+i3)^2 - 8(4+i3) + 25\\
+    & = 7 + i24 - 32 - i24 + 25\\
+    & = 0
+\end{align*}
+
+This means $x=4+i3$ is a zero for the function.
+:::
+
+Since $f(4+i3)$ is ||zero||. Find all the zeros for $f$.
+::::
