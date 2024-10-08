@@ -212,7 +212,7 @@ Since $x=4+i3$ is a zero by the Conjugate Zero Theorem we know $x=4-i3$ is also 
     f(4-i3) & = (4-i3)^2 - 8(4-i3)+25\\
     & = 7-i24-32+i24+25\\
     & = 0
-\end{aling*}
+\end{align*}
 
 Therefore, the zeros for $f$ is $x=4+i3$ and $x=4-i3$.
 :::
@@ -222,7 +222,7 @@ Therefore, the zeros for $f$ is $x=4+i3$ and $x=4-i3$.
 :label: conjZeroExam2
 Find the polynomial with least degree having only real coefficient and zeros $x=-4$ and $x=3-i$.
 :::{dropdown} Solution:
-Since the polynomial has real coefficient and $x=3-i$ is a zero by the conjugate zero theorem we also know $x=3+i$ is a zero. Since $x=-4$, $x=3-i$, and $x=3+i$ are roots we have
+Since the polynomial has real coefficient and $x=3-i$ is a zero by the conjugate zero theorem. Since $x=-4$, $x=3-i$, and $x=3+i$ are roots we have
 
 $$f(x)=(x-(-4))(x-(3-i))(x-(3+i))$$
 
@@ -257,5 +257,5 @@ and $x=-5$, $x=2$ are the last zeros.
 :::
 
 
-With all the previous work we know the zeros for $f(x)=x^4-x^3-17x^2+55x-50$ is $x=\{2,-5,2+i,2-i\}.
+With all the previous work we know the zeros for $f(x)=x^4-x^3-17x^2+55x-50$ is $x=\{2,-5,2+i,2-i\}$.
 ::::
