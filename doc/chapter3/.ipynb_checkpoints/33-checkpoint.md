@@ -203,5 +203,59 @@ If $f(x)=x^2-8x+25$. Find $f(4+i3)$
 This means $x=4+i3$ is a zero for the function.
 :::
 
-Since $f(4+i3)$ is ||zero||. Find all the zeros for $f$.
+Since $f(4+i3)$ is ??. Find all the zeros for $f$.
+
+:::{dropdown} Solution:
+Since $x=4+i3$ is a zero by the Conjugate Zero Theorem we know $x=4-i3$ is also a zero. That is,
+
+\begin{align*}
+    f(4-i3) & = (4-i3)^2 - 8(4-i3)+25\\
+    & = 7-i24-32+i24+25\\
+    & = 0
+\end{aling*}
+
+Therefore, the zeros for $f$ is $x=4+i3$ and $x=4-i3$.
+:::
+::::
+
+::::{prf:example}
+:label: conjZeroExam2
+Find the polynomial with least degree having only real coefficient and zeros $x=-4$ and $x=3-i$.
+:::{dropdown} Solution:
+Since the polynomial has real coefficient and $x=3-i$ is a zero by the conjugate zero theorem we also know $x=3+i$ is a zero. Since $x=-4$, $x=3-i$, and $x=3+i$ are roots we have
+
+$$f(x)=(x-(-4))(x-(3-i))(x-(3+i))$$
+
+If we distribute we have:
+
+$$f(x)= x^3 -2x^2 -14x +40$$
+:::
+::::
+
+::::{prf:example}
+:label: conjZeroExam3
+Given $f(2+i)=0$, find all the zeros for the function $f(x)=x^4-x^3-17x^2+55x-50$.
+
+Since we know $f(2+i)=0$ we have the following from polynomial long division (using sythentic division).
+
+:::{dropdown} Solution:
+$$ f(x) = (x-(2+i))(x^3 + (1+i)x^2 + (-16+3i)x + (20-i10))$$
+:::
+
+Next, using conjugate zero theorem we know $f(2-i)=0$. Using synthetic division we know.
+
+:::{dropdown} Solution:
+$$ f(x)= (x-(2+i))(x-(2-i))(x^2+3x-10)$$
+:::
+
+Next, using the remaining factor: $x^2+3x-10$ we can find the remaining zeros.
+
+:::{dropdown} Solution:
+$$x^2+3x-10=(x+5)(x-2)$$
+
+and $x=-5$, $x=2$ are the last zeros.
+:::
+
+
+With all the previous work we know the zeros for $f(x)=x^4-x^3-17x^2+55x-50$ is $x=\{2,-5,2+i,2-i\}.
 ::::
