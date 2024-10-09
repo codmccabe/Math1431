@@ -14,19 +14,19 @@ End behaviors of $f(x)=ax^n$.
 
 If $n$ is odd and
 * $a>0$ then
-- $f(x)\to\infty$ as $x\to \infty$.
-- $f(x)\to-\infty$ as $x\to -\infty$.
+    - $f(x)\to\infty$ as $x\to \infty$.
+    - $f(x)\to-\infty$ as $x\to -\infty$.
 * $a<0$ then
-- $f(x)\to -\infty$ as $x\to \infty$.
-- $f(x)\to \infty$ as $x\to -\infty$.
+    - $f(x)\to -\infty$ as $x\to \infty$.
+    - $f(x)\to \infty$ as $x\to -\infty$.
 
 If $n$ is even and
 * $a>0$ then
-- $f(x)\to\infty$ as $x\to \infty$.
-- $f(x)\to\infty$ as $x\to -\infty$.
+    - $f(x)\to\infty$ as $x\to \infty$.
+    - $f(x)\to\infty$ as $x\to -\infty$.
 * $a<0$ then
-- $f(x)\to-\infty$ as $x\to\infty$.
-- $f(x)\to-\infty$ as $x\to-\infty$.
+    - $f(x)\to-\infty$ as $x\to\infty$.
+    - $f(x)\to-\infty$ as $x\to-\infty$.
 
 Multiplicity of Zeros
 
