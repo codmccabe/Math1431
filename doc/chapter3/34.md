@@ -108,6 +108,20 @@ Find a polynomial of least possible degree having the graph shown.
 
 ![graph of a function](images/34graph.png)
 :::{dropdown} Solution:
+From the graph we see 
+* $x=5$ is a zero with an even multiplicity. (For lowest degree possible we will say multiplicity 2.)
+* $x=1$, $x=-2$, and $x=1$ is a zero with odd multiplicity. (For lowest degree possible we will say multiplicity 1.)
+* $f(0)=-2$
 
+By the Factoring Theorem we have $f(x)=a(x-5)^2(x-1)(x+2)(x+4)$. We solve for $a$ using the fact that $f(0)=-2$.
+
+\begin{align*}
+    a(0-5)^2(0-1)(0+2)(0+4) & = -2\\
+    -200a & = -2\\
+    a & = \frac{-2}{-200}\\
+    & = \frac{1}{100}
+\end{align*}
+
+Therefore, the polynomial of least degree is $\frac{1}{100}(x-5)^2(x-1)(x+2)(x+4)$ (or expanded $\frac{1}{100}x^5-\frac{1}{20}x^4-\frac{23}{100}x^3+\frac{97}{100}x^2+\frac{13}{10}x-2$).
 :::
 ::::
