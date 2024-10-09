@@ -61,7 +61,7 @@ A certain right triangle has area $30$ square inches. One leg of the triangle me
 
 Express the length of the leg mentioned above in terms of $x$. What are the possible values for $x$. That is, what is the domain of $x$.
 :::{dropdown} Solution:
-Draw a triangle and label the legs $l$ and $b$ and denote the hypotenuse $x$. The base of the triangle will be $b=x-1$ since: "One leg of the triangle measures 1 inch less than the hypotenuse". The height of the triangle will be $l$. If $x=1$ then the length of $b$ would be zero. If $0<x<1$, then the length of $b$ would be negative. Therefore, $x$ must be strickly greater than $1$. That is, the domain of $x$ is $(1,\infty)$.
+Draw a triangle and label the legs $l$ and $b$ and denote the hypotenuse $x$. The base of the triangle will be $b=x-1$ since: "One leg of the triangle measures 1 inch less than the hypotenuse". The height of the triangle will be $l$. If $x=1$ then the length of $b$ would be zero. If $0<x<1$, then the length of $b$ would be negative. Therefore, $x$ must be strictly greater than $1$. That is, the domain of $x$ is $(1,\infty)$.
 :::
 
 Find the length of the other leg.
@@ -73,7 +73,7 @@ We have hypotenuse is $x$ and the length of one leg is $b=x-1$. We will use Pyth
     l^2 + (x-1)^2 & = x^2\\
     l^2 & = x^2-(x-1)^2\\
     & = x^2 - (x^2-2x+1)\\
-    & = 2x-1
+    & = 2x-1\\
     l & = \sqrt{2x-1}
 \end{align*}
 
@@ -99,5 +99,15 @@ Find the dimensions of the triangle.
 Solving $2x^3-5x^2+4x-3601=0$ will give the dimension for the hypotenuse (and the rest of the dimension).
 
 The list of possible rational zeros is $\pm1$, $\pm13$, $\pm277$, and $\pm3601$. Using the remainder theorem and synthetic division we have $x=1$, $x=-1$, and $x=-13$ are not zeros. We then find through remainder theorem and synthetic division that $x=13$ is a zero. This means the hyptenuse is $13$ inches, $b=13-1=12$ inches, and $l=\sqrt{2(13)-1}=5$ inches.
+:::
+::::
+
+::::{prf:example}
+:label: findFunctionGraph
+Find a polynomial of least possible degree having the graph shown.
+
+![graph of a function](images/34graph.png)
+:::{dropdown} Solution:
+
 :::
 ::::
