@@ -122,6 +122,10 @@ By the Factoring Theorem we have $f(x)=a(x-5)^2(x-1)(x+2)(x+4)$. We solve for $a
     & = \frac{1}{100}
 \end{align*}
 
-Therefore, the polynomial of least degree is $\frac{1}{100}(x-5)^2(x-1)(x+2)(x+4)$ (or expanded $\frac{1}{100}x^5-\frac{1}{20}x^4-\frac{23}{100}x^3+\frac{97}{100}x^2+\frac{13}{10}x-2$).
+Therefore, the polynomial of least degree is 
+
+$$\frac{1}{100}(x-5)^2(x-1)(x+2)(x+4)$$
+
+(or expanded $\frac{1}{100}x^5-\frac{1}{20}x^4-\frac{23}{100}x^3+\frac{97}{100}x^2+\frac{13}{10}x-2$).
 :::
 ::::
