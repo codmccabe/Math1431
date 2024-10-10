@@ -142,4 +142,16 @@ Since $f$ simplified is $\frac{x-2}{x-4}$ and $x-4=0$ whenever $x=4$; we say, $x
 :::
 ::::
 
-In the last example it is important to note that $f(x)\ne\frac{x-2}{x-4}$ and $f(-3)$ is undefined (point-wise).
+In the last example it is important to note that $f(x)\ne\frac{x-2}{x-4}$ and $f(-3)$ is undefined (point-wise). If you graph $y=\frac{x^2+x-6}{x^2-x-12}$ and $y=\frac{x-2}{x-4}$ you will think they are the same; however, they are not. The graph $y=\frac{x^2+x-6}{x^2-x-12}$ will have a hole when $x=-3$. The graph $y=\frac{x-2}{x-4}$ will not have a hole when $x=-3$.
+
+::::{prf:example}
+:label: ratFuncExam4
+Find the oblique asymptote for the function $f(x)=\frac{x^2+1}{x-2}$.
+:::{dropdown} Solution:
+After polynomial long division we have:
+
+$$\frac{x^2+1}{x-2} = x+2+\frac{5}{x-2}$$
+
+Therefore, the opblique asymptote is $y=x+2$. That is, the graph $y=\frac{x^2+1}{x-2}$ will always approach the line $y=x+2$ but never touch it.
+:::
+::::
