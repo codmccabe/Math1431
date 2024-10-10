@@ -21,8 +21,8 @@ The graph of $f(x)=\frac{1}{x}$ is:
 
 * The domain of $f$ is the set of all $x$ such that $x\ne0$.
 * The range of $f$ is the set of all $y$ such that $y\ne0$.
-* The function is continuous for all $x$ not zero.
-* The function is decreasing on its domain.
+* The function is continuous for all $x$, not zero.
+* The function is decreasing in its domain.
 * The function has a vertical asymptote $x=0$.
 * The function has a horizontal asymptote $y=0$.
 :::
@@ -50,6 +50,40 @@ Let $f(x)$ be a rational function.
 * If $f(x)$ approaches a number $M$ as $x$ approaches negative infinity. The $f$ has a horizontal asymptote at $y=M$.
 :::
 
-When finding domain of a rational function do not simplify. When finding vertical or horizontal asymptote(s) first simplify.
+When finding the domain of a rational function do not simplify. When finding vertical or horizontal asymptote(s) first simplify.
 
 Important facts when dealing with a horizontal asymptote. The function $\frac{1}{x}$ approaches zero when $x$ approaches $\infty$.
+
+::::{prf:example}
+:label: ratFunctionExam1
+Let $f(x)=\frac{x+1}{(2x-1)(x+3)}$. 
+
+Find the domain of the function.
+:::{dropdown} Solution:
+Immediately setting the denominator equal to zero we say $x$ cannot be $\frac{1}{2}$ or $-3$. Therefore, the domain of $f$ is the set of all $x$ such that $x\ne\frac{1}{2}$ or $x\ne-3$ (interval notation would be $(-\infty,-3)\cup(-3,\frac{1}{2})\cup(\frac{1}{2},\infty)$.
+:::
+
+Find the vertical asymptote.
+:::{dropdown} Solution:
+Since $f$ is already simplified and the denominator is zero when $x$ is $\frac{1}{2}$ or $-3$ we say $f$ has vertical asymptote $y=\frac{1}{2}$ and $y=-3$.
+:::
+
+Find the horizontal asymptote.
+:::{dropdown} Solution:
+First, we will write the function in the following way:
+
+\begin{align*}
+    f(x) & = \frac{x+1}{(2x-1)(x+3)}\\
+    & = \frac{x+1}{2x^2+5x-3}
+\end{align*}
+
+Next, we divide the top and bottom by $x^2$.
+
+\begin{align*}
+    \frac{x+1}{2x^2+5x-3} & = \frac{\frac{1}{x}+\frac{1}{x^2}}{2+\frac{5}{x}-\frac{3}{x^2}}\\
+    & \to \frac{0+0}{2+0-0} = 0
+\end{align*}
+
+Therefore, the function has a horizontal asymptote $x=0$.
+:::
+::::
