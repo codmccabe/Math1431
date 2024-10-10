@@ -136,7 +136,7 @@ The number of times a zero occurs is called the multiplicity of the zero.
 
 :::{prf:example}
 :label: multExam1
-Let $f(x)=(x+1)^3(x+3)(x-2)^2$. We know that the zeros of the function are $-1$, $-3$, and $2$. However, we can also say that $f$ has a zero at $x=-1$ with a multiplicity of $3$, $x=-3$ with a multiplicity of $1$, and $x=2$ with a multiplicity of $2$. The power on the individual factors determines the multiplicity.
+Let $f(x)=(x+1)^3(x+3)(x-2)^2$. We know that the function's zeros are $-1$, $-3$, and $2$. However, we can also say that $f$ has a zero at $x=-1$ with a multiplicity of $3$, $x=-3$ with a multiplicity of $1$, and $x=2$ with a multiplicity of $2$. The power of the individual factors determines the multiplicity.
 :::
 
 ::::{prf:example}
@@ -155,7 +155,7 @@ In order to find $a$ we use $f(-1)=6$. That is, solve the following equation.
     a & = -\frac{6}{-12} = -\frac{1}{2}
 \end{align*}
 
-Therefore, $f(x)=-\frac{1}{2}(x+3)(x+2)(x-5)$. In expanded form we have:
+Therefore, $f(x)=-\frac{1}{2}(x+3)(x+2)(x-5)$. In expanded form, we have:
 
 $$f(x)=-\frac{1}{2} x^3 + \frac{19}{2} x + 15$$
 :::
@@ -179,7 +179,7 @@ Let $z=a+ib$ where $a$ and $b$ are real numbers and $i=\sqrt{-1}$. Then we say $
 
 :::{prf:property} Conjugate Properties
 :label: complexConjProp
-Let $c$ and $d$ be complex number. Then
+Let $c$ and $d$ be complex numbers. Then
 * $\overline{c+d} = \overline{c}+\overline{d}$
 * $\overline{c\cdot d} = \overline{c}\cdot\overline{d}$
 * $\overline{c^n} = \left(\overline{c}\right)^n$
@@ -187,7 +187,7 @@ Let $c$ and $d$ be complex number. Then
 
 :::{prf:theorem} Conjugate Zero Theorem
 :label: conjZeroThm
-If $f(x)$ defines a polynomial having **only real coefficients** and if $z=a+ib$ is a zero of $f(x)$, then $\overline{z}=a-ib$ is also a zero..
+If $f(x)$ defines a polynomial having **only real coefficients** and if $z=a+ib$ is a zero of $f(x)$, then $\overline{z}=a-ib$ is also a zero.
 :::
 
 ::::{prf:example}
@@ -220,9 +220,9 @@ Therefore, the zeros for $f$ is $x=4+i3$ and $x=4-i3$.
 
 ::::{prf:example}
 :label: conjZeroExam2
-Find the polynomial with least degree having only real coefficient and zeros $x=-4$ and $x=3-i$.
+Find the polynomial with the least degree having only real coefficient and zeros $x=-4$ and $x=3-i$.
 :::{dropdown} Solution:
-Since the polynomial has real coefficient and $x=3-i$ is a zero by the conjugate zero theorem. Since $x=-4$, $x=3-i$, and $x=3+i$ are roots we have
+Since the polynomial has all real coefficients and $x=3-i$ is a zero by the conjugate zero theorem. Since $x=-4$, $x=3-i$, and $x=3+i$ are the roots we have
 
 $$f(x)=(x-(-4))(x-(3-i))(x-(3+i))$$
 
@@ -236,7 +236,7 @@ $$f(x)= x^3 -2x^2 -14x +40$$
 :label: conjZeroExam3
 Given $f(2+i)=0$, find all the zeros for the function $f(x)=x^4-x^3-17x^2+55x-50$.
 
-Since we know $f(2+i)=0$ we have the following from polynomial long division (using sythentic division).
+Since we know $f(2+i)=0$ we have the following from polynomial long division (using synthetic division).
 
 :::{dropdown} Solution:
 $$ f(x) = (x-(2+i))(x^3 + (1+i)x^2 + (-16+3i)x + (20-i10))$$

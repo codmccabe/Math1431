@@ -57,7 +57,7 @@ Now, the proof. Since $f(x)$ is a polynomial and $f(-1)<0<f(0)$ there exists a $
 
 ::::{prf:example}
 :label: modelExam11
-A certain right triangle has area $30$ square inches. One leg of the triangle measures 1 inch less than the hypotenuse. Let $x$ represent the length of the hypotenuse. Complete the following:
+A certain right triangle has an area $30$ square inches. One leg of the triangle measures 1 inch less than the hypotenuse. Let $x$ represent the length of the hypotenuse. Complete the following:
 
 Express the length of the leg mentioned above in terms of $x$. What are the possible values for $x$. That is, what is the domain of $x$.
 :::{dropdown} Solution:
@@ -66,7 +66,7 @@ Draw a triangle and label the legs $l$ and $b$ and denote the hypotenuse $x$. Th
 
 Find the length of the other leg.
 :::{dropdown} Solution:
-We have hypotenuse is $x$ and the length of one leg is $b=x-1$. We will use Pythegorean's Theorem to find the length of $l$ in terms of $x$. That is,
+We have hypotenuse is $x$ and the length of one leg is $b=x-1$. We will use the Pythagorean Theorem to find the length of $l$ in terms of $x$. That is,
 
 \begin{align*}
     l^2+b^2 & = x^2\\
@@ -80,7 +80,7 @@ We have hypotenuse is $x$ and the length of one leg is $b=x-1$. We will use Pyth
 The length of the missing leg is $l=\sqrt{2x-1}$. 
 :::
 
-Write and equation bsed on the traingle having an area of 30 square inches and the infomraiton determined thus far.
+Write and equation based on the triangle having an area of 30 square inches and the information determined thus far.
 :::{dropdown} Solution:
 Since the area of a triangle is $A=\frac{1}{2}bl$, $b=x-1$, $l=\sqrt{2x-1}$ and $A=30$ we have the following equation to solve.
 
@@ -98,19 +98,19 @@ Find the dimensions of the triangle.
 :::{dropdown} Solution:
 Solving $2x^3-5x^2+4x-3601=0$ will give the dimension for the hypotenuse (and the rest of the dimension).
 
-The list of possible rational zeros is $\pm1$, $\pm13$, $\pm277$, and $\pm3601$. Using the remainder theorem and synthetic division we have $x=1$, $x=-1$, and $x=-13$ are not zeros. We then find through remainder theorem and synthetic division that $x=13$ is a zero. This means the hyptenuse is $13$ inches, $b=13-1=12$ inches, and $l=\sqrt{2(13)-1}=5$ inches.
+The list of possible rational zeros is $\pm1$, $\pm13$, $\pm277$, and $\pm3601$. Using the remainder theorem and synthetic division we have $x=1$, $x=-1$, and $x=-13$ are not zeros. We then find through the remainder theorem and synthetic division that $x=13$ is a zero. This means the hyptenuse is $13$ inches, $b=13-1=12$ inches, and $l=\sqrt{2(13)-1}=5$ inches.
 :::
 ::::
 
 ::::{prf:example}
 :label: findFunctionGraph
-Find a polynomial of least possible degree having the graph shown.
+Find a polynomial of the least possible degree having the graph shown.
 
 ![graph of a function](images/34graph.png)
 :::{dropdown} Solution:
 From the graph we see 
-* $x=5$ is a zero with an even multiplicity. (For lowest degree possible we will say multiplicity 2.)
-* $x=1$, $x=-2$, and $x=1$ is a zero with odd multiplicity. (For lowest degree possible we will say multiplicity 1.)
+* $x=5$ is a zero with an even multiplicity. (For the lowest degree possible we will say multiplicity 2.)
+* $x=1$, $x=-2$, and $x=1$ is a zero with odd multiplicity. (For the lowest degree possible we will say multiplicity 1.)
 * $f(0)=-2$
 
 By the Factoring Theorem we have $f(x)=a(x-5)^2(x-1)(x+2)(x+4)$. We solve for $a$ using the fact that $f(0)=-2$.
@@ -122,7 +122,7 @@ By the Factoring Theorem we have $f(x)=a(x-5)^2(x-1)(x+2)(x+4)$. We solve for $a
     & = \frac{1}{100}
 \end{align*}
 
-Therefore, the polynomial of least degree is 
+Therefore, the polynomial of the least degree is 
 
 $$\frac{1}{100}(x-5)^2(x-1)(x+2)(x+4)$$
 

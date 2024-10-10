@@ -35,7 +35,7 @@ The graph of $f(x)=\frac{1}{x^2}$ is:
 
 * The domain $f$ is the set of all $x$ such that $x\ne0$.
 * The range of $f$ is the set of all $y$ such that $y\ne0$.
-* The function is continous for all $x$ not zero.
+* The function is continuous for all $x$, not zero.
 * The function is increasing on the open interval $(-\infty,0)$.
 * The function is decreasing on the open interval $(0,\infty)$.
 * The function has a vertical asymptote $x=0$.
@@ -52,4 +52,4 @@ Let $f(x)$ be a rational function.
 
 When finding domain of a rational function do not simplify. When finding vertical or horizontal asymptote(s) first simplify.
 
-Important facts when dealing with horizontal asymptote. The function $\frac{1}{x}$ approaches zero when $x$ approaches $\infty$.
+Important facts when dealing with a horizontal asymptote. The function $\frac{1}{x}$ approaches zero when $x$ approaches $\infty$.
