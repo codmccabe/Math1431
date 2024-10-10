@@ -87,3 +87,59 @@ Next, we divide the top and bottom by $x^2$.
 Therefore, the function has a horizontal asymptote $x=0$.
 :::
 ::::
+
+::::{prf:example}
+:label: ratFunctionExam2
+Let $f(x)=\frac{2x+1}{x-3}$. Find horizontal and vertical asymptote.
+
+Horizontal Asymptote:
+:::{dropdown} Solution:
+First, divide the top and bottom by $x$. 
+
+\begin{align*)
+    \frac{2x+1}{x-3} & = \frac{2+\frac{1}{x}}{1-\frac{3}{x}}\\
+    & \to \frac{2+0}{1-0} = 2
+\end{align*}
+
+As $x\to0$ we see that $f(x)\to0$. Therefore, $f$ has horizontal asymptote $y=2$.
+:::
+
+Vertical Asymptote:
+:::{dropdown} Solution:
+Since $f$ is fully simplified and $x-3=0$ when $x=3$ we say the line $x=3$ is a vertical asymptote.
+:::
+::::
+
+::::{prf:example}
+:label: ratFuncExam3
+Let $f(x)=\frac{x^2+x-6}{x^2-x-12}$. Find horizontal and vertical asymptote.
+
+Before moving forwards we should first simplify $f$.
+
+:::{dropdown} Solution:
+\begin{align*}
+    \frac{x^2+x-6}{x^2-x-12} & = \frac{(x+3)(x-2)}{(x-4)(x+3)}\\
+    & = \frac{x-2}{x-4}
+\end{align*}
+:::
+
+Horizontal asymptote:
+:::{dropdown} Solution:
+First, we will divide top and bottom by $x$.
+
+\begin{align*}
+    \frac{x-2}{x-4} & = \frac{1-\frac{2}{x}}{1-\frac{4}{x}}\\
+    & \to \frac{1-0}{1-0}=1
+\end{align*}
+
+That is, $f\to 1$ as $x\to \infty$. Therefore, $f$ has a horizontal asymptote $y=1$.
+:::
+
+Vertical asymptote:
+
+:::{dropdown} Solution:
+Since $f$ simplified is $\frac{x-2}{x-4}$ and $x-4=0$ whenever $x=4$; we say, $x=4$ is a vertical asymptote.
+:::
+::::
+
+In the last example it is important to note that $f(x)\ne\frac{x-2}{x-4}$ and $f(-3)$ is undefined (point-wise).
