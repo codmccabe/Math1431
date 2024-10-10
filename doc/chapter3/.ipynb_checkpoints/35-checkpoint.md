@@ -47,5 +47,9 @@ The graph of $f(x)=\frac{1}{x^2}$ is:
 Let $f(x)$ be a rational function.
 * If the size of $f(x)$ approaches infinity as $x$ approaches a fixed number (say $a$). Then we say $f$ has a vertical asymptote at $x=a$.
 * If $f(x)$ approaches a number $L$ as $x$ approaches infinity. Then $f$ has a horizontal asymptote at $y=L$.
-* If $f(x)$ approaches a number $M$ as $x$ approaches negative infinity.
+* If $f(x)$ approaches a number $M$ as $x$ approaches negative infinity. The $f$ has a horizontal asymptote at $y=M$.
 :::
+
+When finding domain of a rational function do not simplify. When finding vertical or horizontal asymptote(s) first simplify.
+
+Important facts when dealing with horizontal asymptote. The function $\frac{1}{x}$ approaches zero when $x$ approaches $\infty$.
