@@ -90,7 +90,7 @@ Therefore, the function has a horizontal asymptote $x=0$.
 
 ::::{prf:example}
 :label: ratFunctionExam2
-Let $f(x)=\frac{2x+1}{x-3}$. Find horizontal and vertical asymptote.
+Let $f(x)=\frac{2x+1}{x-3}$. Find horizontal and vertical asymptotes.
 
 Horizontal Asymptote:
 :::{dropdown} Solution:
@@ -112,9 +112,9 @@ Since $f$ is fully simplified and $x-3=0$ when $x=3$ we say the line $x=3$ is a 
 
 ::::{prf:example}
 :label: ratFuncExam3
-Let $f(x)=\frac{x^2+x-6}{x^2-x-12}$. Find horizontal and vertical asymptote.
+Let $f(x)=\frac{x^2+x-6}{x^2-x-12}$. Find horizontal and vertical asymptotes.
 
-Before moving forwards we should first simplify $f$.
+Before moving forwards, we should first simplify $f$.
 
 :::{dropdown} Solution:
 \begin{align*}
@@ -125,7 +125,7 @@ Before moving forwards we should first simplify $f$.
 
 Horizontal asymptote:
 :::{dropdown} Solution:
-First, we will divide top and bottom by $x$.
+First, we will divide the top and bottom by $x$.
 
 \begin{align*}
     \frac{x-2}{x-4} & = \frac{1-\frac{2}{x}}{1-\frac{4}{x}}\\
@@ -152,6 +152,6 @@ After polynomial long division we have:
 
 $$\frac{x^2+1}{x-2} = x+2+\frac{5}{x-2}$$
 
-Therefore, the opblique asymptote is $y=x+2$. That is, the graph $y=\frac{x^2+1}{x-2}$ will always approach the line $y=x+2$ but never touch it.
+Therefore, the oblique asymptote is $y=x+2$. That is, the graph $y=\frac{x^2+1}{x-2}$ will always approach the line $y=x+2$ but never touch it.
 :::
 ::::
