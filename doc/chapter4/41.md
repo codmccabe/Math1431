@@ -48,6 +48,14 @@ A function must be one-to-one in order for the function to have an inverse.
 Let $f$ be a one-to-one function. Then $g$ is the inverse of $f$ if $f(g(x))=x$ for all $x$ in the domain of $g$ and $g(f(x))=x$ for all $x$ in the domain of $f$.
 :::
 
+:::{prf:property}
+:label: domRangeProp
+Let $f$ and $f^{-1}$ exists. 
+* The domain of $f$ is equal to the range of $f^{-1}$.
+* The randge of $f$ is equal to the domain of $f^{-1}$.
+* The graph of $y=f^{-1}(x)$ is the graph of $y=f(x)$ but reflected about the line $y=x$.
+:::
+
 ::::{prf:example}
 :label: inverseFunctionExam1
 Let $f(x)=8x+5$ and $g(x)=\frac{1}{8}x-\frac{5}{8}$. Show $g$ is the inverse of $f$.
@@ -73,3 +81,41 @@ Since $f$ is a linear function we say $f$ is a one-to-one function. Futhermore, 
 ::::
 
 When $g(x)$ is the inverse of $f(x)$, we say, $g(x)=f^{-1}(x)$.  
+
+::::{prf:example}
+:label: inverseExam2
+Let $f(x)=2x+5$ and $g(x)=\frac{1}{2}x-5$. Show $g$ is not the inverse of $f$.
+:::{dropdown} Solution:
+\begin{align*}
+    f(g(x)) & = 2\left(\frac{1}{2}x-5\right)+5\\
+    & = x-\frac{5}{2}+5\\
+    & = \ne x
+\end{align*}
+
+Since $f(g(x))\ne x$ we know $g$ is not the inverse of $f$.
+:::
+::::
+
+:::{prf:exmaple}
+:label: inverseExam3
+Let $f(x)=8x+5$ and $g(x)=\frac{1}{8}x-\frac{5}{8}$. We have shown, $g(x)=f^{-1}(x)$.
+
+Before the discussion of inverse function we would solve the equation $f(x)=2$ in the following way.
+
+\begin{align*}
+    f(x) & = 2\\
+    8x+5 & = 2\\
+    8x & = -3\\
+    x & = -\frac{3}{8}
+\end{align*}
+
+After the discussion of inverse function we would solve the equation $f(x)=2$ in the following way.
+
+\begin{align*}
+    f(x) & = 2\\
+    f^{-1}(f(x)) & = f^{-1}(2)\\
+    x & = \frac{1}{8}(2)-\frac{5}{8}\\
+    & = -\frac{3}{8}
+\end{align*}
+:::
+
