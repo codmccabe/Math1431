@@ -34,8 +34,8 @@ Show $\frac{a^m}{a^n}=a^{m-n}$.
 :::{dropdown} "Proof:"
 
 \begin{align*}
-    \frac{a^{m}}{a^{n}} & =a^{m}\cdot a^{-n}\text{ (since \ensuremath{\frac{1}{a^{n}}=a^{-n}})}\\
-     & =a^{m-n}\text{ (since \ensuremath{a^{m}\cdot a^{n}=a^{m+n}})}
+    \frac{a^{m}}{a^{n}} & =a^{m}\cdot a^{-n}\text{ (since $\frac{1}{a^{n}}=a^{-n}$)}\\
+     & =a^{m-n}\text{ (since $a^{m}\cdot a^{n}=a^{m+n}$)}
 \end{align*}
 :::
 ::::
