@@ -44,3 +44,4 @@ Welcome to Math 1431 Notes's
    :caption: Chapter 4:
    
    chapter4/41.md
+   chapter4/42.md
