@@ -57,3 +57,33 @@ When it comes to exponential equation we have the following.
 :label: expEquation
 The equation $a^m=a^n$ if and only if $m=n$.
 :::
+
+We are familiar with linear growth.
+
+$$2,4,6,8,...$$
+
+The first term is $a_1=2$, second term is $a_2=4$, and so on. The $n^{\text{th}}$ term is? The answer would be $a_n=2n$. This would be similar to $f(x)=2x$ where the domain is all real numbers instead of all natural numbers. The function would be called a linear function.
+
+Next, we we consider exponential growth.
+
+$$2,4,8,16,32,...$$
+
+The first term is $a_1=2$, second term is $a_2=4$, third term is $a_3=8$, and so on. The $n^{\text{th}}$ term is $a_n=2^n$. This would be similar to $f(x)=2^x$ where the domain is all real numbers instead of all natural numbers. The function would be called an exponential function.
+
+:::{prf:definition}
+:label: expFunc
+If $a>0$ and $a\ne1$ then the exponential function base $a$ is
+
+$$f(x)=a^x$$
+
+* The domain of $f$ is the set of all real numbers.
+(Consider $2^x$ what $x$ value would case $2^x<0$. Answer: there isn't a real number that would cause this.)
+* The range of $f$ is the interval $(0\infty)$.
+* The function $f$ is a continuous function over its domain.
+* If $a>1$, then $f$ is increasing on its domain.
+* If $0<a<1$, then $f$ is decreasing on its domain.
+* The function $f$ has a horizontal asymptote $y=0$.
+* The graph passes through the points: $(-1,\frac{1}{a})$, $(0,1)$, and $(1,a)$.
+:::
+
+The graph of the exponential function changes based on the value of $a$.
