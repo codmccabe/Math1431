@@ -87,3 +87,30 @@ $$f(x)=a^x$$
 :::
 
 The graph of the exponential function changes based on the value of $a$.
+
+The graph of $f(x)=a^x$ when $a>1$ we have:
+
+![The graph of an exponential function where the base if greater than 1](images/agreaterone.png)
+
+The graph of $f(x)=a^x$ where $0<a<1$ we have:
+
+![the graph of an exponential function where the base is between 0 and 1](images/abwzeroandonee.png)
+
+::::{prf:example}
+:label: expEqExam1
+Solve $2^{x^2-x}=64$.
+
+:::{dropdown} Solution:
+We want to use the fact that $a^m=a^n$ if and only if $m=n$. However, the equation does not satify the left-hand-side condition. However, $64=2^6$. That is,
+
+$$2^{x^2-x}=2^6$$ 
+
+Which implies $x^2-x=6$. Solve this equation we have:
+
+\begin{align*}
+    x^2-x & = 6\\
+    x^2-x-6 & = 0\\
+    (x-3)(x+2) & = 0
+\end{align*}
+:::
+::::
