@@ -16,7 +16,7 @@ Functions is a special condition on relation. The following is a special conditi
 :label: onetooneFunction
 A function $f$ is one-to-one function if, for each element $a$ and $b$ in the domain of $f$
 
-$$ a\neb \pimplies f(a)\ne f(b)$$
+$$ a\ne b \implies f(a)\ne f(b)$$
 
 That is, different values in the domain correspond to different values of the range.
 :::
