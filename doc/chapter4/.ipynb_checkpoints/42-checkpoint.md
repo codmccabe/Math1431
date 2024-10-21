@@ -122,3 +122,18 @@ It important to notice that the past equation is only possible to solve since $6
 Remember $f(x)=a^x$ is continous everwhere and the range is $(0,\infty)$.
 
 Let $f(x)=2^x$. Notice that $f(2)=2^2=4$ and $f(3)=2^3=8$. By the Intermediate Value Theorem there exists a $c\in(2,3)$ such that $f(c)=7$. However, the value of $x$ is not common knowledge. This lead to the next section. What value of $x$ cause $2^x=7$?
+
+:::{prf:definition} Compount Interest
+:label: compInter
+If $P$ dollars are deposited in an account paying an annual rate of interest $r$ compounded $n$ times per year, then after $t$ years the account will contain $A$ amount of dollars, according to the following formula.
+
+$$A=P\left(1+\frac{r}{n}\right)^{tn}$$
+:::
+
+An important base for exponential equation is the number $e$ defined as:
+
+$$e=\lim_{x\to\infty}\left(1+\frac{1}{x}\right)^x$$
+
+If the investment is compounded continously we have the follwoing formula:
+
+$$A=Pe^{rt}$$
