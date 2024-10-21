@@ -6,14 +6,14 @@ Let $f(x)=2^x$. Consider $f(2)=2^2=4$ and $f(3)=2^3=8$. Since $f$ is continous o
 
 Remember, $\sqrt{4}=2$ because $2^2=4$. We want to find/name a function such that $f(8)=3$ becuase $2^3^=8$.
 
-:::{prf:definition} Logarithm
+:::{prf:definition}
 :label: log
 For all real numbers $y$ and all positive numbers $a$ and $x$, where $a\ne 1$. Then $y=\log_a (x)$ if and only if $x=a^y$.
 :::
 
 Like, $\sqrt{4}=2$ because $2^2=4$ we have: $3=\log_2(8)$ beacuse $2^4=8$.
 
-:::{prf:definition} Logarithm Function
+:::{prf:definition}
 :label: logFunc
 If $a>0$, $a\ne 1$ and $x>0$, then the logarithm function with base $a$ is
 
