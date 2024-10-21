@@ -45,3 +45,4 @@ Welcome to Math 1431 Notes's
    
    chapter4/41.md
    chapter4/42.md
+   chapter4/43.md
