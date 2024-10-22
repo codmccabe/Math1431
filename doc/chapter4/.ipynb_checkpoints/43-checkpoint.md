@@ -92,22 +92,22 @@ $$\frac{1}{2}\log_a(x)+\log_a(y)-4\log_a(z)$$
 
 ::::{prf:example}
 :label: logExamGiven1
-Let $\log_10)(7)\approx 0.8451$. Evaluate the following:
+Let $\log_{10}(7)\approx 0.8451$. Evaluate the following:
 
-Approximate $\log_10(49)$.
+Approximate $\log_{10}(49)$.
 :::{dropdown} Solution:
 \begin{align*}
-    \log_10(49) & = \log_10(7^2)\\
-    & = 2\log_10(7)\\
+    \log_{10}(49) & = \log_{10}(7^2)\\
+    & = 2\log_{10}(7)\\
     & \approx 2(0.8451)\\
     & = 1.6902
 \end{align*}
 :::
-Approximate $\log_10(70)$.
+Approximate $\log_{10}(70)$.
 :::{dropdown} Solution:
 \begin{align*}
-    \log_10(70) & = \log_a(7\cdot 10)\\
-    & = \log_10(7) + \log_10(10)\\
+    \log_{10}(70) & = \log_{10}(7\cdot 10)\\
+    & = \log_{10}(7) + \log_{10}(10)\\
     & \approx 0.8451 + 1\\
     & = 1.8451
 \end{align*}
@@ -139,9 +139,12 @@ Write the expression as a single logarithm with coefficient 1. Assume all variab
 $$\frac{1}{3}\log_a(x)+\frac{2}{3}\log_a(y)-\log_a(xy)$$
 
 :::{dropdown} Solution:
-    \frac{1}{3}\log_a(x)+\frac{2}{3}\log_a(y)-\log_a(xy) & = \log_a(x^{\frac{1}{3}}y^{\frac{2}{3}})-\log_a(xy)\\
-    & = \log_a(\sqrt[3]{xy^2})-\log_a(xy)\\
-    & = \log_a(\frac{\sqrt[3]{xy^2}}{xy})
+\begin{align*}
+    \frac{1}{3}\log_{a}(x)+\frac{2}{3}\log_{a}(y)-\log_{a}(xy) & =\log_{a}(x^{\frac{1}{3}})+\log_{a}(y^{\frac{2}{3}})-\log_{a}(xy)\\
+ & =\log_{a}(\sqrt[3]{x}\cdot\sqrt[3]{y^{2}})-\log_{a}(xy)\\
+ & =\log_{a}(\sqrt[3]{xy^{2}})-\log_{a}(xy)\\
+ & =\log_{a}\left(\frac{\sqrt[3]{xy^{2}}}{xy}\right)
+\end{align*}
 :::
 ::::
 
