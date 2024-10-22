@@ -1,5 +1,6 @@
 # Section 4.3
 
+## Definition and Properties
 The exponential function is $f(x)=a^x$.
 
 Let $f(x)=2^x$. Consider $f(2)=2^2=4$ and $f(3)=2^3=8$. Since $f$ is continous on $[2,3]$, $f(2)=4$, and $f(3)=8$, we know, by the intermediate value theorem there exists a $c$ in $[2,3]$ such that $f(c)=7$. In fact, there is a number such that $2^x$ is 5,6, or 7.
@@ -37,3 +38,112 @@ The graph of $f(x)=\log_a(x)$ when $a>1$ we have:
 The graph of $f(x)=\log_a(x)$ where $0<a<1$ we have:
 
 ![the graph of an exponentiial function where the base is between 0 and 1](images/abwzeroandoneelog.png)
+
+If $f(x)=a^x$ then $f^{-1}(x)=\log_a(x)$. Therefore, by definition we have:
+
+$$a^{\log_a(x)}=x$$
+
+and
+
+$$\log_a(a^x)=x$$
+
+* Since $a^1=a$ we have $\log_a(x)=1$.
+* Since $a^0=1$ where $a\ne 0$ we  have $\log_a(1)=0$.
+
+:::{prf:property} Laws of Logarithms
+:label: logLaws
+Let $A$, $B$, and $a$ be positive real numbers where $a\ne 1$.
+
+* $\log_a(AB)=\log_a(A)+\log_a(B)$
+* $\log_a(\frac{A}{B}) = \log_a(A)-\log_a(B)$
+* $\log_a(A^n) = n\log_a(A)$
+:::
+
+## Examples
+
+::::{prf:example}
+:label: logExamExpa1
+Use the properties of logarithm to exapnd the following expression. Assume all variables are positive.
+
+$$\log_a\left(\sqrt[3]{\frac{x^2y}{z^3}}\right)$$
+
+:::{dropdown} Solution:
+\begin{align*}
+    \log_a\left(\sqrt[3]{\frac{x^2y}{z^3}}\right) & = \log_a\left(\left(\frac{x^2y}{z^3}\right)^{\frac{1}{3}\right)\\
+    & = \frac{1}{3}\log_a\left(\frac{x^2y}{z^3}\right)\\
+    & = \frac{1}{3}\left[\log_a(x^2y)-\log_a(z^3) \right]\\
+    & = \frac{1}{3}\left[\log_a(x^2)+\log_a(y)-3\log_a(z)\right]\\
+    & = \frac{1}{3}\left[2\log_a(x)+\log_a(y)-3\log_a(z)\right]\\
+    & = \frac{2}{3}\log_a(x)+\frac{1}{3}\log_a(y)-\log_a(z)
+\end{align*}
+:::
+::::
+
+::::{prf:example}
+:label: logExamCall1
+Use logarithm properties to write the expression as a single logarithm with coefficient one. Assume all variables are positive.
+
+$$\frac{1}{2}\log_a(x)+\log_a(y)-4\log_a(z)$$
+:::{dropdown} Solution:
+\begin{align*}
+    \frac{1}{2}\log_a(x)+\log_a(y)-4\log_a(z) & = \log_a(x^{\frac{1}{2}})+\log_a(y)-\log_a(z^4)\\
+    & = \log_a(\sqrt{x}\cdot y)-\log_a(z^4)\\
+    & = \log_a(\frac{y\sqrt{x}}{z^4})
+\end{align*}
+:::
+::::
+
+::::{prf:example}
+:label: logExamGiven1
+Let $\log_10)(7)\approx 0.8451$. Evaluate the following:
+
+Approximate $\log_10(49)$.
+:::{dropdown} Solution:
+\begin{align*}
+    \log_10(49) & = \log_10(7^2)\\
+    & = 2\log_10(7)\\
+    & \approx 2(0.8451)\\
+    & = 1.6902
+\end{align*}
+:::
+Approximate $\log_10(70)$.
+:::{dropdown} Solution:
+\begin{align*}
+    \log_10(70) & = \log_a(7\cdot 10)\\
+    & = \log_10(7) + \log_10(10)\\
+    & \approx 0.8451 + 1\\
+    & = 1.8451
+\end{align*}
+:::
+::::
+::::
+
+## More Examples
+
+::::{prf:example}
+:label: logExamExpan2
+Use properties of logarithms to rewrite the expression. Assume all variables are positive.
+
+$$\log_b\left(\frac{rs^2t}{u^3v^5}\right)$$
+
+:::{dropdown} Solution:
+\begin{align*}
+    \log_b\left(\frac{rs^2t}{u^3v^5}\right) & = \log_b(rs^2t)-\log_b(u^3v^5)\\
+    & = \left(\log_b(r)+\log_b(s^2)+\log_b(t)\right)-\left(\log_b(u^3)+\log_b(v^5)\right)\\
+    & = \log_b(r)+2\log_b(s)+\log_b(t)-3\log_b(u)-5\log_b(v)
+\end{align*}
+:::
+::::
+
+::::{prf:example}
+:label: logExamCall2
+Write the expression as a single logarithm with coefficient 1. Assume all variables represent positive real numbers.
+
+$$\frac{1}{3}\log_a(x)+\frac{2}{3}\log_a(y)-\log_a(xy)$$
+
+:::{dropdown} Solution:
+    \frac{1}{3}\log_a(x)+\frac{2}{3}\log_a(y)-\log_a(xy) & = \log_a(x^{\frac{1}{3}}y^{\frac{2}{3}})-\log_a(xy)\\
+    & = \log_a(\sqrt[3]{xy^2})-\log_a(xy)\\
+    & = \log_a(\frac{\sqrt[3]{xy^2}}{xy})
+:::
+::::
