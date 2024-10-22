@@ -5,7 +5,7 @@ The exponential function is $f(x)=a^x$.
 
 Let $f(x)=2^x$. Consider $f(2)=2^2=4$ and $f(3)=2^3=8$. Since $f$ is continous on $[2,3]$, $f(2)=4$, and $f(3)=8$, we know, by the intermediate value theorem there exists a $c$ in $[2,3]$ such that $f(c)=7$. In fact, there is a number such that $2^x$ is 5,6, or 7.
 
-Remember, $\sqrt{4}=2$ because $2^2=4$. We want to find/name a function such that $f(8)=3$ becuase $2^3^=8$.
+Remember, $\sqrt{4}=2$ because $2^2=4$. We want to find/name a function such that $f(8)=3$ becuase $2^3=8$.
 
 :::{prf:definition}
 :label: log
@@ -69,12 +69,9 @@ $$\log_a\left(\sqrt[3]{\frac{x^2y}{z^3}}\right)$$
 
 :::{dropdown} Solution:
 \begin{align*}
-    \log_a\left(\sqrt[3]{\frac{x^2y}{z^3}}\right) & = \log_a\left(\left(\frac{x^2y}{z^3}\right)^{\frac{1}{3}\right)\\
-    & = \frac{1}{3}\log_a\left(\frac{x^2y}{z^3}\right)\\
-    & = \frac{1}{3}\left[\log_a(x^2y)-\log_a(z^3) \right]\\
-    & = \frac{1}{3}\left[\log_a(x^2)+\log_a(y)-3\log_a(z)\right]\\
-    & = \frac{1}{3}\left[2\log_a(x)+\log_a(y)-3\log_a(z)\right]\\
-    & = \frac{2}{3}\log_a(x)+\frac{1}{3}\log_a(y)-\log_a(z)
+\log_{a}\left(\frac{x^{2}y}{z^{3}}\right) & =\log_{a}(x^{2}y)-\log_{a}(z^{3})\\
+ & =\log_{a}(x^{2})+\log_{a}(y)-3\log_{a}(z)\\
+ & =2\log_{a}(x)+\log_{a}(y)-3\log_{a}(z)
 \end{align*}
 :::
 ::::
@@ -145,5 +142,57 @@ $$\frac{1}{3}\log_a(x)+\frac{2}{3}\log_a(y)-\log_a(xy)$$
     \frac{1}{3}\log_a(x)+\frac{2}{3}\log_a(y)-\log_a(xy) & = \log_a(x^{\frac{1}{3}}y^{\frac{2}{3}})-\log_a(xy)\\
     & = \log_a(\sqrt[3]{xy^2})-\log_a(xy)\\
     & = \log_a(\frac{\sqrt[3]{xy^2}}{xy})
+:::
+::::
+
+::::{prf:example}
+:label: logExamSolve1
+Solve the equation.
+
+$$x=\log_5(\frac{1}{625})$$
+
+:::{dropdown} Solution:
+\begin{align*}
+    x & = \log_5(\frac{1}{625})\\
+    & = \log_5(1)-\log_5(625)\\
+    & = 0-\log_5(5^4)\\
+    & = -4\log_5(5)\\
+    & = -4(1) \text{ or } -4
+\end{align*}
+:::
+::::
+
+Rememeber $a^{\log_a(x)}=x$ and $\log_a(a^x)=x$.
+
+::::{prf:example}
+:label: logExamSolve2
+Solve $\log_{\frac{1}{2}}(x+3)=-4$.
+
+:::{dropdown} Solution:
+Rememeber $\left(\frac{1}{2}\right)^{\log_{\frac{1}{2}}(x)}=x$. This also means:
+
+$$\left(\frac{1}{2}\right)^{\log_{\frac{1}{2}}(x+3)}=x+3$$
+
+The equation $\log_{\frac{1}{2}}(x+3)=-4$ will be composed both sides by the exponential function base $\frac{1}{2}$.
+
+\begin{align*}
+    \log_{\frac{1}{2}}(x+3) & = -4\\
+    \left(\frac{1}{2}\right)^{\log_{\frac{1}{2}}(x+3)} & = \left(\frac{1}{2}\right)^{-4}\\
+    x+3 & = 16\\
+    x & = 13
+\end{align*}
+
+Like square root equations we must check the solution:
+
+\begin{align*}
+    \log_{\frac{1}{2}}(13+3) & = \log_{\frac{1}{2}}(16)\\
+    & = \log_{\frac{1}{2}}(2^4)\\
+    & = \log_{\frac{1}{2}}(\frac{1}{2^{-4}})\\
+    & = \log_{\frac{1}{2}}(\left(\frac{1}{2}\right)^{-4})\\
+    & = -4\log_{\frac{1}{2}}(\frac{1}{2})\\
+    & = -4
+\end{align*}
+
+This varifies the equation.
 :::
 ::::
