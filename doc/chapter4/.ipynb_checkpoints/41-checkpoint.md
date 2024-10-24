@@ -10,7 +10,7 @@ A relation is a set of ordered pairs.
 A function is a relation in which, for each distinct value of the first component of the ordered pair, there is **exactly one** value of the second component.
 :::
 
-Functions is a special condition on relation. The following is a special condition on functions.
+Functions are a special type of relation. The following is a special condition on functions.
 
 :::{prf:definition} One-to-one Functions
 :label: onetooneFunction
@@ -18,7 +18,7 @@ A function $f$ is one-to-one function if, for each element $a$ and $b$ in the do
 
 $$ a\ne b \implies f(a)\ne f(b)$$
 
-That is, different values in the domain correspond to different values of the range.
+That is, different values in the domain correspond to different range values.
 :::
 
 * The following set $\{(1,4),(1,5),(2,6),(3,7)\}$ is a relation but not a function since $1\to4$ and $1\to 5$.
@@ -34,7 +34,7 @@ That is, different values in the domain correspond to different values of the ra
 * $f(x)=x^3$ is a one-to-one function.
 :::
 
-Like the vertical line test for determining if a graph is for a function we have the following.
+We have the following, like the vertical line test for determining if a graph is for a function.
 
 :::{prf:property}
 :label: horLineTest
@@ -76,7 +76,7 @@ Scratch work:
 :::
 
 :::{dropdown} "Proof:"
-Since $f$ is a linear function we say $f$ is a one-to-one function. Futhermore, since $f(g(x))=x$ and $g(f(x))=x$ we say $g$ is the inverse of $f$.
+Since $f$ is a linear function we say $f$ is a one-to-one function. Furthermore, since $f(g(x))=x$ and $g(f(x))=x$ we say $g$ is the inverse of $f$.
 :::
 ::::
 
@@ -100,7 +100,7 @@ Since $f(g(x))\ne x$ we know $g$ is not the inverse of $f$.
 :label: inverseExam3
 Let $f(x)=8x+5$ and $g(x)=\frac{1}{8}x-\frac{5}{8}$. We have shown, $g(x)=f^{-1}(x)$.
 
-Before the discussion of inverse function we would solve the equation $f(x)=2$ in the following way.
+Before the discussion of the inverse function, we would solve the equation $f(x)=2$ in the following way.
 
 \begin{align*}
     f(x) & = 2\\
@@ -109,7 +109,7 @@ Before the discussion of inverse function we would solve the equation $f(x)=2$ i
     x & = -\frac{3}{8}
 \end{align*}
 
-After the discussion of inverse function we would solve the equation $f(x)=2$ in the following way.
+After the discussion of the inverse function, we would solve the equation $f(x)=2$ in the following way.
 
 \begin{align*}
     f(x) & = 2\\

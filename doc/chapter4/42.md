@@ -40,7 +40,7 @@ Show $\frac{a^m}{a^n}=a^{m-n}$.
 :::
 ::::
 
-Something to rememeber when it comes to the base of the exponent. 
+Something to remember when it comes to the base of the exponent. 
 
 $$ -2^2\ne (-2)^2 $$
 
@@ -51,7 +51,7 @@ Let $n$ be a natural number.
 $$\sqrt[n]{x} = x^{\frac{1}{n}}$$
 :::
 
-When it comes to exponential equation we have the following.
+When it comes to the exponential equation we have the following.
 
 :::{prf:property}
 :label: expEquation
@@ -64,7 +64,7 @@ $$2,4,6,8,...$$
 
 The first term is $a_1=2$, second term is $a_2=4$, and so on. The $n^{\text{th}}$ term is? The answer would be $a_n=2n$. This would be similar to $f(x)=2x$ where the domain is all real numbers instead of all natural numbers. The function would be called a linear function.
 
-Next, we we consider exponential growth.
+Next, we consider exponential growth.
 
 $$2,4,8,16,32,...$$
 
@@ -101,7 +101,7 @@ The graph of $f(x)=a^x$ where $0<a<1$ we have:
 Solve $2^{x^2-x}=64$.
 
 :::{dropdown} Solution:
-We want to use the fact that $a^m=a^n$ if and only if $m=n$. However, the equation does not satify the left-hand-side condition. However, $64=2^6$. That is,
+We want to use the fact that $a^m=a^n$ if and only if $m=n$. However, the equation does not satisfy the left-hand-side condition. However, $64=2^6$. That is,
 
 $$2^{x^2-x}=2^6$$ 
 
@@ -117,11 +117,11 @@ Therefore, the solution is $\{3,-2\}$.
 :::
 ::::
 
-It important to notice that the past equation is only possible to solve since $64$ is a value of $2$ to some power. However, in the future that will not always be the case.
+It is important to notice that the past equation is only possible to solve since $64$ is a value of $2$ to some power. However, in the future that will not always be the case.
 
 Remember $f(x)=a^x$ is continous everwhere and the range is $(0,\infty)$.
 
-Let $f(x)=2^x$. Notice that $f(2)=2^2=4$ and $f(3)=2^3=8$. By the Intermediate Value Theorem there exists a $c\in(2,3)$ such that $f(c)=7$. However, the value of $x$ is not common knowledge. This lead to the next section. What value of $x$ cause $2^x=7$?
+Let $f(x)=2^x$. Notice that $f(2)=2^2=4$ and $f(3)=2^3=8$. By the Intermediate Value Theorem, there exists a $c\in(2,3)$ such that $f(c)=7$. However, the value of $x$ is not common knowledge. This leads to the next section. What value of $x$ causes $2^x=7$?
 
 :::{prf:definition} Compount Interest
 :label: compInter
@@ -130,10 +130,10 @@ If $P$ dollars are deposited in an account paying an annual rate of interest $r$
 $$A=P\left(1+\frac{r}{n}\right)^{tn}$$
 :::
 
-An important base for exponential equation is the number $e$ defined as:
+An important base for the exponential equation is the number $e$ defined as:
 
 $$e=\lim_{x\to\infty}\left(1+\frac{1}{x}\right)^x$$
 
-If the investment is compounded continously we have the follwoing formula:
+If the investment is compounded continuously we have the following formula:
 
 $$A=Pe^{rt}$$
