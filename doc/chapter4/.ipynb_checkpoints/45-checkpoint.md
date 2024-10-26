@@ -128,3 +128,100 @@ Therefore, the solution set is $\{\ln(2)\}$.
 
 ## Solve Logarithmic Equations
 
+When solving log equations it is important to check solutions against the original equation.
+
+::::{prf:example}
+:label: logSolveExam1
+
+Solve $4\ln(x)=36$.
+
+:::{dropdown} Solution:
+First, we will isolate $\ln(x)$
+
+$$4\ln(x)=36 \to \ln(x)=\frac{36}{4}$$ 
+
+Next, we will use the fact that $e^{\ln(x)}=x$. After composing both sides by the exponential function $e$ we have
+
+\begin{align*}
+    e^{\ln(x)} & = e^{\frac{36}{4}}\\
+    x & = e^9
+\end{align*}
+
+Next, we will check the solution.
+
+\begin{align*}
+    4\ln(e^9) & = 36\\
+    4\cdot 9 \ln(e) & = 36\\
+    36 & = 36\checkmark
+\end{align*}
+
+
+Therefore, the solution set is $\{e^9\}$.
+:::
+::::
+
+::::{prf:example}
+:label: logSolveExam2
+
+Solve $\log_3(x^3-5)=1$.
+
+:::{dropdown} Solution:
+
+We will compose both sides by the exponential function base $3$. Then solve for $x$.
+
+\begin{align*}
+    3^{\log_3(x^3-5)} & = 3^1\\
+    x^3-5 & = 3\\
+    x^3 & = 8\\
+    x & = 2
+\end{align*}
+
+Next, we will check the solution.
+
+\begin{align*}
+    \log_3((2)^3-5) & = 1\\
+    \log_3(8-5) & = 1\\
+    \log_3(3) & = 1\checkmark
+\end{align*}
+
+Therefore, the solution set is $\{2\}$.
+:::
+::::
+
+::::{prf:example}
+:label: logSolveExam3
+
+Solve $\log(2x+1)+\log(x) = \log(x+8)$.
+
+:::{dropdown}
+First, we will simplify the left-hand side of the equation.
+
+\begin{align*}
+    \log(2x+1)+\log(x) & = \log(x(2x+1))\\
+    & = \log(2x^2+x)
+\end{align*}
+
+The equation to solve is now: $\log(2x^2+x) = \log(x+8)$. Compose both sides of the equation by exponential function base $10$ since $10^{\log(x)}=x$.
+
+\begin{align*}
+    10^{\log(2x^2+x)} & = 10^{\log(x+8)}\\
+    2x^2 + x & = x + 8\\
+    2x^2 - 8 & = 0\\
+    2(x^2-4) & = 0\\
+    2(x-2)(x+2) & = 0
+\end{align*}
+
+The solutions to $2(x-2)(x+2)=0$ are $x=2$ and $x=-2$. However, the original equation is undefined when $x=-2$ since $\log(-2)$ is undefined. Next, we will check the solution $x=2$.
+
+\begin{align*}
+    \log(2(2)+1)+\log(2) & = \log(2+8)\\
+    \log(5)+\log(2) & = \log(10)\\
+    \log(5\cdot 2) & = 1\\
+    \log(10) & = 1\checkmark
+\end{align*}
+
+Therefore, the solution set is $\{2\}$.
+:::
+::::
+
+Remember to always check you solutions for log equations.
