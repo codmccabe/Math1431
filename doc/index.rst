@@ -49,3 +49,8 @@ Welcome to Math 1431 Notes's
    chapter4/44.md
    chapter4/45.md
    chapter4/46.md
+
+.. toctree::
+   :caption: Chapter 5:
+
+   chapter5/51.md
