@@ -84,6 +84,7 @@ class DetailedGaussJordanElimination(Scene):
         ).scale(0.7)
         
         calc5a_detail = MathTex(
+            r"0 + 0 & = 0\\",
             r"- \frac{1}{2}\cdot1 + \frac{1}{2} & = 0 \\",
             r"-\frac{1}{2}\cdot1 + (-\frac{1}{2}) & = -1 \\",
             r"- \frac{1}{2}\cdot2 + 4  & = 3 \\",
@@ -104,6 +105,7 @@ class DetailedGaussJordanElimination(Scene):
         ).scale(0.7)
 
         calc5b_detail = MathTex(
+            r"0 + 0 & = 0\\"
             r"- 2\cdot1 + 2 & = 0 \\",
             r"- 2\cdot1 + 1 & = -1 \\",
             r"- 2\cdot2 + 5 & = 1"
