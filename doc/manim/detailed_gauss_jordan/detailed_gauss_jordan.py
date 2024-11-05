@@ -99,13 +99,13 @@ class DetailedGaussJordanElimination(Scene):
         # Step 5b: Eliminate below second pivot
 
         calc5b = MathTex(
-            r"\begin{bmatrix} 1 & \frac{1}{2} & -\frac{1}{2} & | & 4 \\ 0 & 1 & 1 & | & 2 \\ 0 & 2 & 1 & | & 5 \end{bmatrix}\\",
+            r"\begin{bmatrix} 1 & 0 & -1 & | & 3 \\ 0 & 1 & 1 & | & 2 \\ 0 & 2 & 1 & | & 5 \end{bmatrix}\\",
             r"\rightarrow_{-2\times R_2 + R_3}",
             r"\begin{bmatrix} 1 & 0 & -1 & | & 3 \\ 0 & 1 & 1 & | & 2 \\ 0 & 0 & -1 & | & 1 \end{bmatrix}"
         ).scale(0.7)
 
         calc5b_detail = MathTex(
-            r"0 + 0 & = 0\\"
+            r"0 + 0 & = 0\\",
             r"- 2\cdot1 + 2 & = 0 \\",
             r"- 2\cdot1 + 1 & = -1 \\",
             r"- 2\cdot2 + 5 & = 1"
@@ -121,18 +121,18 @@ class DetailedGaussJordanElimination(Scene):
         calc6a = MathTex(
             r"\begin{bmatrix} 1 & 0 & -1 & | & 3 \\ 0 & 1 & 1 & | & 2 \\ 0 & 0 & -1 & | & 1 \end{bmatrix}\\",
             r"\rightarrow_{-1\times R_3}",
-            r"\begin{bmatrix} 1 & 0 & -1 & | & 3 \\ 0 & 1 & 0 & | & 1 \\ 0 & 0 & 1 & | & -1 \end{bmatrix}"
+            r"\begin{bmatrix} 1 & 0 & -1 & | & 3 \\ 0 & 1 & 1 & | & 2 \\ 0 & 0 & 1 & | & -1 \end{bmatrix}"
         ).scale(0.7)
 
         self.play(Transform(system,calc6a))
         self.wait()
         
-        # Step 6b: Eliminate above the last pivot
+        # Step 6b: Eliminate above the last pivot r1
 
         calc6b = MathTex(
             r"\begin{bmatrix} 1 & 0 & -1 & | & 3 \\ 0 & 1 & 1 & | & 2 \\ 0 & 0 & 1 & | & -1 \end{bmatrix}\\",
             r"\rightarrow_{R_3 + R_1}",
-            r"\begin{bmatrix} 1 & 0 & 0 & | & 2 \\ 0 & 1 & 0 & | & 1 \\ 0 & 0 & 1 & | & -1 \end{bmatrix}"
+            r"\begin{bmatrix} 1 & 0 & 0 & | & 2 \\ 0 & 1 & 1 & | & 2 \\ 0 & 0 & 1 & | & -1 \end{bmatrix}"
         ).scale(0.7)
 
         calc6b_detail = MathTex(
@@ -148,9 +148,30 @@ class DetailedGaussJordanElimination(Scene):
         self.wait(2)
         self.play(FadeOut(calc6b_detail))
 
+        # Step 6c: Eliminate above the last pivot r2
+
+        calc6c = MathTex(
+            r"\begin{bmatrix} 1 & 0 & 0 & | & 2 \\ 0 & 1 & 1 & | & 2 \\ 0 & 0 & 1 & | & -1 \end{bmatrix}\\",
+            r"\rightarrow_{-1\times R_3 + R_2}",
+            r"\begin{bmatrix} 1 & 0 & 0 & | & 2 \\ 0 & 1 & 0 & | & 3 \\ 0 & 0 & 1 & | & -1 \end{bmatrix}"
+        ).scale(0.7)
+
+        calc6c_detail = MathTex(
+            r"0+0 & = 0\\",
+            r"0+1 & = 1\\",
+            r"-1 + 1 & = 0\\",
+            r"-1\cdot (-1) + 2 & = 3"
+        ).scale(0.7)
+        calc6c_detail.to_edge(RIGHT)
+
+        self.play(Transform(system, calc6c))
+        self.play(Write(calc6c_detail))
+        self.wait(2)
+        self.play(FadeOut(calc6c_detail))
+
         # Show final solution
         solution = MathTex(
-            r"\begin{cases} x = 2 \\ y = 1 \\ z = -1 \end{cases}"
+            r"\begin{cases} x = 2 \\ y = 3 \\ z = -1 \end{cases}"
         ).scale(0.8)
         
         self.play(Transform(system, solution))
