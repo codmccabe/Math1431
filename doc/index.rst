@@ -56,3 +56,4 @@ Welcome to Math 1431 Notes's
    chapter5/51.md
    chapter5/52.md
    chapter5/53.md
+   chapter5/55.md
