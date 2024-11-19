@@ -59,3 +59,19 @@ Welcome to Math 1431 Notes's
    chapter5/55.md
    chapter5/57.md
    chapter5/58.md
+
+.. toctree::
+   :caption: Chapter 6:
+
+   chapter6/61.md
+   chapter6/62.md
+   chapter6/63.md
+   chapter6/64.md
+
+.. toctree::
+   :caption: Chapter 7:
+
+   chapter7/71.md
+   chapter7/72.md
+   chapter7/73.md
+   chapter7/74.md
