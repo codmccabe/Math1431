@@ -1,0 +1,533 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 5.1 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 5.2" href="52.html" />
+    <link rel="prev" title="Section 4.6" href="../chapter4/46.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 5.1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#two-by-two-system-of-linear-equations">Two-by-Two System of Linear Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#three-by-three-system-of-linear-equations">Three-by-Three System of Linear Equations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 5.1</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter5/51.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-5-1">
+<h1>Section 5.1<a class="headerlink" href="#section-5-1" title="Link to this heading"></a></h1>
+<div class="proof definition admonition" id="linearEquation">
+<p class="admonition-title"><span class="caption-number">Definition 54 </span></p>
+<section class="definition-content" id="proof-content">
+<p>Definition 0.1. The definition of a linear equation can be extended to more than one variable. Any equation of the form</p>
+<div class="math notranslate nohighlight">
+\[a_1x_1+a_2x_2+\cdots+a_nx_n = b\]</div>
+<p>for all real numbers <span class="math notranslate nohighlight">\(a_1\)</span>, <span class="math notranslate nohighlight">\(a_2\)</span>, … , <span class="math notranslate nohighlight">\(a_n\)</span> (all nonzero) and <span class="math notranslate nohighlight">\(b\)</span>, is a linear equation, or a first-degree equation, in <span class="math notranslate nohighlight">\(n\)</span> unknowns.</p>
+</section>
+</div><div class="proof theorem admonition" id="solutionSystemCases">
+<p class="admonition-title"><span class="caption-number">Theorem 7 </span></p>
+<section class="theorem-content" id="proof-content">
+<p>There are three cases for solutions of linear systems in two variables:</p>
+<ol class="arabic simple">
+<li><p>Two graphs intersect in a single point. The coordinates of this point give the only solution of the system. Since the system has a solution, it is <strong>consistent</strong>. The equations are not equivalent, so they are <strong>independent</strong>.</p></li>
+<li><p>The graph are parallel lines. There is no solution common to both
+equations, so the solution set is <span class="math notranslate nohighlight">\(\emptyset\)</span> and the system is <strong>inconsistent</strong>.
+Because the equation are not equivalent, they are <strong>independent</strong>.</p></li>
+<li><p>The graphs are the same line - that is, they coincide. Because any solution of one equation of the system is a solution of the other, the solution set is an infinite set of ordered pairs representing the points on the line. This type of system is <strong>consistent</strong> because there is a solution. The equations are equivalent, so they are <strong>dependent</strong>.</p></li>
+</ol>
+</section>
+</div><section id="two-by-two-system-of-linear-equations">
+<h2>Two-by-Two System of Linear Equations<a class="headerlink" href="#two-by-two-system-of-linear-equations" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="22systemExam1">
+<p class="admonition-title"><span class="caption-number">Example 91 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve the system</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+4x-3y &amp; =14\\
+x-2y &amp; =1
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will solve for <span class="math notranslate nohighlight">\(x\)</span> from the second row equation.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x-2y &amp; = 1\\
+    x &amp; = 2y+1
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will substitute <span class="math notranslate nohighlight">\(x\)</span> into the first row equation. Then solve for <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    4(2y+1)-3y&amp;=14\\
+    8y+4-3y &amp; = 14\\
+    5y+4 &amp; = 14\\
+    5y &amp; = 10\\
+    y &amp; = 2
+\end{align*}\]</div>
+<p class="sd-card-text">Now that we know <span class="math notranslate nohighlight">\(y=2\)</span> we will substitute it back into <span class="math notranslate nohighlight">\(x=2y+\)</span> to solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x &amp; = 2(2)+1\\
+    &amp; = 5
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{(5,2)\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="22systemExam2">
+<p class="admonition-title"><span class="caption-number">Example 92 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve
+$<span class="math notranslate nohighlight">\(
+\begin{cases}
+2x+3y &amp; =-1\\
+3x-2y &amp; =18
+\end{cases}
+\)</span>$</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+2x+3y &amp; =-1\\
+3x-2y &amp; =18
+\end{cases} &amp; \to_{3\times R_{2}}^{2\times R_{1}}\begin{cases}
+4x+6y &amp; =-2\\
+9x-6y &amp; =54
+\end{cases}\\
+ &amp; \to_{R_{1}+R_{2}}13x=52\\
+ &amp; \to x=4
+\end{align*}\]</div>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(x=4\)</span> we will sub it into any of the equations (we’ll use the first equation) and then solve for <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+2(4)+3y &amp; =-1\\
+8+3y &amp; =-1\\
+3y &amp; =-9\\
+y &amp; =-3
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution to the system is <span class="math notranslate nohighlight">\(\{(4,-3)\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="22systemExam3">
+<p class="admonition-title"><span class="caption-number">Example 93 </span></p>
+<section class="example-content" id="proof-content">
+<p>Show the following system has no solution or infinitely many solutions.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+7x+3y &amp; =-5\\
+-14x-6y &amp; =-10
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+7x+3y &amp; =-5\\
+-14x-6y &amp; =-10
+\end{cases} &amp; \to_{2\times R_{1}}\begin{cases}
+14x+6y &amp; =-10\\
+-14x-6y &amp; =-10
+\end{cases}\\
+ &amp; \to_{R_{1}+R_{2}}0\ne-20
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, no solution and the solution set is the empty set, or <span class="math notranslate nohighlight">\(\emptyset\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="22systemExam4">
+<p class="admonition-title"><span class="caption-number">Example 94 </span></p>
+<section class="example-content" id="proof-content">
+<p>Show the following system has no solution or infinitely many solutions.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+-9x+3y &amp; =-24\\
+3x-y &amp; =8
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+-9x+3y &amp; =-24\\
+3x-y &amp; =8
+\end{cases} &amp; \to_{3\times R_{2}}\begin{cases}
+-9x+3y &amp; =-24\\
+9x-3y &amp; =24
+\end{cases}\\
+ &amp; \to_{R_{1}+R_{2}}0=0
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the system has infinitely many solutions. The solution set is <span class="math notranslate nohighlight">\(\{(x,3x-8)\}\)</span>.</p>
+<p class="sd-card-text">To get this solution set we solve for <span class="math notranslate nohighlight">\(y\)</span> from on of the above equations:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+-9x+3y &amp; =-24\\
+3y &amp; =9x-24\\
+y &amp; =3x-8
+\end{align*}\]</div>
+</div>
+</details></section>
+</div></section>
+<section id="three-by-three-system-of-linear-equations">
+<h2>Three-by-Three System of Linear Equations<a class="headerlink" href="#three-by-three-system-of-linear-equations" title="Link to this heading"></a></h2>
+<p>When solving a system of three equations and three variables we want to use the elimination method to reduce the system to two equations and two variables. Then we will reduce the system on more time to get one equation with one variable. The choice of which variable to eliminate first can vary from system to system.</p>
+<div class="proof example admonition" id="33systemExam1">
+<p class="admonition-title"><span class="caption-number">Example 95 </span></p>
+<section class="example-content" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+3x+4y-2z &amp; =14\\
+2x+y+2z &amp; =-9\\
+x-y+z &amp; =-9
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Here we will eliminate the <span class="math notranslate nohighlight">\(z\)</span> variable from the system. First, we will multiply row 3 by <span class="math notranslate nohighlight">\(2\)</span>. Then we will add together row 1 and row 2 to get one equation in terms of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>. Also, we will add row 1 and row 3 to get another equation (the second equation) in terms of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>. This will give a system of two equations and two variables.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+3x+4y-2z &amp; =14\\
+2x+y+2z &amp; =-9\\
+x-y+z &amp; =-9
+\end{cases} &amp; \to_{2\times R_{3}}\begin{cases}
+3x+4y-2z &amp; =14\\
+2x+y+2z &amp; =-9\\
+2x-2y+2z &amp; =-18
+\end{cases}\\
+ &amp; \to_{R_{1}+R_{3}}^{R_{1}+R_{2}}\begin{cases}
+5x+5y &amp; =5\\
+5x+2y &amp; =-4
+\end{cases}
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will subtract row 2 from row 1 and get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+5x+5y &amp; =5\\
+5x+2y &amp; =-4
+\end{cases} &amp; \to_{R_{1}-R_{2}}3y=9\\
+ &amp; \to y=3
+\end{align*}\]</div>
+<p class="sd-card-text">We can then solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+5x+5(3) &amp; =5\\
+5x &amp; =5-15\\
+5x &amp; =-10\\
+x &amp; =-2
+\end{align*}\]</div>
+<p class="sd-card-text">Now that we have <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> we can solve for <span class="math notranslate nohighlight">\(z\)</span> from the third row equation from the original system.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(-2)-(3)+z &amp; =-9\\
+-5+z &amp; =-9\\
+z &amp; =-4
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{(-2,3,-4)\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="23systemExam1">
+<p class="admonition-title"><span class="caption-number">Example 96 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+3x+y-2z &amp; =-7\\
+5x+2y+z &amp; =-6
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">This is a system of two equations and three variables. This means, the solution to the system is either no solution or infinitely many solutions.</p>
+<p class="sd-card-text">If we eliminate the <span class="math notranslate nohighlight">\(y\)</span> variable we get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+3x+y-2z &amp; =-7\\
+5x+2y+z &amp; =-6
+\end{cases} &amp; \to_{2\times R_{1}}\begin{cases}
+6x+2y-4z &amp; =-14\\
+5x+2y+z &amp; =-6
+\end{cases}\\
+&amp; \to_{R_{1}-R_{2}}x-5z=-8\\
+&amp; \to x=5z-8
+\end{align*}\]</div>
+<p class="sd-card-text">This means we will have infinitely many solutions. We will then write the solution set where each component will be in terms of <span class="math notranslate nohighlight">\(z\)</span>. So far we have <span class="math notranslate nohighlight">\(\{(x,y,z)\}=\{(5z-8,y,z)\}\)</span>. Next, we want to write <span class="math notranslate nohighlight">\(y\)</span> in terms of <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p class="sd-card-text">We can do this by eliminating the <span class="math notranslate nohighlight">\(x\)</span> variable.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+3x+y-2z &amp; =-7\\
+5x+2y+z &amp; =-6
+\end{cases} &amp; \to_{5\times R_{1}}\begin{cases}
+15x+5y-10z &amp; =-35\\
+5x+2y+z &amp; =-6
+\end{cases}\\
+ &amp; \to_{3\times R_{2}}\begin{cases}
+15x+5y-10z &amp; =-35\\
+15x+6y+3z &amp; =-18
+\end{cases}\\
+ &amp; \to_{R_{1}-R_{2}}-y-13z=-17\\
+ &amp; \to y=-13z+17
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{(5z-8,-13z+17,z)\}\)</span>. For Math 1431 this is how we will write our solution set. Another way to write the solution set would be</p>
+<div class="math notranslate nohighlight">
+\[\{(x,y,z)\,|\,3x+y-2z=-7\}\]</div>
+</div>
+</details></section>
+</div><p>The graph of the parabola will satisfy the equation <span class="math notranslate nohighlight">\(y=ax^2+bx+c\)</span>.  In order to find <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> we would need three equations. This can be done by having three different points on the curve. We will then be able to find the equation of the parabola.</p>
+<div class="proof example admonition" id="paraExam1">
+<p class="admonition-title"><span class="caption-number">Example 97 </span></p>
+<section class="example-content" id="proof-content">
+<p>Find the equation of the parabola that passes through the points <span class="math notranslate nohighlight">\((-5,7)\)</span>, <span class="math notranslate nohighlight">\((-1,-2)\)</span>, and <span class="math notranslate nohighlight">\((3,5)\)</span>.</p>
+<p>Construct the system to solve for <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> for <span class="math notranslate nohighlight">\(y=ax^2+bx+c\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graph of any parabola is <span class="math notranslate nohighlight">\(y=ax^2+bx+c\)</span>.</p>
+<p class="sd-card-text">We need to build three equations to solve for the three unknown values: <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<p class="sd-card-text">First, we will use the point <span class="math notranslate nohighlight">\((-5,7)\)</span> to get the equation</p>
+<div class="math notranslate nohighlight">
+\[a(-5)^2+b(-5)+c=7\to 25a-5b+c=7\]</div>
+<p class="sd-card-text">The point <span class="math notranslate nohighlight">\((-1,-2)\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[a(-1)^2+b(-1)+c=-2\to a-b+c=-2\]</div>
+<p class="sd-card-text">The point <span class="math notranslate nohighlight">\((3,5)\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[a(3)^2+b(3)+c=5\to 9a+3b+c=5\]</div>
+<p class="sd-card-text">This means we want to solve the system</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+25a-5b+c &amp; =7\\
+a-b+c &amp; =-2\\
+9a+3b+c &amp; =5
+\end{cases}
+\end{split}\]</div>
+</div>
+</details><p>Solve the system of equations</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+25a-5b+c &amp; =7\\
+a-b+c &amp; =-2\\
+9a+3b+c &amp; =5
+\end{cases}\to_{\begin{cases}
+R_{1}-R_{2}\\
+R_{1}-R_{3}
+\end{cases}}\begin{cases}
+24a-4b &amp; =9\\
+16a-8b &amp; =2
+\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">Which then gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+24a-4b &amp; =9\\
+16a-8b &amp; =2
+\end{cases} &amp; \to_{2\times R_{1}}\begin{cases}
+48a-8b &amp; =18\\
+16a-8b &amp; =2
+\end{cases}\\
+ &amp; \to_{R_{1}-R_{2}}32a=16\to a=\frac{1}{2}
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will solve for <span class="math notranslate nohighlight">\(b\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+24(\frac{1}{2})-4b &amp; =9\\
+12-4b &amp; =9\\
+-4b &amp; =-3\\
+b &amp; =\frac{3}{4}
+\end{align*}\]</div>
+<p class="sd-card-text">Finally, we will solve for <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{2}-\frac{3}{4}+c &amp; =-2\\
+-\frac{1}{4}+c &amp; =-2\\
+c &amp; =-\frac{7}{4}
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(a=\frac12\)</span>, <span class="math notranslate nohighlight">\(b=\frac34\)</span>, and <span class="math notranslate nohighlight">\(c=\frac74\)</span>.</p>
+</div>
+</details><p>Finally, write the equation of the parabola.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(a=\frac12\)</span>, <span class="math notranslate nohighlight">\(b=\frac34\)</span>, and <span class="math notranslate nohighlight">\(c=\frac74\)</span>. We have</p>
+<div class="math notranslate nohighlight">
+\[y=\frac12 x^2 + \frac34 x + \frac74\]</div>
+</div>
+</details></section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../chapter4/46.html" class="btn btn-neutral float-left" title="Section 4.6" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="52.html" class="btn btn-neutral float-right" title="Section 5.2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

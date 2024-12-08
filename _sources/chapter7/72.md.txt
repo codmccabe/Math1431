@@ -1,0 +1,206 @@
+# Section 7.2
+
+
+## Sequence
+
+:::{prf:definition} Arithmetic Sequence
+:label: arthSeq
+
+An arithmetic sequence is a sequence in which each terms after the first differs from the preceding term by a fixed constant, called the common difference. The common difference is defined as
+
+$$
+d=a_{n+1}-a_{n}
+$$
+
+where $n$ is in the domain of the sequence.
+
+In an arithmetic sequence with first term $a_{1}$ and **common difference** $d$, the $n$th term $a_{n}$ is given by the following
+
+$$
+a_{n}=a_{1}+(n-1)d
+$$
+
+:::
+
+::::{prf:example}
+:label: arthSeqExam1
+
+Determine $a_{16}$ and $a_{n}$ for the arithmetic sequence
+
+$$
+23,20,17,14,\dots
+$$
+
+:::{dropdown} Solution:
+
+First, we will find the common difference. Since we know this is an
+arithmetic sequence we can pick any two consecutive numbers in the
+sequence and subtract the former from the later
+
+\begin{align*}
+d & =a_{2}-a_{1}\\
+ & =20-23=-3
+\end{align*}
+This means the common difference is $d=-3$ and we know $a_{1}=23$
+
+we then have
+
+\begin{align*}
+a_{n} & =23+(n-1)(-3)\\
+ & =23-3n+3\\
+ & =26-3n
+\end{align*}
+
+we can check this with the given sequence 
+
+$$a_{1}=26-3(1)=23$$
+
+and 
+
+$$a_{3}=26-3(3)=17$$
+
+and so on.
+
+Now we can evaluate $a_{16}$
+
+\begin{align*}
+a_{16} & =26-3(16)\\
+ & =-22
+\end{align*}
+
+Therefore, $a_{n}=26-3n$ and $a_{16}=-22$.
+
+:::
+::::
+
+## Series
+
+:::{prf:definition} Arithmetic Series
+
+An arithmetic series is the sum of the terms of an arithmetic sequence.
+
+If an arithmetic sequence has first term $a_{1}$ and common different $d$, then the sum $S_{n}$ of the first $n$ terms is given by the following
+
+$$
+S_{n}=\frac{n}{2}(a_{1}+a_{n})
+$$
+
+or
+
+$$
+S_{n}=\frac{n}{2}\left(2a_{1}+(n-1)d\right).
+$$
+
+The first formula is used when the first and last terms are known; otherwise, the second formula is used.
+:::
+
+::::{prf:example}
+:label: arthSeriesExam1
+
+Consider the arithmetic sequence
+
+$$
+48,44,40,36,\dots
+$$
+
+Evaluate $S_{21}$
+
+:::{dropdown} Solution:
+
+Using the definition we have
+
+$$
+S_{21}=\frac{21}{2}\left(2(48)+(21-1)d\right)
+$$
+
+were we need to find $d$. Since this is an arithmetic sequence we can find $d=44-48=-4$. Now we know
+
+\begin{align*}
+S_{21} & =\frac{21}{2}\left(2(48)+(21-1)(-4)\right)\\
+ & =\frac{21}{2}(96+(-80))\\
+ & =\frac{21}{2}(96-80)\\
+ & =\frac{21}{2}(16)\\
+ & =168
+\end{align*}
+
+:::
+
+Evaluate the sum of the first 200 positive integers.
+
+:::{dropdown} Solution:
+
+Since $d=1$ for the list of positive integers we have $a_{1}=1$ and $a_{n}=a_{200}=200$.
+
+\begin{align*}
+S_{200} & =\frac{200}{2}\left(a_{1}+a_{200}\right)\\
+ & =100(1+200)\\
+ & =100(201)\\
+ & =20100
+\end{align*}
+
+:::
+::::
+
+::::{prf:example}
+:label: arthSeriesExam2
+
+Evaluate
+
+$$
+\sum_{i=1}^{10}\left(4i+8\right)
+$$
+
+:::{dropdown} Solution:
+
+We know $a_{1}=4(1)+8=12$ and $a_{10}=4(10)+8=48$. We want to find $S_{10}$ which is
+
+\begin{align*}
+S_{10} & =\frac{10}{2}\left(a_{1}+a_{10}\right)\\
+ & =5(12+48)\\
+ & =5(60)\\
+ & =300
+\end{align*}
+
+:::
+::::
+
+::::{prf:example}
+:label: arthSeriesExam3
+Evaluate
+
+$$
+\sum_{i=5}^{10}(8-2i)
+$$
+
+:::{dropdown} Solution:
+
+We have
+
+\begin{align*}
+\sum_{i=5}^{10}(8-2i) & =\sum_{i=1}^{10}(8-2i)-\sum_{i=1}^{4}(8-2i)\\
+a_{1} & =8-2(1)=6\\
+a_{4} & =8-2(4)=0\\
+a_{10} & =8-2(10)=-12
+\end{align*}
+
+and
+
+\begin{align*}
+\sum_{i=1}^{10}(8-2i) & =\frac{10}{2}\left(6+(-12)\right)\\
+ & =\frac{10}{2}\cdot(-6)\\
+ & =-30
+\end{align*}
+\begin{align*}
+\sum_{i=1}^{4}(8-2i) & =\frac{4}{2}\left(6+0\right)\\
+ & =\frac{4}{2}\cdot(6)\\
+ & =12
+\end{align*}
+
+\begin{align*}
+\sum_{i=5}^{10}(8-2i) & =\sum_{i=1}^{10}(8-2i)-\sum_{i=1}^{4}(8-2i)\\
+ & =-30-12\\
+ & =-42
+\end{align*}
+
+:::
+::::

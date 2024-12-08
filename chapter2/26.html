@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 2.6 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 2.7" href="27.html" />
+    <link rel="prev" title="Section 2.5" href="25.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="25.html">Section 2.5</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 2.6</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#continuity">Continuity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-graphs-and-information">Basic Graphs and Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 2.6</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter2/26.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-2-6">
+<h1>Section 2.6<a class="headerlink" href="#section-2-6" title="Link to this heading"></a></h1>
+<section id="continuity">
+<h2>Continuity<a class="headerlink" href="#continuity" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="continuity">
+<p class="admonition-title"><span class="caption-number">Definition 17 </span></p>
+<section class="definition-content" id="proof-content">
+<p>A function is continuous over an interval of its domain if its hand-drawn graph over that interval can be sketched without lifting the pencil from the paper.</p>
+</section>
+</div></section>
+<section id="basic-graphs-and-information">
+<h2>Basic Graphs and Information<a class="headerlink" href="#basic-graphs-and-information" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="idFunction">
+<p class="admonition-title"><span class="caption-number">Definition 18 </span> (Identity Function)</p>
+<section class="definition-content" id="proof-content">
+<p>Identity Function: <span class="math notranslate nohighlight">\(f(x)=x\)</span>.</p>
+<ul class="simple">
+<li><p>Domain is <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Range is <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Continuous everywhere or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Increasing everywhere or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p><img alt="Graph of the identity function" src="../_images/identityFunctionGraph.png" /></p></li>
+</ul>
+</section>
+</div><div class="proof definition admonition" id="sqrFunction">
+<p class="admonition-title"><span class="caption-number">Definition 19 </span> (Squaring Function)</p>
+<section class="definition-content" id="proof-content">
+<p>Squaring Function: <span class="math notranslate nohighlight">\(f(x)=x^2\)</span>.</p>
+<ul class="simple">
+<li><p>Domain is <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Range is <span class="math notranslate nohighlight">\([0,\infty)\)</span>.</p></li>
+<li><p>Contiuous everywhere or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Decreasing on <span class="math notranslate nohighlight">\((-\infty,0)\)</span>.</p></li>
+<li><p>Increasing on <span class="math notranslate nohighlight">\((0,\infty)\)</span>.</p></li>
+<li><p><img alt="Graph of the squaring function" src="../_images/sqrFunctionGraph.png" /></p></li>
+</ul>
+</section>
+</div><div class="proof definition admonition" id="cubFunction">
+<p class="admonition-title"><span class="caption-number">Definition 20 </span> (Cubing Function)</p>
+<section class="definition-content" id="proof-content">
+<p>Cubing Function: <span class="math notranslate nohighlight">\(f(x)=x^3\)</span></p>
+<ul class="simple">
+<li><p>Domain is <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Range is <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Continuous everywhere or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Increasing everywhere or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p><img alt="Graph of the cubing function" src="../_images/cubFunctionGraph.png" /></p></li>
+</ul>
+</section>
+</div><div class="proof definition admonition" id="sqrtFunction">
+<p class="admonition-title"><span class="caption-number">Definition 21 </span> (Square Root Function)</p>
+<section class="definition-content" id="proof-content">
+<p>Square Root Function: <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>.</p>
+<ul class="simple">
+<li><p>Domain is <span class="math notranslate nohighlight">\([0,\infty)\)</span>.</p></li>
+<li><p>Range is <span class="math notranslate nohighlight">\([0,\infty)\)</span>.</p></li>
+<li><p>Continuous on <span class="math notranslate nohighlight">\([0,\infty)\)</span>.</p></li>
+<li><p>Increasing on <span class="math notranslate nohighlight">\((0,\infty)\)</span>.</p></li>
+<li><p><img alt="Graph of the square root function" src="../_images/sqrtFunctionGraph.png" /></p></li>
+</ul>
+</section>
+</div><div class="proof definition admonition" id="cbrtFunction">
+<p class="admonition-title"><span class="caption-number">Definition 22 </span> (Cube Root Function)</p>
+<section class="definition-content" id="proof-content">
+<p>Cube Root Function: <span class="math notranslate nohighlight">\(f(x)=\sqrt[3]{x}\)</span></p>
+<ul class="simple">
+<li><p>Domain is <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Range is <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Continuous everywhere or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Increasing everywhere or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p><img alt="Graph fo the cube root function" src="../_images/cbrtFunctionGraph.png" /></p></li>
+</ul>
+</section>
+</div><div class="proof definition admonition" id="absFunction">
+<p class="admonition-title"><span class="caption-number">Definition 23 </span> (Absolute Value Function)</p>
+<section class="definition-content" id="proof-content">
+<p>Absolute Value Function: <span class="math notranslate nohighlight">\(f(x)=|x|\)</span>.</p>
+<ul class="simple">
+<li><p>Domain is <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Range is <span class="math notranslate nohighlight">\([0,\infty)\)</span>.</p></li>
+<li><p>Continuous everywhere or <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>Decreasing on <span class="math notranslate nohighlight">\((-\infty,0)\)</span>.</p></li>
+<li><p>Increasing on <span class="math notranslate nohighlight">\((0,\infty)\)</span>.</p></li>
+<li><p><img alt="Graph of the the absolute value function" src="../_images/absFunctionGraph.png" /></p></li>
+</ul>
+</section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="25.html" class="btn btn-neutral float-left" title="Section 2.5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="27.html" class="btn btn-neutral float-right" title="Section 2.7" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,593 @@
+# Section 5.3
+
+:::{prf:definition} Determinant of a Two by Two
+:label: 22Det
+
+If $A=\left[\begin{matrix}a_{11} & a_{12}\\a_{21} & _{22}\end{matrix}\right]$, then
+
+$$|A|=\left|\begin{matrix}a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{matrix}\right|=a_{11}\cdot a_{22}-a_{21}\cdot a_{12}.$$
+:::
+
+:::{prf:definition} Determinant of a Three by Three
+:label: 33Det
+
+If $A=\left[\begin{matrix}a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{matrix}\right]$, then the determinant of $A$ is
+
+$$
+|A|=\left|\begin{matrix}a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{matrix}\right|=a_{11}\left|\begin{matrix}a_{22} & a_{23}\\
+a_{32} & a_{33}
+\end{matrix}\right|-a_{12}\left|\begin{matrix}a_{21} & a_{23}\\
+a_{31} & a_{33}
+\end{matrix}\right|+a_{13}\left|\begin{matrix}a_{21} & a_{22}\\
+a_{31} & a_{32}
+\end{matrix}\right|
+$$
+However, this is not the only way to compute the determinant.
+:::
+
+The determinant of each $2\times 2$ matrix from the previous definition is the **minor** of the associated element in the $3\times 3$ matrix. The symbol $M_{ij}$ is the minor for the associated element in row $i$ and column $j$.
+
+:::{prf:definition} Cofactor
+:label: cofactor
+
+Let $M_{ij}$ be the minor for each element $a_{ij}$ in an $n\times n$ matrix. The cofactor of $a_{ij}$, denoted $A_{ij}$, is 
+
+$$
+A_{ij}=(-1)^{i+j}\cdot M_{ij}
+$$
+:::
+
+:::{prf:definition} Determinant of a Matrix (using cofactor)
+:label: nnDet
+
+Multiply each element in any row (or column) of a matrix by its cofactor. The sum of these products gives the value of the determinant.
+
+The expansion by a given row (or column) is when we fix a row (or column) to setup the sum.
+:::
+
+Before we look at finding determinants of large matrices we will first calculate the determinant of a two by two matrix.
+
+## Two by Two Determinant Example(s)
+
+::::{prf:example}
+:label: 22DetExam1
+
+Find the determinant for the matrix
+
+$$
+A=\left[\begin{matrix}-3 & 4\\
+6 & 8
+\end{matrix}\right]
+$$
+
+:::{dropdown} Solution:
+
+We have $a_{11}=-3$, $a_{12}=4$, $a_{21}=6$, and $a_{22}=8$. Using
+the definition we have
+\begin{align*}
+|A| & =a_{11}\cdot a_{22}-a_{21}\cdot a_{12}\\
+ & =(-3)(8)-(6)(4)\\
+ & =-48
+\end{align*}
+:::
+::::
+
+## Three by Three Determinant Example(s)
+
+If we have the matrix
+
+$$
+\left[\begin{matrix}a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{matrix}\right]
+$$
+
+then we say the minor of an element, say $a_{22}$, is
+
+$$
+M_{22}=\left|\begin{matrix}a_{11} & a_{13}\\
+a_{31} & a_{33}
+\end{matrix}\right|
+$$
+
+Before, computing a determinant of $n\times n$ matrix practice finding minors of each element of a three by three matrix.
+
+::::{prf:example}
+:label: 33DetCofactorExam1
+
+Let $A=\left[\begin{matrix}2 & -3 & 5\\
+1 & 4 & -5\\
+0 & 2 & -6
+\end{matrix}\right]$, find the determinant of the matrix by expanding the third row.
+
+:::{dropdown} Solution:
+
+First, we will find the cofators for third row elements. 
+
+$$
+M_{31}=\left|\begin{matrix}-3 & 5\\
+4 & -5
+\end{matrix}\right|=(-3)*(-5)-(4)*(5)=-5
+$$
+$$
+M_{32}=\left|\begin{matrix}2 & 5\\
+1 & -5
+\end{matrix}\right|=(2)*(-5)-(1)*(5)=-15
+$$
+$$
+M_{33}=\left|\begin{matrix}2 & -3\\
+1 & 4
+\end{matrix}\right|=(2)*(4)-(1)*(-3)=11
+$$
+
+Then we will find each of the cofactors. Remember, the cofactor for each element is defined as $A_{ij}=(-1)^{i+j}M_{ij}$.
+
+\begin{align*}
+A_{31} & =(-1)^{3+1}M_{31}=(1)*(-5)=-5\\
+A_{32} & =(-1)^{3+2}M_{32}=(-1)*(-15)=15\\
+A_{33} & =(-1)^{3+3}M_{33}=(1)*(11)=11
+\end{align*}
+
+Next, we will multiply each cofactor by its associated element.
+
+\begin{align*}
+a_{31}A_{31} & =(0)(-5)=0\\
+a_{32}A_{32} & =(2)(15)=30\\
+a_{33}A_{33} & =(-6)(11)=-66
+\end{align*}
+
+Finally, we will sum all the values.
+
+\begin{align*}
+|A| & =a_{31}\cdot A_{31}+a_{32}\cdot A_{32}+a_{33}\cdot A_{33}\\
+ & =0+30+(-66)\\
+ & =-36
+\end{align*}
+
+Therefore, the determinant of matrix $A$ is $-36$.
+:::
+::::
+
+However, this may seem difficult or require too many steps. The purpose of showing the previous example and using the cofactor is to help show step-by-step how to compute a determinant by fixing any row or column. This can help in the future. In the next example we will compute the determinant of the same matrix using the first definition of a three-by-three determinant. 
+
+::::{prf:example}
+:label: 33DetExam2
+
+Let $A=\left[\begin{matrix}2 & -3 & 5\\
+1 & 4 & -5\\
+0 & 2 & -6
+\end{matrix}\right]$, find the determinant.
+
+:::{dropdown} Solution:
+\begin{align*}
+\left|\begin{matrix}2 & -3 & 5\\
+1 & 4 & -5\\
+0 & 2 & -6
+\end{matrix}\right| & =2\left|\begin{matrix}4 & -5\\
+2 & -6
+\end{matrix}\right|-(-3)\left|\begin{matrix}1 & -5\\
+0 & -6
+\end{matrix}\right|+5\left|\begin{matrix}1 & 4\\
+0 & 2
+\end{matrix}\right|\\
+ & =2\left(-24-(-10)\right)+3\left(-6\right)+5\left(2\right)\\
+ & =2(-14)-18+10\\
+ & =-28-8\\
+ & =-36
+\end{align*}
+:::
+::::
+
+Notice the last way resulted in the same value as the way using the cofactor method.
+
+## Determinant Theorems
+
+:::{prf:theorem} Determinant Theorems
+:label: detThm
+
+1. If every element in a row (or column) of a matrix $A$ is $0$, then $|A|=0$.
+2. If the rows of matrix $A$ are the corresponding columns of matrix $B$, then $|A|=|B|$. (Transpose)
+3. If any two rows (or column) of matrix $A$ are interchanged to form matrix $B$, then $|B|=-|A|$.
+1. Suppose matrix $B$ is formed by multiplying every element of a row (or column) of matrix $A$ by the real number $k$. Then $|B|=k\cdot|A|$.
+1. If two rows (or columns) of matrix $A$ are identical, then $|A|=0$.
+1. Changing a row (or column) of matrix by adding to it a constant times another row (or column) does not change the determinant of the matrix. (Doing row reduction does not change the determinant of the original matrix.)
+1. If matrix $A$ is in triangular form, having only zeros either above or below the main diagonal, then $|A|$ is the product of the elements on the main diagonal of $A$.
+:::
+
+::::{prf:example}
+:label: DetThmExam1
+Use the determinant theorems to evaluate the determinant of the following matrix.
+
+$$
+\left[\begin{matrix}-2 & 4 & 2\\
+6 & 7 & 3\\
+0 & 16 & 8
+\end{matrix}\right]
+$$
+
+:::{dropdown} Solution:
+Since $M_{31}=0$ we can also use part 6 of the previous them by minipulating
+$R_{2}$ to have $a_{21}=0$ which would then cause $M_{21}=0$. Then
+we would have a much simpler approach to find the determinant. 
+
+$$
+\underset{A}{\underbrace{\left[\begin{matrix}-2 & 4 & 2\\
+6 & 7 & 3\\
+0 & 16 & 8
+\end{matrix}\right]}}\to_{3\times R_{1}+R_{2}}\underset{B}{\underbrace{\left[\begin{matrix}-2 & 4 & 2\\
+0 & 19 & 9\\
+0 & 16 & 8
+\end{matrix}\right]}}
+$$
+
+By 6 of the previous theorem we know $|A|=|B|$. For matrix $B$ the following minors are calculated
+
+$$
+M_{11}=\left|\begin{matrix}19 & 9\\
+16 & 8
+\end{matrix}\right|=(19)*(8)-(16)*(9)=8
+$$
+
+$$
+B_{11}=(-1)^{1+1}M_{11}=(1)*8=8
+$$
+
+$$
+b_{11}\cdot B_{11}=(-2)*(8)=-16
+$$
+
+$$
+M_{12}=\left|\begin{matrix}4 & 2\\
+16 & 8
+\end{matrix}\right|=(4)*(8)-(16)*(2)=0
+$$
+
+$$
+B_{12}=(-1)^{1+2}M_{12}=(-1)*(0)=0
+$$
+
+$$
+b_{12}\cdot B_{12}=(0)*(0)=0
+$$
+
+$$
+M_{13}=\left|\begin{matrix}4 & 2\\
+19 & 9
+\end{matrix}\right|=(4)*(9)-(19)*(2)=-2
+$$
+
+$$
+B_{13}=(-1)^{1+3}M_{13}=(1)*(-2)=-2
+$$
+
+$$
+b_{13}B_{13}=(0)*(-2)=0
+$$
+
+Therefore, we have
+\begin{align*}
+|A|=|B| & =b_{11}B_{11}+b_{12}B_{12}+b_{13}B_{13}\\
+ & =-16+0+0\\
+ & =-16
+\end{align*}
+:::
+::::
+
+## Cramer's Rule
+
+Consider a general system of two equations and two unknowns.
+
+$$
+\begin{cases}
+a_{1}x+b_{1}y & =c_{1}\\
+a_{2}x+b_{2}y & =c_{2}
+\end{cases}.
+$$
+
+We can solve this system using the elimination method (ignoring and
+ideal factors to multiply to one equation to elimination another).
+
+\begin{align*}
+\begin{cases}
+a_{1}x+b_{1}y & =c_{1}\\
+a_{2}x+b_{2}y & =c_{2}
+\end{cases} & \to_{\begin{cases}
+b_{2}\times R_{1}\\
+-b_{1}\times R_{2}
+\end{cases}}\begin{cases}
+b_{2}a_{1}x+b_{2}b_{1}y & =b_{2}c_{1}\\
+-b_{1}a_{2}x-b_{1}b_{2}y & =-b_{1}c_{2}
+\end{cases}\\
+ & \to_{R_{1}+R_{2}}\left(b_{2}a_{1}-b_{1}a_{2}\right)x+\left(b_{2}b_{1}-b_{1}b_{2}\right)y=b_{2}c_{1}-b_{1}c_{2}\\
+ & \to\left(b_{2}a_{1}-b_{1}a_{2}\right)x=b_{2}c_{1}-b_{1}c_{2}\\
+x & =\dfrac{b_{2}c_{1}-b_{1}c_{2}}{b_{2}a_{1}-b_{1}a_{2}}
+\end{align*}
+
+provided $b_{2}a_{1}-b_{1}a_{2}\ne0$. Next, we can solve for the
+$y$ variable:
+
+\begin{align*}
+\begin{cases}
+a_{1}x+b_{1}y & =c_{1}\\
+a_{2}x+b_{2}y & =c_{2}
+\end{cases} & \to_{\begin{cases}
+-a_{2}\times R_{1}\\
+a_{1}\times R_{2}
+\end{cases}}\begin{cases}
+-a_{2}a_{1}x-a_{2}b_{1}y & =-a_{2}c_{1}\\
+a_{1}a_{2}x+a_{1}b_{2}y & =a_{1}c_{2}
+\end{cases}\\
+ & \to_{R_{1}+R_{2}}\left(-a_{2}a_{1}+a_{1}a_{2}\right)x+\left(-a_{2}b_{1}+a_{1}b_{2}\right)y=-a_{2}c_{1}+a_{1}c_{2}\\
+ & \to\left(-a_{2}b_{1}+a_{1}b_{2}\right)y=-a_{2}c_{1}+a_{1}c_{2}\\
+y & =\dfrac{-a_{2}c_{1}+a_{1}c_{2}}{-a_{2}b_{1}+a_{1}b_{2}}
+\end{align*}
+
+provided $-a_{2}b_{1}+a_{1}b_{2}\ne0$.
+
+Now, the previous calculations look similar to find the discriminant
+of something:
+
+$$
+c_{1}b_{2}-c_{2}b_{1}=\left|\begin{matrix}c_{1} & b_{1}\\
+c_{2} & b_{2}
+\end{matrix}\right|
+$$
+
+$$
+a_{1}c_{2}-a_{2}c_{1}=\left|\begin{matrix}a_{1} & c_{1}\\
+a_{2} & c_{2}
+\end{matrix}\right|
+$$
+
+$$
+a_{1}b_{2}-a_{2}b_{1}=\left|\begin{matrix}a_{1} & b_{1}\\
+a_{2} & b_{2}
+\end{matrix}\right|
+$$
+
+The solutions for $x$ and $y$ can be represented using the discriminant
+
+$$
+x=\dfrac{b_{2}c_{1}-b_{1}c_{2}}{b_{2}a_{1}-b_{1}a_{2}}=\dfrac{\left|\begin{matrix}c_{1} & b_{1}\\
+c_{2} & b_{2}
+\end{matrix}\right|}{\left|\begin{matrix}a_{1} & b_{1}\\
+a_{2} & b_{2}
+\end{matrix}\right|}
+$$
+
+and
+
+$$
+y=\dfrac{-a_{2}c_{1}+a_{1}c_{2}}{-a_{2}b_{1}+a_{1}b_{2}}=\dfrac{\left|\begin{matrix}a_{1} & c_{1}\\
+a_{2} & c_{2}
+\end{matrix}\right|}{\left|\begin{matrix}a_{1} & b_{1}\\
+a_{2} & b_{2}
+\end{matrix}\right|}
+$$
+
+Notice, how the denominator is the same for both solutions, and the
+numerator for each of the solutions are different with respect to
+their variable. For this we have a way to represent these
+
+$$
+D_{x}=\left|\begin{matrix}c_{1} & b_{1}\\
+c_{2} & b_{2}
+\end{matrix}\right|,D_{y}=\left|\begin{matrix}a_{1} & c_{1}\\
+a_{2} & c_{2}
+\end{matrix}\right|,\text{ and }D=\left|\begin{matrix}a_{1} & b_{1}\\
+a_{2} & b_{2}
+\end{matrix}\right|.
+$$
+
+Since $D$ is some number and in the denominator of the general solution
+we require $D\ne0$.
+
+:::{prf:theorem} 
+:label: DZero
+If $D=0$, then the above generalized solution doesn't apply. The
+system is inconsistent or has infinitely many solutions.
+:::
+
+The generalized method to solve the system is called Cramer's Rule for two equation in two variables.
+
+:::{prf:theorem} Cramer's Rule Two-by-Two
+:label: 22CRThm
+Cramer's Rule for Two equations in Two Variables
+
+Given the system
+
+$$
+\begin{cases}
+a_{1}x+b_{1}y & =c_{1}\\
+a_{2}x+b_{2}y & =c_{2}
+\end{cases},
+$$
+
+if $D\ne0$, then the system has the unique solution
+
+$$
+x=\dfrac{D_{x}}{D}\text{ and }y=\dfrac{D_{y}}{D}
+$$
+
+where $D=\left|\begin{matrix}a_{1} & b_{1}\\
+a_{2} & b_{2}
+\end{matrix}\right|$, $D_{x}=\left|\begin{matrix}c_{1} & b_{1}\\
+c_{2} & b_{2}
+\end{matrix}\right|$, and $D_{y}=\left|\begin{matrix}a_{1} & c_{1}\\
+a_{2} & c_{2}
+\end{matrix}\right|$.
+$$
+
+:::
+
+::::{prf:example}
+:label: 22CRExam1
+
+Use Cramer's rule to solve the system of equation
+
+$$
+\begin{cases}
+4x+3y & =2\\
+x-2y & =5
+\end{cases}
+$$
+
+:::{dropdown} Solution:
+
+First we will find $D$ (always) to determine if Cramer's rule is a viable method.
+
+$$
+D=\left|\begin{matrix}4 & 3\\
+1 & -2
+\end{matrix}\right|=(4)*(-2)-(1)*(3)=-11\ne0.
+$$
+
+Next, we will find $D_{x}$ and $D_{y}$
+
+$$
+D_{x}=\left|\begin{matrix}2 & 3\\
+5 & -2
+\end{matrix}\right|=(2)*(-2)-(5)*(3)=-19
+$$
+
+and
+
+$$
+D_{y}=\left|\begin{matrix}4 & 2\\
+1 & 5
+\end{matrix}\right|=(4)*(5)-(1)*(2)=18
+$$
+
+Therefore, by Cramer's Rule we have
+
+$$
+x=\dfrac{D_{x}}{D}=\dfrac{-19}{-11}\text{ and }y=\dfrac{D_{y}}{D}=\dfrac{18}{-11}
+$$
+
+and the solution set for the system of equations is $\{(\frac{19}{11},-\frac{18}{11})\}$.
+:::
+::::
+
+:::{prf:theorem} General Form of Cramer's Rule
+:label: nnCRThm
+
+Let $n\times n$ system have linear equations of the following form
+
+$$
+a_{1}x_{1}+a_{2}x_{2}+\cdots+a_{n}x_{n}=b
+$$
+
+Define $D$ as the determinant of the $n\times n$ matrix of all coefficients of the variables. Define $D_{x_{1}}$ as the determinant obtained from $D$ be replacing the entries in column $1$ of $D$ with the constants of the system. Define $D_{x_{i}}$ as the determinant obtained from $D$ by replacing the entries in column $i$ with the constants of the system. If $D\ne0$, then the unique solution of the system is
+ 
+$$
+x_{1}=\dfrac{D_{x_{1}}}{D},x_{2}=\dfrac{D_{x_{2}}}{D},\dots,x_{n}=\dfrac{D_{x_{n}}}{D}.
+$$
+
+:::
+
+::::{prf:example}
+:label: 33CRExam1
+
+Solve the system of equations
+
+$$
+\begin{cases}
+2x-4y+z-19 & =0\\
+4x+6y-z+15 & =0\\
+x+y+2z-11 & =0
+\end{cases}.
+$$
+
+:::{dropdown} Solution:
+
+First, we want to rewrite the system.
+
+$$
+\begin{cases}
+2x-4y+z-19 & =0\\
+4x+6y-z+15 & =0\\
+x+y+2z-11 & =0
+\end{cases}\to\begin{cases}
+2x-4y+z & =19\\
+4x+6y-z & =-15\\
+x+y+2z & =11
+\end{cases}
+$$
+
+If $D=0$ then we will stop doing Cramer's Rule. Thus, it is helpful calculate $D$ first to see if Cramer's Rule will work.
+
+Next, we want to find $D$. (For spacing each line will be a sum or difference. Otherwise, the calculations would not fit the page.)
+ 
+\begin{align*}
+D=\left|\begin{matrix}2 & -4 & 1\\
+4 & 6 & -1\\
+1 & 1 & 2
+\end{matrix}\right| & =2\left((6)(2)-(1)(-1)\right)\\
+ & -(-4)\left((4)(2)-(1)(-1)\right)\\
+ & +1\left((4)(1)-(1)(6)\right)\\
+ & =60
+\end{align*}
+
+Since, $D\ne0$ we can proceed with Cramer's Rule
+
+\begin{align*}
+D_{x} & =\left|\begin{matrix}19 & -4 & 1\\
+-15 & 6 & -1\\
+11 & 1 & 2
+\end{matrix}\right|\\
+ & =19\left((6)(2)-(1)(-1)\right)\\
+ & -(-15)\left((-4)(2)-(1)(1)\right)\\
+ & +11\left((-4)(-1)-(6)(1)\right)\\
+ & =90
+\end{align*}
+\begin{align*}
+D_{y} & =\left|\begin{matrix}2 & 19 & 1\\
+4 & -15 & -1\\
+1 & 11 & 2
+\end{matrix}\right|\\
+ & =2\left((-15)(2)-(11)(-1)\right)\\
+ & -4\left((19)(2)-(11)(1)\right)\\
+ & +1\left((19)(-1)-(-15)(1)\right)\\
+ & =-150
+\end{align*}
+\begin{align*}
+D_{z} & =\left|\begin{matrix}2 & -4 & 19\\
+4 & 6 & -15\\
+1 & 1 & 11
+\end{matrix}\right|\\
+ & =2\left((6)(11)-(1)(-15)\right)\\
+ & -4\left((-4)(11)-(1)(19)\right)\\
+ & +1\left((-4)(-15)-(6)(19)\right)\\
+ & =360
+\end{align*}
+
+Thus, we have $D=60$, $D_{x}=90$, $D_{y}=-150$, and $D_{z}=360$.
+Using these values we have
+
+$$
+x=\dfrac{D_{x}}{D}=\frac{90}{60}=\frac{3}{2},
+$$
+
+$$
+y=\dfrac{D_{y}}{D}=\frac{-150}{60}=-\frac{5}{2},
+$$
+
+and
+
+$$
+z=\dfrac{D_{z}}{D}=\frac{360}{60}=6.
+$$
+
+Therefore, the solution for the system is $\{(\frac{3}{2},-\frac{5}{2},6)\}$.
+:::
+::::
+

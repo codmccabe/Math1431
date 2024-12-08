@@ -1,0 +1,370 @@
+# Section 7.3
+
+## Sequence
+
+:::{prf:definition} Geometric Sequence
+:label: geoSeqDef
+
+A geometric sequence is a sequence in which each term after the first is obtained by multiplying the preceding term by a fixed nonzero real number, called the **common ratio**.
+
+We find the common ratio by choosing any term after the first and dividing it by the preceding term.
+
+In a geometric sequence with first term $a_{1}$ and common ratio $r$, the $n$th term $a_{n}$ is given by the following
+
+$$
+a_{n}=a_{1}r^{n-1}.
+$$
+:::
+
+Something to keep in mind when dealing with geometric sequences. The first value, $a_1$, is your starting number and by definition is $a_1=a_1\cdot r^0=a_1$. Then the next number in the sequence is $a_2$ which is $a_1$ times $r$. That is,
+
+$$a_2=a_1\cdot r$$
+
+The next number is $a_3$ which is $a_2$ times $r$. That is,
+
+\begin{align*}
+    a_3 & = a_2\cdot r\\ 
+    & = \left(a_1 \cdot r \right)\cdot r\\
+    & = a_1\cdot r^2
+\end{align*}
+
+The next number is $a_4$ which is $a_3$ times $r$. That is,
+
+\begin{align*}
+    a_4 & = a_3\cdot r\\
+    & = \left(a_2\cdot r\right)\cdot r\\
+    & = \left(\left(a_1\cdot r\right)\cdot r\right)\cdot r\\
+    & = a_1\cdot r^3
+\end{align*}
+
+And so on. This commonly associated with compound interest.
+
+::::{prf:example}
+:label: geoSeqExam1
+
+Determine $a_{5}$ and $a_{n}$for the geometric sequence
+
+$$
+6400,\,1600,\,400,\,100,\,...
+$$
+
+:::{dropdown} Solution:
+
+First,
+
+$$
+\frac{1600}{6400}=\frac{1}{4}=r
+$$
+
+and $a_{1}=6400$. Therefore, $a_{n}=6400\cdot4^{n-1}$. Thus,
+
+\begin{align*}
+a_{5} & =6400\cdot(\frac{1}{4})^{5-1}\\
+ & =6400\cdot\left(\frac{1}{4}\right)^{4}\\
+ & =25
+\end{align*}
+
+or since $a_{4}=100$ we know that $a_{5}=100\div4=25$.
+:::
+::::
+
+::::{prf:example}
+:label: geoSeqExam2
+
+Determine $r$ and $a_{1}$ for the geometric sequence with $a_{2}=-18$ and $a_{5}=486$. Then define $a_{n}$.
+
+:::{dropdown} Solution:
+
+Consider a table of values
+
+\begin{align*}
+a_{1} & =a_{1}r^{0}=a_1\\
+a_{2} & =a_{1}r=-18\\
+a_{3} & =a_{2}\cdot r=-18\cdot r\\
+a_{4} & =a_{3}\cdot r=\left(a_{2}\cdot r\right)\cdot r=a_{2}r^{2}=-18r^{2}\\
+a_{5} & =a_{4}\cdot r=\left(-18r^{2}\right)\cdot r=-18r^{3}=486
+\end{align*}
+
+Thus, we can solve for $r$
+
+\begin{align*}
+-18r^{3} & =486\\
+r^{3} & =\frac{486}{-18}\\
+ & =-27\\
+r & =-3
+\end{align*}
+Since $a_{2}=a_{1}r^{2-1}$ we have
+\begin{align*}
+-18 & =a_{1}(-3)^{1}\\
+-18 & =a_{1}(-3)\\
+a_{1} & =\frac{-18}{-3}\\
+ & =6
+\end{align*}
+
+Therefore, $a_{1}=6$, $r=-3$ and $a_{n}=6(-3)^{n-1}$.
+
+:::
+::::
+
+::::{prf:example}
+:label: geoSeqExam3
+
+A person receives a gift on the first day of each month for a year, starting with \$50 on January 1, with the amount doubling each month. How much is received on December 1?
+
+:::{dropdown} Solution:
+
+We are given $a_{1}=50$ and the common ratio is $r=2$ (because the amount is doubled). Therefore,
+
+\begin{align*}
+a_{12} & =50\cdot(2)^{12-1}\\
+ & =50\cdot2^{11}\\
+ & =102400
+\end{align*}
+
+which means the person will have \$102400 at the end of the year.
+
+:::
+::::
+
+## Series
+
+Consider,
+
+\begin{align*}
+S_{n} & =\sum_{i=1}^{n}a_{1}r^{i-1}\\
+ & =a_{1}+a_{1}r+a_{1}r^{2}+\cdots+a_{1}r^{n-1}\\
+r\cdot\left(S_{n}\right) & =r\left(a_{1}+a_{1}r+a_{1}r^{2}+\cdots+a_{1}r^{n-1}\right)\\
+rS_{n} & =a_{1}r+a_{1}r^{2}+a_{1}r^{3}+\cdots+a_{1}r^{n}\\
+S_{n}-rS_{n} & =\left(a_{1}+\cancel{a_{1}r}+\cdots+\cancel{a_{1}r^{n-1}}\right)-\left(\cancel{a_{1}r}+\cdots+\cancel{a_{1}r^{n-1}}+a_{1}r^{n}\right)\\
+S_{n}(1-r) & =a_{1}-a_{1}r^{n}\\
+ & =a_{1}(1-r^{n})\\
+S_{n} & =\dfrac{a_{1}(1-r^{n})}{1-r}
+\end{align*}
+
+:::{prf:definition}
+:label: geoSeriesDef
+
+A geometric Series is the sum of the terms of a geometric sequence.
+
+If a geometric sequence has first term $a_{1}$ and a common ratio $r$, then the sum $S_{n}$ of the first $n$ terms is given by the following
+
+$$
+S_{n}=\dfrac{a_{1}(1-r^{n})}{1-r},
+$$
+
+where $r\ne1$.
+
+$$
+\lim_{n\to\infty}r^{n}=0
+$$
+
+when $0<r<1$.
+:::
+
+:::{prf:definition}
+:label: geoSeriesInf
+
+The sum $S_{\infty}$ of the terms of an infinite geometric sequence with first term $a_{1}$ and common ratio $r$, where $|r|<1$, is given by the following
+
+$$
+\lim_{n\to\infty}S_{n}=S_{\infty}=\dfrac{a_{1}}{1-r}
+$$
+
+If $|r|>1$, then the terms increase without bound in the absolute value, so there is no limit as $n\to\infty.$ Therefore, if $|r|>1$, then the terms of the sequence will not have a sum.
+:::
+
+::::{prf:example}
+:label: geoSeriesExam1
+
+A person receives a gift on the first day of each month for a year, starting with $50 on January 1, with the amount doubling each month. What is the total amount received throughout the year?
+
+:::{dropdown} Solution:
+
+We know that $a_{1}=50$ and $r=2$ and since we had 12 gifts we have
+
+\begin{align*}
+S_{12} & =\dfrac{50(1-2^{12})}{1-2}\\
+ & =\dfrac{50(-4095)}{-1}\\
+ & =204750
+\end{align*}
+
+That is, the total received in the year is \$204750.
+:::
+::::
+
+::::{prf:example}
+:label: geoSeriesExam2
+
+Evaluate
+
+$$
+\sum_{i=1}^{8}4\cdot5^{i}
+$$
+
+:::{dropdown} Solution:
+
+We have $a_{i}=4\cdot5^{i}$, $a_{1}=4\cdot5=20$, $r=5$, and in this case $n=8$.
+
+\begin{align*}
+\sum_{i=1}^{8}4\cdot5^{i} & =\dfrac{20(1-5^{8})}{1-5}\\
+ & =\dfrac{20(-390624)}{-4}\\
+ & =1953120
+\end{align*}
+
+:::
+::::
+
+:::{prf:example}
+:label: geoSeriesExam3
+
+Consider the geometric sequence
+
+$$
+2,1,\frac{1}{2},\frac{1}{4},\frac{1}{8},\frac{1}{16},\dots
+$$
+
+We have $a_{1}=2$ and $r=\frac{1}{2}$. Which means
+
+\begin{align*}
+S_{n} & =\sum_{i=1}^{n}2\cdot\left(\frac{1}{2}\right)^{i}=\frac{2\cdot\left(1-\left(\frac{1}{2}\right)^{n}\right)}{1-\frac{1}{2}}\\
+ & =\frac{2\cdot\left(1-\left(\frac{1}{2}\right)^{n}\right)}{1-\frac{1}{2}}\\
+ & =\dfrac{2\cdot\left(1-\left(\frac{1}{2}\right)^{n}\right)}{\frac{1}{2}}\\
+ & =4\cdot\left(1-\left(\frac{1}{2}\right)^{n}\right)\\
+ & =4-4\cdot\left(\frac{1}{2}\right)^{n}
+\end{align*}
+
+With this generalization we see
+
+\begin{align*}
+S_{1} & =4-4\cdot\frac{1}{2}=2\\
+S_{2} & =4-4\cdot\left(\frac{1}{2}\right)^{2}=3\\
+S_{3} & =4-4\cdot\left(\frac{1}{2}\right)^{3}=3.5\\
+S_{4} & =4-4\cdot\left(\frac{1}{2}\right)^{4}=3.75\\
+\vdots\\
+S_{10} & =4-4\cdot\left(\frac{1}{2}\right)^{10}=3.99609375\\
+\vdots\\
+\lim_{n\to\infty}S_{n} & =\lim_{n\to\infty}(4-4\cdot(\frac{1}{2})^{n})\\
+ & =4-4\lim_{n\to\infty}(\frac{1}{2})^{n}\\
+ & =4-4\cdot0\\
+ & =4
+\end{align*}
+
+We say the limit $S_{n}$ as $n$ increases without bounds is $4$.
+
+:::
+
+{prf:example}
+:label: geoSeriesExam4
+
+If a geometric series has a first term $a_{1}$ and a common ratio $r$ such that $0<r<1$, then the finite sum is 
+
+\begin{align*}
+S_{n} & =\sum_{i=1}^{n}a_{1}\cdot r^{i}\\
+ & =\dfrac{a_{1}(1-r^{n})}{1-r}
+\end{align*}
+
+The infinity sum is $\lim_{n\to\infty}S_{n}$. Using the fact that $\lim_{n\to\infty}r^{n}=0$ when $0<r<1$ we have
+
+\begin{align*}
+\lim_{n\to\infty}S_{n} & =\lim_{n\to\infty}\dfrac{a_{1}(1-r^{n})}{1-r}\\
+ & =\dfrac{a_{1}(1-0)}{1-r}\\
+ & =\dfrac{a_{1}(1)}{1-r}\\
+ & =\dfrac{a_{1}}{1-r}
+\end{align*}
+
+
+
+::::{prf:example}
+:label: geoSeriesExam5
+
+Evaluate
+
+$$
+\sum_{i=1}^{\infty}\left(\frac{2}{5}\right)\cdot\left(-\frac{1}{3}\right)^{i-1}
+$$
+
+:::{dropdown} Solution:
+
+First, we see that $a_{1}=\frac{2}{5}$ and $r=-\frac{1}{3}$. We notice that $|r|<1$ which means the sum exists.
+
+Next, we use the identity
+
+\begin{align*}
+S_{\infty} & =\dfrac{a_{1}}{1-r}\\
+ & =\dfrac{\frac{2}{5}}{1-(-\frac{1}{3})}\\
+ & =\frac{2}{5}\cdot\frac{1}{\frac{4}{3}}\\
+ & =\frac{2}{5}\cdot\frac{3}{4}\\
+ & =\frac{3}{10}
+\end{align*}
+:::
+::::
+
+::::{prf:example}
+:label: geoSeriesExam6
+
+Evaluate 
+
+$$
+\sum_{i=1}^{\infty}(0.9)^{i}
+$$
+
+:::{dropdown} Solution:
+
+First, $\sum_{i=1}^{\infty}(0.9)^{i}=\sum_{i=1}^{\infty}(0.9)\cdot(0.9)^{i-1}$. Thus, $a_{1}=0.9$ and $r=0.9$. Since $|r|<1$ we know the sum exists.
+
+\begin{align*}
+S_{\infty} & =\dfrac{0.9}{1-0.9}\\
+ & =\dfrac{0.9}{0.1}\\
+ & =9
+\end{align*}
+:::
+::::
+
+## Future Value of an Annuity
+
+::::{prf:theorem} Future Value of an Annuity
+:label: futureAnnuityTHM
+
+The formula for the future value of an annuity is given by the following
+
+$$
+S=R\left(\dfrac{(1+i)^{n}-1}{i}\right).
+$$
+
+Here $S$ is the future value, $R$ is payment at the end of each period, $i$ is interest rate per period, and $n$ is number of periods.
+
+:::{dropdown} "Proof:"
+
+The formula for interest compounded annually is
+\[
+A=P(1+r)^{t}
+\]
+To avoid confusion we will redefine it as
+\[
+A=P(1+i)^{t}
+\]
+where $i$ is the interest rate per period.
+
+If $A_{n}$ is a sequence of possible amounts we have
+\[
+A_{n}=A_{0}(1+i)^{n}
+\]
+where the common ratio is $r=1+i$. To connect with the identity we
+will say $A_{0}=R$. Now we have
+\[
+A_{n}=R(1+i)^{n}
+\]
+
+Next, the sum of money after $n$ years is 
+\begin{align*}
+S_{n} & =\sum_{i=1}^{n}A_{n}\\
+ & =\sum_{i=1}^{n}R(1+i)^{n}\\
+ & =\dfrac{R(1-(1+i)^{n})}{1-(1+i)}\\
+ & =\dfrac{R(1-(1+i)^{n})}{-i}\\
+ & =\dfrac{R(-1)\left((1+i)^{n}-1\right)}{(-1)i}\\
+ & =\dfrac{R\left((1+i)^{n}-1\right)}{i}
+\end{align*}
+
+:::
+::::
+

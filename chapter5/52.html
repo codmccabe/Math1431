@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 5.2 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 5.3" href="53.html" />
+    <link rel="prev" title="Section 5.1" href="51.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="51.html">Section 5.1</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 5.2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#two-by-two-examples">Two by Two Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#three-by-three-examples">Three by Three Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#two-by-three-example">Two by Three Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 5.2</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter5/52.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-5-2">
+<h1>Section 5.2<a class="headerlink" href="#section-5-2" title="Link to this heading"></a></h1>
+<p>In this section we want to convert a system of equations to an augmented matrix:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\underset{\text{Linear system of equations}}{\underbrace{\begin{cases}
+x+3y+2z &amp; =1\\
+2x+y-z &amp; =2\\
+x+y+z &amp; =2
+\end{cases}}}\to\underset{\text{Augmented Matrix}}{\underbrace{\left[\begin{matrix}1 &amp; 3 &amp; 2\\
+2 &amp; 1 &amp; -1\\
+1 &amp; 1 &amp; 1
+\end{matrix}\left|\begin{matrix}1\\
+2\\
+2
+\end{matrix}\right.\right]}}
+\end{split}\]</div>
+<div class="proof property admonition" id="matrixRowTrans">
+<p class="admonition-title"><span class="caption-number">Property 14 </span></p>
+<section class="property-content" id="proof-content">
+<p>For any augmented matrix of a system of linear equations, the following <strong>row transformations</strong> will result in the matrix of an equivalent system</p>
+<ol class="arabic simple">
+<li><p>Interchange any two rows</p></li>
+<li><p>Multiply or divide the elements of any row by a nonzero real number.</p></li>
+<li><p>Replace any row of the matrix by the sum of the elements of that row and a multiple of th element of another row.</p></li>
+</ol>
+</section>
+</div><div class="proof property admonition" id="gaussJordanMethod">
+<p class="admonition-title"><span class="caption-number">Property 15 </span></p>
+<section class="property-content" id="proof-content">
+<p>Using the Gauss-Jordan Method to Transform a Matrix into Diagonal Form (Reduced Row Echelon Form)</p>
+<ol class="arabic simple">
+<li><p>Obtain 1 as the first element of the first column</p></li>
+<li><p>Use the first row to transform the remaining entries in the first column to zero.</p></li>
+<li><p>Obtain 1 as the second entry in the second column.</p></li>
+<li><p>Use the second row to transform the remaining entries in the second column to zero.</p></li>
+<li><p>Continue in this manner as far as possible.</p></li>
+</ol>
+</section>
+</div><p>The goal for Gauss-Jordan Method is the following use row transformations.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\underset{\text{Linear system of equations}}{\underbrace{\begin{cases}
+x+3y+2z &amp; =1\\
+2x+y-z &amp; =2\\
+x+y+z &amp; =2
+\end{cases}}} &amp; \to\underset{\text{Augmented Matrix}}{\underbrace{\left[\begin{matrix}1 &amp; 3 &amp; 2\\
+2 &amp; 1 &amp; -1\\
+1 &amp; 1 &amp; 1
+\end{matrix}\left|\begin{matrix}1\\
+2\\
+2
+\end{matrix}\right.\right]}}\\
+ &amp; \vdots \text{ Row Transformations}\\
+ &amp; \to\left[\begin{matrix}1 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{matrix}\left|\begin{matrix}i\\
+j\\
+k
+\end{matrix}\right.\right]
+\end{align*}\]</div>
+<p>Which would then say the solution set for the system would be <span class="math notranslate nohighlight">\(\{(i,j,k)\}\)</span>.</p>
+<section id="two-by-two-examples">
+<h2>Two by Two Examples<a class="headerlink" href="#two-by-two-examples" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="22GJMethodExam1">
+<p class="admonition-title"><span class="caption-number">Example 98 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+3x-4y &amp; =1\\
+5x+2y &amp; =19
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will write the system as an augmented matrix.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+3x-4y &amp; =1\\
+5x+2y &amp; =19
+\end{cases}\to\left[\begin{matrix}3 &amp; -4\\
+5 &amp; 2
+\end{matrix}\left|\begin{matrix}1\\
+19
+\end{matrix}\right.\right]
+\end{split}\]</div>
+<p class="sd-card-text">Next, we will do row transformation to get our solution set.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left[\begin{matrix}3 &amp; -4 &amp; 1\\
+5 &amp; 2 &amp; 19
+\end{matrix}\right] &amp; \to_{\frac{1}{3}\times R_{1}}\left[\begin{matrix}1 &amp; -\frac{4}{3} &amp; \frac{1}{3}\\
+5 &amp; 2 &amp; 19
+\end{matrix}\right]\\
+ &amp; \to_{-5\times R_{1}+R_{2}}\left[\begin{matrix}1 &amp; -\frac{4}{3} &amp; \frac{1}{3}\\
+0 &amp; \frac{26}{3} &amp; \frac{52}{3}
+\end{matrix}\right]\\
+ &amp; \to_{\frac{3}{26}\times R_{2}}\left[\begin{matrix}1 &amp; -\frac{4}{3} &amp; \frac{1}{3}\\
+0 &amp; 1 &amp; 2
+\end{matrix}\right]\\
+ &amp; \to_{\frac{4}{3}\times R_{2}+R_{1}}\left[\begin{matrix}1 &amp; 0 &amp; 3\\
+0 &amp; 1 &amp; 2
+\end{matrix}\right]
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{(3,2)\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="22GJMethodExam2">
+<p class="admonition-title"><span class="caption-number">Example 99 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+2x+3y &amp; =7\\
+3x-4y &amp; =-32
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+2x+3y &amp; =7\\
+3x-4y &amp; =-32
+\end{cases}\to\left[\begin{matrix}2 &amp; 3\\
+3 &amp; -4
+\end{matrix}\left|\begin{matrix}7\\
+-32
+\end{matrix}\right.\right]
+\end{split}\]</div>
+<p class="sd-card-text">Then row operations</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left[\begin{matrix}2 &amp; 3 &amp; 7\\
+3 &amp; -4 &amp; -32
+\end{matrix}\right] &amp; \to_{\frac{1}{2}\times R_{1}}\left[\begin{matrix}1 &amp; \frac{3}{2} &amp; \frac{7}{2}\\
+3 &amp; -4 &amp; -32
+\end{matrix}\right]\\
+ &amp; \to_{-3\times R_{1}+R_{2}}\left[\begin{matrix}1 &amp; \frac{3}{2} &amp; \frac{7}{2}\\
+0 &amp; -\frac{17}{2} &amp; -\frac{85}{2}
+\end{matrix}\right]\\
+ &amp; \to_{-\frac{2}{17}\times R_{2}}\left[\begin{matrix}1 &amp; \frac{3}{2} &amp; \frac{7}{2}\\
+0 &amp; 1 &amp; 5
+\end{matrix}\right]\\
+ &amp; \to_{-\frac{3}{2}\times R_{2}+R_{1}}\left[\begin{matrix}1 &amp; 0 &amp; -4\\
+0 &amp; 1 &amp; 5
+\end{matrix}\right]
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{(-4,5)\}\)</span>.</p>
+</div>
+</details></section>
+</div><p>This example will show how a no solution looks like when using Gauss-Jordan Method.</p>
+<div class="proof example admonition" id="22GJExam3">
+<p class="admonition-title"><span class="caption-number">Example 100 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x+y &amp; =2\\
+2x+2y &amp; =5
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x+y &amp; =2\\
+2x+2y &amp; =5
+\end{cases}\to\left[\begin{matrix}1 &amp; 1\\
+2 &amp; 2
+\end{matrix}\left|\begin{matrix}2\\
+5
+\end{matrix}\right.\right]
+\end{split}\]</div>
+<p class="sd-card-text">Next, row transformations.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[\begin{matrix}1 &amp; 1 &amp; 2\\
+2 &amp; 2 &amp; 5
+\end{matrix}\right]\to_{-2\times R_{1}+R_{2}}\left[\begin{matrix}1 &amp; 1 &amp; 2\\
+0 &amp; 0 &amp; 1
+\end{matrix}\right]
+\end{split}\]</div>
+<p class="sd-card-text">The last row says <span class="math notranslate nohighlight">\(0x+0y=1\)</span>, or <span class="math notranslate nohighlight">\(0=1\)</span>. Since this is impossible we say the system has no solution. The solution set is the empty set, <span class="math notranslate nohighlight">\(\emptyset\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+<section id="three-by-three-examples">
+<h2>Three by Three Examples<a class="headerlink" href="#three-by-three-examples" title="Link to this heading"></a></h2>
+<p>The next example will not be using the Gauss-Jordan Method. Instead it will be using the Gauss Method. In this method we still want 1s along the diagonal and zeros below each 1; however, we will not attempts to to get zeros above all the 1s like in Gauss-Jordan Method.</p>
+<div class="proof example admonition" id="33GExam1">
+<p class="admonition-title"><span class="caption-number">Example 101 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x+2y+z &amp; =5\\
+2x-y+z &amp; =-5\\
+-3x+y-2z &amp; =8
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x+2y+z &amp; =5\\
+2x-y+z &amp; =-5\\
+-3x+y-2z &amp; =8
+\end{cases}\to\left[\begin{matrix}1 &amp; 2 &amp; 1\\
+2 &amp; -1 &amp; 1\\
+-3 &amp; 1 &amp; -2
+\end{matrix}\left|\begin{matrix}5\\
+-5\\
+8
+\end{matrix}\right.\right]
+\end{split}\]</div>
+<p class="sd-card-text">Next, we will only reduce to have leading ones and zeros below them.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left[\begin{matrix}1 &amp; 2 &amp; 1 &amp; 5\\
+2 &amp; -1 &amp; 1 &amp; -5\\
+-3 &amp; 1 &amp; -2 &amp; 8
+\end{matrix}\right] &amp; \to_{-2\times R_{1}+R_{2}}\left[\begin{matrix}1 &amp; 2 &amp; 1 &amp; 5\\
+0 &amp; -5 &amp; -1 &amp; -15\\
+-3 &amp; 1 &amp; -2 &amp; 8
+\end{matrix}\right]\\
+ &amp; \to_{3\times R_{1}+R_{3}}\left[\begin{matrix}1 &amp; 2 &amp; 1 &amp; 5\\
+0 &amp; -5 &amp; -1 &amp; -15\\
+0 &amp; 7 &amp; 1 &amp; 23
+\end{matrix}\right]\\
+ &amp; \to_{-\frac{1}{5}\times R_{2}}\left[\begin{matrix}1 &amp; 2 &amp; 1 &amp; 5\\
+0 &amp; 1 &amp; \frac{1}{5} &amp; 3\\
+0 &amp; 7 &amp; 1 &amp; 23
+\end{matrix}\right]\\
+ &amp; \to_{-7\times R_{2}+R_{3}}\left[\begin{matrix}1 &amp; 2 &amp; 1 &amp; 5\\
+0 &amp; 1 &amp; \frac{1}{5} &amp; 3\\
+0 &amp; 0 &amp; -\frac{2}{5} &amp; 2
+\end{matrix}\right]\\
+ &amp; \to_{-\frac{5}{2}\times R_{3}}\left[\begin{matrix}1 &amp; 2 &amp; 1 &amp; 5\\
+0 &amp; 1 &amp; \frac{1}{5} &amp; 3\\
+0 &amp; 0 &amp; 1 &amp; -5
+\end{matrix}\right]
+\end{align*}\]</div>
+<p class="sd-card-text">From the last row transformation we can “dump” back into a system of equations situation.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x+2y+z &amp; =5\\
+y+\frac{1}{5}z &amp; =3\\
+z &amp; =-5
+\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">From here we see <span class="math notranslate nohighlight">\(z=-5\)</span>. Next, we will solve for <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+y+\frac{1}{5}(-5) &amp; =3\\
+y &amp; =4
+\end{align*}\]</div>
+<p class="sd-card-text">Now that we have <span class="math notranslate nohighlight">\(z\)</span> and <span class="math notranslate nohighlight">\(y\)</span> we can solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x+2(4)+(-5) &amp; =5\\
+x &amp; =2
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set for the system is <span class="math notranslate nohighlight">\(\{(2,4,-5)\}\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+<section id="two-by-three-example">
+<h2>Two by Three Example<a class="headerlink" href="#two-by-three-example" title="Link to this heading"></a></h2>
+<p>Since the following two equations represent two different plane, the solution set will be infinite. Therefore, we will be representing the solution set in terms of <span class="math notranslate nohighlight">\(z\)</span> for the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> component.</p>
+<div class="proof example admonition" id="23GJExam1">
+<p class="admonition-title"><span class="caption-number">Example 102 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+2x+y+z &amp; =5\\
+3x+2y-z &amp; =-8
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+2x+y+z &amp; =5\\
+3x+2y-z &amp; =-8
+\end{cases}\to\left[\begin{matrix}2 &amp; 1 &amp; 1\\
+3 &amp; 2 &amp; -1
+\end{matrix}\left|\begin{matrix}5\\
+-8
+\end{matrix}\right.\right]
+\end{split}\]</div>
+<p class="sd-card-text">Next, row transformations.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left[\begin{matrix}2 &amp; 1 &amp; 1 &amp; 5\\
+3 &amp; 2 &amp; -1 &amp; -8
+\end{matrix}\right] &amp; \to_{\frac{1}{2}\times R_{1}}\left[\begin{matrix}1 &amp; \frac{1}{2} &amp; \frac{1}{2} &amp; \frac{5}{2}\\
+3 &amp; 2 &amp; -1 &amp; -8
+\end{matrix}\right]\\
+ &amp; \to_{-3\times R_{1}+R_{2}}\left[\begin{matrix}1 &amp; \frac{1}{2} &amp; \frac{1}{2} &amp; \frac{5}{2}\\
+0 &amp; \frac{1}{2} &amp; -\frac{5}{2} &amp; -\frac{31}{2}
+\end{matrix}\right]\\
+ &amp; \to_{2\times R_{2}}\left[\begin{matrix}1 &amp; \frac{1}{2} &amp; \frac{1}{2} &amp; \frac{5}{2}\\
+0 &amp; 1 &amp; -5 &amp; -31
+\end{matrix}\right]\\
+ &amp; \to_{-\frac{1}{2}\times R_{2}+R_{1}}\left[\begin{matrix}1 &amp; 0 &amp; 3 &amp; 18\\
+0 &amp; 1 &amp; -5 &amp; -31
+\end{matrix}\right]\\
+ &amp; \to\begin{cases}
+x+3z &amp; =18\\
+y-5z &amp; =-31
+\end{cases}
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the infinite solution set is
+$<span class="math notranslate nohighlight">\(\{(-3z+18,5z-31,z)\}\)</span>$</p>
+</div>
+</details></section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="51.html" class="btn btn-neutral float-left" title="Section 5.1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="53.html" class="btn btn-neutral float-right" title="Section 5.3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 4.6 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 5.1" href="../chapter5/51.html" />
+    <link rel="prev" title="Section 4.5" href="45.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="45.html">Section 4.5</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 4.6</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#exponential-growth-model">Exponential Growth Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exponential-decay-model">Exponential Decay Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exponential-find-k">Exponential Find <span class="math notranslate nohighlight">\(k\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#newtons-law-of-cooling">Newton’s Law of Cooling</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 4.6</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter4/46.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-4-6">
+<h1>Section 4.6<a class="headerlink" href="#section-4-6" title="Link to this heading"></a></h1>
+<div class="proof definition admonition" id="expModelDef">
+<p class="admonition-title"><span class="caption-number">Definition 52 </span></p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(y_0\)</span> be the amount or number present at time <span class="math notranslate nohighlight">\(t=0\)</span>. Then, under certain conditions, the amount <span class="math notranslate nohighlight">\(y\)</span> at any time <span class="math notranslate nohighlight">\(t\)</span> is modeled by</p>
+<div class="math notranslate nohighlight">
+\[y=y_0e^{kt}\]</div>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is some constant.</p>
+</section>
+</div><ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(k&gt;0\)</span>, then the model is called exponential growth.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(k&lt;0\)</span>, then the model is called exponential decay.</p></li>
+</ul>
+<section id="exponential-growth-model">
+<h2>Exponential Growth Model<a class="headerlink" href="#exponential-growth-model" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="expGrowthProb1">
+<p class="admonition-title"><span class="caption-number">Example 88 </span></p>
+<section class="example-content" id="proof-content">
+<p>In the year 1990 the amount of atmospheric carbon dioxide was <span class="math notranslate nohighlight">\(353\)</span> parts per million and then in the year 2000 the amount was <span class="math notranslate nohighlight">\(375\)</span> parts per million. Since the model is exponential find the function.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We want to find the function <span class="math notranslate nohighlight">\(f(x)=y_0e^{kx}\)</span> where <span class="math notranslate nohighlight">\(x\)</span> is the number of years after 1990 and <span class="math notranslate nohighlight">\(f(x)\)</span> is the amount of atmospheric carbon dioxide in units of parts per million.</p>
+<p class="sd-card-text">First, we will use the fact that <span class="math notranslate nohighlight">\(f(0)=353\)</span> to find <span class="math notranslate nohighlight">\(y_0\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(0) &amp; = y_0e^{k(0)}\\
+    353 &amp; = y_0e^{0}\\
+    y_0 &amp; = 353
+\end{align*}\]</div>
+<p class="sd-card-text">This means the function is <span class="math notranslate nohighlight">\(f(x)=353e^{kx}\)</span>. The year 2000 means <span class="math notranslate nohighlight">\(x=10\)</span>. We will then use <span class="math notranslate nohighlight">\(f(10)=375\)</span> to solve for <span class="math notranslate nohighlight">\(k\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(10) &amp; = 353e^{k(10)}\\
+    375 &amp; = 353e^{10k}\\
+    e^{10k} &amp; = \frac{375}{353}
+\end{align*}\]</div>
+<p class="sd-card-text">After composing both sides by the natural log function we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \ln(e^{10k}) &amp; = \ln\left(\frac{375}{353}\right)\\
+    10k\ln(e) &amp; = \ln\left(\frac{375}{353}\right)\\
+    k &amp; = \frac{1}{10}\cdot\ln\left(\frac{375}{353}\right)
+\end{align*}\]</div>
+<p class="sd-card-text">This gives the function:</p>
+<div class="math notranslate nohighlight">
+\[f(x)=353e^{\frac{1}{10}\cdot\ln\left(\frac{375}{353}\right)x}\]</div>
+</div>
+</details><p>How much atmospheric carbon dioxide will there be in the year 2020?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The year 2020, <span class="math notranslate nohighlight">\(x=30\)</span>. That means we want to evaluate <span class="math notranslate nohighlight">\(f(30)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[f(30)=353e^{\frac{1}{10}\cdot\ln\left(\frac{375}{353}\right)(30)}\approx 423\]</div>
+<p class="sd-card-text">That is, in the year 2020 there will be 423 parts per million atomspheric carbon dioxide.</p>
+</div>
+</details><p>In what year will the amount be 560 parts per million?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We want to find <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f(x)=560\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(x) &amp; = 560\\
+    353e^{\frac{1}{10}\cdot\ln\left(\frac{375}{353}\right)x} &amp; = 560\\
+    e^{\frac{1}{10}\cdot\ln\left(\frac{375}{353}\right)x} &amp; = \frac{560}{353}\\
+    \ln\left(e^{\frac{1}{10}\cdot\ln\left(\frac{375}{353}\right)x}\right) &amp; =\ln\left(\frac{560}{353}\right)\\
+    \frac{1}{10}\cdot\ln\left(\frac{375}{353}\right)x\ln(e) &amp; = \ln\left(\frac{560}{353}\right)\\
+    x &amp; = 10\cdot \frac{\ln\left(\frac{560}{353}\right)}{\ln\left(\frac{375}{353}\right)}\\
+    &amp; \approx 76
+\end{align*}\]</div>
+<p class="sd-card-text">That is, it will take about 76 years for the atomospheric carbon dioxide to double from the year 2000 amount.</p>
+</div>
+</details></section>
+</div></section>
+<section id="exponential-decay-model">
+<h2>Exponential Decay Model<a class="headerlink" href="#exponential-decay-model" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="decayModelProb">
+<p class="admonition-title"><span class="caption-number">Example 89 </span></p>
+<section class="example-content" id="proof-content">
+<p>Suppose 800 grams of radioactive substance reduces to 400 grams of substance 2.5 years later. Find the exponential model for this situation.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We are trying to find the function:</p>
+<div class="math notranslate nohighlight">
+\[f(x)=y_0e^{kx}\]</div>
+<p class="sd-card-text">Since, the substance starts with 800 grams we have:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(0) &amp; = 800\\
+    y_0e^{k(0)} &amp; = 800\\
+    y_0(1) &amp; = 800
+\end{align*}\]</div>
+<p class="sd-card-text">Which then gives: <span class="math notranslate nohighlight">\(y_0=800\)</span>.</p>
+<p class="sd-card-text">Next, we want to use the fact that <span class="math notranslate nohighlight">\(f(2.5)=400\)</span> to find <span class="math notranslate nohighlight">\(k\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(2.5) &amp; = 400\\
+    800e^{k(2.5)} &amp; = 400\\
+    e^{2.5k} &amp; = \frac{400}{800} \text{ or } \frac12
+\end{align*}\]</div>
+<p class="sd-card-text">After composing both sides by the natural log we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \ln(e^{2.5k}) &amp; \ln(\frac12)\\
+    2.5k\ln(e) &amp; = -\ln(2)\\
+    2.5k &amp; = -\ln(2)\\
+    k &amp; = -\frac{\ln(2)}{2.5}
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the equation of the model is:</p>
+<div class="math notranslate nohighlight">
+\[f(x)=800e^{-\frac{\ln(2)}{2.5}x}\]</div>
+</div>
+</details><p>How much of the substance will be present after 4 years?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Here we want to evaluate <span class="math notranslate nohighlight">\(f(4)\)</span>. We will then get</p>
+<div class="math notranslate nohighlight">
+\[f(4)=800e^{-\frac{\ln(2)}{2.5}(4))}\approx 264\]</div>
+<p class="sd-card-text">That is, there will be 264 grams of the substance.</p>
+</div>
+</details></section>
+</div></section>
+<section id="exponential-find-k">
+<h2>Exponential Find <span class="math notranslate nohighlight">\(k\)</span><a class="headerlink" href="#exponential-find-k" title="Link to this heading"></a></h2>
+<p>{prf:example}</p>
+<dl class="myst field-list simple">
+<dt class="field-odd">label<span class="colon">:</span></dt>
+<dd class="field-odd"><p>findKExam1</p>
+</dd>
+</dl>
+<p>The model for Carbon-14 is</p>
+<div class="math notranslate nohighlight">
+\[y=y_0e^{-0.0001216t}\]</div>
+<p>Find the half life of Carbon-14.</p>
+<p>Solution:</p>
+<p>We don’t know what the initial amount is; therefore, we will have the following equation to solve.</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2}y_0 = y_0e^{-0.0001216t}\]</div>
+<p>Dividing by <span class="math notranslate nohighlight">\(y_0\)</span> to both sides we will be able to solve for <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{1}{2}y_0 &amp; = y_0e^{-0.0001216t}\\
+    \frac{1}{2} = e^{-0.0001216t}\\
+    \ln(\frac{1}{2}) &amp; = \ln(e^{-0.0001216t})\\
+    \ln(\frac{1}{2}) &amp; = (-0.0001216t)\ln(e)\\
+    \frac{\ln(\frac12)}{-0.0001216} &amp; = t
+\end{align*}\]</div>
+<p>That is, it will take <span class="math notranslate nohighlight">\(\frac{\ln(\frac12)}{-0.0001216} \approx 5700\)</span> years.</p>
+</section>
+<section id="newtons-law-of-cooling">
+<h2>Newton’s Law of Cooling<a class="headerlink" href="#newtons-law-of-cooling" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="newLawCoolDef">
+<p class="admonition-title"><span class="caption-number">Definition 53 </span></p>
+<section class="definition-content" id="proof-content">
+<p>The temperature <span class="math notranslate nohighlight">\(f(t)\)</span> of the body at time <span class="math notranslate nohighlight">\(t\)</span> in appropriate units after being introduced into an environment having constant temperature <span class="math notranslate nohighlight">\(T_0\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[f(t) = T_0 + Ce^{-kt}\]</div>
+<p>where <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(k\)</span> are constants.</p>
+</section>
+</div><div class="proof example admonition" id="newCoolProblem">
+<p class="admonition-title"><span class="caption-number">Example 90 </span></p>
+<section class="example-content" id="proof-content">
+<p>A New York Strip is pulled from the refrigerator with a temperature of <span class="math notranslate nohighlight">\(34^{\circ}\text{F}\)</span>. Then the strip is moved to an oven preheated to <span class="math notranslate nohighlight">\(350^{\circ}\text{F}\)</span>. After one hour the internal temperature of the meat is <span class="math notranslate nohighlight">\(70^{\circ}\)</span>. Find the model that represents the internal temperature.</p>
+<div class="{dropdown}Solution: docutils">
+<p>We start with <span class="math notranslate nohighlight">\(f(t)=T_0+Ce^{-kt}\)</span>. Want to find <span class="math notranslate nohighlight">\(T_0\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, and <span class="math notranslate nohighlight">\(-k\)</span>. First, by definition the meat is being introduced into an environment with constant temperature <span class="math notranslate nohighlight">\(350^{\circ}\)</span>. This means <span class="math notranslate nohighlight">\(T_0=350\)</span>.</p>
+<p>Next, we will use the fact <span class="math notranslate nohighlight">\(T_0=350\)</span> and <span class="math notranslate nohighlight">\(f(0)=34\)</span> to solve for <span class="math notranslate nohighlight">\(C\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(0) &amp; = 34\\
+    350 + Ce^{-k(0)} &amp; = 34\\
+    C &amp; = -316
+\end{align*}\]</div>
+<p>Next, we will solve for <span class="math notranslate nohighlight">\(k\)</span> using the fact that <span class="math notranslate nohighlight">\(f(1)=70\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(1) &amp; = 70\\
+    350 - 316e^{-k(1)} &amp; = 70\\
+    -316e^{-k} &amp; = -280\\
+    e^{-k} &amp; = -\frac{280}{316}\text{ or }\frac{70}{79}\\
+    -k\ln(e) &amp; = \ln(\frac{70}{79})
+\end{align*}\]</div>
+<p>That is, <span class="math notranslate nohighlight">\(-k=\ln(\frac{70}{79})\)</span></p>
+<p>Therefore, the model is defined by</p>
+<div class="math notranslate nohighlight">
+\[f(t)=350 - 316e^{\ln(\frac{70}{79})t}\]</div>
+</div>
+<p>What will be the internal temp after 90 minutes?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Here we will evaluate <span class="math notranslate nohighlight">\(f\)</span> when <span class="math notranslate nohighlight">\(t=1.5\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(1.5) &amp; = 350-316e^{\ln(\frac{70}{79})(1.5)}\\
+    &amp; \approx 86
+\end{align*}\]</div>
+<p class="sd-card-text">The internal tempt of the meat after 90 minutes or 1.5 hours is approximately <span class="math notranslate nohighlight">\(86^{\circ}\)</span>.</p>
+<p class="sd-card-text">How long will it take the meat to reach an internal temp of <span class="math notranslate nohighlight">\(145^{\circ}\)</span>?</p>
+<p class="sd-card-text">{dropdown} Solution:</p>
+<p class="sd-card-text">Want to solve <span class="math notranslate nohighlight">\(f(t)=145\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    350-316e^{\ln(\frac{70}{79})t} &amp; = 145\\
+    -316e^{\ln(\frac{70}{79})t} &amp; = -205\\
+    e^{\ln(\frac{70}{79})t} &amp; = \frac{205}{316}\\
+    \ln(\frac{70}{79})t\cdot \ln(e) &amp; = \ln(\frac{205}{316})\\
+    t &amp; = \frac{\ln(\frac{205}{316})}{\ln(\frac{70}{79})} \approx 3.5
+\end{align*}\]</div>
+<p class="sd-card-text">It will take about 3.5 hours to cook the meat to 145 degree temp.</p>
+</div>
+</details></section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="45.html" class="btn btn-neutral float-left" title="Section 4.5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../chapter5/51.html" class="btn btn-neutral float-right" title="Section 5.1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

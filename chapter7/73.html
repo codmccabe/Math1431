@@ -1,0 +1,505 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 7.3 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Section 7.2" href="72.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="72.html">Section 7.2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 7.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sequence">Sequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#series">Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#future-value-of-an-annuity">Future Value of an Annuity</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 7.3</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter7/73.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-7-3">
+<h1>Section 7.3<a class="headerlink" href="#section-7-3" title="Link to this heading"></a></h1>
+<section id="sequence">
+<h2>Sequence<a class="headerlink" href="#sequence" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="geoSeqDef">
+<p class="admonition-title"><span class="caption-number">Definition 74 </span> (Geometric Sequence)</p>
+<section class="definition-content" id="proof-content">
+<p>A geometric sequence is a sequence in which each term after the first is obtained by multiplying the preceding term by a fixed nonzero real number, called the <strong>common ratio</strong>.</p>
+<p>We find the common ratio by choosing any term after the first and dividing it by the preceding term.</p>
+<p>In a geometric sequence with first term <span class="math notranslate nohighlight">\(a_{1}\)</span> and common ratio <span class="math notranslate nohighlight">\(r\)</span>, the <span class="math notranslate nohighlight">\(n\)</span>th term <span class="math notranslate nohighlight">\(a_{n}\)</span> is given by the following</p>
+<div class="math notranslate nohighlight">
+\[
+a_{n}=a_{1}r^{n-1}.
+\]</div>
+</section>
+</div><p>Something to keep in mind when dealing with geometric sequences. The first value, <span class="math notranslate nohighlight">\(a_1\)</span>, is your starting number and by definition is <span class="math notranslate nohighlight">\(a_1=a_1\cdot r^0=a_1\)</span>. Then the next number in the sequence is <span class="math notranslate nohighlight">\(a_2\)</span> which is <span class="math notranslate nohighlight">\(a_1\)</span> times <span class="math notranslate nohighlight">\(r\)</span>. That is,</p>
+<div class="math notranslate nohighlight">
+\[a_2=a_1\cdot r\]</div>
+<p>The next number is <span class="math notranslate nohighlight">\(a_3\)</span> which is <span class="math notranslate nohighlight">\(a_2\)</span> times <span class="math notranslate nohighlight">\(r\)</span>. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    a_3 &amp; = a_2\cdot r\\ 
+    &amp; = \left(a_1 \cdot r \right)\cdot r\\
+    &amp; = a_1\cdot r^2
+\end{align*}\]</div>
+<p>The next number is <span class="math notranslate nohighlight">\(a_4\)</span> which is <span class="math notranslate nohighlight">\(a_3\)</span> times <span class="math notranslate nohighlight">\(r\)</span>. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    a_4 &amp; = a_3\cdot r\\
+    &amp; = \left(a_2\cdot r\right)\cdot r\\
+    &amp; = \left(\left(a_1\cdot r\right)\cdot r\right)\cdot r\\
+    &amp; = a_1\cdot r^3
+\end{align*}\]</div>
+<p>And so on. This commonly associated with compound interest.</p>
+<div class="proof example admonition" id="geoSeqExam1">
+<p class="admonition-title"><span class="caption-number">Example 137 </span></p>
+<section class="example-content" id="proof-content">
+<p>Determine <span class="math notranslate nohighlight">\(a_{5}\)</span> and <span class="math notranslate nohighlight">\(a_{n}\)</span>for the geometric sequence</p>
+<div class="math notranslate nohighlight">
+\[
+6400,\,1600,\,400,\,100,\,...
+\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First,</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1600}{6400}=\frac{1}{4}=r
+\]</div>
+<p class="sd-card-text">and <span class="math notranslate nohighlight">\(a_{1}=6400\)</span>. Therefore, <span class="math notranslate nohighlight">\(a_{n}=6400\cdot4^{n-1}\)</span>. Thus,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_{5} &amp; =6400\cdot(\frac{1}{4})^{5-1}\\
+ &amp; =6400\cdot\left(\frac{1}{4}\right)^{4}\\
+ &amp; =25
+\end{align*}\]</div>
+<p class="sd-card-text">or since <span class="math notranslate nohighlight">\(a_{4}=100\)</span> we know that <span class="math notranslate nohighlight">\(a_{5}=100\div4=25\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="geoSeqExam2">
+<p class="admonition-title"><span class="caption-number">Example 138 </span></p>
+<section class="example-content" id="proof-content">
+<p>Determine <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(a_{1}\)</span> for the geometric sequence with <span class="math notranslate nohighlight">\(a_{2}=-18\)</span> and <span class="math notranslate nohighlight">\(a_{5}=486\)</span>. Then define <span class="math notranslate nohighlight">\(a_{n}\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Consider a table of values</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_{1} &amp; =a_{1}r^{0}=a_1\\
+a_{2} &amp; =a_{1}r=-18\\
+a_{3} &amp; =a_{2}\cdot r=-18\cdot r\\
+a_{4} &amp; =a_{3}\cdot r=\left(a_{2}\cdot r\right)\cdot r=a_{2}r^{2}=-18r^{2}\\
+a_{5} &amp; =a_{4}\cdot r=\left(-18r^{2}\right)\cdot r=-18r^{3}=486
+\end{align*}\]</div>
+<p class="sd-card-text">Thus, we can solve for <span class="math notranslate nohighlight">\(r\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+-18r^{3} &amp; =486\\
+r^{3} &amp; =\frac{486}{-18}\\
+ &amp; =-27\\
+r &amp; =-3
+\end{align*}\]</div>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(a_{2}=a_{1}r^{2-1}\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+-18 &amp; =a_{1}(-3)^{1}\\
+-18 &amp; =a_{1}(-3)\\
+a_{1} &amp; =\frac{-18}{-3}\\
+ &amp; =6
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(a_{1}=6\)</span>, <span class="math notranslate nohighlight">\(r=-3\)</span> and <span class="math notranslate nohighlight">\(a_{n}=6(-3)^{n-1}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="geoSeqExam3">
+<p class="admonition-title"><span class="caption-number">Example 139 </span></p>
+<section class="example-content" id="proof-content">
+<p>A person receives a gift on the first day of each month for a year, starting with $50 on January 1, with the amount doubling each month. How much is received on December 1?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We are given <span class="math notranslate nohighlight">\(a_{1}=50\)</span> and the common ratio is <span class="math notranslate nohighlight">\(r=2\)</span> (because the amount is doubled). Therefore,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_{12} &amp; =50\cdot(2)^{12-1}\\
+ &amp; =50\cdot2^{11}\\
+ &amp; =102400
+\end{align*}\]</div>
+<p class="sd-card-text">which means the person will have $102400 at the end of the year.</p>
+</div>
+</details></section>
+</div></section>
+<section id="series">
+<h2>Series<a class="headerlink" href="#series" title="Link to this heading"></a></h2>
+<p>Consider,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S_{n} &amp; =\sum_{i=1}^{n}a_{1}r^{i-1}\\
+ &amp; =a_{1}+a_{1}r+a_{1}r^{2}+\cdots+a_{1}r^{n-1}\\
+r\cdot\left(S_{n}\right) &amp; =r\left(a_{1}+a_{1}r+a_{1}r^{2}+\cdots+a_{1}r^{n-1}\right)\\
+rS_{n} &amp; =a_{1}r+a_{1}r^{2}+a_{1}r^{3}+\cdots+a_{1}r^{n}\\
+S_{n}-rS_{n} &amp; =\left(a_{1}+\cancel{a_{1}r}+\cdots+\cancel{a_{1}r^{n-1}}\right)-\left(\cancel{a_{1}r}+\cdots+\cancel{a_{1}r^{n-1}}+a_{1}r^{n}\right)\\
+S_{n}(1-r) &amp; =a_{1}-a_{1}r^{n}\\
+ &amp; =a_{1}(1-r^{n})\\
+S_{n} &amp; =\dfrac{a_{1}(1-r^{n})}{1-r}
+\end{align*}\]</div>
+<div class="proof definition admonition" id="geoSeriesDef">
+<p class="admonition-title"><span class="caption-number">Definition 75 </span></p>
+<section class="definition-content" id="proof-content">
+<p>A geometric Series is the sum of the terms of a geometric sequence.</p>
+<p>If a geometric sequence has first term <span class="math notranslate nohighlight">\(a_{1}\)</span> and a common ratio <span class="math notranslate nohighlight">\(r\)</span>, then the sum <span class="math notranslate nohighlight">\(S_{n}\)</span> of the first <span class="math notranslate nohighlight">\(n\)</span> terms is given by the following</p>
+<div class="math notranslate nohighlight">
+\[
+S_{n}=\dfrac{a_{1}(1-r^{n})}{1-r},
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(r\ne1\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{n\to\infty}r^{n}=0
+\]</div>
+<p>when <span class="math notranslate nohighlight">\(0&lt;r&lt;1\)</span>.</p>
+</section>
+</div><div class="proof definition admonition" id="geoSeriesInf">
+<p class="admonition-title"><span class="caption-number">Definition 76 </span></p>
+<section class="definition-content" id="proof-content">
+<p>The sum <span class="math notranslate nohighlight">\(S_{\infty}\)</span> of the terms of an infinite geometric sequence with first term <span class="math notranslate nohighlight">\(a_{1}\)</span> and common ratio <span class="math notranslate nohighlight">\(r\)</span>, where <span class="math notranslate nohighlight">\(|r|&lt;1\)</span>, is given by the following</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{n\to\infty}S_{n}=S_{\infty}=\dfrac{a_{1}}{1-r}
+\]</div>
+<p>If <span class="math notranslate nohighlight">\(|r|&gt;1\)</span>, then the terms increase without bound in the absolute value, so there is no limit as <span class="math notranslate nohighlight">\(n\to\infty.\)</span> Therefore, if <span class="math notranslate nohighlight">\(|r|&gt;1\)</span>, then the terms of the sequence will not have a sum.</p>
+</section>
+</div><div class="proof example admonition" id="geoSeriesExam1">
+<p class="admonition-title"><span class="caption-number">Example 140 </span></p>
+<section class="example-content" id="proof-content">
+<p>A person receives a gift on the first day of each month for a year, starting with $50 on January 1, with the amount doubling each month. What is the total amount received throughout the year?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We know that <span class="math notranslate nohighlight">\(a_{1}=50\)</span> and <span class="math notranslate nohighlight">\(r=2\)</span> and since we had 12 gifts we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S_{12} &amp; =\dfrac{50(1-2^{12})}{1-2}\\
+ &amp; =\dfrac{50(-4095)}{-1}\\
+ &amp; =204750
+\end{align*}\]</div>
+<p class="sd-card-text">That is, the total received in the year is $204750.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="geoSeriesExam2">
+<p class="admonition-title"><span class="caption-number">Example 141 </span></p>
+<section class="example-content" id="proof-content">
+<p>Evaluate</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{i=1}^{8}4\cdot5^{i}
+\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We have <span class="math notranslate nohighlight">\(a_{i}=4\cdot5^{i}\)</span>, <span class="math notranslate nohighlight">\(a_{1}=4\cdot5=20\)</span>, <span class="math notranslate nohighlight">\(r=5\)</span>, and in this case <span class="math notranslate nohighlight">\(n=8\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum_{i=1}^{8}4\cdot5^{i} &amp; =\dfrac{20(1-5^{8})}{1-5}\\
+ &amp; =\dfrac{20(-390624)}{-4}\\
+ &amp; =1953120
+\end{align*}\]</div>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="geoSeriesExam3">
+<p class="admonition-title"><span class="caption-number">Example 142 </span></p>
+<section class="example-content" id="proof-content">
+<p>Consider the geometric sequence</p>
+<div class="math notranslate nohighlight">
+\[
+2,1,\frac{1}{2},\frac{1}{4},\frac{1}{8},\frac{1}{16},\dots
+\]</div>
+<p>We have <span class="math notranslate nohighlight">\(a_{1}=2\)</span> and <span class="math notranslate nohighlight">\(r=\frac{1}{2}\)</span>. Which means</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S_{n} &amp; =\sum_{i=1}^{n}2\cdot\left(\frac{1}{2}\right)^{i}=\frac{2\cdot\left(1-\left(\frac{1}{2}\right)^{n}\right)}{1-\frac{1}{2}}\\
+ &amp; =\frac{2\cdot\left(1-\left(\frac{1}{2}\right)^{n}\right)}{1-\frac{1}{2}}\\
+ &amp; =\dfrac{2\cdot\left(1-\left(\frac{1}{2}\right)^{n}\right)}{\frac{1}{2}}\\
+ &amp; =4\cdot\left(1-\left(\frac{1}{2}\right)^{n}\right)\\
+ &amp; =4-4\cdot\left(\frac{1}{2}\right)^{n}
+\end{align*}\]</div>
+<p>With this generalization we see</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S_{1} &amp; =4-4\cdot\frac{1}{2}=2\\
+S_{2} &amp; =4-4\cdot\left(\frac{1}{2}\right)^{2}=3\\
+S_{3} &amp; =4-4\cdot\left(\frac{1}{2}\right)^{3}=3.5\\
+S_{4} &amp; =4-4\cdot\left(\frac{1}{2}\right)^{4}=3.75\\
+\vdots\\
+S_{10} &amp; =4-4\cdot\left(\frac{1}{2}\right)^{10}=3.99609375\\
+\vdots\\
+\lim_{n\to\infty}S_{n} &amp; =\lim_{n\to\infty}(4-4\cdot(\frac{1}{2})^{n})\\
+ &amp; =4-4\lim_{n\to\infty}(\frac{1}{2})^{n}\\
+ &amp; =4-4\cdot0\\
+ &amp; =4
+\end{align*}\]</div>
+<p>We say the limit <span class="math notranslate nohighlight">\(S_{n}\)</span> as <span class="math notranslate nohighlight">\(n\)</span> increases without bounds is <span class="math notranslate nohighlight">\(4\)</span>.</p>
+</section>
+</div><p>{prf:example}</p>
+<dl class="myst field-list simple">
+<dt class="field-odd">label<span class="colon">:</span></dt>
+<dd class="field-odd"><p>geoSeriesExam4</p>
+</dd>
+</dl>
+<p>If a geometric series has a first term <span class="math notranslate nohighlight">\(a_{1}\)</span> and a common ratio <span class="math notranslate nohighlight">\(r\)</span> such that <span class="math notranslate nohighlight">\(0&lt;r&lt;1\)</span>, then the finite sum is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S_{n} &amp; =\sum_{i=1}^{n}a_{1}\cdot r^{i}\\
+ &amp; =\dfrac{a_{1}(1-r^{n})}{1-r}
+\end{align*}\]</div>
+<p>The infinity sum is <span class="math notranslate nohighlight">\(\lim_{n\to\infty}S_{n}\)</span>. Using the fact that <span class="math notranslate nohighlight">\(\lim_{n\to\infty}r^{n}=0\)</span> when <span class="math notranslate nohighlight">\(0&lt;r&lt;1\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lim_{n\to\infty}S_{n} &amp; =\lim_{n\to\infty}\dfrac{a_{1}(1-r^{n})}{1-r}\\
+ &amp; =\dfrac{a_{1}(1-0)}{1-r}\\
+ &amp; =\dfrac{a_{1}(1)}{1-r}\\
+ &amp; =\dfrac{a_{1}}{1-r}
+\end{align*}\]</div>
+<div class="proof example admonition" id="geoSeriesExam5">
+<p class="admonition-title"><span class="caption-number">Example 143 </span></p>
+<section class="example-content" id="proof-content">
+<p>Evaluate</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{i=1}^{\infty}\left(\frac{2}{5}\right)\cdot\left(-\frac{1}{3}\right)^{i-1}
+\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we see that <span class="math notranslate nohighlight">\(a_{1}=\frac{2}{5}\)</span> and <span class="math notranslate nohighlight">\(r=-\frac{1}{3}\)</span>. We notice that <span class="math notranslate nohighlight">\(|r|&lt;1\)</span> which means the sum exists.</p>
+<p class="sd-card-text">Next, we use the identity</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S_{\infty} &amp; =\dfrac{a_{1}}{1-r}\\
+ &amp; =\dfrac{\frac{2}{5}}{1-(-\frac{1}{3})}\\
+ &amp; =\frac{2}{5}\cdot\frac{1}{\frac{4}{3}}\\
+ &amp; =\frac{2}{5}\cdot\frac{3}{4}\\
+ &amp; =\frac{3}{10}
+\end{align*}\]</div>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="geoSeriesExam6">
+<p class="admonition-title"><span class="caption-number">Example 144 </span></p>
+<section class="example-content" id="proof-content">
+<p>Evaluate</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{i=1}^{\infty}(0.9)^{i}
+\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, <span class="math notranslate nohighlight">\(\sum_{i=1}^{\infty}(0.9)^{i}=\sum_{i=1}^{\infty}(0.9)\cdot(0.9)^{i-1}\)</span>. Thus, <span class="math notranslate nohighlight">\(a_{1}=0.9\)</span> and <span class="math notranslate nohighlight">\(r=0.9\)</span>. Since <span class="math notranslate nohighlight">\(|r|&lt;1\)</span> we know the sum exists.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S_{\infty} &amp; =\dfrac{0.9}{1-0.9}\\
+ &amp; =\dfrac{0.9}{0.1}\\
+ &amp; =9
+\end{align*}\]</div>
+</div>
+</details></section>
+</div></section>
+<section id="future-value-of-an-annuity">
+<h2>Future Value of an Annuity<a class="headerlink" href="#future-value-of-an-annuity" title="Link to this heading"></a></h2>
+<div class="proof theorem admonition" id="futureAnnuityTHM">
+<p class="admonition-title"><span class="caption-number">Theorem 15 </span> (Future Value of an Annuity)</p>
+<section class="theorem-content" id="proof-content">
+<p>The formula for the future value of an annuity is given by the following</p>
+<div class="math notranslate nohighlight">
+\[
+S=R\left(\dfrac{(1+i)^{n}-1}{i}\right).
+\]</div>
+<p>Here <span class="math notranslate nohighlight">\(S\)</span> is the future value, <span class="math notranslate nohighlight">\(R\)</span> is payment at the end of each period, <span class="math notranslate nohighlight">\(i\)</span> is interest rate per period, and <span class="math notranslate nohighlight">\(n\)</span> is number of periods.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">“Proof:”</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The formula for interest compounded annually is
+[
+A=P(1+r)^{t}
+]
+To avoid confusion we will redefine it as
+[
+A=P(1+i)^{t}
+]
+where <span class="math notranslate nohighlight">\(i\)</span> is the interest rate per period.</p>
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(A_{n}\)</span> is a sequence of possible amounts we have
+[
+A_{n}=A_{0}(1+i)^{n}
+]
+where the common ratio is <span class="math notranslate nohighlight">\(r=1+i\)</span>. To connect with the identity we
+will say <span class="math notranslate nohighlight">\(A_{0}=R\)</span>. Now we have
+[
+A_{n}=R(1+i)^{n}
+]</p>
+<p class="sd-card-text">Next, the sum of money after <span class="math notranslate nohighlight">\(n\)</span> years is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S_{n} &amp; =\sum_{i=1}^{n}A_{n}\\
+ &amp; =\sum_{i=1}^{n}R(1+i)^{n}\\
+ &amp; =\dfrac{R(1-(1+i)^{n})}{1-(1+i)}\\
+ &amp; =\dfrac{R(1-(1+i)^{n})}{-i}\\
+ &amp; =\dfrac{R(-1)\left((1+i)^{n}-1\right)}{(-1)i}\\
+ &amp; =\dfrac{R\left((1+i)^{n}-1\right)}{i}
+\end{align*}\]</div>
+</div>
+</details></section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="72.html" class="btn btn-neutral float-left" title="Section 7.2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 4.5 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 4.6" href="46.html" />
+    <link rel="prev" title="Section 4.4" href="44.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="44.html">Section 4.4</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 4.5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#solve-exponential-equations">Solve Exponential Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solve-logarithmic-equations">Solve Logarithmic Equations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 4.5</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter4/45.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-4-5">
+<h1>Section 4.5<a class="headerlink" href="#section-4-5" title="Link to this heading"></a></h1>
+<p>Remember</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(a^x=a^y\)</span> if and only if <span class="math notranslate nohighlight">\(x=y\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log_a(x)=\log_a(y)\)</span> if and only if <span class="math notranslate nohighlight">\(x=y\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(f^{-1}(x))=x\)</span> and <span class="math notranslate nohighlight">\(f^{-1}(f(x))=x\)</span>, and</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log_a(a^x)=x\)</span> and <span class="math notranslate nohighlight">\(a^{\log_a(x)}=x\)</span>.</p></li>
+</ul>
+<section id="solve-exponential-equations">
+<h2>Solve Exponential Equations<a class="headerlink" href="#solve-exponential-equations" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="expSolveExam1">
+<p class="admonition-title"><span class="caption-number">Example 81 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(8^x=24\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will compose both sides by the natural log function:</p>
+<div class="math notranslate nohighlight">
+\[\ln(8^x)=\ln(24)\to x\ln(8)=\ln(24)\]</div>
+<p class="sd-card-text">Then we will divide both sides by <span class="math notranslate nohighlight">\(\ln(8)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\frac{x\cancel{\ln(8)}}{\cancel{\ln(8)}}=\frac{\ln(24)}{\ln(8)}\]</div>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{\frac{\ln(24)}{\ln(8)\}\)</span>.</p>
+</div>
+</details></section>
+</div><p>The previous answer can be represented in many different ways.</p>
+<div class="math notranslate nohighlight">
+\[\frac{\ln(24)}{\ln(8)}=\log_8(24)\]</div>
+<p>which could lead to:</p>
+<div class="math notranslate nohighlight">
+\[\log_8(24)=\log_8(8\cdot 3)=\log_8(8)+\log_8(3)=1+\log_8(3)\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight">
+\[1+\log_8(3) = 1+\frac{\ln(8)}{\ln(3)}\]</div>
+<p>It is also important to notice that <span class="math notranslate nohighlight">\(\frac{\ln(24)}{\ln(8)}\ne \ln(3)\)</span>.</p>
+<div class="proof example admonition" id="expSolveExam2">
+<p class="admonition-title"><span class="caption-number">Example 82 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(e^{4x}e^{x-1}=5e\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will apply the law <span class="math notranslate nohighlight">\(a^m a^n = a^{m+n}\)</span></p>
+<div class="math notranslate nohighlight">
+\[e^{4x}e^{x-1}=e^{4x+(x-1)}=e^{5x-1}\]</div>
+<p class="sd-card-text">Then we have:</p>
+<div class="math notranslate nohighlight">
+\[e^{5x-1}=5e\]</div>
+<p class="sd-card-text">Next, we will compose both sides by the natural log</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \ln(e^{5x-1}) &amp; = \ln(5e)\\
+    (5x-1)\ln(e) &amp; = \ln(5e)\\
+    5x-1 &amp; = \ln(5e)
+\end{align*}\]</div>
+<p class="sd-card-text">Next, add one to both sides then divide by 5 to solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    5x-1 &amp; = \ln(5e)\\
+    5x &amp; = \ln(5e)+1\\
+    x &amp; = \frac{\ln(5e)+1}{5}
+\end{align*}\]</div>
+<p class="sd-card-text">Which can written as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{\ln(5e)+1}{5} &amp; = \frac{\ln(5)+\ln(e)+1}{5}\\
+    &amp; = \frac{\ln(5)+1+1}{5}\\
+    &amp; = \frac{\ln(5)+2}{5}
+\end{align*}\]</div>
+<p class="sd-card-text">The solution set is <span class="math notranslate nohighlight">\(\{\frac{\ln(5)+2}{5}\}\)</span></p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="expSolveExam3">
+<p class="admonition-title"><span class="caption-number">Example 83 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(e^{2x}-4e^x+3=0\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will rewrite the equation in the following way</p>
+<div class="math notranslate nohighlight">
+\[\left(e^x\right)^2-4\left(e^x\right)+3=0\]</div>
+<p class="sd-card-text">Then see this is a “quadratic-like” equation. Let <span class="math notranslate nohighlight">\(u=e^x\)</span>, then <span class="math notranslate nohighlight">\(u^2=e^{2x}\)</span> and</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    u^2 - 4u + 3 &amp; = 0\\
+    (u-3)(u-1) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">With <span class="math notranslate nohighlight">\(u=3\)</span> and <span class="math notranslate nohighlight">\(u=1\)</span> as solutions, we substitute <span class="math notranslate nohighlight">\(u=e^x\)</span>.</p>
+<p class="sd-card-text">In the case <span class="math notranslate nohighlight">\(u=3\)</span>, we have, <span class="math notranslate nohighlight">\(e^x=3\)</span>. After composing both sides of the equation by the natural log we have <span class="math notranslate nohighlight">\(x=\ln(3)\)</span>.</p>
+<p class="sd-card-text">In the case <span class="math notranslate nohighlight">\(u=1\)</span>, we have <span class="math notranslate nohighlight">\(e^x=1\)</span>. After composing both sides of the equation by the natural log we have <span class="math notranslate nohighlight">\(x=\ln(1)=0\)</span>.</p>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{0,\ln(3)\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="expSolveExam4">
+<p class="admonition-title"><span class="caption-number">Example 84 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(e^{2x}+e^x-6=0\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, rewrite the equation as follows</p>
+<div class="math notranslate nohighlight">
+\[\left(e^x)\right)^2+\left(e^x\right)-6=0\]</div>
+<p class="sd-card-text">Let <span class="math notranslate nohighlight">\(u=e^x\)</span>, then <span class="math notranslate nohighlight">\(u^2=e^{2x}\)</span> and</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    u^2 + u - 6 &amp; = 0\\
+    (u+3)(u-2) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">For the case <span class="math notranslate nohighlight">\(u=-3\)</span>, we have, <span class="math notranslate nohighlight">\(e^x=-3\)</span> which has no solution. Remember <span class="math notranslate nohighlight">\(\ln(-3)\)</span> is undefined.</p>
+<p class="sd-card-text">For the case <span class="math notranslate nohighlight">\(u=2\)</span>, we have, <span class="math notranslate nohighlight">\(e^x=2\)</span> which has a solution of <span class="math notranslate nohighlight">\(x=\ln(2)\)</span>.</p>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{\ln(2)\}\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+<section id="solve-logarithmic-equations">
+<h2>Solve Logarithmic Equations<a class="headerlink" href="#solve-logarithmic-equations" title="Link to this heading"></a></h2>
+<p>When solving log equations it is important to check solutions against the original equation.</p>
+<div class="proof example admonition" id="logSolveExam1">
+<p class="admonition-title"><span class="caption-number">Example 85 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(4\ln(x)=36\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will isolate <span class="math notranslate nohighlight">\(\ln(x)\)</span></p>
+<div class="math notranslate nohighlight">
+\[4\ln(x)=36 \to \ln(x)=\frac{36}{4}\]</div>
+<p class="sd-card-text">Next, we will use the fact that <span class="math notranslate nohighlight">\(e^{\ln(x)}=x\)</span>. After composing both sides by the exponential function <span class="math notranslate nohighlight">\(e\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    e^{\ln(x)} &amp; = e^{\frac{36}{4}}\\
+    x &amp; = e^9
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will check the solution.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    4\ln(e^9) &amp; = 36\\
+    4\cdot 9 \ln(e) &amp; = 36\\
+    36 &amp; = 36\checkmark
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{e^9\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="logSolveExam2">
+<p class="admonition-title"><span class="caption-number">Example 86 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(\log_3(x^3-5)=1\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We will compose both sides by the exponential function base <span class="math notranslate nohighlight">\(3\)</span>. Then solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    3^{\log_3(x^3-5)} &amp; = 3^1\\
+    x^3-5 &amp; = 3\\
+    x^3 &amp; = 8\\
+    x &amp; = 2
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will check the solution.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \log_3((2)^3-5) &amp; = 1\\
+    \log_3(8-5) &amp; = 1\\
+    \log_3(3) &amp; = 1\checkmark
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{2\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="logSolveExam3">
+<p class="admonition-title"><span class="caption-number">Example 87 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(\log(2x+1)+\log(x) = \log(x+8)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will simplify the left-hand side of the equation.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \log(2x+1)+\log(x) &amp; = \log(x(2x+1))\\
+    &amp; = \log(2x^2+x)
+\end{align*}\]</div>
+<p class="sd-card-text">The equation to solve is now: <span class="math notranslate nohighlight">\(\log(2x^2+x) = \log(x+8)\)</span>. Compose both sides of the equation by exponential function base <span class="math notranslate nohighlight">\(10\)</span> since <span class="math notranslate nohighlight">\(10^{\log(x)}=x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    10^{\log(2x^2+x)} &amp; = 10^{\log(x+8)}\\
+    2x^2 + x &amp; = x + 8\\
+    2x^2 - 8 &amp; = 0\\
+    2(x^2-4) &amp; = 0\\
+    2(x-2)(x+2) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">The solutions to <span class="math notranslate nohighlight">\(2(x-2)(x+2)=0\)</span> are <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(x=-2\)</span>. However, the original equation is undefined when <span class="math notranslate nohighlight">\(x=-2\)</span> since <span class="math notranslate nohighlight">\(\log(-2)\)</span> is undefined. Next, we will check the solution <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \log(2(2)+1)+\log(2) &amp; = \log(2+8)\\
+    \log(5)+\log(2) &amp; = \log(10)\\
+    \log(5\cdot 2) &amp; = 1\\
+    \log(10) &amp; = 1\checkmark
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{2\}\)</span>.</p>
+</div>
+</details></section>
+</div><p>Remember to always check you solutions for log equations.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="44.html" class="btn btn-neutral float-left" title="Section 4.4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="46.html" class="btn btn-neutral float-right" title="Section 4.6" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

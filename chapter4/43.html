@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 4.3 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 4.4" href="44.html" />
+    <link rel="prev" title="Section 4.2" href="42.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="42.html">Section 4.2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 4.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definition-and-properties">Definition and Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 4.3</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter4/43.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-4-3">
+<h1>Section 4.3<a class="headerlink" href="#section-4-3" title="Link to this heading"></a></h1>
+<section id="definition-and-properties">
+<h2>Definition and Properties<a class="headerlink" href="#definition-and-properties" title="Link to this heading"></a></h2>
+<p>The exponential function is <span class="math notranslate nohighlight">\(f(x)=a^x\)</span>.</p>
+<p>Let <span class="math notranslate nohighlight">\(f(x)=2^x\)</span>. Consider <span class="math notranslate nohighlight">\(f(2)=2^2=4\)</span> and <span class="math notranslate nohighlight">\(f(3)=2^3=8\)</span>. Since <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\([2,3]\)</span>, <span class="math notranslate nohighlight">\(f(2)=4\)</span>, and <span class="math notranslate nohighlight">\(f(3)=8\)</span>, we know, by the intermediate value theorem there exists a <span class="math notranslate nohighlight">\(c\)</span> in <span class="math notranslate nohighlight">\([2,3]\)</span> such that <span class="math notranslate nohighlight">\(f(c)=7\)</span>. In fact, there is a number such that <span class="math notranslate nohighlight">\(2^x\)</span> is 5,6, or 7.</p>
+<p>Remember, <span class="math notranslate nohighlight">\(\sqrt{4}=2\)</span> because <span class="math notranslate nohighlight">\(2^2=4\)</span>. We want to find/name a function such that <span class="math notranslate nohighlight">\(f(8)=3\)</span> because <span class="math notranslate nohighlight">\(2^3=8\)</span>.</p>
+<div class="proof definition admonition" id="log">
+<p class="admonition-title"><span class="caption-number">Definition 49 </span></p>
+<section class="definition-content" id="proof-content">
+<p>For all real numbers <span class="math notranslate nohighlight">\(y\)</span> and all positive numbers <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(x\)</span>, where <span class="math notranslate nohighlight">\(a\ne 1\)</span>. Then <span class="math notranslate nohighlight">\(y=\log_a (x)\)</span> if and only if <span class="math notranslate nohighlight">\(x=a^y\)</span>.</p>
+</section>
+</div><p>Like, <span class="math notranslate nohighlight">\(\sqrt{4}=2\)</span> because <span class="math notranslate nohighlight">\(2^2=4\)</span> we have: <span class="math notranslate nohighlight">\(3=\log_2(8)\)</span> because <span class="math notranslate nohighlight">\(2^4=8\)</span>.</p>
+<div class="proof definition admonition" id="logFunc">
+<p class="admonition-title"><span class="caption-number">Definition 50 </span></p>
+<section class="definition-content" id="proof-content">
+<p>If <span class="math notranslate nohighlight">\(a&gt;0\)</span>, <span class="math notranslate nohighlight">\(a\ne 1\)</span> and <span class="math notranslate nohighlight">\(x&gt;0\)</span>, then the logarithm function with base <span class="math notranslate nohighlight">\(a\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[f(x)=\log_a(x)\]</div>
+<ul class="simple">
+<li><p>The domain is <span class="math notranslate nohighlight">\((0,\infty)\)</span> (which is the range of <span class="math notranslate nohighlight">\(a^x\)</span> function).</p></li>
+<li><p>The range is <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span> (which is the domain of <span class="math notranslate nohighlight">\(a^x\)</span> function).</p></li>
+<li><p>The function <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\((0,\infty)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(0&lt;a&lt;1\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is decreasing on its domain.</p></li>
+<li><p>if <span class="math notranslate nohighlight">\(a&gt;1\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is increasing on its domain.</p></li>
+<li><p>The graph of <span class="math notranslate nohighlight">\(f\)</span> has vertical asymptote <span class="math notranslate nohighlight">\(x=0\)</span>.</p></li>
+<li><p>The graph passes through <span class="math notranslate nohighlight">\((\frac{1}{a},-1)\)</span>, <span class="math notranslate nohighlight">\((1,0)\)</span>, and <span class="math notranslate nohighlight">\((a,1)\)</span>.</p></li>
+</ul>
+</section>
+</div><p>The graph of the logarithmic function changes based on the value of <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<p>The graph of <span class="math notranslate nohighlight">\(f(x)=\log_a(x)\)</span> when <span class="math notranslate nohighlight">\(a&gt;1\)</span> we have:</p>
+<p><img alt="The graph of an exponential function where the base if greater than 1" src="../_images/agreateronelog.png" /></p>
+<p>The graph of <span class="math notranslate nohighlight">\(f(x)=\log_a(x)\)</span> where <span class="math notranslate nohighlight">\(0&lt;a&lt;1\)</span> we have:</p>
+<p><img alt="the graph of an exponential function where the base is between 0 and 1" src="../_images/abwzeroandoneelog.png" /></p>
+<p>If <span class="math notranslate nohighlight">\(f(x)=a^x\)</span> then <span class="math notranslate nohighlight">\(f^{-1}(x)=\log_a(x)\)</span>. Therefore, by definition, we have:</p>
+<div class="math notranslate nohighlight">
+\[a^{\log_a(x)}=x\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\log_a(a^x)=x\]</div>
+<ul class="simple">
+<li><p>Since <span class="math notranslate nohighlight">\(a^1=a\)</span> we have <span class="math notranslate nohighlight">\(\log_a(x)=1\)</span>.</p></li>
+<li><p>Since <span class="math notranslate nohighlight">\(a^0=1\)</span> where <span class="math notranslate nohighlight">\(a\ne 0\)</span> we  have <span class="math notranslate nohighlight">\(\log_a(1)=0\)</span>.</p></li>
+</ul>
+<div class="proof property admonition" id="logLaws">
+<p class="admonition-title"><span class="caption-number">Property 13 </span> (Laws of Logarithms)</p>
+<section class="property-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(a\)</span> be positive real numbers where <span class="math notranslate nohighlight">\(a\ne 1\)</span>.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_a(AB)=\log_a(A)+\log_a(B)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\log_a(\frac{A}{B}) = \log_a(A)-\log_a(B)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\log_a(A^n) = n\log_a(A)\)</span></p></li>
+</ul>
+</section>
+</div></section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="logExamExpa1">
+<p class="admonition-title"><span class="caption-number">Example 71 </span></p>
+<section class="example-content" id="proof-content">
+<p>Use the properties of the logarithm to expand the following expression. Assume all variables are positive.</p>
+<div class="math notranslate nohighlight">
+\[\log_a\left(\sqrt[3]{\frac{x^2y}{z^3}}\right)\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\log_{a}\left(\frac{x^{2}y}{z^{3}}\right) &amp; =\log_{a}(x^{2}y)-\log_{a}(z^{3})\\
+ &amp; =\log_{a}(x^{2})+\log_{a}(y)-3\log_{a}(z)\\
+ &amp; =2\log_{a}(x)+\log_{a}(y)-3\log_{a}(z)
+\end{align*}\]</div>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="logExamCall1">
+<p class="admonition-title"><span class="caption-number">Example 72 </span></p>
+<section class="example-content" id="proof-content">
+<p>Use logarithm properties to write the expression as a single logarithm with coefficient one. Assume all variables are positive.</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2}\log_a(x)+\log_a(y)-4\log_a(z)\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{1}{2}\log_a(x)+\log_a(y)-4\log_a(z) &amp; = \log_a(x^{\frac{1}{2}})+\log_a(y)-\log_a(z^4)\\
+    &amp; = \log_a(\sqrt{x}\cdot y)-\log_a(z^4)\\
+    &amp; = \log_a(\frac{y\sqrt{x}}{z^4})
+\end{align*}\]</div>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="logExamGiven1">
+<p class="admonition-title"><span class="caption-number">Example 73 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(\log_{10}(7)\approx 0.8451\)</span>. Evaluate the following:</p>
+<p>Approximate <span class="math notranslate nohighlight">\(\log_{10}(49)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \log_{10}(49) &amp; = \log_{10}(7^2)\\
+    &amp; = 2\log_{10}(7)\\
+    &amp; \approx 2(0.8451)\\
+    &amp; = 1.6902
+\end{align*}\]</div>
+</div>
+</details><p>Approximate <span class="math notranslate nohighlight">\(\log_{10}(70)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \log_{10}(70) &amp; = \log_{10}(7\cdot 10)\\
+    &amp; = \log_{10}(7) + \log_{10}(10)\\
+    &amp; \approx 0.8451 + 1\\
+    &amp; = 1.8451
+\end{align*}\]</div>
+</div>
+</details></section>
+</div><div class="docutils">
+<p class="rubric" id="more-examples">More Examples</p>
+<div class="proof example admonition" id="logExamExpan2">
+<p class="admonition-title"><span class="caption-number">Example 74 </span></p>
+<section class="example-content" id="proof-content">
+<p>Use properties of logarithms to rewrite the expression. Assume all variables are positive.</p>
+<div class="math notranslate nohighlight">
+\[\log_b\left(\frac{rs^2t}{u^3v^5}\right)\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \log_b\left(\frac{rs^2t}{u^3v^5}\right) &amp; = \log_b(rs^2t)-\log_b(u^3v^5)\\
+    &amp; = \left(\log_b(r)+\log_b(s^2)+\log_b(t)\right)-\left(\log_b(u^3)+\log_b(v^5)\right)\\
+    &amp; = \log_b(r)+2\log_b(s)+\log_b(t)-3\log_b(u)-5\log_b(v)
+\end{align*}\]</div>
+</div>
+</details></section>
+</div></div>
+<div class="proof example admonition" id="logExamCall2">
+<p class="admonition-title"><span class="caption-number">Example 75 </span></p>
+<section class="example-content" id="proof-content">
+<p>Write the expression as a single logarithm with a coefficient of 1. Assume all variables represent positive real numbers.</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{3}\log_a(x)+\frac{2}{3}\log_a(y)-\log_a(xy)\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{1}{3}\log_{a}(x)+\frac{2}{3}\log_{a}(y)-\log_{a}(xy) &amp; =\log_{a}(x^{\frac{1}{3}})+\log_{a}(y^{\frac{2}{3}})-\log_{a}(xy)\\
+ &amp; =\log_{a}(\sqrt[3]{x}\cdot\sqrt[3]{y^{2}})-\log_{a}(xy)\\
+ &amp; =\log_{a}(\sqrt[3]{xy^{2}})-\log_{a}(xy)\\
+ &amp; =\log_{a}\left(\frac{\sqrt[3]{xy^{2}}}{xy}\right)
+\end{align*}\]</div>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="logExamSolve1">
+<p class="admonition-title"><span class="caption-number">Example 76 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve the equation.</p>
+<div class="math notranslate nohighlight">
+\[x=\log_5(\frac{1}{625})\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x &amp; = \log_5(\frac{1}{625})\\
+    &amp; = \log_5(1)-\log_5(625)\\
+    &amp; = 0-\log_5(5^4)\\
+    &amp; = -4\log_5(5)\\
+    &amp; = -4(1) \text{ or } -4
+\end{align*}\]</div>
+</div>
+</details></section>
+</div><p>Remember <span class="math notranslate nohighlight">\(a^{\log_a(x)}=x\)</span> and <span class="math notranslate nohighlight">\(\log_a(a^x)=x\)</span>.</p>
+<div class="proof example admonition" id="logExamSolve2">
+<p class="admonition-title"><span class="caption-number">Example 77 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(\log_{\frac{1}{2}}(x+3)=-4\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Remember <span class="math notranslate nohighlight">\(\left(\frac{1}{2}\right)^{\log_{\frac{1}{2}}(x)}=x\)</span>. This also means:</p>
+<div class="math notranslate nohighlight">
+\[\left(\frac{1}{2}\right)^{\log_{\frac{1}{2}}(x+3)}=x+3\]</div>
+<p class="sd-card-text">The equation <span class="math notranslate nohighlight">\(\log_{\frac{1}{2}}(x+3)=-4\)</span> will be composed both sides by the exponential function base <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \log_{\frac{1}{2}}(x+3) &amp; = -4\\
+    \left(\frac{1}{2}\right)^{\log_{\frac{1}{2}}(x+3)} &amp; = \left(\frac{1}{2}\right)^{-4}\\
+    x+3 &amp; = 16\\
+    x &amp; = 13
+\end{align*}\]</div>
+<p class="sd-card-text">Like square root equations, we must check the solution:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \log_{\frac{1}{2}}(13+3) &amp; = \log_{\frac{1}{2}}(16)\\
+    &amp; = \log_{\frac{1}{2}}(2^4)\\
+    &amp; = \log_{\frac{1}{2}}(\frac{1}{2^{-4}})\\
+    &amp; = \log_{\frac{1}{2}}(\left(\frac{1}{2}\right)^{-4})\\
+    &amp; = -4\log_{\frac{1}{2}}(\frac{1}{2})\\
+    &amp; = -4
+\end{align*}\]</div>
+<p class="sd-card-text">This verifies the equation.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="invExam1">
+<p class="admonition-title"><span class="caption-number">Example 78 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=5^x+1\)</span>. Find <span class="math notranslate nohighlight">\(f^{-1}(x)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, <span class="math notranslate nohighlight">\(y=5^x+1\)</span> and swap the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> variables. Then solve for <span class="math notranslate nohighlight">\(y\)</span>. Remember <span class="math notranslate nohighlight">\(\log_5(5^x)=x\)</span> and <span class="math notranslate nohighlight">\(\log_5(5)=1\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x &amp; = 5^y + 1\\
+    x-1 &amp; = 5^y\\
+    \log_5(x-1) &amp; = \log_5(5^y)\\
+    \log_5(x-1) &amp; = y\log_5(5)\\
+    \log_5(x-1) &amp; = y
+\end{align*}\]</div>
+<p class="sd-card-text">This means, <span class="math notranslate nohighlight">\(f^{-1}(x)=\log_5(x-1)\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="invExam2">
+<p class="admonition-title"><span class="caption-number">Example 79 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=\log_{10}(2x)\)</span>. Find <span class="math notranslate nohighlight">\(f^{-1}(x)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, <span class="math notranslate nohighlight">\(y=\log_{10}(2x)\)</span> and swap the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> variables. Then solve for <span class="math notranslate nohighlight">\(y\)</span>. Remember <span class="math notranslate nohighlight">\(10^{\log_{10}(x)}=x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x &amp; = \log_{10}(2y)\\
+    10^x &amp; = 10^{\log_{10}(2y)}\\
+    10^x &amp; = 2y\\
+    \frac{1}{2}\cdot 10^x &amp; = y
+\end{align*}\]</div>
+<p class="sd-card-text">This means, <span class="math notranslate nohighlight">\(f^{-1}(x)=\frac{1}{2}\cdot 10^x\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="expExamSolve1">
+<p class="admonition-title"><span class="caption-number">Example 80 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(\left(\frac{1}{3}\right)^{x+1}=9^x\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will want to rewrite the equation as an exponential expression base <span class="math notranslate nohighlight">\(3\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \left(\frac{1}{3}\right)^{x+1} &amp; = 9^x\\
+    \left(3^{-1}\right)^{x+1} &amp; = \left(3^2\right)^x\\
+    3^{-x-1} &amp; = 3^{2x}
+\end{align*}\]</div>
+<p class="sd-card-text">Next, use the fact <span class="math notranslate nohighlight">\(\log_3(3^x)=x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    3^{-x-1} &amp; = 3^{2x}\\
+    \log_3\left(3^{-x-1}\right) &amp; = \log_3\left(3^{2x}\right)\\
+    -x-1 &amp; = 2x\\
+    -1 &amp; = 3x\\
+    x &amp; = -\frac{1}{3}
+\end{align*}\]</div>
+</div>
+</details></section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="42.html" class="btn btn-neutral float-left" title="Section 4.2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="44.html" class="btn btn-neutral float-right" title="Section 4.4" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

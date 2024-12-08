@@ -1,0 +1,214 @@
+# Section 7.1
+
+:::{prf:definition} Sequence
+:label: defSeq
+
+A finite sequence is a function that has a set of natural numbers
+of the form $\{1,2,3,...,n\}$ as its domain. An infinity sequence
+has the set of natural numbers as its domain.
+
+The general term of the sequence is usually denoted $a_{n}$.
+
+:::
+
+::::{prf:example}
+:label: seqExam1
+
+Write the first five terms of the sequence $a_{n}=5n-2$.
+
+:::{dropdown} Solution:
+
+In this case the domain is $\{1,2,3,4,5\}$ and 
+\begin{align*}
+a_{1} & =5(1)-2=3\\
+a_{2} & =5(2)-2=8\\
+a_{3} & =5(3)-2=13\\
+a_{4} & =5(4)-2=18\\
+a_{5} & =5(5)-2=23
+\end{align*}
+
+So the sequence $\{a_{i}\}_{i=1}^{5}=\{3,8,13,18,23\}$.
+
+:::
+::::
+
+:::{prf:definition} Convergence and Divergence
+:label: defConDiv
+
+If the terms of an infinite sequence get closer and closer to some
+real number, the sequence is said to be convergent and to converge
+to that real number. 
+
+A sequence that does not converge to any number is divergent.
+
+:::
+
+The sequence $a_{n}=\frac{1}{n}$ is a convergent sequence and converges to $0$.
+
+The sequence $b_{n}=n^{2}$ is divergent and continue to get larger and larger without bound.
+
+::::{prf:example}
+:label: findSeqExam1
+
+If $a_{1}=2$ and $a_{n}=3\cdot a_{n-1}-1$ for $n\ge1$, then find the first five terms of the sequence $a_{n}$.
+
+:::{dropdown} Solution:
+
+We have
+
+\begin{align*}
+a_{1} & =2\\
+a_{2} & =3a_{2-1}-1\\
+ & =3a_{1}-1\\
+ & =3(2)-1\\
+ & =5\\
+a_{3} & =3(5)-1\\
+ & =14\\
+a_{4} & =3(14)-1\\
+ & =41\\
+a_{5} & =3(41)-1\\
+ & =122
+\end{align*}
+
+:::
+::::
+
+:::{prf:definition} Series
+:label: defSeries
+
+A finite series is an expression of the form
+
+$$
+S_{n}=a_{1}+a_{2}+\dots+a_{n}=\sum_{i=1}^{n}a_{i}.
+$$
+
+An infinite series is an expression of the form
+
+$$
+S_{\infty}=a_{1}+a_{2}+\dots=\sum_{i=1}^{\infty}a_{i}.
+$$
+
+We say the letter $i$ is the index of the summation.
+
+:::
+
+::::{prf:example}
+:label: seriesExam1
+
+Evaluate 
+
+$$
+\sum_{i=1}^{5}(i^{2}+i+1).
+$$
+
+:::{dropdown} Solution:
+
+First we define $a_{i}=i^{2}+i+1$ and we want to find the first $5$ terms of the sequence. 
+
+\begin{align*}
+a_{1} & =(1)^{2}+1+1=3\\
+a_{2} & =(2)^{2}+(2)+1=7\\
+a_{3} & =(3)^{2}+(3)+1=13\\
+a_{4} & =(4)^{2}+(4)+1=21\\
+a_{5} & =(5)^{2}+(5)+1=31
+\end{align*}
+
+Next, we evaluate
+
+\begin{align*}
+\sum_{i=1}^{5}(i^{2}+i+1) & =\sum_{i=1}^{5}a_{i}\\
+ & =a_{1}+a_{2}+a_{3}+a_{4}+a_{5}\\
+ & =3+7+13+21+31\\
+ & =75
+\end{align*}
+
+Therefore, 
+
+$$
+\sum_{i=1}^{5}(i^{2}+i+1)=75.
+$$
+
+:::
+::::
+
+::::{prf:example}
+:label: seriesExam2
+
+Evaluate $\sum_{i=1}^{3}f(x_{i})\Delta x$ where $f(x)=\frac{1}{x}$;
+$x_{1}=1$ , $x_{2}=3$, $x_{3}=5$, and $\Delta x=2$.
+
+:::{dropdown} Solution:
+
+First, we will define $a_{i}=f(x_{i})\Delta x$ and we will find the first 3 terms of the sequence
+
+\begin{align*}
+a_{1} & =f(x_{1})\Delta x\\
+ & =f(1)(2)\\
+ & =\frac{1}{1}(2)\\
+ & =2\\
+a_{2} & =f(x_{2})\Delta x\\
+ & =f(3)(2)\\
+ & =\frac{1}{3}\cdot2\\
+ & =\frac{2}{3}\\
+a_{3} & =f(x_{3})\Delta x\\
+ & =f(5)(2)\\
+ & =\frac{1}{5}\cdot2\\
+ & =\frac{2}{5}\\
+\sum_{i=1}^{3}f(x_{i})\Delta x & =f(x_{1})\Delta x+f(x_{2})\Delta x+f(x_{3})\Delta x\\
+ & =2+\frac{2}{3}+\frac{2}{5}\\
+ & =\frac{46}{15}
+\end{align*}
+
+Therefore, we have
+
+$$
+\sum_{i=1}^{3}f(x_{i})\Delta x=\frac{46}{15}.
+$$
+
+:::
+::::
+
+:::{prf:property} Summation Properties
+:label: sumProper
+
+If $a_{1}$, $a_{2}$, $a_{3}$, ..., $a_{n}$ and $b_{1}$, $b_{2}$,
+$b_{3}$, ..., $b_{n}$ are two sequences, and $c$ is a constant, then for every positive integer $n$, the following holds true.
+
+1. $\sum_{i=1}^{n}c=cn$
+1. $\sum_{i=1}^{n}ca_{i}=c\sum_{i=1}^{n}a_{i}$
+1. $\sum_{i=1}^{n}(a_{i}+b_{i})=\sum_{i=1}^{n}a_{i}+\sum_{i=1}^{n}b_{i}$
+1. $\sum_{i=1}^{n}(a_{i}-b_{i})=\sum_{i=1}^{n}a_{i}-\sum_{i=1}^{n}b_{i}$
+1. $\sum_{i=1}^{n}i=\dfrac{n(n+1)}{2}$
+1. $\sum_{i=1}^{n}i^{2}=\dfrac{n(n+1)(2n+1)}{6}$
+1. $\sum_{i=1}^{n}i^{3}=\dfrac{n^{2}(n+1)^{2}}{4}$
+:::
+
+::::{prf:example}
+:label: sumPropExam1
+
+Evaluate 
+
+$$
+\sum_{i=1}^{10}(3i^{2}+5)
+$$
+
+:::{dropdown} Solution:
+
+Here we will use the properties of summation
+\begin{align*}
+\sum_{i=1}^{10}(3i^{2}+5) & =\sum_{i=1}^{10}3i^{2}+\sum_{i=1}^{10}5\\
+ & =3\sum_{i=1}^{10}i^{2}+\sum_{i=1}^{10}5\\
+ & =3\cdot\frac{n(n+1)(2n+1)}{6}|_{n=10}+5n|_{n=10}\\
+ & =3\cdot\frac{(10)((10)+1)(2(10)+1)}{6}+5(10)\\
+ & =3\cdot385+50\\
+ & =1205
+\end{align*}
+
+Therefore, 
+
+$$
+\sum_{i=1}^{10}(3i^{2}+5)=1205.
+$$
+
+:::
+::::

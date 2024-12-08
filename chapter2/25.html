@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 2.5 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 2.6" href="26.html" />
+    <link rel="prev" title="Section 2.4" href="24.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="24.html">Section 2.4</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 2.5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#point-slope-form">Point-Slope Form</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#horizontal-and-vertical-lines">Horizontal and Vertical Lines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parallel-and-perpendicular-lines">Parallel and Perpendicular Lines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 2.5</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter2/25.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-2-5">
+<h1>Section 2.5<a class="headerlink" href="#section-2-5" title="Link to this heading"></a></h1>
+<p>Consider a fixed point on a line and call it <span class="math notranslate nohighlight">\((x_1,y_1)\)</span>. Next, consider any other point on the line and call it <span class="math notranslate nohighlight">\((x,y)\)</span>. Then the slope of the line would be:</p>
+<div class="math notranslate nohighlight">
+\[m=\frac{y-y_1}{x-x_1}\]</div>
+<p>The equivalent equation would be: <span class="math notranslate nohighlight">\(y-y_1=m(x-x_1)\)</span>; provided <span class="math notranslate nohighlight">\((x,y)\)</span> is not the fixed point. This leads to the point-slope form equation of a line.</p>
+<section id="point-slope-form">
+<h2>Point-Slope Form<a class="headerlink" href="#point-slope-form" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="pointSlopeForm">
+<p class="admonition-title"><span class="caption-number">Definition 14 </span> (Point-Slope Form)</p>
+<section class="definition-content" id="proof-content">
+<p>The point-slope form of the equation of a line with a slope of <span class="math notranslate nohighlight">\(m\)</span> and a point <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[y-y_1=m(x-x_1)\]</div>
+</section>
+</div><section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h3>
+<div class="proof example admonition" id="lineExample1">
+<p class="admonition-title"><span class="caption-number">Example 28 </span></p>
+<section class="example-content" id="proof-content">
+<p>Write the equation of a line passing through the point <span class="math notranslate nohighlight">\((-4,1)\)</span> and a slope of <span class="math notranslate nohighlight">\(3\)</span>. Finish the equation in slope-intercept form (<span class="math notranslate nohighlight">\(y=mx+b\)</span>).</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We are given <span class="math notranslate nohighlight">\((x_1,y_1)=(-4,1)\)</span> and <span class="math notranslate nohighlight">\(m=3\)</span>. Plugging these values into the point-slope form equation we have:</p>
+<div class="math notranslate nohighlight">
+\[y-1=3(x+4)\]</div>
+<p class="sd-card-text">Now, solve for <span class="math notranslate nohighlight">\(y\)</span> to get into slope-intercept form</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    y-1 &amp; = 3(x+4)\\
+    y-1 &amp; = 3x+12\\
+    y &amp; = 3x+12+1\\
+    &amp; = 3x+13
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the equation of the line passing through <span class="math notranslate nohighlight">\((-4,1)\)</span> and having a slope of <span class="math notranslate nohighlight">\(3\)</span> is: <span class="math notranslate nohighlight">\(y=3x+13\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="lineExample2">
+<p class="admonition-title"><span class="caption-number">Example 29 </span></p>
+<section class="example-content" id="proof-content">
+<p>Write the equation of the line passing through the points <span class="math notranslate nohighlight">\((-4,3)\)</span> and <span class="math notranslate nohighlight">\((5,-1)\)</span>. Finish the equation in slope-intercept form (<span class="math notranslate nohighlight">\(y=mx+b\)</span>).</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We are given <span class="math notranslate nohighlight">\((x_1,y_1)=(-4,3)\)</span> and <span class="math notranslate nohighlight">\((x_2,y_2)=(5,-1)\)</span>. To find the equation of the line we must first find the slope of the line. Using <span class="math notranslate nohighlight">\(m=\frac{y_2-y_1}{x_2-x_1}\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    m &amp; = \frac{-1-3}{5-(-4)}\\
+    &amp; = \frac{-4}{9}
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we pick one of the two points, <span class="math notranslate nohighlight">\((-4,3)\)</span>, and use <span class="math notranslate nohighlight">\(m=-\frac{4}{9}\)</span> to find the equation of the line:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    y-3 &amp; =-\frac{4}{9}(x+4)\\
+    y-3 &amp; = -\frac{4}{9}x-\frac{16}{9}\\
+    y &amp; = -\frac{4}{9}x +\frac{27-16}{9}\\
+    &amp; = -\frac{4}{9}x + \frac{11}{9}
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the equation of the line is <span class="math notranslate nohighlight">\(y=-\frac{4}{9}x+\frac{11}{9}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="lineExample3">
+<p class="admonition-title"><span class="caption-number">Example 30 </span></p>
+<section class="example-content" id="proof-content">
+<p>Given the following graph. Find the equation of the line.
+<img alt="Graph of a line" src="../_images/graphline1.png" /></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">One way to find the equation of the line is to have two points, find the slope, plug the point and slope into the point-slope, and then solve for <span class="math notranslate nohighlight">\(y\)</span>. Given the graph, we have many points to choose from. However, two points are clearly on the line: <span class="math notranslate nohighlight">\((0,2)\)</span> and <span class="math notranslate nohighlight">\((3,0)\)</span>. We will use these points to find the equation of the line. First, we will find the slope:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    m &amp; = \frac{0-2}{3-0}\\
+    &amp; = \frac{-2}{3}
+\end{align*}\]</div>
+<p class="sd-card-text">Using the point <span class="math notranslate nohighlight">\((0,2)\)</span> and slope <span class="math notranslate nohighlight">\(m=-\frac{2}{3}\)</span> we have:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    y-2&amp;=-\frac{2}{3}(x-0)\\
+    y &amp; = -\frac{2}{3}x+2
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the equation of the graphed line is: <span class="math notranslate nohighlight">\(y=-\frac{2}{3}x+2\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+</section>
+<section id="horizontal-and-vertical-lines">
+<h2>Horizontal and Vertical Lines<a class="headerlink" href="#horizontal-and-vertical-lines" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="vertHorizLines">
+<p class="admonition-title"><span class="caption-number">Definition 15 </span> (Vertical and Horizontal Lines)</p>
+<section class="definition-content" id="proof-content">
+<ul class="simple">
+<li><p>An equation of the vertical line through the point <span class="math notranslate nohighlight">\((a,b)\)</span> is <span class="math notranslate nohighlight">\(x=a\)</span>.</p></li>
+<li><p>An equation of the horizontal line through the point <span class="math notranslate nohighlight">\((a,b)\)</span> is <span class="math notranslate nohighlight">\(y=b\)</span>.</p></li>
+</ul>
+</section>
+</div></section>
+<section id="parallel-and-perpendicular-lines">
+<h2>Parallel and Perpendicular Lines<a class="headerlink" href="#parallel-and-perpendicular-lines" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="paraPerpLines">
+<p class="admonition-title"><span class="caption-number">Definition 16 </span> (Parallel and Perpendicular Lines)</p>
+<section class="definition-content" id="proof-content">
+<ul class="simple">
+<li><p>Two distinct nonvertical lines are parallel if and only if they have the same slope.</p></li>
+<li><p>Two lines, neither of which is vertical, are perpendicular if and only if their slopes have a product of <span class="math notranslate nohighlight">\(-1\)</span>.</p></li>
+</ul>
+</section>
+</div><p>It is common to say if the slope of line one is <span class="math notranslate nohighlight">\(m_1\)</span>, then the slope of the perpendicular line is the opposite reciprocal. That is, <span class="math notranslate nohighlight">\(m_2=\frac{1}{m_2}\)</span>.</p>
+<section id="id1">
+<h3>Examples<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<div class="proof example admonition" id="paraPerpExample1">
+<p class="admonition-title"><span class="caption-number">Example 31 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let line one be <span class="math notranslate nohighlight">\(y=3x+10\)</span>.</p>
+<ul class="simple">
+<li><p>if line two is <strong>parallel</strong> to line one, then the slope of line two would be <span class="math notranslate nohighlight">\(m=3\)</span>.</p></li>
+<li><p>if line two is <strong>perpendicular</strong> to line one, then the slope of line two would be <span class="math notranslate nohighlight">\(m=-\frac{1}{3}\)</span>.</p></li>
+</ul>
+</section>
+</div><div class="proof example admonition" id="paraPerpExample2">
+<p class="admonition-title"><span class="caption-number">Example 32 </span></p>
+<section class="example-content" id="proof-content">
+<p>Write an equation in slope-intercept form of the line that passes through the point <span class="math notranslate nohighlight">\((2,-4)\)</span> and satisfies the given conditions.</p>
+<p>Parallel to the line <span class="math notranslate nohighlight">\(3x-2y=5\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To construct a line equation we need a point and a slope. We know the point is <span class="math notranslate nohighlight">\((2,-4)\)</span>. Next, we need to find the slope of the new line.</p>
+<p class="sd-card-text">The slope of the old line is unknown as the equation is given. We must first find the slope-intercept form of the equation given to find the slope of the old line.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    3x-2y &amp; = 5\\
+    2y &amp; = 3x-5\\
+    y &amp; = \frac{3}{2}x-\frac{5}{2}
+\end{align*}\]</div>
+<p class="sd-card-text">From this, we see the slope of the old line is <span class="math notranslate nohighlight">\(m=\frac{3}{2}\)</span>. This means the slope of the new line, parallel to the old line, must be <span class="math notranslate nohighlight">\(m=\frac{3}{2}\)</span>.</p>
+<p class="sd-card-text">Since, we have <span class="math notranslate nohighlight">\((x_1,y_1)=(2,-4)\)</span> and <span class="math notranslate nohighlight">\(m=\frac{3}{2}\)</span> we can now find the equation of the line.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    y+4 &amp; = \frac{3}{2}(x-2)\\
+    y &amp; = \frac{3}{2}x-3-4\\
+    &amp; = \frac{3}{2}x-7
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the equation of the line parallel to <span class="math notranslate nohighlight">\(3x-2y=5\)</span> and passes through the point <span class="math notranslate nohighlight">\((2,-4)\)</span> is <span class="math notranslate nohighlight">\(y=\frac{3}{2}x-7\)</span>.</p>
+</div>
+</details><p>Perpendicular to the line <span class="math notranslate nohighlight">\(3x-2y=5\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Given: <span class="math notranslate nohighlight">\((x_1,y_1)=(2,-4)\)</span></p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(3x-2y=5\)</span> can be written as <span class="math notranslate nohighlight">\(y=\frac{3}{2}x-7\)</span> we know the slope of the old line is <span class="math notranslate nohighlight">\(m=\frac{3}{2}\)</span>.</p>
+<p class="sd-card-text">The slope of the new line is <span class="math notranslate nohighlight">\(m=-\frac{2}{3}\)</span> since the slope of the old line was <span class="math notranslate nohighlight">\(m=\frac{3}{2}\)</span>.</p>
+<p class="sd-card-text">All together we have:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    y+4 &amp; =-\frac{2}{3}(x-2)\\
+    y &amp; = -\frac{2}{3}x + \frac{4}{3} - 4\\
+    &amp; = -\frac{2}{3}x + \frac{4-12}{3}\\
+    &amp; = -\frac{2}{3}x - \frac{8}{3}
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the equation of the line perpendicular to <span class="math notranslate nohighlight">\(3x-2y=5\)</span> and passes through the point <span class="math notranslate nohighlight">\((2,-4)\)</span> is <span class="math notranslate nohighlight">\(y=-\frac{2}{3}x-\frac{8}{3}\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="24.html" class="btn btn-neutral float-left" title="Section 2.4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="26.html" class="btn btn-neutral float-right" title="Section 2.6" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

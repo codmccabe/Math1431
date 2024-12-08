@@ -1,0 +1,732 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 5.3 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 5.5" href="55.html" />
+    <link rel="prev" title="Section 5.2" href="52.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="52.html">Section 5.2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 5.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#two-by-two-determinant-example-s">Two by Two Determinant Example(s)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#three-by-three-determinant-example-s">Three by Three Determinant Example(s)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#determinant-theorems">Determinant Theorems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cramers-rule">Cramer’s Rule</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 5.3</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter5/53.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-5-3">
+<h1>Section 5.3<a class="headerlink" href="#section-5-3" title="Link to this heading"></a></h1>
+<div class="proof definition admonition" id="22Det">
+<p class="admonition-title"><span class="caption-number">Definition 55 </span> (Determinant of a Two by Two)</p>
+<section class="definition-content" id="proof-content">
+<p>If <span class="math notranslate nohighlight">\(A=\left[\begin{matrix}a_{11} &amp; a_{12}\\a_{21} &amp; _{22}\end{matrix}\right]\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}|A|=\left|\begin{matrix}a_{11} &amp; a_{12}\\
+a_{21} &amp; a_{22}
+\end{matrix}\right|=a_{11}\cdot a_{22}-a_{21}\cdot a_{12}.\end{split}\]</div>
+</section>
+</div><div class="proof definition admonition" id="33Det">
+<p class="admonition-title"><span class="caption-number">Definition 56 </span> (Determinant of a Three by Three)</p>
+<section class="definition-content" id="proof-content">
+<p>If <span class="math notranslate nohighlight">\(A=\left[\begin{matrix}a_{11} &amp; a_{12} &amp; a_{13}\\
+a_{21} &amp; a_{22} &amp; a_{23}\\
+a_{31} &amp; a_{32} &amp; a_{33}
+\end{matrix}\right]\)</span>, then the determinant of <span class="math notranslate nohighlight">\(A\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+|A|=\left|\begin{matrix}a_{11} &amp; a_{12} &amp; a_{13}\\
+a_{21} &amp; a_{22} &amp; a_{23}\\
+a_{31} &amp; a_{32} &amp; a_{33}
+\end{matrix}\right|=a_{11}\left|\begin{matrix}a_{22} &amp; a_{23}\\
+a_{32} &amp; a_{33}
+\end{matrix}\right|-a_{12}\left|\begin{matrix}a_{21} &amp; a_{23}\\
+a_{31} &amp; a_{33}
+\end{matrix}\right|+a_{13}\left|\begin{matrix}a_{21} &amp; a_{22}\\
+a_{31} &amp; a_{32}
+\end{matrix}\right|
+\end{split}\]</div>
+<p>However, this is not the only way to compute the determinant.</p>
+</section>
+</div><p>The determinant of each <span class="math notranslate nohighlight">\(2\times 2\)</span> matrix from the previous definition is the <strong>minor</strong> of the associated element in the <span class="math notranslate nohighlight">\(3\times 3\)</span> matrix. The symbol <span class="math notranslate nohighlight">\(M_{ij}\)</span> is the minor for the associated element in row <span class="math notranslate nohighlight">\(i\)</span> and column <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<div class="proof definition admonition" id="cofactor">
+<p class="admonition-title"><span class="caption-number">Definition 57 </span> (Cofactor)</p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(M_{ij}\)</span> be the minor for each element <span class="math notranslate nohighlight">\(a_{ij}\)</span> in an <span class="math notranslate nohighlight">\(n\times n\)</span> matrix. The cofactor of <span class="math notranslate nohighlight">\(a_{ij}\)</span>, denoted <span class="math notranslate nohighlight">\(A_{ij}\)</span>, is</p>
+<div class="math notranslate nohighlight">
+\[
+A_{ij}=(-1)^{i+j}\cdot M_{ij}
+\]</div>
+</section>
+</div><div class="proof definition admonition" id="nnDet">
+<p class="admonition-title"><span class="caption-number">Definition 58 </span> (Determinant of a Matrix (using cofactor))</p>
+<section class="definition-content" id="proof-content">
+<p>Multiply each element in any row (or column) of a matrix by its cofactor. The sum of these products gives the value of the determinant.</p>
+<p>The expansion by a given row (or column) is when we fix a row (or column) to setup the sum.</p>
+</section>
+</div><p>Before we look at finding determinants of large matrices we will first calculate the determinant of a two by two matrix.</p>
+<section id="two-by-two-determinant-example-s">
+<h2>Two by Two Determinant Example(s)<a class="headerlink" href="#two-by-two-determinant-example-s" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="22DetExam1">
+<p class="admonition-title"><span class="caption-number">Example 103 </span></p>
+<section class="example-content" id="proof-content">
+<p>Find the determinant for the matrix</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A=\left[\begin{matrix}-3 &amp; 4\\
+6 &amp; 8
+\end{matrix}\right]
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We have <span class="math notranslate nohighlight">\(a_{11}=-3\)</span>, <span class="math notranslate nohighlight">\(a_{12}=4\)</span>, <span class="math notranslate nohighlight">\(a_{21}=6\)</span>, and <span class="math notranslate nohighlight">\(a_{22}=8\)</span>. Using
+the definition we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|A| &amp; =a_{11}\cdot a_{22}-a_{21}\cdot a_{12}\\
+ &amp; =(-3)(8)-(6)(4)\\
+ &amp; =-48
+\end{align*}\]</div>
+</div>
+</details></section>
+</div></section>
+<section id="three-by-three-determinant-example-s">
+<h2>Three by Three Determinant Example(s)<a class="headerlink" href="#three-by-three-determinant-example-s" title="Link to this heading"></a></h2>
+<p>If we have the matrix</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[\begin{matrix}a_{11} &amp; a_{12} &amp; a_{13}\\
+a_{21} &amp; a_{22} &amp; a_{23}\\
+a_{31} &amp; a_{32} &amp; a_{33}
+\end{matrix}\right]
+\end{split}\]</div>
+<p>then we say the minor of an element, say <span class="math notranslate nohighlight">\(a_{22}\)</span>, is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{22}=\left|\begin{matrix}a_{11} &amp; a_{13}\\
+a_{31} &amp; a_{33}
+\end{matrix}\right|
+\end{split}\]</div>
+<p>Before, computing a determinant of <span class="math notranslate nohighlight">\(n\times n\)</span> matrix practice finding minors of each element of a three by three matrix.</p>
+<div class="proof example admonition" id="33DetCofactorExam1">
+<p class="admonition-title"><span class="caption-number">Example 104 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(A=\left[\begin{matrix}2 &amp; -3 &amp; 5\\
+1 &amp; 4 &amp; -5\\
+0 &amp; 2 &amp; -6
+\end{matrix}\right]\)</span>, find the determinant of the matrix by expanding the third row.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will find the cofators for third row elements.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{31}=\left|\begin{matrix}-3 &amp; 5\\
+4 &amp; -5
+\end{matrix}\right|=(-3)*(-5)-(4)*(5)=-5
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{32}=\left|\begin{matrix}2 &amp; 5\\
+1 &amp; -5
+\end{matrix}\right|=(2)*(-5)-(1)*(5)=-15
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{33}=\left|\begin{matrix}2 &amp; -3\\
+1 &amp; 4
+\end{matrix}\right|=(2)*(4)-(1)*(-3)=11
+\end{split}\]</div>
+<p class="sd-card-text">Then we will find each of the cofactors. Remember, the cofactor for each element is defined as <span class="math notranslate nohighlight">\(A_{ij}=(-1)^{i+j}M_{ij}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+A_{31} &amp; =(-1)^{3+1}M_{31}=(1)*(-5)=-5\\
+A_{32} &amp; =(-1)^{3+2}M_{32}=(-1)*(-15)=15\\
+A_{33} &amp; =(-1)^{3+3}M_{33}=(1)*(11)=11
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will multiply each cofactor by its associated element.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_{31}A_{31} &amp; =(0)(-5)=0\\
+a_{32}A_{32} &amp; =(2)(15)=30\\
+a_{33}A_{33} &amp; =(-6)(11)=-66
+\end{align*}\]</div>
+<p class="sd-card-text">Finally, we will sum all the values.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|A| &amp; =a_{31}\cdot A_{31}+a_{32}\cdot A_{32}+a_{33}\cdot A_{33}\\
+ &amp; =0+30+(-66)\\
+ &amp; =-36
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the determinant of matrix <span class="math notranslate nohighlight">\(A\)</span> is <span class="math notranslate nohighlight">\(-36\)</span>.</p>
+</div>
+</details></section>
+</div><p>However, this may seem difficult or require too many steps. The purpose of showing the previous example and using the cofactor is to help show step-by-step how to compute a determinant by fixing any row or column. This can help in the future. In the next example we will compute the determinant of the same matrix using the first definition of a three-by-three determinant.</p>
+<div class="proof example admonition" id="33DetExam2">
+<p class="admonition-title"><span class="caption-number">Example 105 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(A=\left[\begin{matrix}2 &amp; -3 &amp; 5\\
+1 &amp; 4 &amp; -5\\
+0 &amp; 2 &amp; -6
+\end{matrix}\right]\)</span>, find the determinant.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left|\begin{matrix}2 &amp; -3 &amp; 5\\
+1 &amp; 4 &amp; -5\\
+0 &amp; 2 &amp; -6
+\end{matrix}\right| &amp; =2\left|\begin{matrix}4 &amp; -5\\
+2 &amp; -6
+\end{matrix}\right|-(-3)\left|\begin{matrix}1 &amp; -5\\
+0 &amp; -6
+\end{matrix}\right|+5\left|\begin{matrix}1 &amp; 4\\
+0 &amp; 2
+\end{matrix}\right|\\
+ &amp; =2\left(-24-(-10)\right)+3\left(-6\right)+5\left(2\right)\\
+ &amp; =2(-14)-18+10\\
+ &amp; =-28-8\\
+ &amp; =-36
+\end{align*}\]</div>
+</div>
+</details></section>
+</div><p>Notice the last way resulted in the same value as the way using the cofactor method.</p>
+</section>
+<section id="determinant-theorems">
+<h2>Determinant Theorems<a class="headerlink" href="#determinant-theorems" title="Link to this heading"></a></h2>
+<div class="proof theorem admonition" id="detThm">
+<p class="admonition-title"><span class="caption-number">Theorem 8 </span> (Determinant Theorems)</p>
+<section class="theorem-content" id="proof-content">
+<ol class="arabic simple">
+<li><p>If every element in a row (or column) of a matrix <span class="math notranslate nohighlight">\(A\)</span> is <span class="math notranslate nohighlight">\(0\)</span>, then <span class="math notranslate nohighlight">\(|A|=0\)</span>.</p></li>
+<li><p>If the rows of matrix <span class="math notranslate nohighlight">\(A\)</span> are the corresponding columns of matrix <span class="math notranslate nohighlight">\(B\)</span>, then <span class="math notranslate nohighlight">\(|A|=|B|\)</span>. (Transpose)</p></li>
+<li><p>If any two rows (or column) of matrix <span class="math notranslate nohighlight">\(A\)</span> are interchanged to form matrix <span class="math notranslate nohighlight">\(B\)</span>, then <span class="math notranslate nohighlight">\(|B|=-|A|\)</span>.</p></li>
+<li><p>Suppose matrix <span class="math notranslate nohighlight">\(B\)</span> is formed by multiplying every element of a row (or column) of matrix <span class="math notranslate nohighlight">\(A\)</span> by the real number <span class="math notranslate nohighlight">\(k\)</span>. Then <span class="math notranslate nohighlight">\(|B|=k\cdot|A|\)</span>.</p></li>
+<li><p>If two rows (or columns) of matrix <span class="math notranslate nohighlight">\(A\)</span> are identical, then <span class="math notranslate nohighlight">\(|A|=0\)</span>.</p></li>
+<li><p>Changing a row (or column) of matrix by adding to it a constant times another row (or column) does not change the determinant of the matrix. (Doing row reduction does not change the determinant of the original matrix.)</p></li>
+<li><p>If matrix <span class="math notranslate nohighlight">\(A\)</span> is in triangular form, having only zeros either above or below the main diagonal, then <span class="math notranslate nohighlight">\(|A|\)</span> is the product of the elements on the main diagonal of <span class="math notranslate nohighlight">\(A\)</span>.</p></li>
+</ol>
+</section>
+</div><div class="proof example admonition" id="DetThmExam1">
+<p class="admonition-title"><span class="caption-number">Example 106 </span></p>
+<section class="example-content" id="proof-content">
+<p>Use the determinant theorems to evaluate the determinant of the following matrix.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[\begin{matrix}-2 &amp; 4 &amp; 2\\
+6 &amp; 7 &amp; 3\\
+0 &amp; 16 &amp; 8
+\end{matrix}\right]
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(M_{31}=0\)</span> we can also use part 6 of the previous them by minipulating
+<span class="math notranslate nohighlight">\(R_{2}\)</span> to have <span class="math notranslate nohighlight">\(a_{21}=0\)</span> which would then cause <span class="math notranslate nohighlight">\(M_{21}=0\)</span>. Then
+we would have a much simpler approach to find the determinant.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\underset{A}{\underbrace{\left[\begin{matrix}-2 &amp; 4 &amp; 2\\
+6 &amp; 7 &amp; 3\\
+0 &amp; 16 &amp; 8
+\end{matrix}\right]}}\to_{3\times R_{1}+R_{2}}\underset{B}{\underbrace{\left[\begin{matrix}-2 &amp; 4 &amp; 2\\
+0 &amp; 19 &amp; 9\\
+0 &amp; 16 &amp; 8
+\end{matrix}\right]}}
+\end{split}\]</div>
+<p class="sd-card-text">By 6 of the previous theorem we know <span class="math notranslate nohighlight">\(|A|=|B|\)</span>. For matrix <span class="math notranslate nohighlight">\(B\)</span> the following minors are calculated</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{11}=\left|\begin{matrix}19 &amp; 9\\
+16 &amp; 8
+\end{matrix}\right|=(19)*(8)-(16)*(9)=8
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+B_{11}=(-1)^{1+1}M_{11}=(1)*8=8
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+b_{11}\cdot B_{11}=(-2)*(8)=-16
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{12}=\left|\begin{matrix}4 &amp; 2\\
+16 &amp; 8
+\end{matrix}\right|=(4)*(8)-(16)*(2)=0
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+B_{12}=(-1)^{1+2}M_{12}=(-1)*(0)=0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+b_{12}\cdot B_{12}=(0)*(0)=0
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{13}=\left|\begin{matrix}4 &amp; 2\\
+19 &amp; 9
+\end{matrix}\right|=(4)*(9)-(19)*(2)=-2
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+B_{13}=(-1)^{1+3}M_{13}=(1)*(-2)=-2
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+b_{13}B_{13}=(0)*(-2)=0
+\]</div>
+<p class="sd-card-text">Therefore, we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|A|=|B| &amp; =b_{11}B_{11}+b_{12}B_{12}+b_{13}B_{13}\\
+ &amp; =-16+0+0\\
+ &amp; =-16
+\end{align*}\]</div>
+</div>
+</details></section>
+</div></section>
+<section id="cramers-rule">
+<h2>Cramer’s Rule<a class="headerlink" href="#cramers-rule" title="Link to this heading"></a></h2>
+<p>Consider a general system of two equations and two unknowns.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+a_{1}x+b_{1}y &amp; =c_{1}\\
+a_{2}x+b_{2}y &amp; =c_{2}
+\end{cases}.
+\end{split}\]</div>
+<p>We can solve this system using the elimination method (ignoring and
+ideal factors to multiply to one equation to elimination another).</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+a_{1}x+b_{1}y &amp; =c_{1}\\
+a_{2}x+b_{2}y &amp; =c_{2}
+\end{cases} &amp; \to_{\begin{cases}
+b_{2}\times R_{1}\\
+-b_{1}\times R_{2}
+\end{cases}}\begin{cases}
+b_{2}a_{1}x+b_{2}b_{1}y &amp; =b_{2}c_{1}\\
+-b_{1}a_{2}x-b_{1}b_{2}y &amp; =-b_{1}c_{2}
+\end{cases}\\
+ &amp; \to_{R_{1}+R_{2}}\left(b_{2}a_{1}-b_{1}a_{2}\right)x+\left(b_{2}b_{1}-b_{1}b_{2}\right)y=b_{2}c_{1}-b_{1}c_{2}\\
+ &amp; \to\left(b_{2}a_{1}-b_{1}a_{2}\right)x=b_{2}c_{1}-b_{1}c_{2}\\
+x &amp; =\dfrac{b_{2}c_{1}-b_{1}c_{2}}{b_{2}a_{1}-b_{1}a_{2}}
+\end{align*}\]</div>
+<p>provided <span class="math notranslate nohighlight">\(b_{2}a_{1}-b_{1}a_{2}\ne0\)</span>. Next, we can solve for the
+<span class="math notranslate nohighlight">\(y\)</span> variable:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+a_{1}x+b_{1}y &amp; =c_{1}\\
+a_{2}x+b_{2}y &amp; =c_{2}
+\end{cases} &amp; \to_{\begin{cases}
+-a_{2}\times R_{1}\\
+a_{1}\times R_{2}
+\end{cases}}\begin{cases}
+-a_{2}a_{1}x-a_{2}b_{1}y &amp; =-a_{2}c_{1}\\
+a_{1}a_{2}x+a_{1}b_{2}y &amp; =a_{1}c_{2}
+\end{cases}\\
+ &amp; \to_{R_{1}+R_{2}}\left(-a_{2}a_{1}+a_{1}a_{2}\right)x+\left(-a_{2}b_{1}+a_{1}b_{2}\right)y=-a_{2}c_{1}+a_{1}c_{2}\\
+ &amp; \to\left(-a_{2}b_{1}+a_{1}b_{2}\right)y=-a_{2}c_{1}+a_{1}c_{2}\\
+y &amp; =\dfrac{-a_{2}c_{1}+a_{1}c_{2}}{-a_{2}b_{1}+a_{1}b_{2}}
+\end{align*}\]</div>
+<p>provided <span class="math notranslate nohighlight">\(-a_{2}b_{1}+a_{1}b_{2}\ne0\)</span>.</p>
+<p>Now, the previous calculations look similar to find the discriminant
+of something:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+c_{1}b_{2}-c_{2}b_{1}=\left|\begin{matrix}c_{1} &amp; b_{1}\\
+c_{2} &amp; b_{2}
+\end{matrix}\right|
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+a_{1}c_{2}-a_{2}c_{1}=\left|\begin{matrix}a_{1} &amp; c_{1}\\
+a_{2} &amp; c_{2}
+\end{matrix}\right|
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+a_{1}b_{2}-a_{2}b_{1}=\left|\begin{matrix}a_{1} &amp; b_{1}\\
+a_{2} &amp; b_{2}
+\end{matrix}\right|
+\end{split}\]</div>
+<p>The solutions for <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> can be represented using the discriminant</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x=\dfrac{b_{2}c_{1}-b_{1}c_{2}}{b_{2}a_{1}-b_{1}a_{2}}=\dfrac{\left|\begin{matrix}c_{1} &amp; b_{1}\\
+c_{2} &amp; b_{2}
+\end{matrix}\right|}{\left|\begin{matrix}a_{1} &amp; b_{1}\\
+a_{2} &amp; b_{2}
+\end{matrix}\right|}
+\end{split}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+y=\dfrac{-a_{2}c_{1}+a_{1}c_{2}}{-a_{2}b_{1}+a_{1}b_{2}}=\dfrac{\left|\begin{matrix}a_{1} &amp; c_{1}\\
+a_{2} &amp; c_{2}
+\end{matrix}\right|}{\left|\begin{matrix}a_{1} &amp; b_{1}\\
+a_{2} &amp; b_{2}
+\end{matrix}\right|}
+\end{split}\]</div>
+<p>Notice, how the denominator is the same for both solutions, and the
+numerator for each of the solutions are different with respect to
+their variable. For this we have a way to represent these</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+D_{x}=\left|\begin{matrix}c_{1} &amp; b_{1}\\
+c_{2} &amp; b_{2}
+\end{matrix}\right|,D_{y}=\left|\begin{matrix}a_{1} &amp; c_{1}\\
+a_{2} &amp; c_{2}
+\end{matrix}\right|,\text{ and }D=\left|\begin{matrix}a_{1} &amp; b_{1}\\
+a_{2} &amp; b_{2}
+\end{matrix}\right|.
+\end{split}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(D\)</span> is some number and in the denominator of the general solution
+we require <span class="math notranslate nohighlight">\(D\ne0\)</span>.</p>
+<div class="proof theorem admonition" id="DZero">
+<p class="admonition-title"><span class="caption-number">Theorem 9 </span></p>
+<section class="theorem-content" id="proof-content">
+<p>If <span class="math notranslate nohighlight">\(D=0\)</span>, then the above generalized solution doesn’t apply. The
+system is inconsistent or has infinitely many solutions.</p>
+</section>
+</div><p>The generalized method to solve the system is called Cramer’s Rule for two equation in two variables.</p>
+<div class="proof theorem admonition" id="22CRThm">
+<p class="admonition-title"><span class="caption-number">Theorem 10 </span> (Cramer’s Rule Two-by-Two)</p>
+<section class="theorem-content" id="proof-content">
+<p>Cramer’s Rule for Two equations in Two Variables</p>
+<p>Given the system</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+a_{1}x+b_{1}y &amp; =c_{1}\\
+a_{2}x+b_{2}y &amp; =c_{2}
+\end{cases},
+\end{split}\]</div>
+<p>if <span class="math notranslate nohighlight">\(D\ne0\)</span>, then the system has the unique solution</p>
+<div class="math notranslate nohighlight">
+\[
+x=\dfrac{D_{x}}{D}\text{ and }y=\dfrac{D_{y}}{D}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(D=\left|\begin{matrix}a_{1} &amp; b_{1}\\
+a_{2} &amp; b_{2}
+\end{matrix}\right|\)</span>, <span class="math notranslate nohighlight">\(D_{x}=\left|\begin{matrix}c_{1} &amp; b_{1}\\
+c_{2} &amp; b_{2}
+\end{matrix}\right|\)</span>, and <span class="math notranslate nohighlight">\(D_{y}=\left|\begin{matrix}a_{1} &amp; c_{1}\\
+a_{2} &amp; c_{2}
+\end{matrix}\right|\)</span>.
+$$</p>
+</section>
+</div><div class="proof example admonition" id="22CRExam1">
+<p class="admonition-title"><span class="caption-number">Example 107 </span></p>
+<section class="example-content" id="proof-content">
+<p>Use Cramer’s rule to solve the system of equation</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+4x+3y &amp; =2\\
+x-2y &amp; =5
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First we will find <span class="math notranslate nohighlight">\(D\)</span> (always) to determine if Cramer’s rule is a viable method.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+D=\left|\begin{matrix}4 &amp; 3\\
+1 &amp; -2
+\end{matrix}\right|=(4)*(-2)-(1)*(3)=-11\ne0.
+\end{split}\]</div>
+<p class="sd-card-text">Next, we will find <span class="math notranslate nohighlight">\(D_{x}\)</span> and <span class="math notranslate nohighlight">\(D_{y}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+D_{x}=\left|\begin{matrix}2 &amp; 3\\
+5 &amp; -2
+\end{matrix}\right|=(2)*(-2)-(5)*(3)=-19
+\end{split}\]</div>
+<p class="sd-card-text">and</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+D_{y}=\left|\begin{matrix}4 &amp; 2\\
+1 &amp; 5
+\end{matrix}\right|=(4)*(5)-(1)*(2)=18
+\end{split}\]</div>
+<p class="sd-card-text">Therefore, by Cramer’s Rule we have</p>
+<div class="math notranslate nohighlight">
+\[
+x=\dfrac{D_{x}}{D}=\dfrac{-19}{-11}\text{ and }y=\dfrac{D_{y}}{D}=\dfrac{18}{-11}
+\]</div>
+<p class="sd-card-text">and the solution set for the system of equations is <span class="math notranslate nohighlight">\(\{(\frac{19}{11},-\frac{18}{11})\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof theorem admonition" id="nnCRThm">
+<p class="admonition-title"><span class="caption-number">Theorem 11 </span> (General Form of Cramer’s Rule)</p>
+<section class="theorem-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(n\times n\)</span> system have linear equations of the following form</p>
+<div class="math notranslate nohighlight">
+\[
+a_{1}x_{1}+a_{2}x_{2}+\cdots+a_{n}x_{n}=b
+\]</div>
+<p>Define <span class="math notranslate nohighlight">\(D\)</span> as the determinant of the <span class="math notranslate nohighlight">\(n\times n\)</span> matrix of all coefficients of the variables. Define <span class="math notranslate nohighlight">\(D_{x_{1}}\)</span> as the determinant obtained from <span class="math notranslate nohighlight">\(D\)</span> be replacing the entries in column <span class="math notranslate nohighlight">\(1\)</span> of <span class="math notranslate nohighlight">\(D\)</span> with the constants of the system. Define <span class="math notranslate nohighlight">\(D_{x_{i}}\)</span> as the determinant obtained from <span class="math notranslate nohighlight">\(D\)</span> by replacing the entries in column <span class="math notranslate nohighlight">\(i\)</span> with the constants of the system. If <span class="math notranslate nohighlight">\(D\ne0\)</span>, then the unique solution of the system is</p>
+<div class="math notranslate nohighlight">
+\[
+x_{1}=\dfrac{D_{x_{1}}}{D},x_{2}=\dfrac{D_{x_{2}}}{D},\dots,x_{n}=\dfrac{D_{x_{n}}}{D}.
+\]</div>
+</section>
+</div><div class="proof example admonition" id="33CRExam1">
+<p class="admonition-title"><span class="caption-number">Example 108 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve the system of equations</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+2x-4y+z-19 &amp; =0\\
+4x+6y-z+15 &amp; =0\\
+x+y+2z-11 &amp; =0
+\end{cases}.
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we want to rewrite the system.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+2x-4y+z-19 &amp; =0\\
+4x+6y-z+15 &amp; =0\\
+x+y+2z-11 &amp; =0
+\end{cases}\to\begin{cases}
+2x-4y+z &amp; =19\\
+4x+6y-z &amp; =-15\\
+x+y+2z &amp; =11
+\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(D=0\)</span> then we will stop doing Cramer’s Rule. Thus, it is helpful calculate <span class="math notranslate nohighlight">\(D\)</span> first to see if Cramer’s Rule will work.</p>
+<p class="sd-card-text">Next, we want to find <span class="math notranslate nohighlight">\(D\)</span>. (For spacing each line will be a sum or difference. Otherwise, the calculations would not fit the page.)</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+D=\left|\begin{matrix}2 &amp; -4 &amp; 1\\
+4 &amp; 6 &amp; -1\\
+1 &amp; 1 &amp; 2
+\end{matrix}\right| &amp; =2\left((6)(2)-(1)(-1)\right)\\
+ &amp; -(-4)\left((4)(2)-(1)(-1)\right)\\
+ &amp; +1\left((4)(1)-(1)(6)\right)\\
+ &amp; =60
+\end{align*}\]</div>
+<p class="sd-card-text">Since, <span class="math notranslate nohighlight">\(D\ne0\)</span> we can proceed with Cramer’s Rule</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+D_{x} &amp; =\left|\begin{matrix}19 &amp; -4 &amp; 1\\
+-15 &amp; 6 &amp; -1\\
+11 &amp; 1 &amp; 2
+\end{matrix}\right|\\
+ &amp; =19\left((6)(2)-(1)(-1)\right)\\
+ &amp; -(-15)\left((-4)(2)-(1)(1)\right)\\
+ &amp; +11\left((-4)(-1)-(6)(1)\right)\\
+ &amp; =90
+\end{align*}\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+D_{y} &amp; =\left|\begin{matrix}2 &amp; 19 &amp; 1\\
+4 &amp; -15 &amp; -1\\
+1 &amp; 11 &amp; 2
+\end{matrix}\right|\\
+ &amp; =2\left((-15)(2)-(11)(-1)\right)\\
+ &amp; -4\left((19)(2)-(11)(1)\right)\\
+ &amp; +1\left((19)(-1)-(-15)(1)\right)\\
+ &amp; =-150
+\end{align*}\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+D_{z} &amp; =\left|\begin{matrix}2 &amp; -4 &amp; 19\\
+4 &amp; 6 &amp; -15\\
+1 &amp; 1 &amp; 11
+\end{matrix}\right|\\
+ &amp; =2\left((6)(11)-(1)(-15)\right)\\
+ &amp; -4\left((-4)(11)-(1)(19)\right)\\
+ &amp; +1\left((-4)(-15)-(6)(19)\right)\\
+ &amp; =360
+\end{align*}\]</div>
+<p class="sd-card-text">Thus, we have <span class="math notranslate nohighlight">\(D=60\)</span>, <span class="math notranslate nohighlight">\(D_{x}=90\)</span>, <span class="math notranslate nohighlight">\(D_{y}=-150\)</span>, and <span class="math notranslate nohighlight">\(D_{z}=360\)</span>.
+Using these values we have</p>
+<div class="math notranslate nohighlight">
+\[
+x=\dfrac{D_{x}}{D}=\frac{90}{60}=\frac{3}{2},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+y=\dfrac{D_{y}}{D}=\frac{-150}{60}=-\frac{5}{2},
+\]</div>
+<p class="sd-card-text">and</p>
+<div class="math notranslate nohighlight">
+\[
+z=\dfrac{D_{z}}{D}=\frac{360}{60}=6.
+\]</div>
+<p class="sd-card-text">Therefore, the solution for the system is <span class="math notranslate nohighlight">\(\{(\frac{3}{2},-\frac{5}{2},6)\}\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="52.html" class="btn btn-neutral float-left" title="Section 5.2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="55.html" class="btn btn-neutral float-right" title="Section 5.5" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

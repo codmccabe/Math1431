@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 1.6 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 1.7" href="17.html" />
+    <link rel="prev" title="Welcome" href="../welcome.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 1.6</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#review">Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-problem-s">Application Problem(s)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solving-equations">Solving Equations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 1.6</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter1/16.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-1-6">
+<h1>Section 1.6<a class="headerlink" href="#section-1-6" title="Link to this heading"></a></h1>
+<p>We will start this section with a basic review.</p>
+<section id="review">
+<h2>Review<a class="headerlink" href="#review" title="Link to this heading"></a></h2>
+<p>A set of numbers can be written as <span class="math notranslate nohighlight">\(\{1,2,3,...\}\)</span>.</p>
+<p>The set of real numbers is denoted: <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>.</p>
+<p>The set of natural numbers is denoted as <span class="math notranslate nohighlight">\(\mathbb{N}\)</span> and is equal to <span class="math notranslate nohighlight">\(\{1,2,3,...,\}\)</span>.</p>
+<p>The set of whole numbers is the set of natural numbers including the zero element.</p>
+<p>The set of integers is denoted <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span> and equal to <span class="math notranslate nohighlight">\(\{...,-2,-1,0,1,2,...\}\)</span>.</p>
+<p>The set of rational numbers is denoted <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> and equal to <span class="math notranslate nohighlight">\(\{\frac{p}{q}\,|\,p\in \mathbb{Z},q\in\mathbb{Z}-\{0\}\}\)</span>.</p>
+<p>The set of irrational numbers are real numbers that are not rational numbers.</p>
+<p>Given <span class="math notranslate nohighlight">\(i=\sqrt{-1}\)</span> we have the set of complex numbers denoted <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> and equal to <span class="math notranslate nohighlight">\(\{a,b\in\mathbb{R}\,|\,a+ib\}\)</span>.</p>
+<div class="proof example admonition" id="complexSolutions">
+<p class="admonition-title"><span class="caption-number">Example 1 </span></p>
+<section class="example-content" id="proof-content">
+<p>The equation <span class="math notranslate nohighlight">\(x^2-1=0\)</span> has two solutions <span class="math notranslate nohighlight">\(x=1\)</span> and <span class="math notranslate nohighlight">\(x=-1\)</span>. However, the equation <span class="math notranslate nohighlight">\(x^2+1=0\)</span> has no real solutions. Unless we consider <span class="math notranslate nohighlight">\(i=\sqrt{-1}\)</span>. Then we say <span class="math notranslate nohighlight">\(x^2+1=0\)</span> has two solutions <span class="math notranslate nohighlight">\(x=i\)</span> and <span class="math notranslate nohighlight">\(x=-i\)</span>.</p>
+</section>
+</div><p>Suppose <span class="math notranslate nohighlight">\(n\)</span> is a natural number then <span class="math notranslate nohighlight">\(a^n=a\cdot a\cdot a \cdots a\)</span> where <span class="math notranslate nohighlight">\(a\)</span> is multiplied <span class="math notranslate nohighlight">\(n\)</span> amount of times. Considering this we have the following properties.</p>
+<div class="proof property admonition" id="lawsExponents">
+<p class="admonition-title"><span class="caption-number">Property 1 </span> (Laws of Exponents)</p>
+<section class="property-content" id="proof-content">
+<p><span class="math notranslate nohighlight">\(a^m\cdot a^n = a^{m+n}\)</span>, <span class="math notranslate nohighlight">\(\left(a^m\right)^n = a^{mn}\)</span>, <span class="math notranslate nohighlight">\(\frac{a^n}{a^m}=a^{n-m}\)</span>, <span class="math notranslate nohighlight">\(a^{-n}=\frac{1}{a^n}\)</span>, and <span class="math notranslate nohighlight">\(\frac{1}{a^n} = a^{-n}\)</span>.</p>
+<p>Also,</p>
+<p><span class="math notranslate nohighlight">\((ab)^n = a^n\cdot b^n\)</span> and <span class="math notranslate nohighlight">\(\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}\)</span>.</p>
+<p>For radical notation, we have:</p>
+<div class="math notranslate nohighlight">
+\[\sqrt[n]{x} = x^{\frac{1}{n}}\]</div>
+</section>
+</div><div class="proof example admonition" id="freshmanDream">
+<p class="admonition-title"><span class="caption-number">Example 2 </span></p>
+<section class="example-content" id="proof-content">
+<p>Remember <span class="math notranslate nohighlight">\((ab)^n=a^n\cdot b^n\)</span>; however, <span class="math notranslate nohighlight">\((a+b)^n\ne a^n +b^n\)</span>.</p>
+<p>That is, <span class="math notranslate nohighlight">\((x+y)^2\ne x^2 +y^2\)</span> because</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    (x+y)^2 &amp; = (x+y)(x+y)\\
+    &amp; = x^2+xy+xy+y^2\\
+    &amp; = x^2 + 2xy + y^2
+\end{align*}\]</div>
+</section>
+</div></section>
+<section id="application-problem-s">
+<h2>Application Problem(s)<a class="headerlink" href="#application-problem-s" title="Link to this heading"></a></h2>
+<p>The amount of work is equal to the rate of work times the amount of time worked, or,</p>
+<div class="math notranslate nohighlight">
+\[W=rt\]</div>
+<p>This can also be used for distance, rate, and time:</p>
+<div class="math notranslate nohighlight">
+\[d=rt\]</div>
+<div class="proof example admonition" id="workProblem">
+<p class="admonition-title"><span class="caption-number">Example 3 </span></p>
+<section class="example-content" id="proof-content">
+<p>One printer can do a job twice as fast as another. Working together, both printers can do the job in 2 hours. How long would it take each printer, working alone, to do the job?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We know the work done for the faster printer plus the work done for the slower printer equals one job done.</p>
+<div class="math notranslate nohighlight">
+\[W_f+W_s = 1 \]</div>
+<p class="sd-card-text">Let <span class="math notranslate nohighlight">\(x\)</span> be the number of hours the faster printer takes to complete one job. Then the rate for the faster printer is</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{x}\]</div>
+<p class="sd-card-text">and the rate of the slower printer is</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2x}\]</div>
+<p class="sd-card-text">since “One printer can do a job twice as fast as another”.</p>
+<p class="sd-card-text">The time <span class="math notranslate nohighlight">\(t=2\)</span> for the job to be done. Therefore, we have the following equation to solve:</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{x}\cdot 2 + \frac{1}{2x}\cdot 2 = 1\]</div>
+<p class="sd-card-text">Simplifying we have:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{1}{x}\cdot 2 + \frac{1}{2x}\cdot 2 &amp; = 1\\
+    \frac{2}{x}+\frac{1}{x} &amp; = 1\\
+    \frac{3}{x} &amp; = 1
+\end{align*}\]</div>
+<p class="sd-card-text">This means <span class="math notranslate nohighlight">\(x=3\)</span> is the solution to the equation.</p>
+<p class="sd-card-text">That is, the faster printer will take 3 hours and the slower printer will take 6 hours to complete one job by themselves.</p>
+</div>
+</details></section>
+</div></section>
+<section id="solving-equations">
+<h2>Solving Equations<a class="headerlink" href="#solving-equations" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="rationalEquation1">
+<p class="admonition-title"><span class="caption-number">Example 4 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\frac{3x-1}{3} - \frac{2x}{x-1} = x\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we notice that <span class="math notranslate nohighlight">\(x\ne1\)</span>. To solve this equation we will first subtract the two rational expressions.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \left(\frac{x-1}{x-1}\right)\cdot \frac{3x-1}{3} - \left(\frac{3}{3}\right)\cdot \frac{2x}{x-1} &amp; = x \\
+    \frac{(x-1)(3x-1)-2x(3)}{3(x-1)} &amp; = x\\
+    \frac{3x^2-4x+1-6x}{3(x-1)} &amp; = x\\
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will subtract <span class="math notranslate nohighlight">\(x\)</span> from both sides and compute the two expressions:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{3x^2-4x+1-6x}{3(x-1)} - x &amp; = 0\\
+    \frac{3x^2-4x+1-6x}{3(x-1)} - \frac{x(3(x-1))}{3(x-1)} &amp; = 0\\
+    \frac{3x^2-4x+1-6x-3x^2+3x}{3(x-1)} &amp; = 0\\
+    \frac{-7x+1}{3(x-1)} &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">We know that <span class="math notranslate nohighlight">\(\frac{-7x+1}{3(x-1)}\)</span> is zero whenever <span class="math notranslate nohighlight">\(-7x+1=0\)</span> and <span class="math notranslate nohighlight">\(x\ne1\)</span>. Furthermore, we know <span class="math notranslate nohighlight">\(-7x+1=0\)</span> whenever <span class="math notranslate nohighlight">\(x=\frac{1}{7}\)</span>. After checking we know the solution set for the equation is: <span class="math notranslate nohighlight">\(\{\frac{1}{7}\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="rationalEquation2">
+<p class="admonition-title"><span class="caption-number">Example 5 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\frac{3x+2}{x-2}+\frac{1}{x} = \frac{-2}{x^2-2x}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, notice that <span class="math notranslate nohighlight">\(x\ne2\)</span> and <span class="math notranslate nohighlight">\(x\ne0\)</span>. To solve this equation we will add the two expressions on the left-hand side and see that the two expressions on either side of the equation share the same denominator. This means we can then set the numerator of both sides of the equation equal to each other.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \left(\frac{x}{x}\right)\cdot \frac{3x+2}{x-2} + \frac{1}{x}\cdot \left(\frac{x-2}{x-2}\right) &amp; = \frac{-2}{x(x-2)}\\
+    \frac{3x^2 +2x +x -2}{x(x-2)} &amp; = \frac{-2}{x(x-2)}
+\end{align*}\]</div>
+<p class="sd-card-text">Since the denominator of the left-hand side is equal to the right-hand side, we have, provided <span class="math notranslate nohighlight">\(x\ne2\)</span> and <span class="math notranslate nohighlight">\(x\ne0\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    3x^2+3x-2 &amp; = -2\\
+    3x^2 + 3x &amp; = 0\\
+    3x(x+1) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">That is <span class="math notranslate nohighlight">\(x=0\)</span> or <span class="math notranslate nohighlight">\(x=-1\)</span>. We claim the solution set to the equation is <span class="math notranslate nohighlight">\(\{0,-1\}\)</span>. However, <span class="math notranslate nohighlight">\(x\ne0\)</span>. Therefore, after checking we see that the solution set is: <span class="math notranslate nohighlight">\(\{-1\}\)</span>.</p>
+</div>
+</details></section>
+</div><p>Before, we use a composition of inverse functions to solve equations like <span class="math notranslate nohighlight">\(\sqrt{x}=c\)</span> first consider the square root operator. That is, <span class="math notranslate nohighlight">\(\sqrt{4}=2\)</span> because <span class="math notranslate nohighlight">\(4=2^2\)</span>. In general, for all <span class="math notranslate nohighlight">\(c\ge0\)</span>, <span class="math notranslate nohighlight">\(\sqrt{x}=c\)</span> whenever <span class="math notranslate nohighlight">\(x=c^2\)</span>. When solving the following equation we don’t need to compose both sides by the <span class="math notranslate nohighlight">\(x^2\)</span> function because we can use knowledge of the square function to find the solution intuitively.</p>
+<div class="proof example admonition" id="radicalEquation1">
+<p class="admonition-title"><span class="caption-number">Example 7 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\sqrt{x}-5=2\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \sqrt{x}-5 &amp; = 2\\
+    \sqrt{x} &amp; = 7\\
+    x &amp; = 49
+\end{align*}\]</div>
+<p class="sd-card-text">This hold true since <span class="math notranslate nohighlight">\(\sqrt{x}=7\)</span> because <span class="math notranslate nohighlight">\(x=7^2=49\)</span>. Therefore, the solution set for the equation (after a quick mental check) is <span class="math notranslate nohighlight">\(\{49\}\)</span>.</p>
+</div>
+</details></section>
+</div><p>In some cases solving a rational equation isn’t intuitive. In the next example, we will rely on prerequisite knowledge.</p>
+<div class="proof example admonition" id="radicalEquation1">
+<p class="admonition-title"><span class="caption-number">Example 7 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[\sqrt{3x+1} - \sqrt{x+4} = 1 \]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">For solving this equation we will be composing both sides by the <span class="math notranslate nohighlight">\(x^2\)</span> function to eliminate the radical. In fact, we will be composing both sides by the <span class="math notranslate nohighlight">\(x^2\)</span> function twice. First, we will isolate on of the radial expressions.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \sqrt{3x+1} - \sqrt{x+4} &amp; = 1\\
+    \sqrt{3x+1} &amp; = \sqrt{x+4} + 1\\
+    \left(\sqrt{3x+1}\right)^2 &amp; = \left(\sqrt{x+4}+1\right)^2 \\
+    3x+1 &amp; = (x+4) + 2\sqrt{x+4} + 1\\
+    3x+1 &amp; = x+5 + 2\sqrt{x+4}\\
+    2x-4 &amp; = 2\sqrt{x+4}\\
+    x-2 &amp; = \sqrt{x+4}
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will compose both sides by the <span class="math notranslate nohighlight">\(x^2\)</span> function again to eliminate the last radical expression. Then we will solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \left(x-2\right)^2 &amp; = \left(\sqrt{x+4}\right)^2\\
+    x^2 - 4x + 4 &amp; = x+4\\
+    x^2 -5x &amp; = 0\\
+    x(x-5) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">The solution to the last equation (by the zero product property) is <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=5\)</span>. Claim, the solution set to the equation is <span class="math notranslate nohighlight">\(\{0,5\}\)</span>. However, to verify this claim we will check the solutions against the original equation.</p>
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=0\)</span>, we have,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \sqrt{3(0)+1} - \sqrt{0+4} &amp; = 1\\
+    \sqrt{1} - \sqrt{4} &amp; \ne 1
+\end{algin*}
+This shows that $x=0$ is not a solution to the original equation.
+
+When $x=5$, we have,
+\begin{align*}
+    \sqrt{3(5)+1} - \sqrt{5+4} &amp; = 1\\
+    \sqrt{9} - \sqrt{4} &amp; = 1 \checkmark
+\end{align*}\]</div>
+<p class="sd-card-text">This shows that <span class="math notranslate nohighlight">\(x=5\)</span> is a solution to the original equation.</p>
+<p class="sd-card-text">Therefore, the solution set for the equation is <span class="math notranslate nohighlight">\(\{5\}\)</span>.</p>
+</div>
+</details></section>
+</div><p>A quadratic equation is</p>
+<div class="math notranslate nohighlight">
+\[ax^2+bx+c=0\]</div>
+<p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are constants and <span class="math notranslate nohighlight">\(a\ne0\)</span>.</p>
+<p>We have already seen how to solve quadratic equations using GCF factoring and zero product property. In this next example, we will use “ac” method of factoring and then zero product property to solve the equation.</p>
+<div class="proof example admonition" id="quadEquation1">
+<p class="admonition-title"><span class="caption-number">Example 8 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve the following equation allowing real or non-real solutions.</p>
+<div class="math notranslate nohighlight">
+\[x^2+3x-10=0\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The equation <span class="math notranslate nohighlight">\(x^2+3x-10=0\)</span> has <span class="math notranslate nohighlight">\(a=1\)</span> and <span class="math notranslate nohighlight">\(c=-10\)</span>. Evaluating <span class="math notranslate nohighlight">\(ac\)</span> we have <span class="math notranslate nohighlight">\(-10\)</span>. Now, we want to find two numbers that multiply to <span class="math notranslate nohighlight">\(ac=-10\)</span> and add to <span class="math notranslate nohighlight">\(b=3\)</span>. The two numbers are <span class="math notranslate nohighlight">\(5\)</span> and <span class="math notranslate nohighlight">\(-2\)</span>. Next, we will rewrite the equation and use factor by grouping to complete the factoring of the quadratic expression.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x^2+3x-10 &amp; = 10\\
+    x^2 +5x - 2x -10 &amp; = 0\\
+    x(x+5)-2(x+5) &amp; = 0\\
+    (x+5)(x-2) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">By the zero product property, we see that the solution to the equation is when <span class="math notranslate nohighlight">\(x=-5\)</span> and <span class="math notranslate nohighlight">\(x=2\)</span>. Therefore, the solution set for the equation is <span class="math notranslate nohighlight">\(\{-5,2\}\)</span>.</p>
+</div>
+</details></section>
+</div><p>The next example is a quadratic-like equation. That is, the expression can be “transformed” into a quadratic equation in order to use quadratic equation techniques to solve.</p>
+<div class="proof example admonition" id="quadLikeEquation">
+<p class="admonition-title"><span class="caption-number">Example 9 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve the following equation allowing real or non-real solutions.</p>
+<div class="math notranslate nohighlight">
+\[x^4 + 3x^2 - 10 = 0\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To demonstrate how this is a quadratic-like equation consider the original equation can be rewritten as the following:</p>
+<div class="math notranslate nohighlight">
+\[\left(x^2\right)^2 - 3\left(x^2\right) - 10 = 0\]</div>
+<p class="sd-card-text">If we let <span class="math notranslate nohighlight">\(u=x^2\)</span>, then we have <span class="math notranslate nohighlight">\(u^2=x^4\)</span> and can solve the following equation:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    u^2 + 3u - 10 &amp; = 0\\
+    (u+5)(u-2) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">By the zero product property, we have <span class="math notranslate nohighlight">\(u=-5\)</span> and <span class="math notranslate nohighlight">\(u=2\)</span>. However, we want to solve for <span class="math notranslate nohighlight">\(x\)</span>. Using the fact that <span class="math notranslate nohighlight">\(u=x^2\)</span> we have:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    u &amp; = -5 &amp; u &amp; = 2\\
+    x^2 &amp; = -5 &amp; x^2 &amp; = 2\\
+    x &amp; = \pm i\sqrt{5} &amp; x &amp; = \pm \sqrt{2}
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set for the equation is <span class="math notranslate nohighlight">\(\{\pm i\sqrt{5},\pm \sqrt{2}\}\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../welcome.html" class="btn btn-neutral float-left" title="Welcome" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="17.html" class="btn btn-neutral float-right" title="Section 1.7" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
