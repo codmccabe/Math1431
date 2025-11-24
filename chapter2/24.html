@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 2.4 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 2.5" href="25.html" />
+    <link rel="prev" title="Section 2.3" href="23.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="23.html">Section 2.3</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 2.4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#standard-form">Standard Form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#slope">Slope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#secant-line">Secant Line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#business-models">Business Models</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 2.4</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter2/24.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-2-4">
+<h1>Section 2.4<a class="headerlink" href="#section-2-4" title="Link to this heading"></a></h1>
+<div class="proof definition admonition" id="linearFunction">
+<p class="admonition-title"><span class="caption-number">Definition 9 </span> (Linear Function)</p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(b\)</span> be any real number. Then a linear function is defined as</p>
+<div class="math notranslate nohighlight">
+\[f(x)=mx+b\]</div>
+</section>
+</div><p>When <span class="math notranslate nohighlight">\(m\ne0\)</span> the domain and range of the <span class="math notranslate nohighlight">\(f\)</span> is the set of all real numbers. However, if <span class="math notranslate nohighlight">\(m=0\)</span> then the linear function graph would be a horizontal line, the domain of a function that is a horizontal line is the set of all real numbers, and the function’s range would be <span class="math notranslate nohighlight">\(\{b\}\)</span>.</p>
+<div class="proof definition admonition" id="standardFormLine">
+<p class="admonition-title"><span class="caption-number">Definition 10 </span> (Standard Form Line Equation)</p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(C\)</span> be integers such that <span class="math notranslate nohighlight">\(A\ge0\)</span> and <span class="math notranslate nohighlight">\(\text{gcf}(A,B,C)=1\)</span>. Then the standard form of the linear equation is:</p>
+<div class="math notranslate nohighlight">
+\[Ax+By=C\]</div>
+</section>
+</div><section id="standard-form">
+<h2>Standard Form<a class="headerlink" href="#standard-form" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="exmapleStandFormLine">
+<p class="admonition-title"><span class="caption-number">Example 26 </span></p>
+<section class="example-content" id="proof-content">
+<p>Write <span class="math notranslate nohighlight">\(-\frac{4}{3}x+\frac{2}{3}y=\frac{8}{3}\)</span> in standard form.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we notice that <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(C\)</span> are not integers. This can be fixed by multiplying both sides of the equation by <span class="math notranslate nohighlight">\(3\)</span>. We would then get:</p>
+<div class="math notranslate nohighlight">
+\[-4x+2y=8\]</div>
+<p class="sd-card-text">However, <span class="math notranslate nohighlight">\(A\not\ge0\)</span>. This can be fixed by multiplying by <span class="math notranslate nohighlight">\(-1\)</span> on both sides. We would then get:</p>
+<div class="math notranslate nohighlight">
+\[4x-2y=-8\]</div>
+<p class="sd-card-text">However, <span class="math notranslate nohighlight">\(\text{gcf}(A,B,C)=2\ne1\)</span>. This can be fixed by dividing by <span class="math notranslate nohighlight">\(2\)</span> on both sides. We would then get:</p>
+<div class="math notranslate nohighlight">
+\[2x-y=-4\]</div>
+<p class="sd-card-text">This would be the linear equation in standard form.</p>
+</div>
+</details></section>
+</div></section>
+<section id="slope">
+<h2>Slope<a class="headerlink" href="#slope" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="defSlope">
+<p class="admonition-title"><span class="caption-number">Definition 11 </span> (Slope)</p>
+<section class="definition-content" id="proof-content">
+<p>The slope of a line is the change in <span class="math notranslate nohighlight">\(y\)</span> values over the change in <span class="math notranslate nohighlight">\(x\)</span> values. Or,</p>
+<div class="math notranslate nohighlight">
+\[m=\frac{\Delta y}{\Delta x}\]</div>
+</section>
+</div><p>Remember, <span class="math notranslate nohighlight">\(\Delta x = x_2 - x_1\)</span> and <span class="math notranslate nohighlight">\(\Delta y = y_2 - y_1\)</span>. In function notation, we say <span class="math notranslate nohighlight">\(y_1=f(x_1)\)</span>.</p>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading"></a></h2>
+<div class="proof property admonition" id="slopeIncDecCons">
+<p class="admonition-title"><span class="caption-number">Property 2 </span></p>
+<section class="property-content" id="proof-content">
+<p>Consider <span class="math notranslate nohighlight">\(m=\frac{\Delta y}{\Delta x}\)</span>.</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(m&gt;0\)</span>, then we say the line is increasing.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(m&lt;0\)</span>, then we say the line is decreasing.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(m=0\)</span>, then <span class="math notranslate nohighlight">\(\Delta y = 0\)</span>, <span class="math notranslate nohighlight">\(\Delta x\ne0\)</span>, and the line is constant. We also say the line is horizontal.</p></li>
+<li><p>If (for some reason) <span class="math notranslate nohighlight">\(m\)</span> is undefined, then <span class="math notranslate nohighlight">\(\Delta x=0\)</span> and the line would be vertical. We also say the slope is undefined.</p></li>
+</ul>
+</section>
+</div></section>
+<section id="secant-line">
+<h2>Secant Line<a class="headerlink" href="#secant-line" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="secantLine">
+<p class="admonition-title"><span class="caption-number">Definition 12 </span> (Secant Line)</p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f\)</span> be a function defined on an interval <span class="math notranslate nohighlight">\(I\)</span> and <span class="math notranslate nohighlight">\(x_1,x_2\in I\)</span>. The average rate of change of a function <span class="math notranslate nohighlight">\(f\)</span> from <span class="math notranslate nohighlight">\(x_1\)</span> to <span class="math notranslate nohighlight">\(x_2\)</span> is defined as:</p>
+<div class="math notranslate nohighlight">
+\[m_{\text{ave}} = \dfrac{f(x_2)-f(x_1)}{x_2-x_1}\]</div>
+<p>The line through these two points, <span class="math notranslate nohighlight">\((x_1,f(x_1)\)</span> and <span class="math notranslate nohighlight">\((x_2,f(x_2))\)</span>, is called the <strong>secant line</strong>.</p>
+</section>
+</div></section>
+<section id="business-models">
+<h2>Business Models<a class="headerlink" href="#business-models" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="bizModels">
+<p class="admonition-title"><span class="caption-number">Definition 13 </span> (Business Models)</p>
+<section class="definition-content" id="proof-content">
+<p>In general, we say</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(R(x)=xp\)</span> is the revenue function where <span class="math notranslate nohighlight">\(x\)</span> is the number of units sold and <span class="math notranslate nohighlight">\(p\)</span> is the price per unit. Sometimes, <span class="math notranslate nohighlight">\(p\)</span> is a function of <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(C(x)=V(x)+F(x)\)</span> where <span class="math notranslate nohighlight">\(V(x)\)</span> is the variable cost function and <span class="math notranslate nohighlight">\(F(x)\)</span> is the fixed cost function.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(x)=R(x)-C(x)\)</span></p></li>
+</ul>
+</section>
+</div><div class="proof example admonition" id="bizExample">
+<p class="admonition-title"><span class="caption-number">Example 27 </span></p>
+<section class="example-content" id="proof-content">
+<p>Assume that the product cost of a pager is a linear function. The fixed cost is 1500 dollars and the cost to make one pager is 100 dollars. If you plan to sell each pager for 125 dollars answer the following questions.</p>
+<p>What is the cost function?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[C(x)=100x+1500\]</div>
+</div>
+</details><p>What is the revenue function?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[R(x)=125x\]</div>
+</div>
+</details><p>What is the profit function?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    P(x) &amp; = R(x)-C(x)\\
+    &amp; = (125x) - (100x+1500)\\
+    &amp; = 25x-1500
+\end{align*}\]</div>
+</div>
+</details><p>How many units must be sold before you make a profit?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">That is, solve the equation <span class="math notranslate nohighlight">\(P(x)=0\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    P(x) &amp; = 0\\
+    25x-1500 &amp; = 0\\
+    25x &amp; = 1500\\
+    x &amp; = \frac{1500}{25}\text{ or } 60
+\end{align*}\]</div>
+<p class="sd-card-text">That is, you will need to sell 60 pagers before we can make a profit.</p>
+</div>
+</details><p>How much profit will you make when you sell zero pagers?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">That is, evaluate <span class="math notranslate nohighlight">\(P(0)\)</span>.
+$<span class="math notranslate nohighlight">\(P(0)=25(0)-1500 = -1500\)</span>$
+That is, you will lose 1500 dollars.</p>
+</div>
+</details></section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="23.html" class="btn btn-neutral float-left" title="Section 2.3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="25.html" class="btn btn-neutral float-right" title="Section 2.5" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

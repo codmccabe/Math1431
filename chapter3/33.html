@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 3.3 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 3.4" href="34.html" />
+    <link rel="prev" title="Section 3.2" href="32.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="32.html">Section 3.2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 3.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#factor-theorem-and-rational-zero-theorem">Factor Theorem and Rational Zero Theorem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-s">Example(s)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fundamental-theorem-of-algebra-and-number-of-zeros-theorem">Fundamental Theorem of Algebra and Number of Zeros Theorem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#complex-numbers">Complex Numbers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 3.3</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter3/33.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-3-3">
+<h1>Section 3.3<a class="headerlink" href="#section-3-3" title="Link to this heading"></a></h1>
+<section id="factor-theorem-and-rational-zero-theorem">
+<h2>Factor Theorem and Rational Zero Theorem<a class="headerlink" href="#factor-theorem-and-rational-zero-theorem" title="Link to this heading"></a></h2>
+<div class="proof theorem admonition" id="factorThm">
+<p class="admonition-title"><span class="caption-number">Theorem 1 </span> (Factor Theorem)</p>
+<section class="theorem-content" id="proof-content">
+<p>For any polynomial <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(x-k\)</span> is a factor of <span class="math notranslate nohighlight">\(f(x)\)</span> if and only if <span class="math notranslate nohighlight">\(f(k)=0\)</span>.</p>
+</section>
+</div><div class="proof theorem admonition" id="ratZeroThm">
+<p class="admonition-title"><span class="caption-number">Theorem 2 </span> (Rational Zero Theorem)</p>
+<section class="theorem-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)\)</span> be a polynomial function</p>
+<div class="math notranslate nohighlight">
+\[f(x)=a_nx^n+a_{n-1}x^{n-1}+\dots +a_1x+a_0\]</div>
+<p>If <span class="math notranslate nohighlight">\(f(\frac{p}{q})=0\)</span>, then <span class="math notranslate nohighlight">\(p\)</span> is proportional to <span class="math notranslate nohighlight">\(a_0\)</span> and <span class="math notranslate nohighlight">\(q\)</span> is proportional to <span class="math notranslate nohighlight">\(a_n\)</span>.</p>
+</section>
+</div><p>From the previous theorem, it is important to remember that it is <span class="math notranslate nohighlight">\(\frac{p}{q}\)</span> where <span class="math notranslate nohighlight">\(p\)</span> is associated with <span class="math notranslate nohighlight">\(a_0\)</span> (the constant term) and <span class="math notranslate nohighlight">\(q\)</span> is associated with <span class="math notranslate nohighlight">\(a_n\)</span> (the leading coefficient).</p>
+<section id="example-s">
+<h3>Example(s)<a class="headerlink" href="#example-s" title="Link to this heading"></a></h3>
+<div class="proof example admonition" id="zeroExam1">
+<p class="admonition-title"><span class="caption-number">Example 53 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=18x^6-21x^5-49x^4+21x^3+35x^2-4\)</span>.</p>
+<p>List all possible rational zeros (or roots).</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Remember <span class="math notranslate nohighlight">\(p\)</span> is associated with the constant value, <span class="math notranslate nohighlight">\(-4\)</span>. Also, <span class="math notranslate nohighlight">\(q\)</span> is associated with the leading coefficient, <span class="math notranslate nohighlight">\(18\)</span>. Next, we will list all the factors of for <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[p=-4:\pm 1, \pm 2, \pm 4\]</div>
+<div class="math notranslate nohighlight">
+\[q=18: \pm 1, \pm 2, \pm 3, \pm 6, \pm 9, \pm 18\]</div>
+<p class="sd-card-text">Next, we will list all the possible rational zeros with redundant ratios.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{alignat*}{3}
+\pm\frac{1}{1}, &amp; \pm\frac{1}{2}, &amp; \pm\frac{1}{3}, &amp; \pm\frac{1}{6}, &amp; \pm\frac{1}{9}, &amp; \pm\frac{1}{18},\\
+\pm\frac{2}{1}, &amp; \pm\frac{2}{2}, &amp; \pm\frac{2}{3}, &amp; \pm\frac{2}{6}, &amp; \pm\frac{2}{9}, &amp; \pm\frac{2}{18},\\
+\pm\frac{4}{1}, &amp; \pm\frac{4}{2}, &amp; \pm\frac{4}{3}, &amp; \pm\frac{4}{6}, &amp; \pm\frac{4}{9}, &amp; \pm\frac{4}{18}
+\end{alignat*}\]</div>
+<p class="sd-card-text">Eliminating redundancy we have the following as the possible rational roots.</p>
+<div class="math notranslate nohighlight">
+\[\pm 1, \pm 2, \pm 4, \pm \frac{1}{2},\pm \frac{1}{3},\pm \frac{1}{6},\pm \frac{1}{9},\pm \frac{1}{18}\]</div>
+<div class="math notranslate nohighlight">
+\[\pm \frac{2}{3},\pm \frac{2}{9},\pm \frac{4}{3}, \pm \frac{4}{9}\]</div>
+</div>
+</details><p>Factor <span class="math notranslate nohighlight">\(f(x)\)</span> into products of linear binomials.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">From the list of possible rational zeros, we will do synthetic division.</p>
+<p class="sd-card-text">We will first try <span class="math notranslate nohighlight">\(x=1\)</span> (or <span class="math notranslate nohighlight">\(k=1\)</span>). After synthetic division we will discover <span class="math notranslate nohighlight">\(f(1)=0\)</span> and <span class="math notranslate nohighlight">\(q_1(x)=18x^5-3x^4-52x^3-31x^2+4x+4\)</span>. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(x) &amp; = (x-1)q_1(x)\\
+    &amp; = (x-1)(18x^5-3x^4-52x^3-31x^2+4x+4)
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will do synthetic division on <span class="math notranslate nohighlight">\(q_1(x)\)</span> using <span class="math notranslate nohighlight">\(k=-1\)</span>. We will get <span class="math notranslate nohighlight">\(q_1(-1)=0\)</span> and <span class="math notranslate nohighlight">\(q_2(x)=18x^4-21x^3-31x^2+4\)</span>. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(x) &amp; = (x-1)q_1(x)\\
+    &amp; = (x-1)\left((x+1)q_2(x)\right)\\
+    &amp; = (x-1)(x+1)(18x^4-21x^3-31x^2+4)
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will do synthetic division on <span class="math notranslate nohighlight">\(q_2(x)\)</span> using <span class="math notranslate nohighlight">\(k=2\)</span>. We will get <span class="math notranslate nohighlight">\(q_2(2)=0\)</span> and <span class="math notranslate nohighlight">\(q_3(x)=18x^3+15x^2-x-2\)</span>. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(x) &amp; = (x-1)(x+1)q_2(x)\\
+    &amp; = (x-1)(x+1)\left((x-2)q_3(x)\right)\\
+    &amp; = (x-1)(x+1)(x-2)(18x^3+15x^2-x-2)
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we will do synthetic division on <span class="math notranslate nohighlight">\(q_3(x)\)</span> using <span class="math notranslate nohighlight">\(k=-2\)</span>. We will get <span class="math notranslate nohighlight">\(q_3(-2)=-84\)</span>. This means <span class="math notranslate nohighlight">\(x=-2\)</span> is not a zero of the original function. We then move down the list of possible rational zeros. We will find</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    q_3(4) &amp; = 1386\\
+    q_3(-4) &amp; = -910\\
+    q_3(\frac{1}{2})) &amp; = \frac{7}{2}\\
+    q_3(-\frac{1}{2})) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">We finally discover that <span class="math notranslate nohighlight">\(q_3(-\frac{1}{2})=0\)</span>. This means we will use synthetic division on <span class="math notranslate nohighlight">\(q_3(x)\)</span> with <span class="math notranslate nohighlight">\(k=-\frac{1}{2}\)</span>. We will then get <span class="math notranslate nohighlight">\(q_4(x)=18x^2+6x-4\)</span>. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(x) &amp; = (x-1)(x+1)(x-2)q_3(x)\\
+    &amp; = (x-1)(x+1)(x-2)\left((x+\frac{1}{2})q_4(x)\right)\\
+    &amp; = (x-1)(x+1)(x-2)(x+\frac{1}{2})(=18x^2+6x-4)
+\end{align*}\]</div>
+<p class="sd-card-text">To find the last factors we then factor <span class="math notranslate nohighlight">\(=18x^2+6x-4\)</span>. First, <span class="math notranslate nohighlight">\(18\cdot(-4)=-72\)</span>, <span class="math notranslate nohighlight">\(12\cdot (-6)=-72\)</span>, and <span class="math notranslate nohighlight">\(12-6=6\)</span>. With that information, we can begin to factor.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    18x^2+6x-4 &amp; = 18x^2+12x-6x-4\\
+    &amp; = 6x(3x+2)-2(3x+2)\\
+    &amp; = (3x+2)(6x-2)\\
+    &amp; = (6x-2)(3x+2)\\
+    &amp; = 2(3x-1)(3x+2)
+\end{align*}\]</div>
+<p class="sd-card-text">Putting everything together we have:</p>
+<div class="math notranslate nohighlight">
+\[f(x)=2(x-1)(x+1)(x-2)(x+\frac{1}{2})(3x-1)(3x+2)\]</div>
+</div>
+</details><p>List all the zeros for the function <span class="math notranslate nohighlight">\(f(x)\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since we know</p>
+<div class="math notranslate nohighlight">
+\[f(x)=2(x-1)(x+1)(x-2)(x+\frac{1}{2})(3x-1)(3x+2)\]</div>
+<p class="sd-card-text">The zeros of the function <span class="math notranslate nohighlight">\(f\)</span> is: <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(-1\)</span>, <span class="math notranslate nohighlight">\(2\)</span>, <span class="math notranslate nohighlight">\(-\frac{1}{2}\)</span>, <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span>, and <span class="math notranslate nohighlight">\(-\frac{2}{3}\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+</section>
+<section id="fundamental-theorem-of-algebra-and-number-of-zeros-theorem">
+<h2>Fundamental Theorem of Algebra and Number of Zeros Theorem<a class="headerlink" href="#fundamental-theorem-of-algebra-and-number-of-zeros-theorem" title="Link to this heading"></a></h2>
+<div class="proof theorem admonition" id="FTA">
+<p class="admonition-title"><span class="caption-number">Theorem 3 </span> (Fundamental Theorem of Algebra)</p>
+<section class="theorem-content" id="proof-content">
+<p>Every function defined by a polynomial of degree 1 or more has at least one complex root.</p>
+</section>
+</div><div class="proof theorem admonition" id="numberZerosThm">
+<p class="admonition-title"><span class="caption-number">Theorem 4 </span> (Number of Zeros Theorem)</p>
+<section class="theorem-content" id="proof-content">
+<p>A function defined by a polynomial of degree <span class="math notranslate nohighlight">\(n\)</span> has at most <span class="math notranslate nohighlight">\(n\)</span> distinct zeros.</p>
+</section>
+</div><div class="proof definition admonition" id="multiplicity">
+<p class="admonition-title"><span class="caption-number">Definition 39 </span> (Multiplicity)</p>
+<section class="definition-content" id="proof-content">
+<p>The number of times a zero occurs is called the multiplicity of the zero.</p>
+</section>
+</div><div class="proof example admonition" id="multExam1">
+<p class="admonition-title"><span class="caption-number">Example 54 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=(x+1)^3(x+3)(x-2)^2\)</span>. We know that the function’s zeros are <span class="math notranslate nohighlight">\(-1\)</span>, <span class="math notranslate nohighlight">\(-3\)</span>, and <span class="math notranslate nohighlight">\(2\)</span>. However, we can also say that <span class="math notranslate nohighlight">\(f\)</span> has a zero at <span class="math notranslate nohighlight">\(x=-1\)</span> with a multiplicity of <span class="math notranslate nohighlight">\(3\)</span>, <span class="math notranslate nohighlight">\(x=-3\)</span> with a multiplicity of <span class="math notranslate nohighlight">\(1\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span> with a multiplicity of <span class="math notranslate nohighlight">\(2\)</span>. The power of the individual factors determines the multiplicity.</p>
+</section>
+</div><div class="proof example admonition" id="multExam2">
+<p class="admonition-title"><span class="caption-number">Example 55 </span></p>
+<section class="example-content" id="proof-content">
+<p>Find a polynomial of degree three with real coefficient, zeros at <span class="math notranslate nohighlight">\(x=-3\)</span>, <span class="math notranslate nohighlight">\(x=-2\)</span>, and <span class="math notranslate nohighlight">\(x=5\)</span>, and <span class="math notranslate nohighlight">\(f(-1)=6\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We know that with the zeros</p>
+<div class="math notranslate nohighlight">
+\[f(x)=a(x+3)(x+2)(x-5)\]</div>
+<p class="sd-card-text">In order to find <span class="math notranslate nohighlight">\(a\)</span> we use <span class="math notranslate nohighlight">\(f(-1)=6\)</span>. That is, solve the following equation.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    a(-1+3)(-1+2)(-1-5) &amp; = 6\\
+    a(2)(1)(-6) &amp; = 6\\
+    a &amp; = -\frac{6}{-12} = -\frac{1}{2}
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(f(x)=-\frac{1}{2}(x+3)(x+2)(x-5)\)</span>. In expanded form, we have:</p>
+<div class="math notranslate nohighlight">
+\[f(x)=-\frac{1}{2} x^3 + \frac{19}{2} x + 15\]</div>
+</div>
+</details></section>
+</div></section>
+<section id="complex-numbers">
+<h2>Complex Numbers<a class="headerlink" href="#complex-numbers" title="Link to this heading"></a></h2>
+<p>Remember <span class="math notranslate nohighlight">\(\sqrt{-1}=i\)</span> and the following hold true.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    i &amp; = \sqrt{-1}\\
+    i^2 &amp; = -1\\
+    i^3 &amp; = -i\\
+    i^4 &amp; = 1
+\end{align*}\]</div>
+<div class="proof definition admonition" id="complexConj">
+<p class="admonition-title"><span class="caption-number">Definition 40 </span> (Complex Conjugate)</p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(z=a+ib\)</span> where <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are real numbers and <span class="math notranslate nohighlight">\(i=\sqrt{-1}\)</span>. Then we say <span class="math notranslate nohighlight">\(\overline{z}=a-ib\)</span> and <span class="math notranslate nohighlight">\(\overline{z}\)</span> is the conjugate of <span class="math notranslate nohighlight">\(z\)</span>.</p>
+</section>
+</div><div class="proof property admonition" id="complexConjProp">
+<p class="admonition-title"><span class="caption-number">Property 4 </span> (Conjugate Properties)</p>
+<section class="property-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(d\)</span> be complex numbers. Then</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\overline{c+d} = \overline{c}+\overline{d}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\overline{c\cdot d} = \overline{c}\cdot\overline{d}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\overline{c^n} = \left(\overline{c}\right)^n\)</span></p></li>
+</ul>
+</section>
+</div><div class="proof theorem admonition" id="conjZeroThm">
+<p class="admonition-title"><span class="caption-number">Theorem 5 </span> (Conjugate Zero Theorem)</p>
+<section class="theorem-content" id="proof-content">
+<p>If <span class="math notranslate nohighlight">\(f(x)\)</span> defines a polynomial having <strong>only real coefficients</strong> and if <span class="math notranslate nohighlight">\(z=a+ib\)</span> is a zero of <span class="math notranslate nohighlight">\(f(x)\)</span>, then <span class="math notranslate nohighlight">\(\overline{z}=a-ib\)</span> is also a zero.</p>
+</section>
+</div><div class="proof example admonition" id="conjZeroExam1">
+<p class="admonition-title"><span class="caption-number">Example 56 </span></p>
+<section class="example-content" id="proof-content">
+<p>If <span class="math notranslate nohighlight">\(f(x)=x^2-8x+25\)</span>. Find <span class="math notranslate nohighlight">\(f(4+i3)\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(4+i3) &amp; = (4+i3)^2 - 8(4+i3) + 25\\
+    &amp; = 7 + i24 - 32 - i24 + 25\\
+    &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">This means <span class="math notranslate nohighlight">\(x=4+i3\)</span> is a zero for the function.</p>
+</div>
+</details><p>Since <span class="math notranslate nohighlight">\(f(4+i3)\)</span> is ??. Find all the zeros for <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(x=4+i3\)</span> is a zero by the Conjugate Zero Theorem we know <span class="math notranslate nohighlight">\(x=4-i3\)</span> is also a zero. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(4-i3) &amp; = (4-i3)^2 - 8(4-i3)+25\\
+    &amp; = 7-i24-32+i24+25\\
+    &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the zeros for <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\(x=4+i3\)</span> and <span class="math notranslate nohighlight">\(x=4-i3\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="conjZeroExam2">
+<p class="admonition-title"><span class="caption-number">Example 57 </span></p>
+<section class="example-content" id="proof-content">
+<p>Find the polynomial with the least degree having only real coefficient and zeros <span class="math notranslate nohighlight">\(x=-4\)</span> and <span class="math notranslate nohighlight">\(x=3-i\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the polynomial has all real coefficients and <span class="math notranslate nohighlight">\(x=3-i\)</span> is a zero by the conjugate zero theorem. Since <span class="math notranslate nohighlight">\(x=-4\)</span>, <span class="math notranslate nohighlight">\(x=3-i\)</span>, and <span class="math notranslate nohighlight">\(x=3+i\)</span> are the roots we have</p>
+<div class="math notranslate nohighlight">
+\[f(x)=(x-(-4))(x-(3-i))(x-(3+i))\]</div>
+<p class="sd-card-text">If we distribute we have:</p>
+<div class="math notranslate nohighlight">
+\[f(x)= x^3 -2x^2 -14x +40\]</div>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="conjZeroExam3">
+<p class="admonition-title"><span class="caption-number">Example 58 </span></p>
+<section class="example-content" id="proof-content">
+<p>Given <span class="math notranslate nohighlight">\(f(2+i)=0\)</span>, find all the zeros for the function <span class="math notranslate nohighlight">\(f(x)=x^4-x^3-17x^2+55x-50\)</span>.</p>
+<p>Since we know <span class="math notranslate nohighlight">\(f(2+i)=0\)</span> we have the following from polynomial long division (using synthetic division).</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[ f(x) = (x-(2+i))(x^3 + (1+i)x^2 + (-16+3i)x + (20-i10))\]</div>
+</div>
+</details><p>Next, using conjugate zero theorem we know <span class="math notranslate nohighlight">\(f(2-i)=0\)</span>. Using synthetic division we know.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[ f(x)= (x-(2+i))(x-(2-i))(x^2+3x-10)\]</div>
+</div>
+</details><p>Next, using the remaining factor: <span class="math notranslate nohighlight">\(x^2+3x-10\)</span> we can find the remaining zeros.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[x^2+3x-10=(x+5)(x-2)\]</div>
+<p class="sd-card-text">and <span class="math notranslate nohighlight">\(x=-5\)</span>, <span class="math notranslate nohighlight">\(x=2\)</span> are the last zeros.</p>
+</div>
+</details><p>With all the previous work we know the zeros for <span class="math notranslate nohighlight">\(f(x)=x^4-x^3-17x^2+55x-50\)</span> is <span class="math notranslate nohighlight">\(x=\{2,-5,2+i,2-i\}\)</span>.</p>
+</section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="32.html" class="btn btn-neutral float-left" title="Section 3.2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="34.html" class="btn btn-neutral float-right" title="Section 3.4" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

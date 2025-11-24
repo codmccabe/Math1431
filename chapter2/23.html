@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 2.3 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 2.4" href="24.html" />
+    <link rel="prev" title="Section 2.2" href="22.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="22.html">Section 2.2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 2.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#evaluate-vs-solve">Evaluate vs. Solve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-function-arithmetic">Basic Function Arithmetic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#increasing-decreasing-and-constant">Increasing, Decreasing, and Constant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#domain">Domain</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 2.3</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter2/23.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-2-3">
+<h1>Section 2.3<a class="headerlink" href="#section-2-3" title="Link to this heading"></a></h1>
+<div class="proof definition admonition" id="relation">
+<p class="admonition-title"><span class="caption-number">Definition 4 </span> (Relation)</p>
+<section class="definition-content" id="proof-content">
+<p>A relation is a set of ordered pairs.</p>
+</section>
+</div><p>A relation is a correspondence from one set of numbers to another set of numbers.</p>
+<div class="proof definition admonition" id="indepDepVariables">
+<p class="admonition-title"><span class="caption-number">Definition 5 </span> (Independent and Dependent Variables)</p>
+<section class="definition-content" id="proof-content">
+<p>Given an ordered pair, <span class="math notranslate nohighlight">\((x,y)\)</span>:</p>
+<ul class="simple">
+<li><p>The first component is the independent variable.</p></li>
+<li><p>The second component is the dependent variable.</p></li>
+</ul>
+</section>
+</div><p>Next, is a definition of a special kind of relation that we commonly use in mathematics.</p>
+<div class="proof definition admonition" id="function">
+<p class="admonition-title"><span class="caption-number">Definition 6 </span> (Function)</p>
+<section class="definition-content" id="proof-content">
+<p>A function is a relation in which, for each distinct value of the first component of the ordered pair, there is <strong>exactly one</strong> value of the second component.</p>
+</section>
+</div><section id="evaluate-vs-solve">
+<h2>Evaluate vs. Solve<a class="headerlink" href="#evaluate-vs-solve" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="evalVsolve1">
+<p class="admonition-title"><span class="caption-number">Example 22 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=x^2+x-6\)</span>.</p>
+<p>Evaluate <span class="math notranslate nohighlight">\(f(0)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[f(0)=(0)^2+(0)-6=-6\]</div>
+</div>
+</details><p>Solve <span class="math notranslate nohighlight">\(f(x)=0\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x^2 + x - 6 &amp; = 0\\
+    (x+3)(x-2) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">The solution set is <span class="math notranslate nohighlight">\(\{-3,2\}\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+<section id="basic-function-arithmetic">
+<h2>Basic Function Arithmetic<a class="headerlink" href="#basic-function-arithmetic" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="basicFArith">
+<p class="admonition-title"><span class="caption-number">Example 23 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=x^2+x+1\)</span>.</p>
+<p>Find <span class="math notranslate nohighlight">\(f(q)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[f(q)=q^2+q+1\]</div>
+</div>
+</details><p>Find <span class="math notranslate nohighlight">\(f(x)+q\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[f(x)+q = x^2+x+1+q\]</div>
+</div>
+</details><p>Find <span class="math notranslate nohighlight">\(f(x+q)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[f(x+q)=(x+q)^2+(x+q)+1=x^2+2qx+q^2+x+q+1\]</div>
+</div>
+</details><p>Find <span class="math notranslate nohighlight">\(f(x)+f(q)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[f(x)+f(q)=x^2+x+1+q^2+q+1\]</div>
+</div>
+</details></section>
+</div></section>
+<section id="increasing-decreasing-and-constant">
+<h2>Increasing, Decreasing, and Constant<a class="headerlink" href="#increasing-decreasing-and-constant" title="Link to this heading"></a></h2>
+<p>Remember, functions are a  collection of ordered pairs. Graphing a function is a way to represent all of the ordered pairs.</p>
+<div class="proof definition admonition" id="monotonicity">
+<p class="admonition-title"><span class="caption-number">Definition 7 </span> (Increasing, Decreasing, and Constant.)</p>
+<section class="definition-content" id="proof-content">
+<p>Suppose <span class="math notranslate nohighlight">\(f\)</span> is defined on an interval <span class="math notranslate nohighlight">\((a,b\)</span>. Let <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> be elements in the interval <span class="math notranslate nohighlight">\((a,b\)</span> such that <span class="math notranslate nohighlight">\(x_1&lt;x_2\)</span>.</p>
+<p>The function <span class="math notranslate nohighlight">\(f\)</span> is increasing over <span class="math notranslate nohighlight">\((a,b)\)</span> if and only if <span class="math notranslate nohighlight">\(f(x_1)&lt;f(x_2)\)</span> for all <span class="math notranslate nohighlight">\(x_1,x_2\)</span>.
+<img alt="Increasing over (a,b)" src="../_images/inc.png" /></p>
+<p>The function <span class="math notranslate nohighlight">\(f\)</span> is decreasing over <span class="math notranslate nohighlight">\((a,b)\)</span> if and only if <span class="math notranslate nohighlight">\(f(x_1)&gt;f(x_2)\)</span> for all <span class="math notranslate nohighlight">\(x_1,x_2\)</span>.
+<img alt="Decreasing over (a,b)" src="../_images/dec.png" /></p>
+<p>The function <span class="math notranslate nohighlight">\(f\)</span> is constant over <span class="math notranslate nohighlight">\((a,b)\)</span> if and only if <span class="math notranslate nohighlight">\(f(x_1)=f(x_2)\)</span> for all <span class="math notranslate nohighlight">\(x_1,x_2\)</span>.
+<img alt="Constant over (a,b)" src="../_images/constant.png" /></p>
+</section>
+</div><div class="proof example admonition" id="exampleIncDecCons">
+<p class="admonition-title"><span class="caption-number">Example 24 </span></p>
+<section class="example-content" id="proof-content">
+<p>Given the graph of <span class="math notranslate nohighlight">\(y=f(x)\)</span> determine the following using open intervals:</p>
+<p><img alt="Graph of y=f(x)" src="../_images/exampleIncDecCons.png" /></p>
+<p>Where is <span class="math notranslate nohighlight">\(f\)</span> increasing?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[(-1,0)\]</div>
+</div>
+</details><p>Where is <span class="math notranslate nohighlight">\(f\)</span> decreasing?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[(-3,-1)\]</div>
+</div>
+</details><p>Where is <span class="math notranslate nohighlight">\(f\)</span> constant?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[(0,3)\]</div>
+</div>
+</details></section>
+</div><p>Remember when finding intervals where a function is increasing, decreasing, or constant we orientate concerning the <span class="math notranslate nohighlight">\(x\)</span>-axis. That is, when finding intervals of increasing for a function <span class="math notranslate nohighlight">\(f\)</span> we want to see all <span class="math notranslate nohighlight">\(x\)</span> values such that <span class="math notranslate nohighlight">\(f\)</span> satisfies the increasing function definition.</p>
+</section>
+<section id="domain">
+<h2>Domain<a class="headerlink" href="#domain" title="Link to this heading"></a></h2>
+<p>We will consider the following domain situations for the beginning of the semester.</p>
+<div class="proof definition admonition" id="keyDomain">
+<p class="admonition-title"><span class="caption-number">Definition 8 </span> (Domain)</p>
+<section class="definition-content" id="proof-content">
+<ul class="simple">
+<li><p>The domain for the function <span class="math notranslate nohighlight">\(f(x)=x\)</span> is the set of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\)</span> is a real number. Or, <span class="math notranslate nohighlight">\(\text{dom}(x)=\mathbb{R}\)</span></p></li>
+<li><p>The domain for the function <span class="math notranslate nohighlight">\(f(x)=\frac{1}{x}\)</span> is the set of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\)</span> is not zero. Or, <span class="math notranslate nohighlight">\(\text{dom}(\frac{1}{x})=\{x|x\ne0\}\)</span></p></li>
+<li><p>The domain for the function <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span> is the set of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\)</span> is greater than or equal to zero. Or, <span class="math notranslate nohighlight">\(\text{dom}(\sqrt{x})=\{x|x\ge0\}\)</span></p></li>
+</ul>
+</section>
+</div><div class="proof example admonition" id="exampleDomain1">
+<p class="admonition-title"><span class="caption-number">Example 25 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=\frac{x^2+x-12}{x+4}\)</span>. Find the domain of <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Remember, <span class="math notranslate nohighlight">\(\text{dom}(\frac{1}{x})=\{x|x\ne0\}\)</span>. We can use this information to find the domain of <span class="math notranslate nohighlight">\(f\)</span>. That is, we want to say the domain of <span class="math notranslate nohighlight">\(f\)</span> is the set of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x+4\ne0\)</span>. Or,</p>
+<div class="math notranslate nohighlight">
+\[\text{dom}(f)=\{x|x\ne -4\}\]</div>
+<p class="sd-card-text">The interval notation for this set would be <span class="math notranslate nohighlight">\((-\infty,-4)\cup(-4,\infty)\)</span>.</p>
+</div>
+</details></section>
+</div><div class="docutils">
+<p>It is important to notice in the last example that we did not simplify the function before finding the domain. Consider what would happen if we simplified <span class="math notranslate nohighlight">\(f\)</span> and tried to find the domain. We would be very confused. The moral is; that when finding the domain of a function, do not simplify the function.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="22.html" class="btn btn-neutral float-left" title="Section 2.2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="24.html" class="btn btn-neutral float-right" title="Section 2.4" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

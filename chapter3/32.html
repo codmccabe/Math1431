@@ -1,0 +1,522 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 3.2 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 3.3" href="33.html" />
+    <link rel="prev" title="Section 3.1" href="31.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="31.html">Section 3.1</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 3.2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#real-number-division-algorithm">Real Number Division Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#division-algorithm-for-polynomials">Division Algorithm for Polynomials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#synthetic-division">Synthetic Division</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#synthetic-division-examples">Synthetic Division Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#remainder-theorem">Remainder Theorem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#root-or-zero-of-a-function">Root (or Zero) of a Function</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 3.2</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter3/32.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-3-2">
+<h1>Section 3.2<a class="headerlink" href="#section-3-2" title="Link to this heading"></a></h1>
+<section id="real-number-division-algorithm">
+<h2>Real Number Division Algorithm<a class="headerlink" href="#real-number-division-algorithm" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="divAlgRealNumbers">
+<p class="admonition-title"><span class="caption-number">Definition 35 </span> (Division Algorithm (Real Numbers))</p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> be any real number where <span class="math notranslate nohighlight">\(b\ne0\)</span>. Then there exists a unique real number <span class="math notranslate nohighlight">\(q\)</span> and <span class="math notranslate nohighlight">\(r\)</span> such that</p>
+<div class="math notranslate nohighlight">
+\[a=b\cdot q+r\]</div>
+<p>where <span class="math notranslate nohighlight">\(0&lt;r&lt;b\)</span> or <span class="math notranslate nohighlight">\(r=0\)</span>.</p>
+</section>
+</div><div class="proof example admonition" id="divExample1">
+<p class="admonition-title"><span class="caption-number">Example 45 </span></p>
+<section class="example-content" id="proof-content">
+<p>If we look at <span class="math notranslate nohighlight">\(12\)</span> and <span class="math notranslate nohighlight">\(3\)</span> we know that</p>
+<div class="math notranslate nohighlight">
+\[12=3\cdot 4 + 0\]</div>
+<p>This can be shown by doing long division:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{alignat*}{10}
+&amp; \phantom{11}4\\
+3 &amp; )\overline{12}\\
+- &amp; \underline{\phantom{)}12} &amp; \leftarrow4(3)\phantom{--}\\
+ &amp; \phantom{)1}0 &amp; \leftarrow12-12
+\end{alignat*}\]</div>
+<p>If we look at <span class="math notranslate nohighlight">\(13\)</span> and <span class="math notranslate nohighlight">\(3\)</span> we know that</p>
+<div class="math notranslate nohighlight">
+\[13 = 3\cdot 4 + 1\]</div>
+<p>This can be shown by doing long division:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{alignat*}{10}
+&amp; \phantom{11}4\\
+3 &amp; )\overline{13}\\
+- &amp; \underline{\phantom{)}12} &amp; \leftarrow4(3)\phantom{--}\\
+ &amp; \phantom{)1}1 &amp; \leftarrow13-12
+\end{alignat*}\]</div>
+</section>
+</div><p>Since the division algorithm for real numbers is <span class="math notranslate nohighlight">\(a=bq+r\)</span> we know that if we divide both sides by <span class="math notranslate nohighlight">\(b\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[\frac{a}{b} = q+\frac{r}{b}\]</div>
+<p>We will use this fact to rewrite polynomial over polynomial expressions later on. For example, we know that <span class="math notranslate nohighlight">\(13=3(4)+1\)</span>. If we divide both sides by <span class="math notranslate nohighlight">\(3\)</span> we have: <span class="math notranslate nohighlight">\(\frac{13}{3} = 4+\frac{1}{3}\)</span>.</p>
+</section>
+<section id="division-algorithm-for-polynomials">
+<h2>Division Algorithm for Polynomials<a class="headerlink" href="#division-algorithm-for-polynomials" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="divAlgPolynomial">
+<p class="admonition-title"><span class="caption-number">Definition 36 </span> (Division Algorithm for Polynomials)</p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> be polynomials with <span class="math notranslate nohighlight">\(g(x)\)</span> of lesser degree than <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> is of degree one or higher. Then there exists a unique <span class="math notranslate nohighlight">\(q(x)\)</span> and <span class="math notranslate nohighlight">\(r(x)\)</span> such that</p>
+<div class="math notranslate nohighlight">
+\[f(x)=g(x)\cdot q(x)+r(x)\]</div>
+<p>where <span class="math notranslate nohighlight">\(0&lt;\text{deg}(r(x))&lt;\text{deg}(g(x))\)</span> or <span class="math notranslate nohighlight">\(\text{deg}(r(x))=0\)</span>.</p>
+</section>
+</div><div class="proof example admonition" id="polyLongExam1">
+<p class="admonition-title"><span class="caption-number">Example 46 </span></p>
+<section class="example-content" id="proof-content">
+<p>If we look at <span class="math notranslate nohighlight">\(x^2+3x+2\)</span> and <span class="math notranslate nohighlight">\(x+1\)</span> we know that</p>
+<div class="math notranslate nohighlight">
+\[x^2+3x+2=(x+1)(x+2)+0\]</div>
+<p>by factoring <span class="math notranslate nohighlight">\(x2+3x+2\)</span>. This can also be done by polynomial long division.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{alignat*}{10}
+ &amp; \phantom{)x^{2}+)}x+2\\
+x+1 &amp; )\overline{x^{2}+3x+2}\\
+- &amp; \underline{\phantom{)}x^{2}+x} &amp; \leftarrow x(x+1)\phantom{)-(x^{2}+x)}\\
+ &amp; \phantom{)x^{2}+)}2x+2 &amp; \leftarrow(x^{2}+3x)-(x^{2}+x)\\
+ &amp; \underline{-\phantom{x^{2}))}2x+2} &amp; \leftarrow2(x+1)\phantom{))))(2x+2}\\
+ &amp; \phantom{-x^{2}))2x+)}0 &amp; \leftarrow(2x+2)-(2x+2)
+\end{alignat*}\]</div>
+</section>
+</div><p>From the previous example, we also know that</p>
+<div class="math notranslate nohighlight">
+\[\frac{x^2+3x+2}{x+1}=(x+2)\]</div>
+<p>Let’s do another polynomial long-division problem.</p>
+<div class="proof example admonition" id="polyLongExam2">
+<p class="admonition-title"><span class="caption-number">Example 47 </span></p>
+<section class="example-content" id="proof-content">
+<p>Use polynomial long division to evaluate <span class="math notranslate nohighlight">\(\frac{3x^3-2x^2-150}{x^2-4}\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We should first notice that the numerator and denominator are missing an <span class="math notranslate nohighlight">\(x\)</span> term. This would be like saying <span class="math notranslate nohighlight">\(12\)</span> is the same as <span class="math notranslate nohighlight">\(102\)</span>. Therefore, we must first rewrite the quotient.</p>
+<div class="math notranslate nohighlight">
+\[\frac{3x^3-2x^2+0x-150}{x^2+0x-4}\]</div>
+<p class="sd-card-text">Next, we have the following setup</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}+0x-4 &amp; )\overline{3x^{3}-2x^{2}+0x-150}
+\end{align*}\]</div>
+<p class="sd-card-text">Then we start the polynomial long division</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{alignat*}{10}
+ &amp; \phantom{)3x^{3}-2x^{2}+)}3x-2\\
+x^{2}+0x-4 &amp; )\overline{3x^{3}-2x^{2}+0x-150}\\
+- &amp; \underline{\phantom{)}3x^{3}-0x^{2}-12x} &amp; \leftarrow3x(x^{2}+0x-4)\phantom{x)-(3x^{3}-2x^{2}-12)}\\
+ &amp; \phantom{)3^{3}}-2x^{2}+12x-150 &amp; \leftarrow(3x^{3}-2x^{2}+0x)-(3x^{3}-2x^{2}-12x)\\
+- &amp; \underline{\phantom{xx}-2x^{2}+0x\phantom{x}+8} &amp; \leftarrow-2(x^{2}+0x-4)\phantom{150)-(-2x^{2}+0x+))}\\
+ &amp; \phantom{xxxxxxxx}12x-158 &amp; \leftarrow(-2x^{2}+12x-150)-(-2x^{2}+0x+8)\\
+\end{alignat*}\]</div>
+<p class="sd-card-text">Therefore, we have</p>
+<div class="math notranslate nohighlight">
+\[\frac{3x^3-2x^2-150}{x^2-4}=3x-2+\frac{12x-158}{x^2-4}\]</div>
+</div>
+</details></section>
+</div></section>
+<section id="synthetic-division">
+<h2>Synthetic Division<a class="headerlink" href="#synthetic-division" title="Link to this heading"></a></h2>
+<p>In <strong>special cases</strong>, we can use a method called synthetic division instead of polynomial long division. We can use synthetic division when a polynomial is divided by a binomial <span class="math notranslate nohighlight">\(x-k\)</span>. This means the previous example could not be done by synthetic division.</p>
+<p>Consider the following polynomial long division of <span class="math notranslate nohighlight">\(\frac{3x^3-2x^2+0x-150}{x-4}\)</span>. Notice that the denominator satisfied the <span class="math notranslate nohighlight">\(x-k\)</span> requirement. We then have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{alignat*}{10}
+ &amp; \phantom{)3x^{3}-}3x^{2}+10x+40\\
+x-4 &amp; )\overline{3x^{3}-2x^{2}\phantom{xx}+0x-150}\\
+- &amp; \underline{\phantom{x}3x^{3}-12x^{2}} &amp; \leftarrow3x^{2}(x-4)\phantom{x)-(3x^{3}-2x^{2}-12xxxx)}\\
+ &amp; \phantom{)3^{3}xxxx}10x^{2}+0x &amp; \leftarrow(3x^{3}-2x^{2}+0x)-(3x^{3}-2x^{2}-12x)\\
+- &amp; \underline{\phantom{xxxxxx}10x^{2}-40x} &amp; \leftarrow-2(x^{2}+0x-4)\phantom{150)-(-2x^{2}+0x+))}\\
+ &amp; \phantom{xxxxxxxxxxx}40x-150 &amp; \leftarrow(-2x^{2}+12x-150)-(-2x^{2}+0x+8)\\
+- &amp; \underline{\phantom{xxxxxxxxxxx}40x-160} &amp; \leftarrow40(x-4)\phantom{0)-(4x-160xxxxxxxxxxx)}\\
+ &amp; \phantom{xxxxxxxxxxxxxxxx}10 &amp; \leftarrow(40x-150)-(4x-160)\phantom{xxxxxxxxxx)}
+\end{alignat*}\]</div>
+<p>Next, we want to do this again but remove all the <span class="math notranslate nohighlight">\(x^n\)</span> factors.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{alignat*}{10}
+&amp; \phantom{)3x^{3}-}3\phantom{xx}10\phantom{xxxx}40\\
+-4 &amp; )\overline{3\phantom{xx}-2\phantom{xx}0\phantom{x}-150}\\
+- &amp; \underline{\phantom{)}3\phantom{xx}-4}\\
+ &amp; \phantom{)3^{3}}10\phantom{xxxx}0\\
+- &amp; \underline{\phantom{xxx}10\phantom{xxx}40}\\
+ &amp; \phantom{xxxxxxxx}40\phantom{x}-150\\
+- &amp; \underline{\phantom{xxxxxxxx}40\phantom{x}-160}\\
+ &amp; \phantom{xxxxxxxxxxxxx}10
+\end{alignat*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(q(x)=3x^2+10x+40\)</span> and <span class="math notranslate nohighlight">\(r(x)=10\)</span> still. We can still remove some items from the work:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{alignat*}{10}
+ &amp; \phantom{)3x^{3}-}3\phantom{xx}10\phantom{xxxx}40\\
+-4 &amp; )\overline{3\phantom{xx}-2\phantom{xx}0\phantom{x}-150}\\
+- &amp; \underline{\phantom{)}\phantom{xxx}-4}\\
+ &amp; \phantom{)3^{3}xx}10\phantom{xxxx}\\
+- &amp; \underline{\phantom{xxxxi}10\phantom{xx}40}\\
+ &amp; \phantom{xxxxxxxx}40\phantom{x}\\
+- &amp; \underline{\phantom{xxxxxxxx}40\phantom{x}-160}\\
+ &amp; \phantom{xxxxxxxxxxxxx}10
+\end{alignat*}\]</div>
+<p>Next, we can smash everything together to get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{)3x^{3}-}3\phantom{xx}10\phantom{xxxx}40\\
+-4 &amp; )\overline{3\phantom{xx}-2\phantom{xxxxx}0\phantom{x}-150}\\
+- &amp; \underline{\phantom{xxx}-12\phantom{xx}-40\phantom{x}-160}\\
+ &amp; \phantom{xxxxx}10\phantom{xxxx}40\phantom{xxx}10
+\end{align*}\]</div>
+<p>Finally, if we use <span class="math notranslate nohighlight">\(4\)</span> instead of <span class="math notranslate nohighlight">\(-4\)</span> and add down instead of subtract down we have synthetic division:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{)3x^{3}-}3\phantom{xxxxx}10\phantom{xxxx}40\\
+4 &amp; )\overline{3\phantom{xx}-2\phantom{xxxxx}0\phantom{x}-150}\\
++ &amp; \underline{\phantom{xxxxx}12\phantom{xxxx}40\phantom{xxx}160}\\
+ &amp; \phantom{xxxxx}10\phantom{xxxx}40\phantom{xxxx}10
+\end{align*}\]</div>
+<p>Again, doing this shows that <span class="math notranslate nohighlight">\(q(x)=3x^2+10x+40\)</span> and <span class="math notranslate nohighlight">\(r(x)=10\)</span>. We also have</p>
+<div class="math notranslate nohighlight">
+\[\frac{3x^3-2x^2+0x-150}{x-4}=3x^2+10x+40+\frac{10}{x-4}\]</div>
+<section id="synthetic-division-examples">
+<h3>Synthetic Division Examples<a class="headerlink" href="#synthetic-division-examples" title="Link to this heading"></a></h3>
+<div class="proof example admonition" id="synDivExam1">
+<p class="admonition-title"><span class="caption-number">Example 48 </span></p>
+<section class="example-content" id="proof-content">
+<p>Rewrite <span class="math notranslate nohighlight">\(\frac{5x^3-6x^2-28x-2}{x+2}\)</span> as <span class="math notranslate nohighlight">\(q(x)+\frac{r(x)}{x+2}\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">In this case <span class="math notranslate nohighlight">\(x-k\)</span> we have <span class="math notranslate nohighlight">\(x+2=x-(-2)\)</span>. This means <span class="math notranslate nohighlight">\(k=-2\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{xxxxxx}5\phantom{xx}-16\phantom{xxxx}4\\
+-2 &amp; )\overline{5\phantom{xx}-6\phantom{xx}-28\phantom{xx}-2}\\
++ &amp; \underline{\phantom{xxx}-10\phantom{xxxx}32\phantom{xx}-8}\\
+ &amp; \phantom{xxx}-16\phantom{xxxxx}4\phantom{xx}-10
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore,</p>
+<div class="math notranslate nohighlight">
+\[\frac{5x^3-6x^2-28x-2}{x+2} = 5x^2 -16x +4 + \frac{-10}{x+2}\]</div>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="synDivExam2">
+<p class="admonition-title"><span class="caption-number">Example 49 </span></p>
+<section class="example-content" id="proof-content">
+<p>Evaluate <span class="math notranslate nohighlight">\(\frac{5x^3-6x^2+3x}{x-1}\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Here <span class="math notranslate nohighlight">\(k=1\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{xxxxxx}5\phantom{xx}-1\phantom{xxxx}2\\
+1 &amp; )\overline{5\phantom{xx}-6\phantom{xxx}3\phantom{xxxxx}0}\\
++ &amp; \underline{\phantom{xxxxxx}5\phantom{x}-1\phantom{xxxxx}2}\\
+ &amp; \phantom{xxx}-1\phantom{xxxxx}2\phantom{xxxx}2
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, we have <span class="math notranslate nohighlight">\(\frac{5x^3-6x^2+3x}{x-1}=5x^2-x+2+\frac{2}{x-1}\)</span>.</p>
+</div>
+</details></section>
+</div><hr class="docutils" />
+<p>Quick reminder: <span class="math notranslate nohighlight">\(i=\sqrt{-1}\)</span>, <span class="math notranslate nohighlight">\(i^2=-1\)</span>, <span class="math notranslate nohighlight">\(i^3=-i\)</span>, and <span class="math notranslate nohighlight">\(i^4=1\)</span>.</p>
+<p>The following are examples of how to do arithmetic involving <span class="math notranslate nohighlight">\(i\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    (2-i)(-8+4i) &amp; = -16 + 8i + 8i - 4(-1)\\
+    &amp; = -16+16i+4\\
+    &amp; = -12+16i
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[30+(4+i) = 34 + i\]</div>
+<div class="math notranslate nohighlight">
+\[(14+5i)+(-4-8i)=10-3i\]</div>
+<hr class="docutils" />
+<div class="proof example admonition" id="synDivExam3">
+<p class="admonition-title"><span class="caption-number">Example 50 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=x^3+9x^2+28x+30%\)</span>. Use synthetic division with <span class="math notranslate nohighlight">\(k=-3+i\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Here is the setup</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{xxxxxx)}1\\
+-3+i &amp; )\overline{\phantom{x}1\phantom{xxxx}9\phantom{xxxx}28\phantom{xxxx}30}\\
++ &amp; \underline{\phantom{xxxxxxxxxxxxxxxxxxxx}}\\
+ &amp; \phantom{xxxxxxxxxxxxxxxxxxxx}
+\end{align*}\]</div>
+<p class="sd-card-text">Then we will compute <span class="math notranslate nohighlight">\(1(-3+i)=-3+i\)</span> and then compute <span class="math notranslate nohighlight">\(9+(-3+i)=6+i\)</span>. This then gives:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{xxxxxx)}1\phantom{xxx}6+i\\
+-3+i &amp; )\overline{\phantom{x}1\phantom{xxxx}9\phantom{xxxx}28\phantom{xxxx}30}\\
++ &amp; \underline{\phantom{xxx}-3+i\phantom{xxxxxxxxxxxx}}\\
+ &amp; \phantom{xxxxx}6+i
+\end{align*}\]</div>
+<p class="sd-card-text">Then we will compute (<span class="math notranslate nohighlight">\(i^2=-1\)</span>) <span class="math notranslate nohighlight">\((6+i)(-3+i)=-19+3i\)</span> and then compute <span class="math notranslate nohighlight">\(28-(-19+3i)\)</span>. This then gives:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{xxxxxx)}1\phantom{xxxxx}6+i\phantom{xxxxx}9+3i\\
+-3+i &amp; )\overline{\phantom{x}1\phantom{xxxx}9\phantom{xxxxxx}28\phantom{xxxxxxx}30}\\
++ &amp; \underline{\phantom{xxx}-3+i\phantom{x}-19+3i\phantom{xxxxxxxx}}\\
+ &amp; \phantom{xxxxx}6+i\phantom{xxxx}9+3i
+\end{align*}\]</div>
+<p class="sd-card-text">Then we will compute <span class="math notranslate nohighlight">\((9+3i)(-3+i)=30\)</span> and then compute <span class="math notranslate nohighlight">\(30+(-30)=0\)</span>. This then gives:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{xxxxxx)}1\phantom{xxxxx}6+i\phantom{xxxxx}9+3i\\
+-3+i &amp; )\overline{\phantom{x}1\phantom{xxxx}9\phantom{xxxxxx}28\phantom{xxxxxxx}30}\\
++ &amp; \underline{\phantom{xxx}-3+i\phantom{x}-19+3i\phantom{xxxxx}30}\\
+ &amp; \phantom{xxxxx}6+i\phantom{xxxx}9+3i\phantom{xxxxxx}0
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, we have <span class="math notranslate nohighlight">\(\frac{x^3+9x^2+28x+30}{x+3-i}=x^2+(6+i)x+(9+3i)\)</span></p>
+</div>
+</details></section>
+</div></section>
+</section>
+<section id="remainder-theorem">
+<h2>Remainder Theorem<a class="headerlink" href="#remainder-theorem" title="Link to this heading"></a></h2>
+<p>We know that <span class="math notranslate nohighlight">\(f(x)=g(x)q(x)+r(x)\)</span> is from the division algorithm. If we force <span class="math notranslate nohighlight">\(g(x)=x-k\)</span> then we have the following identity</p>
+<div class="math notranslate nohighlight">
+\[f(x)=(x-k)q(x)+r(x)\]</div>
+<p>where <span class="math notranslate nohighlight">\(r(x)\)</span> is going to be a constant value. In fact, this leads to an important theorem.</p>
+<div class="proof definition admonition" id="remaindTheorem">
+<p class="admonition-title"><span class="caption-number">Definition 37 </span> (Remainder Theorem)</p>
+<section class="definition-content" id="proof-content">
+<p>If a polynomial <span class="math notranslate nohighlight">\(f(x)\)</span> is divided by <span class="math notranslate nohighlight">\(x-k\)</span>, then the remainder is equal to <span class="math notranslate nohighlight">\(f(k)\)</span>.</p>
+</section>
+</div><div class="proof example admonition" id="remaindExam1">
+<p class="admonition-title"><span class="caption-number">Example 51 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=-x^4+3x^2-4x-5\)</span>. Evaluate <span class="math notranslate nohighlight">\(f(-3)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Instead of evaluating <span class="math notranslate nohighlight">\(f(-3)\)</span> as the following:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(-3) &amp; = -(-3)^4+3(-3)^2-4(-3)-5\\
+    &amp; = -81 + 27 + 12 - 5\\
+    &amp; = -47
+\end{align*}\]</div>
+<p class="sd-card-text">We can do the following:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{xxxxx}-1\phantom{xxx}3\phantom{xxx}-6\phantom{xxxxx}14\\
+-3 &amp; )\overline{\phantom{x}-1\phantom{xx}0\phantom{xxxx}3\phantom{xx}-4\phantom{xxxx}-5}\\
++ &amp; \underline{\phantom{xxxxxxx}3\phantom{xx}-9\phantom{xxx}18\phantom{xxx}-42}\\
+ &amp; \phantom{xxxxxxx}3\phantom{xx}-6\phantom{xxx}14\phantom{xxx}-47
+\end{align*}\]</div>
+<p class="sd-card-text">Would also say, <span class="math notranslate nohighlight">\(f(-3)=-47\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+<section id="root-or-zero-of-a-function">
+<h2>Root (or Zero) of a Function<a class="headerlink" href="#root-or-zero-of-a-function" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="rootofFunction">
+<p class="admonition-title"><span class="caption-number">Definition 38 </span> (Root (or Zero) or a Function)</p>
+<section class="definition-content" id="proof-content">
+<p>A root (or zero) of a  polynomial function <span class="math notranslate nohighlight">\(f(x)\)</span> is a number <span class="math notranslate nohighlight">\(k\)</span> such that <span class="math notranslate nohighlight">\(f(k)=0\)</span>.</p>
+</section>
+</div><p>Currently, finding roots of a polynomial function is difficult when considering all possible real numbers as potential roots. However, in the following section, we can narrow down the search. For now, we will consider testing <span class="math notranslate nohighlight">\(x=0\)</span>, <span class="math notranslate nohighlight">\(x=1\)</span>, or <span class="math notranslate nohighlight">\(x=-1\)</span>.</p>
+<div class="proof example admonition" id="rootExam1">
+<p class="admonition-title"><span class="caption-number">Example 52 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=x^4-6x^3+8x^2+6x-9\)</span>. Find all the roots for <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">It should be obvious that <span class="math notranslate nohighlight">\(x=0\)</span> is not a root. Therefore, we will move on to <span class="math notranslate nohighlight">\(x=1\)</span>. Using the remainder theorem we will see if <span class="math notranslate nohighlight">\(f(1)=0\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{xxxxxxx}1\phantom{xx}-5\phantom{xxx}3\phantom{xxx}9\\
+1 &amp; )\overline{\phantom{x}1\phantom{xx}-6\phantom{xxxx}8\phantom{xxx}6\phantom{x}-9}\\
++ &amp; \underline{\phantom{xxxxxxx}1\phantom{xx}-5\phantom{xxx}3\phantom{xxx}9}\\
+ &amp; \phantom{xxxxx}-5\phantom{xxxx}3\phantom{xxx}9\phantom{xxx}0
+\end{align*}\]</div>
+<p class="sd-card-text">This means, <span class="math notranslate nohighlight">\(f(1)=0\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[f(x)=(x-1)(x^3-5x^2+3x+9)\]</div>
+<p class="sd-card-text">We then want to see if <span class="math notranslate nohighlight">\(f(-1)=0\)</span>. Using the remainder theorem we will evaluate <span class="math notranslate nohighlight">\(x^3-5x^2+3x+9\)</span> at <span class="math notranslate nohighlight">\(x=-1\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ &amp; \phantom{xxxxxxx}1\phantom{xx}-6\phantom{xxxx}9\\
+1 &amp; )\overline{\phantom{x}1\phantom{xx}-5\phantom{xxxx}3\phantom{xxxx}9}\\
++ &amp; \underline{\phantom{xxxxxxx}1\phantom{xxxx}6\phantom{xx}-9}\\
+ &amp; \phantom{xxxxx}-6\phantom{xxxx}3\phantom{xxxx}0
+\end{align*}\]</div>
+<p class="sd-card-text">This means, <span class="math notranslate nohighlight">\(f(-1)=0\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[f(x)=(x-1)(x+1)(x^2-6x+9)\]</div>
+<p class="sd-card-text">Looking at <span class="math notranslate nohighlight">\(x^2-6x+9\)</span> we know that it factors to <span class="math notranslate nohighlight">\((x-3)(x-3)\)</span>. Therefore,</p>
+<div class="math notranslate nohighlight">
+\[f(x)=(x-1)(x+1)(x-3)^2\]</div>
+<p class="sd-card-text">and all the roots of <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\(\{1,-1,3\}\)</span>.</p>
+</div>
+</details></section>
+</div><p>In the next section, we will discover how to find all possible rational roots. This will help find zero of polynomials more efficiently.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="31.html" class="btn btn-neutral float-left" title="Section 3.1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="33.html" class="btn btn-neutral float-right" title="Section 3.3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

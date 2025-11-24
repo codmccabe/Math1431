@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 3.1 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 3.2" href="32.html" />
+    <link rel="prev" title="Section 2.8" href="../chapter2/28.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 3.1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definitions">Definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vertex-formula">Vertex Formula</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-of-vertex-and-axis-of-symmetry">Example of Vertex and Axis of Symmetry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#x-and-y-intercepts"><span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> Intercepts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#free-fall-model">Free Fall Model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 3.1</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter3/31.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-3-1">
+<h1>Section 3.1<a class="headerlink" href="#section-3-1" title="Link to this heading"></a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="polynomial">
+<p class="admonition-title"><span class="caption-number">Definition 33 </span></p>
+<section class="definition-content" id="proof-content">
+<p>A polynomial function <span class="math notranslate nohighlight">\(f\)</span> of degree <span class="math notranslate nohighlight">\(n\)</span> is a non-negative integer of the form:</p>
+<div class="math notranslate nohighlight">
+\[f(x)=a_n x^n + a_{n-1} x^{n-1}+\dots + a_1 x + a_0\]</div>
+<p>where <span class="math notranslate nohighlight">\(a_n\)</span>, <span class="math notranslate nohighlight">\(a_{n-1}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(a_1\)</span>, and <span class="math notranslate nohighlight">\(a_0\)</span> are complex numbers and <span class="math notranslate nohighlight">\(a_n\ne0\)</span>.</p>
+<ul class="simple">
+<li><p>We say <span class="math notranslate nohighlight">\(a_n\)</span>, <span class="math notranslate nohighlight">\(a_{n-1}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(a_1\)</span> and <span class="math notranslate nohighlight">\(a_0\)</span> are coefficients.</p></li>
+<li><p>We say <span class="math notranslate nohighlight">\(a_n\)</span> is the leading coefficient.</p></li>
+</ul>
+</section>
+</div><p>We have already seen two polynomial functions.</p>
+<div class="math notranslate nohighlight">
+\[f(x)=c\]</div>
+<p>where <span class="math notranslate nohighlight">\(c\)</span> is some real number.</p>
+<ul class="simple">
+<li><p>We call this function the constant function.</p></li>
+<li><p>This is a monomial.</p></li>
+<li><p>This has a degree of zero.</p></li>
+<li><p>The graph of the function is a horizontal line.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[f(x)=mx+b\]</div>
+<p>where <span class="math notranslate nohighlight">\(m\)</span> is the slope of the line and <span class="math notranslate nohighlight">\(b\)</span> is the <span class="math notranslate nohighlight">\(y\)</span> component of the <span class="math notranslate nohighlight">\(y\)</span>-intercept. Assuming <span class="math notranslate nohighlight">\(m\ne0\)</span> we have</p>
+<ul class="simple">
+<li><p>This function is called a linear function.</p></li>
+<li><p>The is a binomial</p></li>
+<li><p>This has a degree of one.</p></li>
+<li><p>The graph of the function is a slanted line. Where the slant is quantified by <span class="math notranslate nohighlight">\(m\)</span>.</p></li>
+</ul>
+<p>The next polynomial function we will look at is the <strong>quadratic function</strong>.</p>
+<div class="proof definition admonition" id="quadFunction">
+<p class="admonition-title"><span class="caption-number">Definition 34 </span></p>
+<section class="definition-content" id="proof-content">
+<p>A quadratic function <span class="math notranslate nohighlight">\(f\)</span> is of the form</p>
+<div class="math notranslate nohighlight">
+\[f(x)=ax^2+bx+c\]</div>
+<p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are complex numbers and <span class="math notranslate nohighlight">\(a\ne0\)</span>.</p>
+<ul class="simple">
+<li><p>This is a trinomail</p></li>
+<li><p>The degree is two.</p></li>
+<li><p>The graph is a parabola</p></li>
+</ul>
+</section>
+</div><p>When graphing a quadratic function we want to write <span class="math notranslate nohighlight">\(ax^2+bx+c\)</span> in the form <span class="math notranslate nohighlight">\(a(x-h)^2+k\)</span>. We do this by using translating and scaling of graph techniques learned in Chapter 2.</p>
+</section>
+<section id="vertex-formula">
+<h2>Vertex Formula<a class="headerlink" href="#vertex-formula" title="Link to this heading"></a></h2>
+<p>The graph of the parabola has two directions and has the following labels:</p>
+<p>When <span class="math notranslate nohighlight">\(a&gt;0\)</span></p>
+<p><img alt="Graph of a facing up parabola labeled with vertex and axis of symmetry" src="../_images/parabolaGraph1.png" /></p>
+<p>When <span class="math notranslate nohighlight">\(a&lt;0\)</span></p>
+<p><img alt="Graph of a facing down parabola labeled with vertex and axis of symmetry" src="../_images/parabolaGraph2.png" /></p>
+<p>By writing <span class="math notranslate nohighlight">\(ax^x+bx+c\)</span> in the form <span class="math notranslate nohighlight">\(a(x-h)^2+k\)</span> we will know that the vertex is located at <span class="math notranslate nohighlight">\((h,k)\)</span>. Next, we will try to find <span class="math notranslate nohighlight">\(h\)</span> and <span class="math notranslate nohighlight">\(k\)</span> in terms of <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<p>First, we write <span class="math notranslate nohighlight">\(ax^2+bx+c\)</span> in the following way and then factor out an <span class="math notranslate nohighlight">\(a\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    ax^2+bx+c &amp; = ax^2 +b\left(\frac{a}{a}\right)x+c\\
+    &amp; = ax^2 + a\left(\frac{b}{a}\right)x+c\\
+    &amp; = a\left(x^2 + \frac{b}{a}x\right) + c
+\end{align*}\]</div>
+<p>Next, we look specifically at <span class="math notranslate nohighlight">\(x^2+\frac{b}{a}x\)</span> in order to complete the square on these two terms we do the following:</p>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\frac{b}{a}}{2}\right)^2=\left(\frac{b}{2a}\right)^2=\frac{b^2}{4a^2}\]</div>
+<p>This means that the term <span class="math notranslate nohighlight">\(\frac{b^2}{4a^2}\)</span> must be added to the expression <span class="math notranslate nohighlight">\(x^2+\frac{b}{a}x\)</span> in order to complete the square. However, we do not want to change that expression. Therefore, we do the following:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x^2+\frac{b}{a}x &amp; = x^2+\frac{b}{a}x + \frac{b^2}{4a^2} - \frac{b^2}{4a^2}\\
+    &amp; = \left(x+\frac{b}{2a}\right)^2 - \frac{b^2}{4a^2}
+\end{align*}\]</div>
+<p>We now rewrite and simplify <span class="math notranslate nohighlight">\(a\left(x^2 + \frac{b}{a}x\right) + c\)</span> in the following way:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    a\left(x^2 + \frac{b}{a}x\right) + c &amp; = a\left(\left(x+\frac{b}{2a}\right)^2 - \frac{b^2}{4a^2}\right)+c\\
+    &amp; = a\cdot \left(x+\frac{b}{2a}\right)^2 - a\cdot\frac{b^2}{4a^2} + c\\
+    &amp; = a\left(x+\frac{b}{2a}\right)^2 - \frac{b^2}{4a} + c\\
+    &amp; = a\left(x+\frac{b}{2a}\right)^2 + \frac{4ac-b^2}{4a}
+\end{align*}\]</div>
+<p>From the last step, we see:</p>
+<div class="math notranslate nohighlight">
+\[a\left(x+\frac{b}{2a}\right)^2 + \frac{4ac-b^2}{4a} = a\left(x-\left(-\frac{b}{2a}\right)\right)^2 + \frac{4ac-b^2}{4a}\]</div>
+<p>This means <span class="math notranslate nohighlight">\(h=-\frac{b}{2a}\)</span> and <span class="math notranslate nohighlight">\(k=f(-\frac{b}{2a})\)</span> or <span class="math notranslate nohighlight">\(k=\frac{4ac-b^2}{4a}\)</span>.</p>
+<p>With this in mind, we have the following properties for graphing a quadratic function.</p>
+<div class="proof property admonition" id="graphQuadFunction">
+<p class="admonition-title"><span class="caption-number">Property 3 </span> (Quadratic Function Graph)</p>
+<section class="property-content" id="proof-content">
+<p>Given <span class="math notranslate nohighlight">\(f(x)=ax^2+bx+c\)</span> we can write in the form:</p>
+<div class="math notranslate nohighlight">
+\[f(x)=a(x-h)^2+k\]</div>
+<p>where <span class="math notranslate nohighlight">\(a\ne0\)</span>, <span class="math notranslate nohighlight">\(h=-\frac{b}{2a}\)</span> and <span class="math notranslate nohighlight">\(k=f(-\frac{b}{2a})\)</span>.</p>
+<ul class="simple">
+<li><p>The vertex of the parabola is at <span class="math notranslate nohighlight">\((h,k)\)</span> and the axis of symmetry is at <span class="math notranslate nohighlight">\(x=h\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(a&gt;0\)</span>, then the parabola opens up.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(a&lt;0\)</span>, then the parabola opens down.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(|a|&gt;1\)</span>, then the parabola is narrower (than <span class="math notranslate nohighlight">\(y=x^2\)</span>).</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(0&lt;|a|&lt;1\)</span>, then the parabola is wider (than (<span class="math notranslate nohighlight">\(y=x^2\)</span>.</p></li>
+<li><p>The value of <span class="math notranslate nohighlight">\(h\)</span> describes the horizontal shift of the parabola.</p></li>
+<li><p>The value of <span class="math notranslate nohighlight">\(k\)</span> describes the vertical shift of the parabola.</p></li>
+</ul>
+</section>
+</div><p>We will discuss the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> intercepts in more detail soon.</p>
+<section id="example-of-vertex-and-axis-of-symmetry">
+<h3>Example of Vertex and Axis of Symmetry<a class="headerlink" href="#example-of-vertex-and-axis-of-symmetry" title="Link to this heading"></a></h3>
+<div class="proof example admonition" id="vertexAxisSymm">
+<p class="admonition-title"><span class="caption-number">Example 42 </span></p>
+<section class="example-content" id="proof-content">
+<p>Find the axis and vertex of the parabola <span class="math notranslate nohighlight">\(f(x)=-3x^2+12x-8\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We know the vertex for the function <span class="math notranslate nohighlight">\(f(x)=ax^2+bx+c\)</span> is at <span class="math notranslate nohighlight">\(\left(-\frac{b}{2a},f(-\frac{b}{2a})\right)\)</span>. First, we will find <span class="math notranslate nohighlight">\(-\frac{b}{2a}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[-\frac{b}{2a}=-\frac{12}{2(-3)}=2\]</div>
+<p class="sd-card-text">Next, we will evaluate <span class="math notranslate nohighlight">\(f(2)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f(2) &amp; = -3(2)^2+12(2)-8
+    &amp; = 4
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the vertex of the parabola is <span class="math notranslate nohighlight">\((2,4)\)</span>. The exponent of the vertex is <span class="math notranslate nohighlight">\(2\)</span>. This means the axis is <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+<section id="x-and-y-intercepts">
+<h3><span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> Intercepts<a class="headerlink" href="#x-and-y-intercepts" title="Link to this heading"></a></h3>
+<p>The <span class="math notranslate nohighlight">\(y\)</span> intercept of the function <span class="math notranslate nohighlight">\(f(x)=ax^2+bx+c\)</span> is <span class="math notranslate nohighlight">\((0,f(0))=(0,c)\)</span>. However, the <span class="math notranslate nohighlight">\(x\)</span> intercepts are no that simple. Consider, we want to know when <span class="math notranslate nohighlight">\(f(x)=0\)</span>. Consider the following using completing the square method.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    ax^2+bx+c &amp; = 0\\
+    x^2+\frac{b}{a}x+\frac{c}{a} &amp; = 0\\
+    x^2+\frac{b}{a}x + C_x &amp; = -\frac{c}{a} + C_x
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(C_x\)</span> will complete the square for the left-hand side.</p>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\frac{b}{a}}{2}\right)^2=\left(\frac{b}{2a}\right)^2=\frac{b^2}{4a^2}\]</div>
+<p>This means <span class="math notranslate nohighlight">\(C_x=\frac{b}{4a^2}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x^2+\frac{b}{a}x + C_x &amp; = -\frac{c}{a} + C_x\\
+    x^2+\frac{b}{a}x + \frac{b}{4a^2} &amp; = -\frac{c}{a} + \frac{b}{4a^2}\\
+    \left(x+\frac{b}{2a}\right)^2 &amp; = \frac{b^2-4ac}{4a^2}\\
+    x+\frac{b}{2a} &amp; = \pm \sqrt{\frac{b^2-4ac}{4a^2}}\\
+    x &amp; = -\frac{b}{2a} \pm \frac{\sqrt{b^2-4ac}}{2a}\\
+    &amp; = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
+\end{align*}\]</div>
+<p>That is, if <span class="math notranslate nohighlight">\(f(x)=0\)</span> then it will happen when <span class="math notranslate nohighlight">\(x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}\)</span>. However, it is possible for <span class="math notranslate nohighlight">\(\sqrt{b^2-4ac}\)</span> to be not real or even zero. So we have the following conclusions.</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(b^2-4ac=0\)</span>, then the parabola will have only one <span class="math notranslate nohighlight">\(x\)</span> intercept at the vertex <span class="math notranslate nohighlight">\((-\frac{b}{2a},0)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(b^2-4ac&gt;0\)</span>, then the parabola will have two <span class="math notranslate nohighlight">\(x\)</span> intercepts at <span class="math notranslate nohighlight">\((\frac{-b\pm \sqrt{b^2-4ac}}{2a},0)\)</span></p></li>
+<li><p>If <span class="math notranslate nohighlight">\(b^2-4ac&lt;0\)</span>, then the parabola will have zero <span class="math notranslate nohighlight">\(x\)</span> intercepts since <span class="math notranslate nohighlight">\(\sqrt{b^2-4ac}\)</span> is not a real number.</p></li>
+</ul>
+<div class="proof example admonition" id="xyInterceptsParabola">
+<p class="admonition-title"><span class="caption-number">Example 43 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f(x)=-3x^2+12x-8\)</span>. Find the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> intercept(s).</p>
+<p>The <span class="math notranslate nohighlight">\(y\)</span> intercept.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We want to <span class="math notranslate nohighlight">\((0,f(0))\)</span>. That is,</p>
+<div class="math notranslate nohighlight">
+\[f(0)=-3(0)^2+12(0)-8=-8\]</div>
+<p class="sd-card-text">Therefore, the <span class="math notranslate nohighlight">\(y\)</span> intercept is at <span class="math notranslate nohighlight">\((0,-8)\)</span>.</p>
+</div>
+</details><p>The <span class="math notranslate nohighlight">\(x\)</span> intercept.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Want to solve <span class="math notranslate nohighlight">\(f(x)=0\)</span>. Here we can use the <span class="math notranslate nohighlight">\(x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}\)</span> formula (quadratic formula).</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x &amp; = \frac{-b\pm \sqrt{b^2-4ac}}{2a}\\
+    &amp; = \frac{-(12)\pm \sqrt{(12)^2-4(-3)(-8)}}{2(-3)}\\
+    &amp; = \frac{-12\pm \sqrt{48}}{-6}\\
+    &amp; = \frac{-12\pm 4\sqrt{3}}{-6}\\
+    &amp; = \frac{6\pm 2\sqrt{3}}{3}
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the <span class="math notranslate nohighlight">\(x\)</span> intercepts are at <span class="math notranslate nohighlight">\((\frac{6+2\sqrt{3}}{3},0)\)</span> and <span class="math notranslate nohighlight">\((\frac{6-2\sqrt{3}}{3},0)\)</span>.</p>
+</div>
+</details></section>
+</div></section>
+</section>
+<section id="free-fall-model">
+<h2>Free Fall Model<a class="headerlink" href="#free-fall-model" title="Link to this heading"></a></h2>
+<p>The position function of an object in free fall or an object projected directly upward or downward is the following.</p>
+<div class="math notranslate nohighlight">
+\[s(t)=-\frac{1}{2}gt^2+v_0 t+s_0\]</div>
+<p>where <span class="math notranslate nohighlight">\(g\)</span> is the gravitation constant, <span class="math notranslate nohighlight">\(v_0\)</span> is the initial velocity, and <span class="math notranslate nohighlight">\(s_0\)</span> is the initial height. In this course, we will use <span class="math notranslate nohighlight">\(g=32\)</span> feet per second squared. That is,</p>
+<div class="math notranslate nohighlight">
+\[s(t)=-16t^2+v_0t+s_0\]</div>
+<p>Here is an example of how we can use the model.</p>
+<div class="proof example admonition" id="projectExample1">
+<p class="admonition-title"><span class="caption-number">Example 44 </span></p>
+<section class="example-content" id="proof-content">
+<p>A ball is projected directly upward from an initial height of <span class="math notranslate nohighlight">\(75\)</span> feet with an initial velocity of <span class="math notranslate nohighlight">\(112\)</span> feet per second.</p>
+<p>Find the function that gives the height of the ball with respect to time.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We are given <span class="math notranslate nohighlight">\(v_0=112\)</span> and <span class="math notranslate nohighlight">\(s_0=75\)</span>. Therefore, the function is</p>
+<div class="math notranslate nohighlight">
+\[s(t)=-16t^2+112t+75\]</div>
+</div>
+</details><p>Find the maximum height of the ball.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The maximum height will occur when the parabola achieves maximum output. This will happen at the vertex of the parabola. First, we will find how long it will take to reach maximum height by finding the <span class="math notranslate nohighlight">\(x\)</span> component (or <span class="math notranslate nohighlight">\(t\)</span> component in this context) of the vertex.</p>
+<div class="math notranslate nohighlight">
+\[-\frac{b}{2a}=-\frac{112}{2(-16)}=\frac{7}{2}=3.5\]</div>
+<p class="sd-card-text">This means that at <span class="math notranslate nohighlight">\(3.5\)</span> seconds into travel the ball will reach the maximum height.</p>
+<p class="sd-card-text">Next, we want to evaluate <span class="math notranslate nohighlight">\(s(t)\)</span> at <span class="math notranslate nohighlight">\(3.5\)</span> seconds to find the maximum height.</p>
+<div class="math notranslate nohighlight">
+\[s(3.5)=-16(3.5)^2+112(3.5)+75=271\]</div>
+<p class="sd-card-text">That is, the maximum height of the ball will be <span class="math notranslate nohighlight">\(271\)</span> feet off the ground.</p>
+</div>
+</details><p>Find how long it will take the ball to hit the ground.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The ball hits the ground when <span class="math notranslate nohighlight">\(s(t)=0\)</span>. That is, we want to solve <span class="math notranslate nohighlight">\(s(t)=0\)</span> or <span class="math notranslate nohighlight">\(-16t^2+112t+75=0\)</span>. To do this we will use the quadratic formula:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x &amp; = \frac{-112\pm \sqrt{112^2-4(-16)(75)}}{2(-16)}\\
+    &amp; = \frac{-112\pm\sqrt{17344}}{-32}\\
+    &amp; = \frac{-112\pm8\sqrt{271}}{-32}\\
+    &amp; = \frac{14\pm\sqrt{271}}{4}\\
+    &amp; \approx -0.6155 \text{ or } 7.6155
+\end{align*}\]</div>
+<p class="sd-card-text">Here we will take the positive value. That is, it will take <span class="math notranslate nohighlight">\(7.6155\)</span> seconds to hit the ground.</p>
+</div>
+</details></section>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../chapter2/28.html" class="btn btn-neutral float-left" title="Section 2.8" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="32.html" class="btn btn-neutral float-right" title="Section 3.2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+# Section 4.5
+
+Remember 
+* $a^x=a^y$ if and only if $x=y$,
+* $\log_a(x)=\log_a(y)$ if and only if $x=y$,
+* $f(f^{-1}(x))=x$ and $f^{-1}(f(x))=x$, and
+* $\log_a(a^x)=x$ and $a^{\log_a(x)}=x$.
+
+## Solve Exponential Equations
+::::{prf:example}
+:label: expSolveExam1
+Solve $8^x=24$
+:::{dropdown} Solution:
+First, we will compose both sides by the natural log function:
+
+$$\ln(8^x)=\ln(24)\to x\ln(8)=\ln(24)$$
+
+Then we will divide both sides by $\ln(8)$.
+
+$$\frac{x\cancel{\ln(8)}}{\cancel{\ln(8)}}=\frac{\ln(24)}{\ln(8)}$$
+
+Therefore, the solution set is $\{\frac{\ln(24)}{\ln(8)\}$.
+:::
+::::
+
+The previous answer can be represented in many different ways. 
+
+$$\frac{\ln(24)}{\ln(8)}=\log_8(24)$$
+
+which could lead to:
+
+$$\log_8(24)=\log_8(8\cdot 3)=\log_8(8)+\log_8(3)=1+\log_8(3)$$
+
+or
+
+$$1+\log_8(3) = 1+\frac{\ln(8)}{\ln(3)}$$
+
+It is also important to notice that $\frac{\ln(24)}{\ln(8)}\ne \ln(3)$.
+
+::::{prf:example}
+:label: expSolveExam2
+Solve $e^{4x}e^{x-1}=5e$.
+:::{dropdown} Solution:
+First, we will apply the law $a^m a^n = a^{m+n}$
+
+$$e^{4x}e^{x-1}=e^{4x+(x-1)}=e^{5x-1}$$
+
+Then we have:
+
+$$e^{5x-1}=5e$$
+
+Next, we will compose both sides by the natural log
+
+\begin{align*}
+    \ln(e^{5x-1}) & = \ln(5e)\\
+    (5x-1)\ln(e) & = \ln(5e)\\
+    5x-1 & = \ln(5e)
+\end{align*}
+
+Next, add one to both sides then divide by 5 to solve for $x$.
+
+\begin{align*}
+    5x-1 & = \ln(5e)\\
+    5x & = \ln(5e)+1\\
+    x & = \frac{\ln(5e)+1}{5}
+\end{align*}
+
+Which can written as
+
+\begin{align*}
+    \frac{\ln(5e)+1}{5} & = \frac{\ln(5)+\ln(e)+1}{5}\\
+    & = \frac{\ln(5)+1+1}{5}\\
+    & = \frac{\ln(5)+2}{5}
+\end{align*}
+
+The solution set is $\{\frac{\ln(5)+2}{5}\}$
+:::
+::::
+
+::::{prf:example}
+:label: expSolveExam3
+Solve $e^{2x}-4e^x+3=0$
+:::{dropdown} Solution:
+First, we will rewrite the equation in the following way
+
+$$\left(e^x\right)^2-4\left(e^x\right)+3=0$$
+
+Then see this is a "quadratic-like" equation. Let $u=e^x$, then $u^2=e^{2x}$ and
+
+\begin{align*}
+    u^2 - 4u + 3 & = 0\\
+    (u-3)(u-1) & = 0
+\end{align*}
+
+With $u=3$ and $u=1$ as solutions, we substitute $u=e^x$.
+
+In the case $u=3$, we have, $e^x=3$. After composing both sides of the equation by the natural log we have $x=\ln(3)$.
+
+In the case $u=1$, we have $e^x=1$. After composing both sides of the equation by the natural log we have $x=\ln(1)=0$.
+
+Therefore, the solution set is $\{0,\ln(3)\}$.
+:::
+::::
+
+::::{prf:example}
+:label: expSolveExam4
+Solve $e^{2x}+e^x-6=0$.
+
+:::{dropdown} Solution:
+First, rewrite the equation as follows
+
+$$\left(e^x)\right)^2+\left(e^x\right)-6=0$$
+
+Let $u=e^x$, then $u^2=e^{2x}$ and 
+
+\begin{align*}
+    u^2 + u - 6 & = 0\\
+    (u+3)(u-2) & = 0
+\end{align*}
+
+For the case $u=-3$, we have, $e^x=-3$ which has no solution. Remember $\ln(-3)$ is undefined.
+
+For the case $u=2$, we have, $e^x=2$ which has a solution of $x=\ln(2)$.
+
+Therefore, the solution set is $\{\ln(2)\}$.
+:::
+::::
+
+## Solve Logarithmic Equations
+
+When solving log equations it is important to check solutions against the original equation.
+
+::::{prf:example}
+:label: logSolveExam1
+
+Solve $4\ln(x)=36$.
+
+:::{dropdown} Solution:
+First, we will isolate $\ln(x)$
+
+$$4\ln(x)=36 \to \ln(x)=\frac{36}{4}$$ 
+
+Next, we will use the fact that $e^{\ln(x)}=x$. After composing both sides by the exponential function $e$ we have
+
+\begin{align*}
+    e^{\ln(x)} & = e^{\frac{36}{4}}\\
+    x & = e^9
+\end{align*}
+
+Next, we will check the solution.
+
+\begin{align*}
+    4\ln(e^9) & = 36\\
+    4\cdot 9 \ln(e) & = 36\\
+    36 & = 36\checkmark
+\end{align*}
+
+
+Therefore, the solution set is $\{e^9\}$.
+:::
+::::
+
+::::{prf:example}
+:label: logSolveExam2
+
+Solve $\log_3(x^3-5)=1$.
+
+:::{dropdown} Solution:
+
+We will compose both sides by the exponential function base $3$. Then solve for $x$.
+
+\begin{align*}
+    3^{\log_3(x^3-5)} & = 3^1\\
+    x^3-5 & = 3\\
+    x^3 & = 8\\
+    x & = 2
+\end{align*}
+
+Next, we will check the solution.
+
+\begin{align*}
+    \log_3((2)^3-5) & = 1\\
+    \log_3(8-5) & = 1\\
+    \log_3(3) & = 1\checkmark
+\end{align*}
+
+Therefore, the solution set is $\{2\}$.
+:::
+::::
+
+::::{prf:example}
+:label: logSolveExam3
+
+Solve $\log(2x+1)+\log(x) = \log(x+8)$.
+
+:::{dropdown}
+First, we will simplify the left-hand side of the equation.
+
+\begin{align*}
+    \log(2x+1)+\log(x) & = \log(x(2x+1))\\
+    & = \log(2x^2+x)
+\end{align*}
+
+The equation to solve is now: $\log(2x^2+x) = \log(x+8)$. Compose both sides of the equation by exponential function base $10$ since $10^{\log(x)}=x$.
+
+\begin{align*}
+    10^{\log(2x^2+x)} & = 10^{\log(x+8)}\\
+    2x^2 + x & = x + 8\\
+    2x^2 - 8 & = 0\\
+    2(x^2-4) & = 0\\
+    2(x-2)(x+2) & = 0
+\end{align*}
+
+The solutions to $2(x-2)(x+2)=0$ are $x=2$ and $x=-2$. However, the original equation is undefined when $x=-2$ since $\log(-2)$ is undefined. Next, we will check the solution $x=2$.
+
+\begin{align*}
+    \log(2(2)+1)+\log(2) & = \log(2+8)\\
+    \log(5)+\log(2) & = \log(10)\\
+    \log(5\cdot 2) & = 1\\
+    \log(10) & = 1\checkmark
+\end{align*}
+
+Therefore, the solution set is $\{2\}$.
+:::
+::::
+
+Remember to always check you solutions for log equations.

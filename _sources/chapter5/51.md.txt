@@ -1,0 +1,381 @@
+# Section 5.1
+
+:::{prf:definition}
+:label: linearEquation
+Definition 0.1. The definition of a linear equation can be extended to more than one variable. Any equation of the form
+
+$$a_1x_1+a_2x_2+\cdots+a_nx_n = b$$
+
+for all real numbers $a_1$, $a_2$, ... , $a_n$ (all nonzero) and $b$, is a linear equation, or a first-degree equation, in $n$ unknowns.
+:::
+
+:::{prf:theorem}
+:label: solutionSystemCases
+There are three cases for solutions of linear systems in two variables:
+
+1. Two graphs intersect in a single point. The coordinates of this point give the only solution of the system. Since the system has a solution, it is **consistent**. The equations are not equivalent, so they are **independent**.
+2. The graph are parallel lines. There is no solution common to both
+equations, so the solution set is $\emptyset$ and the system is **inconsistent**.
+Because the equation are not equivalent, they are **independent**.
+3. The graphs are the same line - that is, they coincide. Because any solution of one equation of the system is a solution of the other, the solution set is an infinite set of ordered pairs representing the points on the line. This type of system is **consistent** because there is a solution. The equations are equivalent, so they are **dependent**.
+:::
+
+## Two-by-Two System of Linear Equations
+
+::::{prf:example}
+:label: 22systemExam1
+Solve the system
+
+$$
+\begin{cases}
+4x-3y & =14\\
+x-2y & =1
+\end{cases}
+$$
+
+:::{dropdown} Solution:
+
+First, we will solve for $x$ from the second row equation.
+
+\begin{align*}
+    x-2y & = 1\\
+    x & = 2y+1
+\end{align*}
+
+Next, we will substitute $x$ into the first row equation. Then solve for $y$.
+
+\begin{align*}
+    4(2y+1)-3y&=14\\
+    8y+4-3y & = 14\\
+    5y+4 & = 14\\
+    5y & = 10\\
+    y & = 2
+\end{align*}
+
+Now that we know $y=2$ we will substitute it back into $x=2y+$ to solve for $x$.
+
+\begin{align*}
+    x & = 2(2)+1\\
+    & = 5
+\end{align*}
+
+Therefore, the solution set is $\{(5,2)\}$.
+:::
+::::
+
+::::{prf:example}
+:label: 22systemExam2
+
+Solve
+$$
+\begin{cases}
+2x+3y & =-1\\
+3x-2y & =18
+\end{cases}
+$$
+
+:::{dropdown} Solution:
+
+\begin{align*}
+\begin{cases}
+2x+3y & =-1\\
+3x-2y & =18
+\end{cases} & \to_{3\times R_{2}}^{2\times R_{1}}\begin{cases}
+4x+6y & =-2\\
+9x-6y & =54
+\end{cases}\\
+ & \to_{R_{1}+R_{2}}13x=52\\
+ & \to x=4
+\end{align*}
+
+Since $x=4$ we will sub it into any of the equations (we'll use the first equation) and then solve for $y$.
+
+\begin{align*}
+2(4)+3y & =-1\\
+8+3y & =-1\\
+3y & =-9\\
+y & =-3
+\end{align*}
+
+Therefore, the solution to the system is $\{(4,-3)\}$.
+:::
+::::
+
+::::{prf:example}
+:label: 22systemExam3
+
+Show the following system has no solution or infinitely many solutions.
+
+$$\begin{cases}
+7x+3y & =-5\\
+-14x-6y & =-10
+\end{cases}
+$$
+
+:::{dropdown} Solution:
+\begin{align*}
+\begin{cases}
+7x+3y & =-5\\
+-14x-6y & =-10
+\end{cases} & \to_{2\times R_{1}}\begin{cases}
+14x+6y & =-10\\
+-14x-6y & =-10
+\end{cases}\\
+ & \to_{R_{1}+R_{2}}0\ne-20
+\end{align*}
+Therefore, no solution and the solution set is the empty set, or $\emptyset$.
+:::
+::::
+
+::::{prf:example}
+:label: 22systemExam4
+Show the following system has no solution or infinitely many solutions.
+
+$$
+\begin{cases}
+-9x+3y & =-24\\
+3x-y & =8
+\end{cases}
+$$
+
+:::{dropdown} Solution:
+
+\begin{align*}
+\begin{cases}
+-9x+3y & =-24\\
+3x-y & =8
+\end{cases} & \to_{3\times R_{2}}\begin{cases}
+-9x+3y & =-24\\
+9x-3y & =24
+\end{cases}\\
+ & \to_{R_{1}+R_{2}}0=0
+\end{align*}
+
+Therefore, the system has infinitely many solutions. The solution set is $\{(x,3x-8)\}$.
+
+To get this solution set we solve for $y$ from on of the above equations:
+
+\begin{align*}
+-9x+3y & =-24\\
+3y & =9x-24\\
+y & =3x-8
+\end{align*}
+:::
+::::
+
+## Three-by-Three System of Linear Equations
+
+When solving a system of three equations and three variables we want to use the elimination method to reduce the system to two equations and two variables. Then we will reduce the system on more time to get one equation with one variable. The choice of which variable to eliminate first can vary from system to system.
+
+::::{prf:example}
+:label: 33systemExam1
+
+$$
+\begin{cases}
+3x+4y-2z & =14\\
+2x+y+2z & =-9\\
+x-y+z & =-9
+\end{cases}
+$$
+
+:::{dropdown} Solution:
+Here we will eliminate the $z$ variable from the system. First, we will multiply row 3 by $2$. Then we will add together row 1 and row 2 to get one equation in terms of $x$ and $y$. Also, we will add row 1 and row 3 to get another equation (the second equation) in terms of $x$ and $y$. This will give a system of two equations and two variables.
+
+\begin{align*}
+\begin{cases}
+3x+4y-2z & =14\\
+2x+y+2z & =-9\\
+x-y+z & =-9
+\end{cases} & \to_{2\times R_{3}}\begin{cases}
+3x+4y-2z & =14\\
+2x+y+2z & =-9\\
+2x-2y+2z & =-18
+\end{cases}\\
+ & \to_{R_{1}+R_{3}}^{R_{1}+R_{2}}\begin{cases}
+5x+5y & =5\\
+5x+2y & =-4
+\end{cases}
+\end{align*}
+
+Next, we will subtract row 2 from row 1 and get
+
+\begin{align*}
+\begin{cases}
+5x+5y & =5\\
+5x+2y & =-4
+\end{cases} & \to_{R_{1}-R_{2}}3y=9\\
+ & \to y=3
+\end{align*}
+
+We can then solve for $x$.
+
+\begin{align*}
+5x+5(3) & =5\\
+5x & =5-15\\
+5x & =-10\\
+x & =-2
+\end{align*}
+
+Now that we have $x$ and $y$ we can solve for $z$ from the third row equation from the original system.
+
+\begin{align*}
+(-2)-(3)+z & =-9\\
+-5+z & =-9\\
+z & =-4
+\end{align*}
+
+Therefore, the solution set is $\{(-2,3,-4)\}$.
+:::
+::::
+
+::::{prf:example}
+:label: 23systemExam1
+
+Solve
+
+$$
+\begin{cases}
+3x+y-2z & =-7\\
+5x+2y+z & =-6
+\end{cases}
+$$
+
+:::{dropdown} Solution:
+This is a system of two equations and three variables. This means, the solution to the system is either no solution or infinitely many solutions.
+
+If we eliminate the $y$ variable we get
+
+\begin{align*}
+\begin{cases}
+3x+y-2z & =-7\\
+5x+2y+z & =-6
+\end{cases} & \to_{2\times R_{1}}\begin{cases}
+6x+2y-4z & =-14\\
+5x+2y+z & =-6
+\end{cases}\\
+& \to_{R_{1}-R_{2}}x-5z=-8\\
+& \to x=5z-8
+\end{align*}
+
+This means we will have infinitely many solutions. We will then write the solution set where each component will be in terms of $z$. So far we have $\{(x,y,z)\}=\{(5z-8,y,z)\}$. Next, we want to write $y$ in terms of $z$.
+
+We can do this by eliminating the $x$ variable.
+
+\begin{align*}
+\begin{cases}
+3x+y-2z & =-7\\
+5x+2y+z & =-6
+\end{cases} & \to_{5\times R_{1}}\begin{cases}
+15x+5y-10z & =-35\\
+5x+2y+z & =-6
+\end{cases}\\
+ & \to_{3\times R_{2}}\begin{cases}
+15x+5y-10z & =-35\\
+15x+6y+3z & =-18
+\end{cases}\\
+ & \to_{R_{1}-R_{2}}-y-13z=-17\\
+ & \to y=-13z+17
+\end{align*}
+
+Therefore, the solution set is $\{(5z-8,-13z+17,z)\}$. For Math 1431 this is how we will write our solution set. Another way to write the solution set would be 
+
+$$\{(x,y,z)\,|\,3x+y-2z=-7\}$$
+:::
+::::
+
+The graph of the parabola will satisfy the equation $y=ax^2+bx+c$.  In order to find $a$, $b$, and $c$ we would need three equations. This can be done by having three different points on the curve. We will then be able to find the equation of the parabola.
+
+::::{prf:example}
+:label: paraExam1
+Find the equation of the parabola that passes through the points $(-5,7)$, $(-1,-2)$, and $(3,5)$.
+
+Construct the system to solve for $a$, $b$, and $c$ for $y=ax^2+bx+c$.
+
+:::{dropdown} Solution:
+
+The graph of any parabola is $y=ax^2+bx+c$.
+
+We need to build three equations to solve for the three unknown values: $a$, $b$, and $c$.
+
+First, we will use the point $(-5,7)$ to get the equation
+
+$$a(-5)^2+b(-5)+c=7\to 25a-5b+c=7$$
+
+The point $(-1,-2)$ gives
+
+$$a(-1)^2+b(-1)+c=-2\to a-b+c=-2$$
+
+The point $(3,5)$ gives
+
+$$a(3)^2+b(3)+c=5\to 9a+3b+c=5$$
+
+This means we want to solve the system
+
+$$
+\begin{cases}
+25a-5b+c & =7\\
+a-b+c & =-2\\
+9a+3b+c & =5
+\end{cases}
+$$
+:::
+Solve the system of equations
+
+:::{dropdown} Solution:
+
+$$
+\begin{cases}
+25a-5b+c & =7\\
+a-b+c & =-2\\
+9a+3b+c & =5
+\end{cases}\to_{\begin{cases}
+R_{1}-R_{2}\\
+R_{1}-R_{3}
+\end{cases}}\begin{cases}
+24a-4b & =9\\
+16a-8b & =2
+\end{cases}
+$$
+
+Which then gives
+
+\begin{align*}
+\begin{cases}
+24a-4b & =9\\
+16a-8b & =2
+\end{cases} & \to_{2\times R_{1}}\begin{cases}
+48a-8b & =18\\
+16a-8b & =2
+\end{cases}\\
+ & \to_{R_{1}-R_{2}}32a=16\to a=\frac{1}{2}
+\end{align*}
+
+Next, we will solve for $b$.
+
+\begin{align*}
+24(\frac{1}{2})-4b & =9\\
+12-4b & =9\\
+-4b & =-3\\
+b & =\frac{3}{4}
+\end{align*}
+
+Finally, we will solve for $c$.
+
+\begin{align*}
+\frac{1}{2}-\frac{3}{4}+c & =-2\\
+-\frac{1}{4}+c & =-2\\
+c & =-\frac{7}{4}
+\end{align*}
+
+Therefore, $a=\frac12$, $b=\frac34$, and $c=\frac74$.
+:::
+
+Finally, write the equation of the parabola.
+
+:::{dropdown} Solution:
+
+Since $a=\frac12$, $b=\frac34$, and $c=\frac74$. We have
+
+$$y=\frac12 x^2 + \frac34 x + \frac74$$
+:::
+::::

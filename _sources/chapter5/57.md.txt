@@ -1,0 +1,347 @@
+# Section 5.7
+
+Recall the generalized matrix
+
+$$
+A=\left[\begin{matrix}a_{11} & a_{12} & a_{13} & \cdots & a_{1n}\\
+a_{21} & a_{22} & a_{23} & \cdots & a_{2n}\\
+a_{31} & a_{32} & a_{33} & \cdots & a_{3n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+a_{m1} & a_{m2} & a_{m3} & \cdots & a_{mn}
+\end{matrix}\right]
+$$
+
+The number of **rows** a matrix has by the number of **columns** a matrix has will be called the **dimension** of the matrix. For example, $A$ is a $m\times n$ matrix.
+
+:::{prf:definition} $A=B$
+:label: matrixEquality
+
+Two matrices are equal if they have the same **dimension** and if corresponding elements, position by position, are equal.
+
+:::
+
+$$
+\left[\begin{matrix}
+    2 & 1\\
+    3 & -5
+\end{matrix}\right]=
+\left[\begin{matrix}
+    2 & 1\\
+    3 & -5
+\end{matrix}\right]
+$$
+
+but
+
+$$
+\left[\begin{matrix}2 & 1\\
+3 & -5
+\end{matrix}\right]\ne\left[\begin{matrix}1 & 2\\
+-5 & 3
+\end{matrix}\right]
+$$
+
+::::{prf:example}
+:label: equalMatrix1
+
+Find the values of the variables for which each statement is true,
+if possible.
+
+1. $\left[\begin{matrix}2 & 1\\
+p & q
+\end{matrix}\right]=\left[\begin{matrix}x & y\\
+-1 & 0
+\end{matrix}\right]$
+2. $\left[\begin{matrix}x\\
+y
+\end{matrix}\right]=\left[\begin{matrix}1\\
+4\\
+0
+\end{matrix}\right]$
+
+:::{dropdown} Solution:
+
+For (1) By definition we have
+
+$$
+\left[\begin{matrix}2 & 1\\
+p & q
+\end{matrix}\right]=\left[\begin{matrix}x & y\\
+-1 & 0
+\end{matrix}\right]\to\begin{matrix}2=x & 1=y\\
+p=-1 & q=0
+\end{matrix}
+$$
+
+That is,  $x=2$, $y=1$, $p=-1$, and $q=0$.
+
+---
+
+For (2), by definition since the dimensions of the two matrices do not match the two matrices cannot equal.
+
+:::
+::::
+
+:::{prf:definition} Addition of Matrices
+:label: addMatrix
+
+To add matrices of the same dimension, add corresponding elements. **Only matrices of the same dimension can be added.
+
+:::
+
+::::{prf:example}
+:label: addMatrixExam1
+
+Add
+
+$$
+\left[\begin{matrix}5 & -6\\
+8 & 9
+\end{matrix}\right]+\left[\begin{matrix}-4 & 6\\
+8 & -3
+\end{matrix}\right]
+$$
+
+:::{dropdown} Solution:
+
+\begin{align*}
+\left[\begin{matrix}5 & -6\\
+8 & 9
+\end{matrix}\right]+\left[\begin{matrix}-4 & 6\\
+8 & -3
+\end{matrix}\right] & =\left[\begin{matrix}5+(-4) & -6+6\\
+8+8 & 9+(-3)
+\end{matrix}\right]\\
+ & =\left[\begin{matrix}1 & 0\\
+16 & 6
+\end{matrix}\right]
+\end{align*}
+
+:::
+::::
+
+:::{prf:definition} Scalar and Scalar Multiplication
+:label: scalarSalarMult
+
+In the context of matrices, a real number is called a **scalar** to distinguish it from a matrix.
+
+The product of a scalar $k$ and a matrix $X$ is the matrix $kX$, each of whose elements is $k$ times the corresponding element of $X$.
+:::
+
+For example
+
+$$
+k\left[\begin{matrix}a & b\\
+c & d
+\end{matrix}\right]=\left[\begin{matrix}ka & kb\\
+kc & kd
+\end{matrix}\right]
+$$
+
+Also,
+
+$$
+(-1)\left[\begin{matrix}a & b\\
+c & d
+\end{matrix}\right]=-\left[\begin{matrix}a & b\\
+c & d
+\end{matrix}\right]=\left[\begin{matrix}-a & -b\\
+-c & -d
+\end{matrix}\right]
+$$
+
+:::{prf:definition} Properties of Scalar Multiplication
+:label: scalarMultiplicationProperty
+
+Let $A$ and $B$ be matrices of the same dimension, and let $c$
+and $d$ be scalars. Then these properties hold true.
+
+1. $(c+d)A=cA+dA$
+2. $(cA)d=(cd)A$
+3. $c(A+B)=cA+cB$
+4. $(cd)A=c(dA)$
+
+:::
+
+:::{prf:example} Subtraction of Matrices
+:label: subMatrix
+
+If $A$ and $B$ are two matrices of the same dimension, then the
+following holds true
+
+$$
+A-B=A+(-B).
+$$
+
+:::
+
+## Multiplication
+
+For multiplication the process is not intuitive. That is,
+
+$$
+\left[\begin{matrix}a & b\\
+c & d
+\end{matrix}\right]\cdot\left[\begin{matrix}w & x\\
+y & z
+\end{matrix}\right]\ne\left[\begin{matrix}aw & bx\\
+cy & dz
+\end{matrix}\right]
+$$
+
+Instead, multiplication between two matrices would be performed in
+the following way
+
+\begin{align*}
+\left[\begin{matrix}3 & 5\end{matrix}\right]\cdot\left[\begin{matrix}-2\\
+4
+\end{matrix}\right] & =\left[\begin{matrix}(3)(-2)+(5)(4)\end{matrix}\right]\\
+ & =\left[\begin{matrix}14\end{matrix}\right]
+\end{align*}
+
+If $A=\left[\begin{matrix}3 & 5\end{matrix}\right]$ (which is $1\times2$) and $B=\left[\begin{matrix}-2\\ 4\end{matrix}\right]$ (which is $2\times1$) we see that in order to perform the calculation the number of columns of the first matrix **must** match the number of rows of the second matrix.
+
+:::{prf:definition} Matrix Multiplication
+:label: multMatrix
+
+The number of columns of an $m\times n$ matrix $A$ is the same as the number of rows of and $n\times p$ matrix $B$ (i.e., both $n$). The element $c_{ij}$ of the product matrix $C=AB$ is found as follows
+
+$$
+c_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots+a_{in}b_{nj}
+$$
+
+Matrix $AB$ will be an $m\times p$ matrix.
+
+:::
+
+:::{prf:theorem}
+:label: noncommutativeMatrixMult
+
+In general, if $A$ and $B$ are matrices, then 
+
+$$
+AB\ne BA.
+$$
+
+That is, Matrix Multiplication is not commutative.
+:::
+
+:::{prf:theorem} Matrix Multiplication Properties
+:label: matrixMultProp
+
+If $A$, $B$, and $C$ are matrices such that all the following products
+and sums exist, then these properties hold true
+
+1. $(AB)C=A(BC)$
+2. $A(B+C)=AB+AC$
+3. $(B+C)A=BA+CA$ (pay attention to the order of the multiplication since matrix multiplication is not commutative.)
+
+:::
+
+:::{prf:example}
+:label: matrixMultPropExam1
+
+Suppose $A$ is a $3\times 2$ matrix, while $B$ is a $2\times 4$
+matrix.
+
+The sum $A+B$ is impossible since the dimensions of the two matrices do not equal.
+
+The product of $A\cdot B$ does exist since the number of columns for matrix $A$ (2) matches the number of rows for matrix $B$ (2). The resulting matrix (after the product) will be a $3\times 4$ matrix.
+
+The product of $B\cdot A$ does not exists since the number of columns for matrix $B$ (4) does not equal the number of rows for matrix $A$ (3).
+:::
+
+::::{prf:example}
+:label: matrixMultExam1
+
+Let $A=\left[\begin{matrix}1 & -3\\
+7 & 2
+\end{matrix}\right]$ and $B=\left[\begin{matrix}1 & 0 & -1 & 2\\
+3 & 1 & 4 & -1
+\end{matrix}\right]$. 
+
+Find each product, if possible.
+
+Multiply $A\cdot B$.
+
+:::{dropdown} Solution:
+
+Since $A$ has dimension $2\times n=2\times2$ where $n=2$ and $B$ has dimension $n\times4$ where $n=2$ the two matrices can be multiplied. The resulting matrix should be a $2\times4$ matrix.
+
+\begin{align*}
+\left[\begin{matrix}1 & -3\\
+7 & 2
+\end{matrix}\right]\cdot\left[\begin{matrix}1 & 0 & -1 & 2\\
+3 & 1 & 4 & -1
+\end{matrix}\right] & =\left[\begin{matrix}1*1+(-3)*3 & 1*(0)+(-3)*1 & 1*(-1)+(-3)*4 & 1*(2)+(-3)*(-1)\\
+7*(1)+2*(3) & 7*(0)+2*(1) & 7*(-1)+2*(4) & 7*(2)+2*(-1)
+\end{matrix}\right]\\
+ & =\left[\begin{matrix}-8 & -3 & -13 & 5\\
+13 & 2 & 1 & 12
+\end{matrix}\right]
+\end{align*}
+
+:::
+
+Multiply $B\cdot A$.
+
+:::{dropdown} Solution:
+
+Since the number of columns and rows do not match the product is not possible.
+
+:::
+::::
+
+::::{prf:example}
+:label: matrixMultExam2
+
+Let $A=\left[\begin{matrix}2 & -5\\
+-6 & 1
+\end{matrix}\right]$ and $B=\left[\begin{matrix}3 & -4\\
+2 & 3
+\end{matrix}\right]$.
+
+Multiply $A\cdot B$.
+
+:::{dropdown} Solution:
+
+The product $A\cdot B$ is possible since the number of columns of the first matrix matches the number of rows of the second. The resulting matrix will be a $2\times2$ matrix.
+
+\begin{align*}
+\left[\begin{matrix}2 & -5\\
+-6 & 1
+\end{matrix}\right]\cdot\left[\begin{matrix}3 & -4\\
+2 & 3
+\end{matrix}\right] & =\left[\begin{matrix}(2)(3)+(-5)(2) & (2)(-4)+(-5)(3)\\
+(-6)(3)+(1)(2) & (-6)(-4)+(1)(3)
+\end{matrix}\right]\\
+ & =\left[\begin{matrix}-4 & -23\\
+-16 & 27
+\end{matrix}\right]
+\end{align*}
+
+:::
+
+Multiply $B\cdot A$
+
+:::{dropdown} Solution:
+
+The product of $B\cdot A$ is possible since the number of columns of the first matrix matches the number of rows of the second. The resulting matrix will be a $2\times2$ matrix.
+
+\begin{align*}
+\left[\begin{matrix}3 & -4\\
+2 & 3
+\end{matrix}\right]\cdot\left[\begin{matrix}2 & -5\\
+-6 & 1
+\end{matrix}\right] & =\left[\begin{matrix}(3)(2)+(-4)(-6) & (3)(-5)+(-4)(1)\\
+(2)(2)+(3)(-6) & (2)(-5)+(3)(1)
+\end{matrix}\right]\\
+ & =\left[\begin{matrix}30 & -19\\
+-14 & -7
+\end{matrix}\right]
+\end{align*}
+
+:::
+::::
+
+Notice in the last example $A\cdot B\ne B\cdot A$.

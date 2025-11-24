@@ -1,0 +1,509 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 5.5 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 5.7" href="57.html" />
+    <link rel="prev" title="Section 5.3" href="53.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/16.html">Section 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/17.html">Section 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="53.html">Section 5.3</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 5.5</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter5/55.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-5-5">
+<h1>Section 5.5<a class="headerlink" href="#section-5-5" title="Link to this heading"></a></h1>
+<p>In this section we will look at solving nonlinear system of equations.</p>
+<div class="proof example admonition" id="nonLinearSystem1">
+<p class="admonition-title"><span class="caption-number">Example 109 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve the system</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x^{2}-y &amp; =4\\
+x+y &amp; =-2
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Notice this is not a system of linear equations. However, we can simply rewrite the system as follows</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x^{2}-y &amp; =4\\
+x+y &amp; =-2
+\end{cases}\to\begin{cases}
+y &amp; =x^{2}-4\\
+y &amp; =-x-2
+\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">and notice that</p>
+<div class="math notranslate nohighlight">
+\[
+y=y\iff x^{2}-4=-x-2
+\]</div>
+<p class="sd-card-text">Solving</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}-4 &amp; =-x-2\\
+x^{2}+x-4+2 &amp; =0\\
+x^{2}+x-2 &amp; =0\\
+(x+2)(x-1) &amp; =0
+\end{align*}\]</div>
+<p class="sd-card-text">we have <span class="math notranslate nohighlight">\(x=-2\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=-2\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[
+-2+y=-2\iff y=0
+\]</div>
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=1\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[
+1+y=-2\iff y=-3.
+\]</div>
+<p class="sd-card-text">Therefore, the solution set for the system is <span class="math notranslate nohighlight">\(\{(-2,0),(1,-3)\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="nonLinearSystem2">
+<p class="admonition-title"><span class="caption-number">Example 110 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve the system</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x^{2}+y^{2} &amp; =9\\
+9x^{2}+4y^{2} &amp; =36
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Here we will use the elimination method to solve for <span class="math notranslate nohighlight">\(y\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+x^{2}+y^{2} &amp; =9\\
+9x^{2}+4y^{2} &amp; =36
+\end{cases} &amp; \to\begin{cases}
+9x^{2}+9y^{2} &amp; =81\\
+9x^{2}+4y^{2} &amp; =36
+\end{cases}\\
+ &amp; \to5y^{2}=45\\
+ &amp; \to y^{2}=9\\
+ &amp; \to y=\pm3
+\end{align*}\]</div>
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(y=3\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}+(3)^{3} &amp; =9\\
+x^{2}+9 &amp; =9\\
+x^{2} &amp; =0\implies x=0
+\end{align*}\]</div>
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(y=-3\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}+(-3)^{2} &amp; =9\\
+x^{2}+9 &amp; =0\\
+x^{2} &amp; =0\implies x=0
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the solution set for the system is <span class="math notranslate nohighlight">\(\{(0,3),(0,-3)\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="nonLinearSystem3">
+<p class="admonition-title"><span class="caption-number">Example 111 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve the system</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x^{2}+xy+y^{2} &amp; =21\\
+x^{2}-xy+y^{2} &amp; =9
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If use the elimination method we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+x^{2}+xy+y^{2} &amp; =21\\
+x^{2}-xy+y^{2} &amp; =9
+\end{cases} &amp; \to2x^{2}+2y^{2}=30\\
+ &amp; \to x^{2}+y^{2}=15\\
+ &amp; \to\begin{cases}
+y^{2} &amp; =15-x^{2}\\
+y &amp; =\pm\sqrt{15-x^{2}}
+\end{cases}
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(y^2=15-x^{2}\)</span> and <span class="math notranslate nohighlight">\(y=\sqrt{15-x^{2}}\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}+x\sqrt{15-x^{2}}+15-x^{2} &amp; =21\\
+x\sqrt{15-x^{2}}+15 &amp; =21\\
+x\sqrt{15-x^{2}} &amp; =6\\
+\sqrt{15-x^{2}} &amp; =\frac{6}{x}\\
+15-x^{2} &amp; =\frac{36}{x^{2}}\\
+15x^{2}-x^{4} &amp; =36\\
+x^{4}-15x^{2}+36 &amp; =0\\
+(x^{2}-12)(x^{2}-3) &amp; =0\\
+x^{2} &amp; =12\implies x=\pm\sqrt{12}=\pm2\sqrt{3}\\
+x^{2} &amp; =3\implies x=\pm\sqrt{3}
+\end{align*}\]</div>
+<p class="sd-card-text">When we go back to</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}+x\sqrt{15-x^{2}}+15-x^{2} &amp; =21\\
+x\sqrt{15-x^{2}}+15 &amp; =21\\
+x\sqrt{15-x^{2}} &amp; =6
+\end{align*}\]</div>
+<p class="sd-card-text">We see that <span class="math notranslate nohighlight">\(x\ne-\sqrt{3}\)</span> and <span class="math notranslate nohighlight">\(x\ne-2\sqrt{3}\)</span> (check on your own). Therefore, <span class="math notranslate nohighlight">\(x=\sqrt{3}\)</span> or <span class="math notranslate nohighlight">\(x=2\sqrt{3}\)</span>.</p>
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=\sqrt{3}\)</span> we have <span class="math notranslate nohighlight">\(y=\sqrt{15-(\sqrt{3})^{2}}=2\sqrt{3}\)</span>.</p>
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=2\sqrt{3}\)</span> we have <span class="math notranslate nohighlight">\(y=\sqrt{15-(2\sqrt{3})^{2}}=\sqrt{3}\)</span>. Therefore, two elements in the solution set is <span class="math notranslate nohighlight">\(\{(\sqrt{3},2\sqrt{3}),(2\sqrt{3},\sqrt{3})\}\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(y^{2}=15-x^{2}\)</span> and <span class="math notranslate nohighlight">\(y=-\sqrt{15-x^{2}}\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}-x\sqrt{15-x^{2}}+15-x^{2} &amp; =21\\
+-x\sqrt{15-x^{2}}+15 &amp; =21\\
+-x\sqrt{15-x^{2}} &amp; =6\\
+\sqrt{15-x^{2}} &amp; =-\frac{6}{x}\\
+15-x^{2} &amp; =\frac{36}{x^{2}}\\
+15x^{2}-x^{4} &amp; =36\\
+x^{4}-15x+36 &amp; =0
+\end{align*}\]</div>
+<p class="sd-card-text">which we already know the solution to, <span class="math notranslate nohighlight">\(\{\pm\sqrt{3},\pm2\sqrt{3}\}\)</span>.</p>
+<p class="sd-card-text">However, when we look at</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}-x\sqrt{15-x^{2}}+15-x^{2} &amp; =21\\
+-x\sqrt{15-x^{2}}+15 &amp; =21\\
+-x\sqrt{15-x^{2}} &amp; =6
+\end{align*}\]</div>
+<p class="sd-card-text">we see that <span class="math notranslate nohighlight">\(x\ne\sqrt{3}\)</span> and <span class="math notranslate nohighlight">\(x\ne2\sqrt{3}\)</span> (check on your own). Therefore, <span class="math notranslate nohighlight">\(x=-\sqrt{3}\)</span> and <span class="math notranslate nohighlight">\(x=-2\sqrt{3}\)</span>.</p>
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=-\sqrt{3}\)</span> we have <span class="math notranslate nohighlight">\(y=-\sqrt{15-(-\sqrt{3})^{2}}=-2\sqrt{3}\)</span>.</p>
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=-2\sqrt{3}\)</span> we have <span class="math notranslate nohighlight">\(y=-\sqrt{15-(-2\sqrt{3})^{2}}=-\sqrt{3}\)</span>.</p>
+<p class="sd-card-text">This then added <span class="math notranslate nohighlight">\((-\sqrt{3},-2\sqrt{3})\)</span> and <span class="math notranslate nohighlight">\((-2\sqrt{3},-\sqrt{3})\)</span> to the solution set.</p>
+<hr class="docutils" />
+<p class="sd-card-text">Therefore, the solution set is</p>
+<div class="math notranslate nohighlight">
+\[
+\{(\sqrt{3},2\sqrt{3}),(2\sqrt{3},\sqrt{3}),(-\sqrt{3},-2\sqrt{3}),(-2\sqrt{3},-\sqrt{3})\}
+\]</div>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="nonLinearSystem4">
+<p class="admonition-title"><span class="caption-number">Example 112 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve the system</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x^{2}+y^{2} &amp; =4\\
+-|x|+y &amp; =0
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will solve for <span class="math notranslate nohighlight">\(|x|\)</span> in the second equation:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+-|x|+y &amp; =0\\
+-|x| &amp; =-y\\
+|x| &amp; =y
+\end{align*}\]</div>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(x^{2}=\left(|x|\right)^{2}\)</span> we can say <span class="math notranslate nohighlight">\(y^{2}=\left(|x|\right)^{2}=x^{2}\)</span>.</p>
+<p class="sd-card-text">Looking at the first equation we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}+x^{2} &amp; =4\\
+2x^{2} &amp; =4\\
+x^{2} &amp; =2\\
+x &amp; =\pm\sqrt{2}
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=\sqrt{2}\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(\sqrt{2})^{2}+y^{2} &amp; =4\\
+2+y^{2} &amp; =4\\
+y^{2} &amp; =2\\
+y &amp; =\pm\sqrt{2}
+\end{align*}\]</div>
+<p class="sd-card-text">However, <span class="math notranslate nohighlight">\(|x|=y\)</span> and <span class="math notranslate nohighlight">\(|\sqrt{2}|\ne-\sqrt{2}\)</span>. Which means <span class="math notranslate nohighlight">\((\sqrt{2},\sqrt{2})\)</span> is apart of the solution set and <span class="math notranslate nohighlight">\((\sqrt{2},-\sqrt{2})\)</span> is not apart of the solution set.</p>
+<hr class="docutils" />
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=-\sqrt{2}\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(-\sqrt{2})^{2}+y^{2} &amp; =4\\
+2+y^{2} &amp; =4\\
+y &amp; =\pm\sqrt{2}
+\end{align*}\]</div>
+<p class="sd-card-text">However, <span class="math notranslate nohighlight">\(|x|=y\)</span> and <span class="math notranslate nohighlight">\(|-\sqrt{2}|\ne-\sqrt{2}\)</span>. Which means <span class="math notranslate nohighlight">\((-\sqrt{2},\sqrt{2})\)</span> is apart of the solution set and <span class="math notranslate nohighlight">\((-\sqrt{2},-\sqrt{2})\)</span> is not part of the solution set.</p>
+<hr class="docutils" />
+<p class="sd-card-text">Therefore, the solution set is <span class="math notranslate nohighlight">\(\{(\sqrt{2},\sqrt{2}),(-\sqrt{2},\sqrt{2})\}\)</span>.</p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="nonLinearSystemWordProblem">
+<p class="admonition-title"><span class="caption-number">Example 113 </span></p>
+<section class="example-content" id="proof-content">
+<p>A box with an open top has a square bases and four sides of equal height. The volume is 384 cubic meters, and the surface area is 256 square meters. Find the dimensions of the box. Round to the nearest thousandths as necessary.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we can draw the box. Remember it has an open top.</p>
+<p class="sd-card-text"><img alt="3d box label x,y, and z" src="../_images/boxproblem.png" /></p>
+<p class="sd-card-text">Second we can consider the two equations involved</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+V &amp; =384\\
+S &amp; =256
+\end{cases}\to\begin{cases}
+xyz &amp; =384\\
+2xy+2xz+xy &amp; =256
+\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">which yields a system of two equations and three variables. However,
+since the box has a square base we can add another equation to get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\begin{cases}
+xyz &amp; =384\\
+2xy+2xz+xy &amp; =256\\
+x &amp; =y
+\end{cases} &amp; \to\begin{cases}
+x^{2}z &amp; =384\\
+x^{2}+4xz &amp; =256
+\end{cases}\\
+ &amp; \to\begin{cases}
+z &amp; =\dfrac{384}{x^{2}}\\
+x^{2}+4xz &amp; =256
+\end{cases}
+\end{align*}\]</div>
+<p class="sd-card-text">then we can have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{2}+4x\left(\frac{384}{x^{2}}\right) &amp; =256\\
+x^{2}+\frac{1536}{x} &amp; =256\\
+x^{3}+1536 &amp; =256x\\
+x^{3}-256x+1536 &amp; =0
+\end{align*}\]</div>
+<p class="sd-card-text">The possible solutions are</p>
+<div class="math notranslate nohighlight">
+\[
+x=\{\pm1,\pm3,\pm2,\pm4,\pm8,\pm16,\pm32,\pm64,\pm128,\pm256,\pm512,\pm6,\pm12,\pm24,\pm48,\pm96,\pm192,\pm384,\pm768,\pm1536\}.
+\]</div>
+<p class="sd-card-text">However, we are limited by what <span class="math notranslate nohighlight">\(x\)</span> can possibly be. For example <span class="math notranslate nohighlight">\(x\)</span> can not be negative:</p>
+<div class="math notranslate nohighlight">
+\[
+x=\{1,3,2,4,8,16,32,64,128,256,512,6,12,24,48,96,192,384,768,1536\}
+\]</div>
+<p class="sd-card-text">Let <span class="math notranslate nohighlight">\(f(x)=x^3-256x+1536\)</span>. Then evaluate <span class="math notranslate nohighlight">\(f\)</span> at each of those <span class="math notranslate nohighlight">\(x\)</span> values using the Remainder Theorem. Eventually, you will find that <span class="math notranslate nohighlight">\(f(8)=0\)</span>. After doing polynomial long division you will get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^{3}-256x+1536 &amp; =(x-8)(x^{2}+8x-192)\\
+x^{3}-256x+1536 &amp; =0\\
+(x-8)(x^{2}+8x-192) &amp; =0\\
+x-8 &amp; =0\iff x=8\\
+x^{2}+8x-192 &amp; =0\\
+x &amp; =\dfrac{-8\pm\sqrt{8^{2}-4(1)(-192)}}{2(1)}\\
+ &amp; =\dfrac{-8\pm\sqrt{832}}{2}\\
+ &amp; =\dfrac{-8\pm8\sqrt{13}}{2}\\
+ &amp; =-4\pm4\sqrt{13}\\
+ &amp; =\begin{cases}
+-4+4\sqrt{13} &amp; &gt;0\\
+-4-4\sqrt{13} &amp; &lt;0
+\end{cases}
+\end{align*}\]</div>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(x\)</span> must be positive we have two possible dimensions for <span class="math notranslate nohighlight">\(x\)</span>. That is, <span class="math notranslate nohighlight">\(x=8\)</span> or <span class="math notranslate nohighlight">\(x=-4+4\sqrt{13}\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=8\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[
+z=\dfrac{384}{8^{2}}=6
+\]</div>
+<p class="sd-card-text">which means that <span class="math notranslate nohighlight">\(x=8\)</span>, <span class="math notranslate nohighlight">\(y=8\)</span>, and <span class="math notranslate nohighlight">\(z=6\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=-4+4\sqrt{13}\approx10.42220510185596\)</span> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+y &amp; =\dfrac{384}{(-4+4\sqrt{13})^{2}}\\
+ &amp; =\dfrac{384}{224-32\sqrt{13}}\\
+ &amp; =\frac{12}{7-\sqrt{13}}\\
+ &amp; \approx3.535183758487996
+\end{align*}\]</div>
+<p class="sd-card-text">which means <span class="math notranslate nohighlight">\(x=-4+4\sqrt{13}\)</span>, <span class="math notranslate nohighlight">\(y=-4+4\sqrt{13}\)</span>, and <span class="math notranslate nohighlight">\(z=\frac{12}{7-\sqrt{13}}\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text">Therefore, the possible dimensions we have</p>
+<div class="math notranslate nohighlight">
+\[
+\text{length}=\text{width}=8\text{ and }\text{height}=6
+\]</div>
+<p class="sd-card-text">and</p>
+<div class="math notranslate nohighlight">
+\[
+\text{length}=\text{width}=-4+4\sqrt{13}\text{ and }\text{height}=\frac{12}{7-\sqrt{13}}.
+\]</div>
+</div>
+</details></section>
+</div></section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="53.html" class="btn btn-neutral float-left" title="Section 5.3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="57.html" class="btn btn-neutral float-right" title="Section 5.7" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

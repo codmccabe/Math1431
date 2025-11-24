@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 1.7 &mdash; Math 1431 Notes Fall 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e5187821"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 1.8" href="18.html" />
+    <link rel="prev" title="Section 1.6" href="16.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1431 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="16.html">Section 1.6</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 1.7</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#review-of-concepts">Review of concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linear-inequality">Linear Inequality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nonlinear-inequality">Nonlinear Inequality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rational-inequality">Rational Inequality</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="18.html">Section 1.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/23.html">Section 2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/26.html">Section 2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/27.html">Section 2.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/28.html">Section 2.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/35.html">Section 3.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/41.html">Section 4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/42.html">Section 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/43.html">Section 4.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/44.html">Section 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/45.html">Section 4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/46.html">Section 4.6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/52.html">Section 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/53.html">Section 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/55.html">Section 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/57.html">Section 5.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/58.html">Section 5.8</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/61.html">Section 6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/62.html">Section 6.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/63.html">Section 6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6/64.html">Section 6.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/71.html">Section 7.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/72.html">Section 7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter7/73.html">Section 7.3</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1431 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 1.7</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter1/17.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-1-7">
+<h1>Section 1.7<a class="headerlink" href="#section-1-7" title="Link to this heading"></a></h1>
+<section id="review-of-concepts">
+<h2>Review of concepts<a class="headerlink" href="#review-of-concepts" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="inequality">
+<p class="admonition-title"><span class="caption-number">Definition 1 </span></p>
+<section class="definition-content" id="proof-content">
+<p>An inequality says that one expressions is:</p>
+<ul class="simple">
+<li><p>greater than (<span class="math notranslate nohighlight">\(&gt;\)</span>)</p></li>
+<li><p>greater than equal to (<span class="math notranslate nohighlight">\(\ge\)</span>)</p></li>
+<li><p>less than (<span class="math notranslate nohighlight">\(&lt;\)</span>), or</p></li>
+<li><p>less than equal to (<span class="math notranslate nohighlight">\(\le\)</span>)
+another expression.</p></li>
+</ul>
+</section>
+</div><p><img alt="inequality!" src="../_images/inequality.png" /></p>
+<p><img alt="inequality2!" src="../_images/inequality2.png" /></p>
+</section>
+<section id="linear-inequality">
+<h2>Linear Inequality<a class="headerlink" href="#linear-inequality" title="Link to this heading"></a></h2>
+<p>First, we will look at a simple example involving inequality notations.</p>
+<div class="proof example admonition" id="linearInequality1">
+<p class="admonition-title"><span class="caption-number">Example 10 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(1-5x&gt;11\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We solve the inequality the following way. Notice that when dividing by <span class="math notranslate nohighlight">\(-5\)</span> we flip the inequality.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    1-5x &amp; &gt; 11\\
+    -5x &amp; &gt; 10\\
+    x &amp; &lt; -2
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we consider what the graph will look like. To do this, we will test a value against the original inequality. If <span class="math notranslate nohighlight">\(1-5x&gt;11\)</span> at <span class="math notranslate nohighlight">\(x=0\)</span> then we will graph towards zero on the number line. If the inequality is false then we graph away from zero.</p>
+<p class="sd-card-text">Testing <span class="math notranslate nohighlight">\(x=0\)</span> we have:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    1-5(0) &amp; &gt; 11\\
+    1 &amp; \not&gt; 11
+\end{align*}\]</div>
+<p class="sd-card-text">This means we graph away from zero as follows:</p>
+<p class="sd-card-text">The graph of the solution is: <img alt="graph!" src="../_images/linearInequality1.png" /></p>
+<p class="sd-card-text">From the graph, we see the solution set is <span class="math notranslate nohighlight">\(\{x\,|\,x&lt;-2\}\)</span>. Also, the interval notation is <span class="math notranslate nohighlight">\((-\infty,-2)\)</span>.</p>
+</div>
+</details></section>
+</div><p>Next, we will look at a nonlinear inequality. Remember, if <span class="math notranslate nohighlight">\(ab=0\)</span> then <span class="math notranslate nohighlight">\(a=0\)</span> or <span class="math notranslate nohighlight">\(b=0\)</span> by the zero product property. However, we do not use this property for nonlinear inequalities.</p>
+</section>
+<section id="nonlinear-inequality">
+<h2>Nonlinear Inequality<a class="headerlink" href="#nonlinear-inequality" title="Link to this heading"></a></h2>
+<div class="proof example admonition" id="nonlinearInequality1">
+<p class="admonition-title"><span class="caption-number">Example 11 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(x^2-x-12&gt;0\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we want to know where <span class="math notranslate nohighlight">\(x^2-x-12\)</span> is zero.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x^2-x-12 &amp; = 0\\
+    (x-4)(x+3) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">By the zero product property, we know <span class="math notranslate nohighlight">\(x=4\)</span> or <span class="math notranslate nohighlight">\(x=-3\)</span>.</p>
+<p class="sd-card-text">With this information we have now partitioned the real number line into three subintervals: <span class="math notranslate nohighlight">\((-\infty,-3)\)</span>, <span class="math notranslate nohighlight">\((-3,4)\)</span>, and <span class="math notranslate nohighlight">\((4,\infty)\)</span>. Since the polynomial is defined everywhere and is continuous everywhere we know that if <span class="math notranslate nohighlight">\(x^2-x-12\)</span> is greater than zero at some point on a subinterval then the expression is greater than zero for all <span class="math notranslate nohighlight">\(x\)</span> values in that subinterval.</p>
+<p class="sd-card-text">That is, we will test values in each subinterval.</p>
+<ul class="simple">
+<li><p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=-4\)</span> we have <span class="math notranslate nohighlight">\((-4)^2-(-4)-12 &gt; 0\)</span> which is <strong>true</strong>. This means we will shade to the left of <span class="math notranslate nohighlight">\(x=-3\)</span> on the number line.</p></li>
+<li><p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=0\)</span> we have <span class="math notranslate nohighlight">\((0)^2-(0)-12 &gt; 0\)</span> which is <strong>false</strong>. This means we will not shade the middle interval.</p></li>
+<li><p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=5\)</span> we have <span class="math notranslate nohighlight">\((5)2-(5)-12 &gt; 0\)</span> which is <strong>true</strong>. This means we will shade to the right of <span class="math notranslate nohighlight">\(x=4\)</span>.</p></li>
+</ul>
+<p class="sd-card-text">The graph of the solution should look like the following: <img alt="Nonlinear Inequality!" src="../_images/nonlinearInequality1.png" /></p>
+<p class="sd-card-text">Based on the graph the solution set is <span class="math notranslate nohighlight">\(\{x\,|\,x&lt;-3\text{ or }4&lt;x\}\)</span>. The interval notation would be <span class="math notranslate nohighlight">\((-\infty,-3)\cup(4,\infty)\)</span>.</p>
+<p class="sd-card-text">Here is a plot of <span class="math notranslate nohighlight">\(y=x^2-x-12\)</span> compared with the solution.</p>
+<p class="sd-card-text"><img alt="Nonlinear Inequality!" src="../_images/nonlinearInequality2.png" /></p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="nonlinearInequality2">
+<p class="admonition-title"><span class="caption-number">Example 12 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(2x^2+5x-12\le 0\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we will solve <span class="math notranslate nohighlight">\(2x2+5x-12 = 0\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    2x^2+5x-12 &amp; = 0\\
+    2x^2+8x-3x-12 &amp; = 0\\
+    2x(x+4)-3(x+4) &amp; = 0\\
+    (x+4)(2x-3) &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">By the zero product property, we have <span class="math notranslate nohighlight">\(x=-4\)</span> or <span class="math notranslate nohighlight">\(x=\frac{3}{2}\)</span> as solutions to the equation. Next, identify the three subintervals created by these values and put them on a number line. Since there are no other zeros for the expression and the expression is defined everywhere with no jumps we know if we test one value on a subinterval that will determine the rest of the values in the subinterval.</p>
+<ul class="simple">
+<li><p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=-5\)</span> we have <span class="math notranslate nohighlight">\(2(-5)^2+5(-5)-12\le 0\)</span> which is <strong>flase</strong>. This means we will <strong>not</strong> shade the left-most subinterval.</p></li>
+<li><p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=0\)</span> we have <span class="math notranslate nohighlight">\(2(0)^2+5(0)-12\le0\)</span> which is <strong>true</strong>. This means we will shade the middle subinterval.</p></li>
+<li><p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=2\)</span> we have <span class="math notranslate nohighlight">\(2(2)^2+5(2)-12\le0\)</span> which is <strong>false</strong>. This means we will <strong>not</strong> shade the right-most subinterval.</p></li>
+</ul>
+<p class="sd-card-text">The graph of the solution would look like: <img alt="Nonlinear Inequality!" src="../_images/nonlinearInequality3.png" /></p>
+<p class="sd-card-text">From the graph we have the solution set <span class="math notranslate nohighlight">\(\{x\,|\,-4\le x\le \frac{3}{2}\}\)</span> and the interval notation is <span class="math notranslate nohighlight">\([-4,\frac{3}{2}]\)</span>.</p>
+<p class="sd-card-text">For context, we have the following graph.</p>
+<p class="sd-card-text"><img alt="Nonlinear Inequality!" src="../_images/nonlinearInequality4.png" /></p>
+</div>
+</details></section>
+</div><section id="rational-inequality">
+<h3>Rational Inequality<a class="headerlink" href="#rational-inequality" title="Link to this heading"></a></h3>
+<div class="proof example admonition" id="rationalInequality">
+<p class="admonition-title"><span class="caption-number">Example 13 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve <span class="math notranslate nohighlight">\(\frac{6x+1}{2x-3} \le 6\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We will first solve <span class="math notranslate nohighlight">\(\frac{6x-1}{2x-3} = 0\)</span> like the previous examples.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{6x+1}{2x-3} &amp; = 6\\
+    \frac{6x+1}{2x-3} - 6 &amp; = 0\\
+    \frac{6x+1}{2x-3} - \frac{6(2x-3)}{2x-3} &amp; = 0\\
+    \frac{6x+1-12x+18}{2x-3} &amp; = 0\\
+    \frac{-6x+19}{2x-3} &amp; = 0
+\end{align*}\]</div>
+<p class="sd-card-text">The solution to the equation is <span class="math notranslate nohighlight">\(x=\frac{19}{6}\)</span>. In the past, we would say this splits the number line into 2 subintervals. However, the expression is undefined at <span class="math notranslate nohighlight">\(x=\frac{3}{2}\)</span>. This means we must include this value on the number line. Next, we will test values.</p>
+<ul class="simple">
+<li><p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=0\)</span> we have <span class="math notranslate nohighlight">\(\frac{6(0)+1}{2(0)-3} \le 6\)</span> which is <strong>true</strong>.</p></li>
+<li><p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=2\)</span> we have <span class="math notranslate nohighlight">\(\frac{6(2)+1}{2(2)-3} \le 6\)</span> which is <strong>false</strong>.</p></li>
+<li><p class="sd-card-text">When <span class="math notranslate nohighlight">\(x=4\)</span> we have <span class="math notranslate nohighlight">\(\frac{6(4)+1}{2(4)-3} \le 6\)</span> which is <strong>true</strong>.</p></li>
+</ul>
+<p class="sd-card-text">The graph of the solution would look like: <img alt="Rational Inequality!" src="../_images/nonlinearInequality5.png" /></p>
+<p class="sd-card-text">The solution set would be <span class="math notranslate nohighlight">\(\{x\,|\,x&lt;\frac{3}{2}\text{ or }\frac{19}{6}\le x\}\)</span> and interval notation would be <span class="math notranslate nohighlight">\((-\infty,\frac{3}{2})\cup[\frac{19}{6},\infty)\)</span>.</p>
+<p class="sd-card-text">With context, we have:</p>
+<p class="sd-card-text"><img alt="Rational Inequality!" src="../_images/nonlinearInequality6.png" /></p>
+</div>
+</details></section>
+</div></section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="16.html" class="btn btn-neutral float-left" title="Section 1.6" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="18.html" class="btn btn-neutral float-right" title="Section 1.8" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
